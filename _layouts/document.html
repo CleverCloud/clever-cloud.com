@@ -6,29 +6,27 @@
 		<meta name="description" content="{{page.description}}"/>
 		<meta name="keywords" content="{{site.keywords|join:','}}{{page.keywords|join:','}}"/>
 		<title>{{site.title}}</title>
+		<link rel="stylesheet" type="text/css" href="/lib/sass/960.css" media="all"/>
 <!--
-		<link rel="stylesheet" type="text/css" href="/lib/sass/960.min.css" media="all"/>
--->
 		<link rel="stylesheet" type="text/css" href="{{site.www}}/css/document.css" media="all"/>
+-->
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.www}}/img/favicon.ico"/>
 	</head>
 	<body>
-		<nav id="top">
-			<ul>
-				<li>
-					<ul>
-						<li id="brand"><h2><a href="{%if lg == site.i18n.default%}/{%else%}{{site.lg_url[lg]}}/{%endif%}">{{site.title}}</a></h2></li>
-						{%for link in site.i18n[lg].top%}
-						<li><a href="{{site.lg_url[lg]}}/{{link.url}}.html">{{link.title}}</a></li>
-						{%endfor%}
-					</ul>
-				</li>
-				<li class="login"><button href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</button></li>
-			</ul>
+		<nav id="main-nav">
+			<div>
+				<h2 id="brand"><a href="{%if lg == site.i18n.default%}/{%else%}{{site.lg_url[lg]}}/{%endif%}">{{site.title}}</a></h2>
+				<ul>
+					{%for link in site.i18n[lg].top%}
+					<li><a href="{{site.lg_url[lg]}}/{{link.url}}.html">{{link.title}}</a></li>
+					{%endfor%}
+					<li class="login"><button href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</button></li>
+				</ul>
+			</div>
 		</nav>
 		{{content}}
-		<footer>
-			<ul>
+		<footer id="main-footer">
+			<ul class="sitemap">
 				{%for col in site.i18n[lg].footer%}
 				<li>
 					<h3>{{col.head}}</h3>

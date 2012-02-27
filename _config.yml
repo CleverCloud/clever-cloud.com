@@ -31,8 +31,11 @@ i18n:
     name: "English"
   default: fr_FR
   fr_FR:  # traduction française
-    login: "Connexion / Inscription"
+    login: "Inscription"
     technologies: "Technologies supportées"
+    technologies_text: >
+        Quelle que soit la technologie qui la fait tourner, nous pouvons
+        héberger votre application sans rien changer au code d'origine !
     references: "Ils nous font confiance"
     top:
     - title: "Offre"
@@ -47,6 +50,9 @@ i18n:
       prev: "Précédent"
       next: "Suivant"
     signup:
+      info: >
+        Inscrivez-vous dès maintenant pour obtenir un compte à
+        l'ouverture de nos serveurs !
       mail: "Adresse E-mail"
       submit: "M'inscrire pour la Beta"
       google: "M'identifier avec Google"
@@ -54,33 +60,21 @@ i18n:
     - head: "Clever Cloud"
       list:
       - title: "Qui sommes-nous ?"
-        url: "a-propos"
+        url: "qui-sommes-nous"
+      - title: "Devenir partenaire"
+        url: "devenir-partenaire"
       - title: "Espace presse"
         url: "presse"
-      - title: "L'équipe"
-        url: "l-equipe"
       - title: "Facebook"
         url: "#"
       - title: "Twitter"
         url: "#"
-    - head: "Témoignages"
-      list:
-      - title: "Entreprises"
-        url: "entreprises"
-      - title: "Responsables"
-        url: "responsables"
-      - title: "Devenir partenaire"
-        url: "devenir-partenaire"
     - head: "Support"
       list:
       - title: "Documentation"
         url: "documentation"
-      - title: "FAQ"
-        url: "faq"
       - title: "Contactez-nous"
         url: "contact"
-      - title: "Présentation"
-        url: "presentation"
       - title: "Plan du site"
         url: "plan-site"
       - title: "Glossaire"
@@ -95,10 +89,8 @@ i18n:
         url: "cgv"
       - title: "Conditions Générales d'Utilisation"
         url: "cgu"
-      - title: "Plan du site"
-        url: "plan-site"
   en_US:  # traduction anglaise (américain)
-    login: "Login / Sign up"
+    login: "Sign up"
     technologies: "Technologies support"
     references: "They trust us"
     top:

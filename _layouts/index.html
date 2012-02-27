@@ -2,78 +2,56 @@
 layout: document
 ---
 {%assign lg = page.lang%}
-		<header id="slider">
-			<section>                              <!-- slider -->
+		<header id="main-header">
+			<section id="slider">                              <!-- slider -->
 				{%for slide in site.categories.slides%}{%if slide.categories[0] == lg%}
-				<article>
+				<article class="slide">
 					<img src="{{site.media}}/{{slide.icon}}" alt="{{slide.title}}"/>
-					<section>
+					<section class="text">
 						<h2>{{slide.title}}</h2>
-						<div>{{slide.content}}</div>
+						<div class="content">{{slide.content}}</div>
 					</section>
 				</article>
 				{%endif%}{%endfor%}
-				<div class="controls">
-					<button class="prev" href="#">{{site.i18n[lg].slider.prev}}</button>
-					<button class="next" href="#">{{site.i18n[lg].slider.next}}</button>
-				</div>
+				<aside class="controls">
+					<a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
+				</aside>
+			</section>
+			<section id="advantages">
+				{%for adv in site.categories.advantages%}{%if adv.categories[0] == lg%}
+				<article class="advantage">
+					<img src="{{site.media}}/{{adv.icon}}" alt="{{adv.title}}"/>
+					<h2>{{adv.title}}</h2>
+					<div class="content">{{adv.content}}</div>
+				</article>
+				{%endif%}{%endfor%}
 			</section>
 		</header>
-		<div id="form-bar">
-			<section>
-				<form id="signup" action="?" method="POST">              <!-- sign up form -->           
-					<input id="signup-mail" type="email" placeholder="{{site.i18n[lg].signup.mail}}" autocomplete="on" required/>
+		<div id="main">
+			<section id="signup">
+				<form id="signup-form" action="?" method="POST">
+					<p class="info">{{site.i18n[lg].signup.info}}</p>
+					<input id="signup-email" type="email" placeholder="{{site.i18n[lg].signup.mail}}" autocomplete="on" required/>
 					<input type="submit" value="{{site.i18n[lg].signup.submit}}"/>
 				</form>
-				<button id="signup-google" href="#">{{site.i18n[lg].signup.google}}</button>
 			</section>
-		</div>
-		<div id="main">
-			<section id="overview">                       <!-- overview -->
-				<header>
-					<h1>{{page.title}}</h1>
-					<button>button</button>
-					<button>button</button>
-					<button>button</button>
-				</header>
-				<article>
-					{%for img in page.img%}
-					<img src="{{site.media}}/{{img}}" alt="img"/>
-					{%endfor%}
-					{{content}}
-				</article>
-			</section>
-			<section id="technologies">               <!-- technologies -->
+			<section id="technologies">
 				<header>
 					<h2>{{site.i18n[lg].technologies}}</h2>
-					<button>button</button>
 				</header>
-				<ul>
-					{%for tech in site.categories.technologies limit:8%}{%if tech.categories[0] == lg%}
-					<li class="icon">
-						<img src="{{site.media}}/{{tech.icon}}" alt="{{tech.title}}"/>
-					</li>
-					<li class="details">
-						<h3>{{tech.title}}</h3>
-						{{tech.content}}
-					</li>
-					{%endif%}{%endfor%}
-				</ul>
-			</section>
-			<section id="references">               <!-- references -->
-				<header>
-					<h2>{{site.i18n[lg].references}}</h2>
-				</header>
-				<ul>
-					{%for ref in site.categories.references limit:8%}{%if ref.categories[0] == lg%}
-					<li class="icon">
-						<img src="{{site.media}}/{{ref.icon}}" alt="{{ref.title}}"/>
-					</li>
-					<li class="details">
-						<h3>{{ref.title}}</h3>
-						{{ref.content}}
-					</li>
-					{%endif%}{%endfor%}
-				</ul>
+				<article>
+					<p class="info">{{site.i18n[lg].technologies_text}}</p>
+					<ul>
+						{%for tech in site.categories.technologies limit:8%}{%if tech.categories[0] == lg%}
+						<li>
+							<img src="{{site.media}}/{{tech.icon}}" alt="{{tech.title}}"/>
+							<div class="text">
+								<h3>{{tech.title}}</h3>
+								{{tech.content}}
+							</div>
+						</li>
+						{%endif%}{%endfor%}
+					</ul>
+				</article>
 			</section>
 		</div>
