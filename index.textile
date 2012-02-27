@@ -1,0 +1,18 @@
+---
+# SEO
+title: "Premiers pas dans le Cloud ?"
+description: "Clever Cloud, le cloud français !"
+keywords: []
+lang: fr_FR
+# page vars
+img: [img1.png, coucou/img2.jpg, img3.gif]
+# page generation
+layout: index
+1st: true
+---
+
+p. Contenu de la home
+
+p. Encore un contenu
+
+p. encore un !

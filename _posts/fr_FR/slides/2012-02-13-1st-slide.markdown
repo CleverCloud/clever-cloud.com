@@ -1,0 +1,11 @@
+---
+# SEO
+title: "1ère slide"
+icon: "slide01.png"
+lang: fr_FR
+# site generation
+layout: document
+categories: [fr_FR, slides]
+---
+
+Ohh! **Ma première slide !** *Coucou :* Coucou.

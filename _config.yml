@@ -1,0 +1,167 @@
+# SEO
+title: "Clever Cloud"
+keywords: [cloud computing, solution cloud, cloud, clever cloud]
+since: "2012-03-01T12:00"
+# uri/urls                                          change before upload
+url: http://localhost:4000
+www: /www
+media: /media
+lg_url: # locale (i18n) urls                        change before upload
+  fr_FR: "http://localhost:4000/fr_FR"
+  en_US: "http://localhost:4000/en_US"
+# dirty jekyll conf
+destination: ../out
+auto:        true
+lsi:         false
+server_port: 4000
+pygments:    true
+markdown:    maruku
+permalink:   /:categories/:title.html
+maruku:
+  use_tex:   false
+  use_divs:  false
+  png_dir:   images/latex
+  png_url:   /images/latex
+# locale
+i18n:
+  list:
+  - iso: fr_FR
+    name: "Français"
+  - iso: en_US
+    name: "English"
+  default: fr_FR
+  fr_FR:  # traduction française
+    login: "Connexion / Inscription"
+    technologies: "Technologies supportées"
+    references: "Ils nous font confiance"
+    top:
+    - title: "Offre"
+      url: "offre"
+    - title: "Tarifs"
+      url: "tarifs"
+    - title: "Add-ons"
+      url: "add-ons"
+    - title: "Support"
+      url: "support"
+    slider:
+      prev: "Précédent"
+      next: "Suivant"
+    signup:
+      mail: "Adresse E-mail"
+      submit: "M'inscrire pour la Beta"
+      google: "M'identifier avec Google"
+    footer:
+    - head: "Clever Cloud"
+      list:
+      - title: "Qui sommes-nous ?"
+        url: "a-propos"
+      - title: "Espace presse"
+        url: "presse"
+      - title: "L'équipe"
+        url: "l-equipe"
+      - title: "Facebook"
+        url: "#"
+      - title: "Twitter"
+        url: "#"
+    - head: "Témoignages"
+      list:
+      - title: "Entreprises"
+        url: "entreprises"
+      - title: "Responsables"
+        url: "responsables"
+      - title: "Devenir partenaire"
+        url: "devenir-partenaire"
+    - head: "Support"
+      list:
+      - title: "Documentation"
+        url: "documentation"
+      - title: "FAQ"
+        url: "faq"
+      - title: "Contactez-nous"
+        url: "contact"
+      - title: "Présentation"
+        url: "presentation"
+      - title: "Plan du site"
+        url: "plan-site"
+      - title: "Glossaire"
+        url: "glossaire"
+    - head: "Nos engagements"
+      list:
+      - title: "Mentions légales"
+        url: "mentions-legales"
+      - title: "Protection des données"
+        url: "protection-donnees"
+      - title: "Conditions Générales de Vente"
+        url: "cgv"
+      - title: "Conditions Générales d'Utilisation"
+        url: "cgu"
+      - title: "Plan du site"
+        url: "plan-site"
+  en_US:  # traduction anglaise (américain)
+    login: "Login / Sign up"
+    technologies: "Technologies support"
+    references: "They trust us"
+    top:
+    - title: "Solution"
+      url: "solution"
+    - title: "Pricing"
+      url: "pricing"
+    - title: "Add-ons"
+      url: "addons"
+    - title: "Support"
+      url: "support"
+    slider:
+      prev: "Previous"
+      next: "Next"
+    signup:
+      mail: "Mail adress"
+      submit: "Sign up for Beta"
+      google: "Sign up with Google"
+    footer:
+    - head: "Clever Cloud"
+      list:
+      - title: "Who are we?"
+        url: "about"
+      - title: "Press releases"
+        url: "press"
+      - title: "The team"
+        url: "team"
+      - title: "Facebook"
+        url: "#"
+      - title: "Twitter"
+        url: "#"
+    - head: "Testimonials"
+      list:
+      - title: "Companies"
+        url: "companies"
+      - title: "Managers"
+        url: "managers"
+      - title: "Become our partner"
+        url: "partner"
+    - head: "Support"
+      list:
+      - title: "Documentation"
+        url: "documentation"
+      - title: "FAQ"
+        url: "faq"
+      - title: "Contact us"
+        url: "contact"
+      - title: "Overview"
+        url: "overview"
+      - title: "Site map"
+        url: "sitemap"
+      - title: "Glossary"
+        url: "glossary"
+    - head: "Our commitment"
+      list:
+      - title: "Legal notice"
+        url: "legal-notice"
+      - title: "Data privacy"
+        url: "privacy"
+      - title: "Terms of Sale"
+        url: "terms-sale"
+      - title: "Terms of Use"
+        url: "terms-use"
+      - title: "Site map"
+        url: "sitemap"
+    

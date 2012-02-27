@@ -1,0 +1,9 @@
+---
+# SEO
+title: "My pretty pretty page!"
+description: "Yo"
+keywords: []
+lang: en_US
+# site generation
+layout: document
+---

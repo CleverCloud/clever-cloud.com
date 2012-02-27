@@ -1,0 +1,79 @@
+---
+layout: document
+---
+{%assign lg = page.lang%}
+		<header id="slider">
+			<section>                              <!-- slider -->
+				{%for slide in site.categories.slides%}{%if slide.categories[0] == lg%}
+				<article>
+					<img src="{{site.media}}/{{slide.icon}}" alt="{{slide.title}}"/>
+					<section>
+						<h2>{{slide.title}}</h2>
+						<div>{{slide.content}}</div>
+					</section>
+				</article>
+				{%endif%}{%endfor%}
+				<div class="controls">
+					<button class="prev" href="#">{{site.i18n[lg].slider.prev}}</button>
+					<button class="next" href="#">{{site.i18n[lg].slider.next}}</button>
+				</div>
+			</section>
+		</header>
+		<div id="form-bar">
+			<section>
+				<form id="signup" action="?" method="POST">              <!-- sign up form -->           
+					<input id="signup-mail" type="email" placeholder="{{site.i18n[lg].signup.mail}}" autocomplete="on" required/>
+					<input type="submit" value="{{site.i18n[lg].signup.submit}}"/>
+				</form>
+				<button id="signup-google" href="#">{{site.i18n[lg].signup.google}}</button>
+			</section>
+		</div>
+		<div id="main">
+			<section id="overview">                       <!-- overview -->
+				<header>
+					<h1>{{page.title}}</h1>
+					<button>button</button>
+					<button>button</button>
+					<button>button</button>
+				</header>
+				<article>
+					{%for img in page.img%}
+					<img src="{{site.media}}/{{img}}" alt="img"/>
+					{%endfor%}
+					{{content}}
+				</article>
+			</section>
+			<section id="technologies">               <!-- technologies -->
+				<header>
+					<h2>{{site.i18n[lg].technologies}}</h2>
+					<button>button</button>
+				</header>
+				<ul>
+					{%for tech in site.categories.technologies limit:8%}{%if tech.categories[0] == lg%}
+					<li class="icon">
+						<img src="{{site.media}}/{{tech.icon}}" alt="{{tech.title}}"/>
+					</li>
+					<li class="details">
+						<h3>{{tech.title}}</h3>
+						{{tech.content}}
+					</li>
+					{%endif%}{%endfor%}
+				</ul>
+			</section>
+			<section id="references">               <!-- references -->
+				<header>
+					<h2>{{site.i18n[lg].references}}</h2>
+				</header>
+				<ul>
+					{%for ref in site.categories.references limit:8%}{%if ref.categories[0] == lg%}
+					<li class="icon">
+						<img src="{{site.media}}/{{ref.icon}}" alt="{{ref.title}}"/>
+					</li>
+					<li class="details">
+						<h3>{{ref.title}}</h3>
+						{{ref.content}}
+					</li>
+					{%endif%}{%endfor%}
+				</ul>
+			</section>
+		</div>

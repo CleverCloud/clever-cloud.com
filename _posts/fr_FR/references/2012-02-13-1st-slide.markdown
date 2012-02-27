@@ -1,0 +1,14 @@
+---
+# SEO
+title: "Ma référeeence à moi ..."
+icon: "goodref.jpg"
+lang: fr_FR
+# site generation
+layout: document
+categories: [fr_FR, references]
+i18n:
+- iso: "en_US"
+  url: "2012-02-13-my-ref"
+---
+
+Une très bonne référence ! Vairy goude !

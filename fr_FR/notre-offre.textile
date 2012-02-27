@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Notre offre"
+description: "Lorem ipsum day-o banana"
+keywords: []
+lang: fr_FR
+# site generation
+layout: page
+---
+
+Notre offre, c'est cool. Achète-moi ça tout de suite !

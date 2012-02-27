@@ -1,0 +1,10 @@
+---
+# SEO
+title: "Ma jolie page"
+description: ""
+keywords: []
+lang: fr_FR
+# site generation
+layout: document
+---
+

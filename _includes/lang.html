@@ -1,0 +1,8 @@
+<ul id="lang">
+	{%for i in site.i18n.list%}
+	<li id="{{i.iso}}">
+		{%capture currentPage%}{{page.url|remove_first:'/'|remove_first:lg|remove_first:'/'|remove:'index.html'}}{%endcapture%}
+		<a href="/{%unless currentPage == '' and i.iso == site.i18n.default%}{{i.iso}}/{{currentPage}}{%endunless%}"{%if i.iso == lg%} class="active"{%endif%}>{{i.name}}</a>
+	</li>
+	{%endfor%}
+</ul>
