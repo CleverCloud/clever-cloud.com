@@ -6,6 +6,11 @@ body{
 	position:relative;
 }
 button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
+h2 small{
+	font-family:sans-serif;
+	font-size:70%;
+	font-weight:normal;
+}
 #main-nav{
 	background:#eee;
 	box-shadow:inset 0 40px 25px -20px #fff,0 -10px 10px 5px #000;
@@ -23,12 +28,12 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 		text-decoration:none;
 		text-shadow:0 1px #fff;
 	}
-	#main-nav a, #main-nav .login a{
+	#main-nav a{
 		display:block;
 		padding:0 20px;
 	}
 	#main-nav ul{ float:right; }
-	#main-nav .login{ box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1; }
+	#main-nav .login a{ box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1; }
 	#brand{
 		font-size:medium;
 		line-height:inherit;
@@ -42,14 +47,19 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 		height:340px;
 		padding:100px 0 50px;
 	}
+		#slider .slide{ height:320px;}
 		#slider h2{
 			color:#eee;
 			font-family:serif;
-			font-size:480%;
+			font-size:420%;
 			font-style:italic;
 			line-height:120%;
 			padding:30px 0;
 			text-shadow:0 -1px 0 #fff,0 2px 2px #777,0 3px 0 #ddd,-1px 5px 5px #333;
+		}
+		#slider .text{
+			font-size:120%;
+			margin-bottom:20px;
 		}
 		#slider .controls a{
 			background:rgba(0,0,0,.2);
@@ -58,13 +68,14 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 			display:block;
 			float:left;
 			height:16px;
+			margin-bottom:20px;
 			margin-right:16px;
 			overflow:hidden;
 			text-indent:100px;
 			width:16px;
 		}
-			#slider .controls a:hover:before,#slider .controls a:focus:before,#slider .controls .active:before{
-				background:url('../img/header-bg.png');
+			#slider .controls a:hover:before,#slider .controls a:focus:before,#slider .controls .active:before,#slider .controls .active:hover:before,#slider .controls .active:focus:before{
+				background:#fff;
 				border-bottom:1px solid #777;
 				border-radius:5px;
 				content:" ";
@@ -73,7 +84,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 				margin:3px 0 0 3px;
 				width:10px;
 			}
-			#slider .controls .active:hover:before,#slider .controls .active:focus:before{ background:#fff; }
+			#slider .controls .active:before{ background:url('../img/header-bg.png'); }
 	#advantages .advantage{
 		background:#fff;
 		border-radius:4px;
@@ -106,19 +117,28 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 	position:relative;
 	z-index:2;
 }
-	#signup-email{
+	#signup .info{
+		margin-top:20px;
+		margin-bottom:20px;
+	}
+	#signup-form{
 		background:#e8e8e8;
 		border-radius:4px;
 		box-shadow:inset 0 1px 1px #888;
 		color:#4c4c4c;
-		font-size:170%;
-		font-weight:bold;
 		height:50px;
-		text-indent:10px;
-		text-shadow:0 1px 0 #fff;
 	}
-		#signup-email::-webkit-input-placeholder{ color:#4c4c4c; }
-		#signup-email:-moz-placeholder{ color:#4c4c4c; }
+		#signup-email{
+			background:none;
+			color:#4c4c4c;
+			font-size:170%;
+			font-weight:bold;
+			height:50px;
+			text-indent:10px;
+			text-shadow:0 1px 0 #fff;
+		}
+			#signup-email::-webkit-input-placeholder{ color:#4c4c4c; }
+			#signup-email:-moz-placeholder{ color:#4c4c4c; }
 	#signup [type="submit"]{
 		background:#f7f7f7;
 		color:#4c4c4c;
@@ -136,11 +156,24 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 			border-bottom:1px solid #ddd;
 			font-family:serif;
 			font-style:italic;
-			line-height:160%;
-			padding:30px 0 10px;
+			padding:30px 0 20px;
 			margin-bottom:20px;
 		}
-#main-footer{ padding:30px 0;}
+		#technologies .info{ margin-bottom:20px; }
+			#technologies ul img{ background:#eee; }
+			#technologies ul li{
+				border-radius:4px;
+				box-shadow:0 0 0 1px #e1e1e1;
+				margin-bottom:20px;
+				padding:10px 0;
+			}
+			#technologies ul .text p{
+				padding-right:10px;
+			}
+#main-footer{
+	box-shadow:inset 0 -80px 70px -50px #731512;
+	padding:30px 0;
+}
 	#main-footer h3{
 		color:#842623;
 		font-family:serif;
@@ -148,6 +181,7 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 		font-style:italic;
 		text-shadow:0 1px 0 #e06460,0 -1px 0 #3b110f;
 	}
+	#main-footer li ul{ margin-bottom:20px; }
 	#main-footer li{
 		font-weight:bold;
 		line-height:160%;
@@ -158,3 +192,75 @@ button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 			color:#eee;
 			text-decoration:none;
 		}
+@media (max-width: 479px){
+		#main-nav a{
+			margin:0 12px 0 0;
+			padding:0;
+		}
+		#main-nav ul{
+			font-size:80%;
+		}
+	#advantages .advantage img{
+		height:90px;
+		width:130px;
+	}
+	#advantages .advantage .content{
+		display:none;
+	}
+	#signup [type="submit"]{
+		margin-left:5px;
+		width:280px;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	#main-nav a{
+		margin:0 25px 0 0;
+		padding:0 5px;
+	}
+	#advantages .advantage img{
+		height:135px;
+		width:195px;
+	}
+	#signup [type="submit"]{
+		margin-left:6px;
+		width:420px;
+	}
+}
+@media (max-width: 767px){
+	#main-nav{ box-shadow:inset 0 40px 25px -20px #fff,0 -10px 10px 5px #000,0 30px 0 #e8e8e8; }
+		#main-nav a,#main-nav .login a{
+			box-shadow:none;
+			font-weight:normal;
+		}
+		#main-nav ul{
+			float:left;
+			line-height:30px;
+		}
+	#advantages .advantage{ height:auto; }
+	#advantages .advantage img{
+		margin:0 15px;
+	}
+	#advantages .advantage h3{ text-align:left; }
+	#signup-form{ height:100px; }
+	#signup [type="submit"]{
+		position:static;
+	}
+}
+@media (min-width: 768px){}
+@media (min-width: 768px) and (max-width: 979px){
+	#advantages .advantage{ height:auto; }
+	#advantages .advantage h3{ text-align:left; }
+	#advantages .advantage img{
+		height:135px;
+		margin:0 20px;
+		width:195px;
+	}
+}
+@media (min-width: 980px)  and (max-width: 1199px){
+	#advantages .advantage{ height:350px; }
+	#advantages .advantage img{
+		height:135px;
+		width:195px;
+	}
+}
+@media (min-width: 1200px){}

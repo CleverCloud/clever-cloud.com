@@ -29,15 +29,15 @@ layout: document
 		</header>
 		<div id="main">
 			<section id="signup">
+				<p class="info">{{site.i18n[lg].signup.info}}</p>
 				<form id="signup-form" action="?" method="POST">
-					<p class="info">{{site.i18n[lg].signup.info}}</p>
 					<input id="signup-email" type="email" placeholder="{{site.i18n[lg].signup.mail}}" autocomplete="on" required/>
 					<input type="submit" value="{{site.i18n[lg].signup.submit}}"/>
 				</form>
 			</section>
 			<section id="technologies">
 				<header>
-					<h2>{{site.i18n[lg].technologies}}</h2>
+					<h2>{{site.i18n[lg].technologies}} <small>{{site.i18n[lg].technologies_sub}}</small></h2>
 				</header>
 				<article>
 					<p class="info">{{site.i18n[lg].technologies_text}}</p>

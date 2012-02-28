@@ -33,6 +33,7 @@ i18n:
   fr_FR:  # traduction française
     login: "Inscription"
     technologies: "Technologies supportées"
+    technologies_sub: "Portez votre application en un clin d'œil"
     technologies_text: >
         Quelle que soit la technologie qui la fait tourner, nous pouvons
         héberger votre application sans rien changer au code d'origine !

@@ -8,4 +8,10 @@ layout: document
 categories: [fr_FR, slides]
 ---
 
-Ohh! **Ma première slide !** *Coucou :* Coucou.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at 
+justo ligula. Cras ornare felis scelerisque eros rhoncus a feugiat 
+massa malesuada. Donec elementum laoreet massa at elementum. Nam eu 
+turpis et metus suscipit ornare a nec magna. Etiam ornare ipsum sed 
+velit egestas euismod. Suspendisse nec purus tellus. Praesent id 
+augue ipsum. Aenean dui dui, ullamcorper at ullamcorper ut, 
+fringilla in nisi.
