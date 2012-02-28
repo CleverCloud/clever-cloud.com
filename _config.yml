@@ -53,7 +53,7 @@ i18n:
       info: >
         Inscrivez-vous dès maintenant pour obtenir un compte à
         l'ouverture de nos serveurs !
-      mail: "Entrez votre mail pour être le premier informé !"
+      mail: "Votre e-mail"
       submit: "Inscription Beta"
     footer:
     - head: "Clever Cloud"
