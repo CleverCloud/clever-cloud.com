@@ -7,9 +7,7 @@
 		<meta name="keywords" content="{{site.keywords|join:','}}{{page.keywords|join:','}}"/>
 		<title>{{site.title}}</title>
 		<link rel="stylesheet" type="text/css" href="/lib/sass/960.css" media="all"/>
-<!--
 		<link rel="stylesheet" type="text/css" href="{{site.www}}/css/document.css" media="all"/>
--->
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.www}}/img/favicon.ico"/>
 	</head>
 	<body>
@@ -20,7 +18,7 @@
 					{%for link in site.i18n[lg].top%}
 					<li><a href="{{site.lg_url[lg]}}/{{link.url}}.html">{{link.title}}</a></li>
 					{%endfor%}
-					<li class="login"><button href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</button></li>
+					<li class="login"><a href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</a></li>
 				</ul>
 			</div>
 		</nav>

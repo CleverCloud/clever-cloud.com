@@ -14,14 +14,14 @@ layout: document
 				</article>
 				{%endif%}{%endfor%}
 				<aside class="controls">
-					<a href="#">1</a> <a href="#">2</a> <a href="#">3</a>
+					<a href="#">1</a> <a class="active" href="#">2</a> <a href="#">3</a>
 				</aside>
 			</section>
 			<section id="advantages">
 				{%for adv in site.categories.advantages%}{%if adv.categories[0] == lg%}
 				<article class="advantage">
 					<img src="{{site.media}}/{{adv.icon}}" alt="{{adv.title}}"/>
-					<h2>{{adv.title}}</h2>
+					<h3>{{adv.title}}</h3>
 					<div class="content">{{adv.content}}</div>
 				</article>
 				{%endif%}{%endfor%}
