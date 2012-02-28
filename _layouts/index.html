@@ -3,7 +3,8 @@ layout: document
 ---
 {%assign lg = page.lang%}
 		<header id="main-header">
-			<section id="slider">                              <!-- slider -->
+			<section id="slider">
+				<div class="bottle"> </div>
 				{%for slide in site.categories.slides%}{%if slide.categories[0] == lg%}
 				<article class="slide">
 					<img src="{{site.media}}/{{slide.icon}}" alt="{{slide.title}}"/>
@@ -14,7 +15,7 @@ layout: document
 				</article>
 				{%endif%}{%endfor%}
 				<aside class="controls">
-					<a href="#">1</a> <a class="active" href="#">2</a> <a href="#">3</a>
+					<div class="pagination"><a href="#">1</a> <a class="active" href="#">2</a> <a href="#">3</a></div>
 				</aside>
 			</section>
 			<section id="advantages">

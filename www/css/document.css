@@ -35,19 +35,55 @@ h2 small{
 	#main-nav ul{ float:right; }
 	#main-nav .login a{ box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1; }
 	#brand{
+		background:url('../img/logo.png') center no-repeat;
 		font-size:medium;
+		height:50px;
 		line-height:inherit;
+		overflow:hidden;
+		text-indent:500px;
+		width:300px;
 	}
 #main-header{
 	background:url('../img/header-bg.png');
-	padding-top:50px;
+	padding-top:180px;
 }
 	#slider{
+		background:rgba(255,255,255,.3);
+		border-bottom:1px solid #fff;
+		border-top:1px solid #fff;
 		color:#7c7c7c;
-		height:340px;
-		padding:100px 0 50px;
+		position:relative;
 	}
-		#slider .slide{ height:320px;}
+		#slider:before{
+			background:url('../img/big-shadow-top.png') center no-repeat;
+			top:-12px;
+			content:" ";
+			display:block;
+			height:11px;
+			position:absolute;
+			width:100%;
+		}
+		#slider:after{
+			background:url('../img/big-shadow.png') center no-repeat;
+			bottom:-12px;
+			content:" ";
+			display:block;
+			height:11px;
+			position:absolute;
+			width:100%;
+		}
+		#slider .bottle{ position:relative; }
+		#slider .bottle:before{
+			background:url('../img/bottle-top.png') center no-repeat;
+			content:" ";
+			display:block;
+			height:91px;
+			width:65px;
+			position:absolute;
+			top:-92px;
+			left:132px;
+		}
+		#slider .slide{ height:300px;}
 		#slider h2{
 			color:#eee;
 			font-family:serif;
@@ -85,12 +121,16 @@ h2 small{
 				width:10px;
 			}
 			#slider .controls .active:before{ background:url('../img/header-bg.png'); }
+#advantages{
+	background:url('../img/bottle-repeat.png') 140px repeat-y;
+	padding-top:30px;
+}
 	#advantages .advantage{
 		background:#fff;
 		border-radius:4px;
 		box-shadow:0 0 0 1px #e1e1e1;
 		height:400px;
-		margin-bottom:20px;
+		margin-top:20px;
 		padding:10px 0;
 		position:relative;
 		z-index:3;
@@ -113,10 +153,14 @@ h2 small{
 #main{
 	background:#fff;
 	border-top:1px solid #e1e1e1;
-	margin-top:-50px;
+	margin-top:-30px;
 	position:relative;
 	z-index:2;
 }
+	#signup{
+		background:url('../img/bottle-repeat.png') 140px repeat-y;
+		padding-top:40px;
+	}
 	#signup .info{
 		margin-top:20px;
 		margin-bottom:20px;
@@ -152,11 +196,12 @@ h2 small{
 		position:relative;
 		text-transform:uppercase;
 	}
+	#technologies{ background:url('../img/bottle-repeat.png') 140px repeat-y; }
 		#technologies h2{
 			border-bottom:1px solid #ddd;
 			font-family:serif;
 			font-style:italic;
-			padding:30px 0 20px;
+			padding:40px 0 10px;
 			margin-bottom:20px;
 		}
 		#technologies .info{ margin-bottom:20px; }
@@ -171,9 +216,23 @@ h2 small{
 				padding-right:10px;
 			}
 #main-footer{
-	box-shadow:inset 0 -80px 70px -50px #731512;
-	padding:30px 0;
+	box-shadow:inset 0 -150px 150px -80px #731512;
 }
+	#main-footer .sitemap{
+		min-height:251px;
+		padding:30px 0;
+		position:relative;
+	}
+		#main-footer .sitemap:before{
+			background:url('../img/bottle-bottom.png') center no-repeat;
+			content:" ";
+			display:block;
+			height:301px;
+			left:29px;
+			position:absolute;
+			top:0;
+			width:270px;
+		}
 	#main-footer h3{
 		color:#842623;
 		font-family:serif;
@@ -227,6 +286,9 @@ h2 small{
 	}
 }
 @media (max-width: 767px){
+	#slider .bottle:before{ display:none; }
+	#advantages,#signup,#technologies{ background:none; }
+	#main-footer .sitemap:before{ display:none; }
 	#main-nav{ box-shadow:inset 0 40px 25px -20px #fff,0 -10px 10px 5px #000,0 30px 0 #e8e8e8; }
 		#main-nav a,#main-nav .login a{
 			box-shadow:none;
@@ -248,6 +310,13 @@ h2 small{
 }
 @media (min-width: 768px){}
 @media (min-width: 768px) and (max-width: 979px){
+	#slider .bottle:before{ left:117px; }
+	#advantages,#signup,#technologies{ background-position:125px; }
+	#main-footer .sitemap:before{ left:14px; }
+	#main-nav a{
+		padding:0 10px;
+	}
+	#brand{ width:277px; }
 	#advantages .advantage{ height:auto; }
 	#advantages .advantage h3{ text-align:left; }
 	#advantages .advantage img{
@@ -257,6 +326,9 @@ h2 small{
 	}
 }
 @media (min-width: 980px)  and (max-width: 1199px){
+	#slider .bottle:before{ left:127px; }
+	#advantages,#signup,#technologies{ background-position:135px; }
+	#main-footer .sitemap:before{ left:24px; }
 	#advantages .advantage{ height:350px; }
 	#advantages .advantage img{
 		height:135px;
