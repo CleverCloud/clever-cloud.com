@@ -1,7 +1,7 @@
 ---
 # SEO
-title: "1ère slide"
-icon: "slide01.png"
+title: "coucou"
+icon: "slide-img.png"
 lang: fr_FR
 # site generation
 layout: document

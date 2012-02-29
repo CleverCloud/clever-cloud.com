@@ -31,6 +31,7 @@ i18n:
     name: "English"
   default: fr_FR
   fr_FR:  # traduction française
+    name: "Français"
     login: "Inscription"
     technologies: "Technologies supportées"
     technologies_sub: "Portez votre application en un clin d'œil"

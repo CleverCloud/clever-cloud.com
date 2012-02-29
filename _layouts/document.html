@@ -22,7 +22,10 @@
 						$(e.currentTarget).removeClass('toggled');
 						$(e.currentTarget).blur();
 					}
-					else $(e.currentTarget).addClass('toggled');
+					else{
+						$('#main-nav .toggled').removeClass('toggled');
+						$(e.currentTarget).addClass('toggled');
+					}
 				});
 				$('body').click(function(e){
 					$('#main-nav .toggled').removeClass('toggled');
@@ -53,11 +56,11 @@
 					{%endfor%}
 					<li class="login"><a href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</a></li>
 					<li class="lg_choice {{lg}}">
-						<a href="#">{{lg}}</a>
+						<a href="#" title="{{site.i18n[lg].name}}">{{lg}}</a>
 						<ul class="drop">
 							{%for i in site.i18n.list%}
 							{%unless i.iso == lg%}
-							<li class="{{i.iso}}"><a href="{%if i.iso == site.i18n.default%}/{%else%}{{site.lg_url[i.iso]}}{%endif%}">{{i.name}}</a></li>
+							<li class="{{i.iso}}"><a href="{%if i.iso == site.i18n.default%}/{%else%}{{site.lg_url[i.iso]}}{%endif%}" title="{{i.name}}">{{i.iso}}</a></li>
 							{%endunless%}
 							{%endfor%}
 						</ul>
