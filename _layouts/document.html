@@ -10,6 +10,25 @@
 		<link rel="stylesheet" type="text/css" href="/lib/sass/960.css" media="all"/>
 		<link rel="stylesheet" type="text/css" href="{{site.www}}/css/document.css" media="all"/>
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.www}}/img/favicon.ico"/>
+		{%for script in page.scripts%}
+		<script type="text/javascript" src="{{site.www}}/js/{{script}}"></script>
+		{%endfor%}
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#main-nav li:has(.drop)>a').click(function(e){
+					e.preventDefault();
+					e.stopPropagation();
+					if($(e.currentTarget).hasClass('toggled')){
+						$(e.currentTarget).removeClass('toggled');
+						$(e.currentTarget).blur();
+					}
+					else $(e.currentTarget).addClass('toggled');
+				});
+				$('body').click(function(e){
+					$('#main-nav .toggled').removeClass('toggled');
+				});
+			});
+		</script>
 	</head>
 	<body>
 		<nav id="main-nav">
@@ -17,9 +36,32 @@
 				<h2 id="brand"><a href="{%if lg == site.i18n.default%}/{%else%}{{site.lg_url[lg]}}/{%endif%}">{{site.title}}</a></h2>
 				<ul>
 					{%for link in site.i18n[lg].top%}
-					<li><a href="{{site.lg_url[lg]}}/{{link.url}}.html">{{link.title}}</a></li>
+					<li class="{{link.title|downcase}}">
+						{%if link.sub%}
+						<a href="#">{{link.title}}</a>
+						<ul class="drop">
+							{%for sublink in link.list%}
+							<li class="{{sublink.title|downcase}}">
+								<a href="{{site.lg_url[lg]}}/{{sublink.url}}.html">{{sublink.title}}</a>
+							</li>
+							{%endfor%}
+						</ul>
+						{%else%}
+						<a href="{{site.lg_url[lg]}}/{{link.url}}.html">{{link.title}}</a>
+						{%endif%}
+					</li>
 					{%endfor%}
 					<li class="login"><a href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</a></li>
+					<li class="lg_choice {{lg}}">
+						<a href="#">{{lg}}</a>
+						<ul class="drop">
+							{%for i in site.i18n.list%}
+							{%unless i.iso == lg%}
+							<li class="{{i.iso}}"><a href="{%if i.iso == site.i18n.default%}/{%else%}{{site.lg_url[i.iso]}}{%endif%}">{{i.name}}</a></li>
+							{%endunless%}
+							{%endfor%}
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</nav>

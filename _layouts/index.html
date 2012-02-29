@@ -1,13 +1,15 @@
 ---
+scripts: [jquery-1.7.1.min.js, jquery.cycle.all.js]
 layout: document
 ---
 {%assign lg = page.lang%}
 		<header id="main-header">
+			<div id="bottle"> </div>
 			<section id="slider">
-				<div class="bottle"> </div>
+				<script type="text/javascript"></script>
 				{%for slide in site.categories.slides%}{%if slide.categories[0] == lg%}
 				<article class="slide">
-					<img src="{{site.media}}/{{slide.icon}}" alt="{{slide.title}}"/>
+					<img src="{{site.media}}/slides/{{slide.icon}}" alt="{{slide.title}}"/>
 					<section class="text">
 						<h2>{{slide.title}}</h2>
 						<div class="content">{{slide.content}}</div>
@@ -15,7 +17,7 @@ layout: document
 				</article>
 				{%endif%}{%endfor%}
 				<aside class="controls">
-					<div class="pagination"><a href="#">1</a> <a class="active" href="#">2</a> <a href="#">3</a></div>
+					<div class="pagination"> <a></a><a class="activeSlide"></a><a></a></div>
 				</aside>
 			</section>
 			<section id="advantages">
