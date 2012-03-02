@@ -33,7 +33,7 @@ i18n:
   fr_FR:  # traduction française
     name: "Français"
     login: "Inscription"
-    technologies: "Technologies supportées"
+    technologies: "Langages supportés"
     technologies_sub: "Portez votre application en un clin d'œil"
     technologies_text: >
         Quelle que soit la technologie qui la fait tourner, nous pouvons
@@ -102,7 +102,7 @@ i18n:
         url: "cgu"
   en_US:  # traduction anglaise (américain)
     login: "Sign up"
-    technologies: "Technologies support"
+    technologies: "Supported languages"
     references: "They trust us"
     top:
     - title: "Solution"
