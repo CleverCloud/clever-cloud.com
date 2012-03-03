@@ -252,6 +252,10 @@ h2 small{
 		margin-top:5px;
 		position:relative;
 		text-transform:uppercase;
+		cursor: pointer;
+	}
+	#signup [type="submit"]:hover{
+		background:#E1E1E1;
 	}
 	#technologies{ background:url('../img/bottle-repeat.png') 140px repeat-y; }
 		#technologies a{
@@ -270,13 +274,13 @@ h2 small{
 			margin-bottom:20px;
 		}
 		#technologies .info{ margin-bottom:20px; }
-			#technologies ul img{ background:white; }
 			#technologies ul li{
 				border-radius:4px;
 				box-shadow:0 0 0 1px #e1e1e1;
 				margin-bottom:20px;
 				padding:10px 0;
 			}
+			#technologies ul li:hover{background-color:#EEE}
 			#technologies ul .text p{
 				padding-right:10px;
 			}
