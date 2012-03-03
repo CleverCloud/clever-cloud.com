@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Maitrise de vos coûts"
+title: "Maîtrise de vos coûts"
 icon: "slide01.png"
 lang: fr_FR
 # site generation
