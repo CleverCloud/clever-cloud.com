@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Sécurité optimale"
+icon: "slide01.png"
+lang: fr_FR
+# site generation
+layout: document
+categories: [fr_FR, advantages]
+---
+
+Clever Cloud garanti la sécurité de vos données, hébergées dans des datacenters sécurisés offrant un niveau de sécurité conforme aux normes APSAD R82 et R81.
