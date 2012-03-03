@@ -133,6 +133,11 @@ h2 small{
 			left:132px;
 		}
 		#slider .slide{ height:300px; }
+		#slider a {
+			color:#4C4C4C;
+			text-decoration:none;
+		}
+		#slider a:hover {text-decoration:underline;}
 		#slider .slide img{
 			padding-top:20px;
 			z-index:1;
