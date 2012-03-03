@@ -254,6 +254,13 @@ h2 small{
 		text-transform:uppercase;
 	}
 	#technologies{ background:url('../img/bottle-repeat.png') 140px repeat-y; }
+		#technologies a{
+			color:#323838;
+			text-decoration: none
+		}
+		#technologies a:hover{
+			text-decoration: underline
+		}
 		#technologies h2{
 			border-bottom:1px solid #ddd;
 			font-family:serif;

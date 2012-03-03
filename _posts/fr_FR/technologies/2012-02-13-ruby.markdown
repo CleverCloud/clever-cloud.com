@@ -7,6 +7,4 @@ lang: fr_FR
 layout: document
 categories: [fr_FR, technologies]
 ---
-
-Avec Bianca, kdeuch' fait sa fête à PHP ! Il lui met carrément sa 
-race dans une cave avec sa soeur !
+<a href="http://www.ruby-lang.org/">www.ruby-lang.org</a>
