@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "PHP"
+title: "Ruby"
 icon: "php.png"
 lang: fr_FR
 # site generation

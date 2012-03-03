@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Koukou !"
+title: "Java"
 icon: "php.png"
 lang: fr_FR
 # site generation
@@ -8,4 +8,4 @@ layout: document
 categories: [fr_FR, technologies]
 ---
 
-Le post de **Katell**!
+
