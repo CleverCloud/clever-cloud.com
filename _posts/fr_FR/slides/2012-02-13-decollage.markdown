@@ -8,4 +8,4 @@ layout: document
 categories: [fr_FR, slides]
 ---
 
-Clever Cloud s'apprête à tout changer dans le monde de l'hébergement. Inscrivez vous dès maintenant pour être les premiers à être sélectionnés pour la bêta dès sa sortie, en mars. 
+Clever Cloud s'apprête à tout changer dans le monde de l'hébergement. Et on n'en a jamais été aussi près. inscrivez vous dès maintenant à la bêta privée de Clever Cloud et soyez parmi les premiers testeurs d'un hebergement du nouveau genre.

@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Java"
-icon: "php.png"
+icon: "java-logo.png"
 lang: fr_FR
 # site generation
 layout: document

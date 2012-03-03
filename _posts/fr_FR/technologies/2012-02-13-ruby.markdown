@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Ruby"
-icon: "php.png"
+icon: "ruby-logo.png"
 lang: fr_FR
 # site generation
 layout: document

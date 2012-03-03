@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Scala"
-icon: "php.png"
+icon: "scala-logo.png"
 lang: fr_FR
 # site generation
 layout: document

@@ -270,7 +270,7 @@ h2 small{
 			margin-bottom:20px;
 		}
 		#technologies .info{ margin-bottom:20px; }
-			#technologies ul img{ background:#eee; }
+			#technologies ul img{ background:white; }
 			#technologies ul li{
 				border-radius:4px;
 				box-shadow:0 0 0 1px #e1e1e1;
