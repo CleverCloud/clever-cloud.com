@@ -444,8 +444,12 @@ h2 small{
 			top:10px;
 		}
 	#advantages .advantage img{
-		height:110px;
+		display:block;
+		float:none;
+		height:130px;
+		margin:auto;
 	}
+	#advantages .advantage h3{ display:block; }
 	#advantages .advantage .content{
 		display:none;
 	}
@@ -462,7 +466,9 @@ h2 small{
 	}
 	#advantages .advantage img{
 		height:135px;
+		margin:0 15px;
 	}
+	#advantages .advantage h3{ text-align:left; }
 	#signup [type="submit"]{
 		font-size:160%;
 		margin-left:6px;
@@ -500,10 +506,6 @@ h2 small{
 		}
 	#main-header{ padding-top:120px; }
 	#advantages .advantage{ height:auto; }
-	#advantages .advantage img{
-		margin:0 15px;
-	}
-	#advantages .advantage h3{ text-align:left; }
 	#signup-form{ height:30% }
 	#signup [type="submit"]{
 		position:static;
@@ -547,7 +549,7 @@ h2 small{
 	#advantages,#signup,#technologies{ background-position:135px; }
 	#main-footer .sitemap:before{ left:24px; }
 	#slider .slide img{ padding-top:60px; }
-	#advantages .advantage{ height:350px; }
+	#advantages .advantage{ height:400px; }
 	#advantages .advantage .content{padding:0px 10px 0px 10px}
 	#advantages .advantage img{
 		height:135px;
