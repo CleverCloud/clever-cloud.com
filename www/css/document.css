@@ -75,13 +75,15 @@ h2 small{
 		height:50px;
 		margin-left:5px;
 	}
+	#main-nav .support .drop{
+		width: 150%;
+	}
 	#main-nav .login{ position:relative; }
 	#main-nav .drop{
 		border:1px solid #ccc;
 		display:none;
 		left:-12px;
 		position:absolute;
-		width: 150%;
 	}
 	#main-nav .toggled+.drop{ display:block; }
 		#main-nav .drop a{
@@ -438,11 +440,6 @@ h2 small{
 		}
 		#brand+ul{
 			font-size:80%;
-		}
-		#main-nav .support>a:after{
-			border-top:5px solid #4c4c4c;
-			margin-left:3px;
-			top:10px;
 		}
 	#advantages .advantage img{
 		display:block;
