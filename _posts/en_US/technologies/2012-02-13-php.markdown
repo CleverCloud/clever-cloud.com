@@ -1,0 +1,11 @@
+---
+# SEO
+title: "PHP"
+icon: "php-logo.png"
+lang: en_US
+# site generation
+layout: document
+categories: [en_US, technologies]
+---
+
+<a href="http://www.php.net/">www.php.net</a>

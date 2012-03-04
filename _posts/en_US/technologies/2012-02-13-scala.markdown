@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Scala"
+icon: "scala-logo.png"
+lang: en_US
+# site generation
+layout: document
+categories: [en_US, technologies]
+---
+<a href="http://www.scala-lang.org/">www.scala-lang.org</a>
+

@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Java"
+icon: "java-logo.png"
+lang: en_US
+# site generation
+layout: document
+categories: [en_US, technologies]
+---
+
+<a href="http://www.java.com/">www.java.com</a>
