@@ -121,6 +121,8 @@ i18n:
       prev: "Previous"
       next: "Next"
     signup:
+      info: >
+            Sign up for private beta. To register for updates and to get an invite for the private beta, sign up now!
       mail: "Mail adress"
       submit: "Sign up for Beta"
       google: "Sign up with Google"
