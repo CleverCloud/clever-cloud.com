@@ -119,7 +119,7 @@ i18n:
     - title: "Add-ons"
       url: "addons"
     - title: "Support"
-      url: "support"
+      url: "#"
     slider:
       prev: "Previous"
       next: "Next"
