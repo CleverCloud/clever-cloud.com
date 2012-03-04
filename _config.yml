@@ -66,6 +66,10 @@ i18n:
         Inscrivez-vous dès maintenant pour obtenir un compte à
         l'ouverture de nos serveurs !
       mail: "Votre e-mail"
+      success: "Parfait, votre inscription s'est bien passée"
+      code401: "Cette adresse email a déjà été enregistrée."
+      code404: "Erreur 404: Essayez de redémarrer."
+      code500: "Erreur 500: une erreur est survenue quelque part. Mais on ne sait où."
       submit: "Inscription Beta"
     footer:
     - head: "Clever Cloud"
