@@ -60,13 +60,13 @@ small {
     font-size: medium;
     line-height: 22px; }
 
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after {
       content: "";
       display: block;
       clear: both; }
@@ -141,7 +141,7 @@ small {
     width: 290px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 250px; }
+    padding-left: 200px; }
 
   #slider .pagination {
     position: relative;
@@ -194,13 +194,13 @@ small {
     width: 190px;
     margin-right: 0; } }
 @media (min-width: 480px) and (max-width: 767px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 448px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after {
       content: "";
       display: block;
       clear: both; }
@@ -275,7 +275,7 @@ small {
     width: 432px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 336px; }
+    padding-left: 224px; }
 
   #slider .pagination {
     position: relative;
@@ -375,13 +375,13 @@ small {
     font-size: x-large;
     line-height: 28px; } }
 @media (min-width: 768px) and (max-width: 979px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 720px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after {
       content: "";
       display: block;
       clear: both; }
@@ -456,7 +456,7 @@ small {
     width: 520px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 360px; }
+    padding-left: 240px; }
 
   #slider .pagination {
     position: relative;
@@ -534,13 +534,13 @@ small {
     width: 100px;
     margin-right: 0; } }
 @media (min-width: 980px)  and (max-width: 1199px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after {
       content: "";
       display: block;
       clear: both; }
@@ -615,7 +615,7 @@ small {
     width: 700px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 480px; }
+    padding-left: 320px; }
 
   #slider .pagination {
     position: relative;
@@ -629,15 +629,18 @@ small {
     margin-right: 0; }
 
   #technologies .info, #technologies li:nth-child(odd) {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #main-footer .sitemap > li:first-child {
+    padding-left: 240px; } }
 @media (min-width: 1200px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after {
       content: "";
       display: block;
       clear: both; }
@@ -712,7 +715,7 @@ small {
     width: 870px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 600px; }
+    padding-left: 400px; }
 
   #slider .pagination {
     position: relative;

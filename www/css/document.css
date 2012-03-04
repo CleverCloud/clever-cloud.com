@@ -417,7 +417,7 @@ h2 small{
 		font-style:italic;
 		text-shadow:0 1px 0 #e06460,0 -1px 0 #3b110f;
 	}
-	#main-footer li ul{ margin-bottom:20px; }
+	#main-footer li ul{ margin-bottom:20px; position:relative; z-index:2; }
 	#main-footer li{
 		font-weight:bold;
 		line-height:160%;
@@ -428,6 +428,7 @@ h2 small{
 			color:#eee;
 			text-decoration:none;
 		}
+/* media queries */
 @media (max-width: 479px){
 		#brand a,#brand a:hover,#brand a:focus{ background-size:60%; }
 		#brand+ul>li>a{
