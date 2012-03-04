@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Que du code"
-icon: "slide-img.png"
+icon: "slider-cloud.png"
 lang: fr_FR
 # site generation
 layout: document

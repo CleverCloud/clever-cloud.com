@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Only code&nbsp;"
-icon: "slide-img.png"
+icon: "slider-cloud.png"
 lang: en_US
 # site generation
 layout: document
