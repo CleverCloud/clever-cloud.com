@@ -61,6 +61,8 @@ i18n:
     slider:
       prev: "Précédent"
       next: "Suivant"
+    signup_title: "Inscription à la Beta"
+    signup_sub: "Votre adresse mail, et toute votre confiance"
     signup:
       info: >
         Inscrivez-vous dès maintenant pour obtenir un compte à

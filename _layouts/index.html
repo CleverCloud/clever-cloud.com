@@ -32,6 +32,9 @@ layout: document
 		</header>
 		<div id="main">
 			<section id="signup">
+				<header>
+					<h2>{{site.i18n[lg].signup_title}} <small>{{site.i18n[lg].signup_sub}}</small></h2>
+				</header>
 				<p class="info">{{site.i18n[lg].signup.info}}</p>
 				<form id="signup-form" action="http://www.clever-cloud.com/resources/mail/add" method="POST">
 					<input name="betasignup" id="signup-email" type="email" placeholder="{{site.i18n[lg].signup.mail}}" autocomplete="on" required/>

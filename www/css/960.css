@@ -25,24 +25,24 @@
 /* We tweak your templates to make 'em responsive. Please don't worry
  * about that. You've done enough!                                     */
 body, input, button {
-  font-size: 12px;
-  line-height: 18px; }
+  font-size: 14px;
+  line-height: 22px; }
 
 h1 {
   font-size: x-large;
-  line-height: 36px; }
+  line-height: 42px; }
 
 h2 {
   font-size: large;
-  line-height: 24px; }
+  line-height: 28px; }
 
 h3 {
   font-size: large;
-  line-height: 24px; }
+  line-height: 28px; }
 
 h4 {
   font-size: medium;
-  line-height: 24px; }
+  line-height: 28px; }
 
 small {
   font-size: smaller; }
@@ -50,15 +50,15 @@ small {
 @media (max-width: 479px) {
   h1 {
     font-size: large;
-    line-height: 24px; }
+    line-height: 28px; }
 
   h2 {
     font-size: medium;
-    line-height: 18px; }
+    line-height: 22px; }
 
   h3 {
     font-size: medium;
-    line-height: 18px; }
+    line-height: 22px; }
 
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
     /* @include debug; */
@@ -130,7 +130,7 @@ small {
   #signup-email {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
     position: relative;
     left: 150px;
     z-index: 1;
@@ -166,7 +166,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #main-nav h2, #signup-form, #technologies header, #main-footer .sitemap > li, #advantages .advantage {
+  #main-nav h2, #signup-form, #technologies header, #signup header, #main-footer .sitemap > li, #advantages .advantage {
     display: inline;
     float: left;
     margin-left: 5px;
@@ -264,7 +264,7 @@ small {
   #signup-email {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
     position: relative;
     left: 168px;
     z-index: 1;
@@ -315,7 +315,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #main-nav h2, #signup-form, #technologies header, #technologies ul, #technologies .info, #advantages .advantage, #main-footer .sitemap > li {
+  #main-nav h2, #signup-form, #technologies header, #signup header, #technologies ul, #technologies .info, #advantages .advantage, #main-footer .sitemap > li {
     display: inline;
     float: left;
     margin-left: 8px;
@@ -357,7 +357,7 @@ small {
   #main-footer .sitemap > li:first-child {
     padding-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #signup header, #technologies header, #technologies article {
     position: static;
     left: 0; }
 
@@ -369,11 +369,11 @@ small {
 @media (min-width: 768px) {
   h1 {
     font-size: xx-large;
-    line-height: 48px; }
+    line-height: 56px; }
 
   h2 {
     font-size: x-large;
-    line-height: 24px; } }
+    line-height: 28px; } }
 @media (min-width: 768px) and (max-width: 979px) {
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
     /* @include debug; */
@@ -445,7 +445,7 @@ small {
   #signup-email {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
     position: relative;
     left: 180px;
     z-index: 1;
@@ -471,6 +471,12 @@ small {
 
   #technologies .info, #technologies li:nth-child(odd) {
     margin-left: 0; }
+
+  #brand {
+    margin-left: 0; }
+
+  #brand + ul {
+    margin-right: 0; }
 
   #advantages .advantage {
     display: inline;
@@ -506,7 +512,7 @@ small {
   #technologies li:nth-child(even) {
     margin-right: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article, #technologies ul, #technologies .info {
+  #signup-form, #signup .info, #signup header, #technologies header, #technologies article, #technologies ul, #technologies .info {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -515,7 +521,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #signup header, #technologies header, #technologies article {
     position: relative;
     left: 240px;
     z-index: 1; }
@@ -598,7 +604,7 @@ small {
   #signup-email {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
     position: relative;
     left: 240px;
     z-index: 1;
@@ -695,7 +701,7 @@ small {
   #signup-email {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
     position: relative;
     left: 300px;
     z-index: 1;
