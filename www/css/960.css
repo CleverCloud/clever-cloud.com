@@ -25,24 +25,24 @@
 /* We tweak your templates to make 'em responsive. Please don't worry
  * about that. You've done enough!                                     */
 body, input, button {
-  font-size: 12px;
-  line-height: 18px; }
+  font-size: 14px;
+  line-height: 22px; }
 
 h1 {
   font-size: x-large;
-  line-height: 36px; }
+  line-height: 42px; }
 
 h2 {
   font-size: large;
-  line-height: 24px; }
+  line-height: 28px; }
 
 h3 {
   font-size: large;
-  line-height: 24px; }
+  line-height: 28px; }
 
 h4 {
   font-size: medium;
-  line-height: 24px; }
+  line-height: 28px; }
 
 small {
   font-size: smaller; }
@@ -50,15 +50,15 @@ small {
 @media (max-width: 479px) {
   h1 {
     font-size: large;
-    line-height: 24px; }
+    line-height: 28px; }
 
   h2 {
     font-size: medium;
-    line-height: 18px; }
+    line-height: 22px; }
 
   h3 {
     font-size: medium;
-    line-height: 18px; }
+    line-height: 22px; }
 
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
     /* @include debug; */
@@ -369,11 +369,11 @@ small {
 @media (min-width: 768px) {
   h1 {
     font-size: xx-large;
-    line-height: 48px; }
+    line-height: 56px; }
 
   h2 {
     font-size: x-large;
-    line-height: 24px; } }
+    line-height: 28px; } }
 @media (min-width: 768px) and (max-width: 979px) {
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls {
     /* @include debug; */
