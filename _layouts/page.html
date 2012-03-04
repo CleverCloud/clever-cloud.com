@@ -2,16 +2,18 @@
 layout: document
 ---
 {%assign lg = page.lang%}
-		<header>
-			<section>
-				<h1>{{page.title}}</h1>
-				<p>{{page.description}}</p>
-			</section>
-		</header>
-		<div id="main">
-			<section>
-				<article>
-					{{content}}
-				</article>
-			</section>
+		<div id="wrap">
+			<header>
+				<section>
+					<h1>{{page.title}}</h1>
+					<p>{{page.description}}</p>
+				</section>
+			</header>
+			<div id="page">
+				<section>
+					<article>
+						{{content}}
+					</article>
+				</section>
+			</div>
 		</div>
