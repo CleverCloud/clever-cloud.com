@@ -34,7 +34,7 @@ i18n:
     name: "Français"
     login: "Inscription"
     technologies: "Langages supportés"
-    technologies_sub: "Portez votre application en un clin d'œil"
+    technologies_sub: "Hébergez votre application en un clin d'œil"
     technologies_text: >
         Quelle que soit la technologie qui la fait tourner, nous pouvons
         héberger votre application sans rien changer au code d'origine !
@@ -62,11 +62,8 @@ i18n:
       prev: "Précédent"
       next: "Suivant"
     signup_title: "Inscription à la Beta"
-    signup_sub: "Votre adresse mail, et toute votre confiance"
+    signup_sub: "Ouverture des comptes aux beta testeurs imminente. Inscrivez-vous!"
     signup:
-      info: >
-        Inscrivez-vous dès maintenant pour obtenir un compte à
-        l'ouverture de nos serveurs !
       mail: "Votre e-mail"
       success: "Parfait, votre inscription s'est bien passée"
       code401: "Cette adresse email a déjà été enregistrée."
@@ -109,6 +106,10 @@ i18n:
   en_US:  # traduction anglaise (américain)
     login: "Sign up"
     technologies: "Supported languages"
+    technologies_sub: "Code your app, we take care of it"
+    technologies_text: >
+        Your job is to make great apps. Our job is to make them run efficiently, on every supported language. 
+        Leave it to us!
     references: "They trust us"
     top:
     - title: "Solution"
@@ -122,11 +123,15 @@ i18n:
     slider:
       prev: "Previous"
       next: "Next"
+    signup_title: "Sign up for private beta"
+    signup_sub: "To register for updates and to get an invite for the private beta, sign up now!"
     signup:
-      info: >
-            Sign up for private beta. To register for updates and to get an invite for the private beta, sign up now!
       mail: "Mail adress"
       submit: "Sign up for Beta"
+      success: "All right, everything went well. We'll sign you up asap!"
+      code401: "Calm down, we already got your mail. Thank you again!"
+      code404: "Error 404: Try a reboot :)"
+      code500: "Error 500: Something went wrong. No one knows where."
       google: "Sign up with Google"
     footer:
     - head: "Clever Cloud"
