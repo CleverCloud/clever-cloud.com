@@ -47,7 +47,7 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body onload="setTimeout(function() { window.scrollTo(0, 1) }, 100);">
 		<nav id="main-nav">
 			<div>
 				<h2 id="brand"><a href="{%if lg == site.i18n.default%}/{%else%}{{site.lg_url[lg]}}/{%endif%}">{{site.title}}</a></h2>
