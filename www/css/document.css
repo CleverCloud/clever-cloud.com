@@ -129,8 +129,8 @@ h2 small{
 }
 	#slider{
 		background:rgba(255,255,255,.3);
-		border-bottom:1px solid #fff;
-		border-top:1px solid #fff;
+		border-bottom:1px solid #f6f6f6;
+		border-top:1px solid #f6f6f6;
 		color:#7c7c7c;
 		position:relative;
 	}
@@ -219,7 +219,7 @@ h2 small{
 	padding-top:30px;
 }
 	#advantages .advantage{
-		background:#fff;
+		background:#fcfcfc;
 		border-radius:4px;
 		box-shadow:0 0 0 1px #e1e1e1;
 		height:400px;
@@ -227,6 +227,15 @@ h2 small{
 		padding:10px 0;
 		position:relative;
 		z-index:3;
+	}
+	#advantages .advantage:after{
+		background:url('../img/medium-shadow.png') center no-repeat;
+		bottom:-10px;
+		content:" ";
+		display:block;
+		height:10px;
+		position:absolute;
+		width:100%;
 	}
 		#advantages .advantage h3{
 			font-family:serif;
@@ -344,12 +353,13 @@ h2 small{
 		background:#E1E1E1;
 	}
 	#technologies{ background:url('../img/bottle-repeat.png') 140px repeat-y; }
-		#technologies a{
+		#technologies .text h3+*{
 			color:#7C7C7C;
 			font-style:italic;
 			text-decoration: none
 		}
-		#technologies a:hover{
+		#technologies a{ display:block; height:70px; }
+		#technologies a:hover h3+*{
 			text-decoration: underline
 		}
 		#technologies h2{
@@ -359,8 +369,14 @@ h2 small{
 			padding:40px 0 10px;
 			margin-bottom:20px;
 		}
+		#technologies h3{
+			color:#404040;
+			font-family:serif;
+			font-style:italic;
+		}
 		#technologies .info{ margin-bottom:20px; }
 			#technologies ul li{
+				background:#fcfcfc;
 				border-radius:4px;
 				box-shadow:0 0 0 1px #e1e1e1;
 				margin-bottom:20px;

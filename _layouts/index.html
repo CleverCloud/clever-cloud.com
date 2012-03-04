@@ -51,11 +51,13 @@ layout: document
 					<ul>
 						{%for tech in site.categories.technologies limit:8%}{%if tech.categories[0] == lg%}
 						<li>
-							<figure><img src="{{site.media}}/{{tech.icon}}" alt="{{tech.title}}"/></figure>
-							<div class="text">
-								<h3>{{tech.title}}</h3>
-								{{tech.content}}
-							</div>
+							<a href="{{tech.website}}">
+								<figure><img src="{{site.media}}/{{tech.icon}}" alt="{{tech.title}}"/></figure>
+								<div class="text">
+									<h3>{{tech.title}}</h3>
+									{{tech.content}}
+								</div>
+							</a>
 						</li>
 						{%endif%}{%endfor%}
 					</ul>
