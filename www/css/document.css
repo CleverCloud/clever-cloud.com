@@ -442,10 +442,6 @@ h2 small{
 			margin-left:3px;
 			top:10px;
 		}
-	p#subscribe_success,
-	p#subscribe_error_401,
-	p#subscribe_error_404,
-	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
 	#advantages .advantage img{
 		height:130px;
 	}
@@ -453,6 +449,7 @@ h2 small{
 		display:none;
 	}
 	#signup [type="submit"]{
+		font-size:140%;
 		margin-left:5px;
 		width:280px;
 	}
@@ -466,6 +463,7 @@ h2 small{
 		height:135px;
 	}
 	#signup [type="submit"]{
+		font-size:160%;
 		margin-left:6px;
 		width:420px;
 	}
@@ -509,9 +507,16 @@ h2 small{
 	#signup [type="submit"]{
 		position:static;
 	}
+	p#subscribe_success,
+	p#subscribe_error_401,
+	p#subscribe_error_404,
+	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
 }
 @media (min-width: 768px){}
 @media (min-width: 768px) and (max-width: 979px){
+	#signup [type="submit"]{
+		font-size:110%;
+	}
 	#bottle:before{ left:117px; }
 	#advantages,#signup,#technologies{ background-position:125px; }
 	#main-footer .sitemap:before{ left:14px; }
@@ -531,6 +536,10 @@ h2 small{
 		height:135px;
 		margin:0 20px;
 	}
+	p#subscribe_success,
+	p#subscribe_error_401,
+	p#subscribe_error_404,
+	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
 }
 @media (min-width: 980px)  and (max-width: 1199px){
 	#bottle:before{ left:127px; }
@@ -542,5 +551,13 @@ h2 small{
 	#advantages .advantage img{
 		height:135px;
 	}
+	#signup [type="submit"]{
+		font-size:130%;
+	}
+	
 }
-@media (min-width: 1200px){}
+@media (min-width: 1200px){
+	#signup [type="submit"]{
+		font-size:170%;
+	}
+}
