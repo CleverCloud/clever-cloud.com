@@ -234,6 +234,12 @@ h2 small{
 		color:#4c4c4c;
 		height:50px;
 	}
+	#signup-form img {
+		display:none;
+		padding-top: 12px;
+		float: right;
+		padding-right: 20px;
+	}
 		#signup-email{
 			background:none;
 			color:#4c4c4c;
@@ -245,6 +251,49 @@ h2 small{
 		}
 			#signup-email::-webkit-input-placeholder{ color:#4c4c4c; }
 			#signup-email:-moz-placeholder{ color:#4c4c4c; }
+			p#subscribe_error_401{
+				display:none;
+				color: #4C4C4C;
+				font-size: 170%;
+				font-weight: bold;
+				height: 50px;
+				text-indent: 10px;
+				text-shadow: 0 1px 0 white;
+				padding-top: 16px;
+			}
+			p#subscribe_error_404{
+				display:none;
+				color: #4C4C4C;
+				font-size: 170%;
+				font-weight: bold;
+				height: 50px;
+				text-indent: 10px;
+				text-shadow: 0 1px 0 white;
+				padding-top: 16px;
+			}
+			p#subscribe_error_500{
+				display:none;
+				color: #4C4C4C;
+				font-size: 170%;
+				font-weight: bold;
+				height: 50px;
+				text-indent: 10px;
+				text-shadow: 0 1px 0 white;
+				padding-top: 16px;
+			}
+			p#subscribe_success{
+				display:none;
+				background-image:url('/media/valid-mail.png');
+				background-repeat:no-repeat;
+				background-position:98% 34%;
+				color: #4C4C4C;
+				font-size: 170%;
+				font-weight: bold;
+				height: 50px;
+				text-indent: 10px;
+				text-shadow: 0 1px 0 white;
+				padding-top: 16px;
+			}
 	#signup [type="submit"]{
 		background:#f7f7f7;
 		color:#4c4c4c;
@@ -339,6 +388,10 @@ h2 small{
 			margin-left:3px;
 			top:10px;
 		}
+	p#subscribe_success,
+	p#subscribe_error_401,
+	p#subscribe_error_404,
+	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
 	#advantages .advantage img{
 		height:90px;
 		width:130px;
@@ -387,7 +440,7 @@ h2 small{
 		margin:0 15px;
 	}
 	#advantages .advantage h3{ text-align:left; }
-	#signup-form{ height:100px; }
+	#signup-form{ height:30% }
 	#signup [type="submit"]{
 		position:static;
 	}

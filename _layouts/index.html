@@ -35,7 +35,11 @@ layout: document
 				<p class="info">{{site.i18n[lg].signup.info}}</p>
 				<form id="signup-form" action="http://www.clever-cloud.com/resources/mail/add" method="POST">
 					<input name="betasignup" id="signup-email" type="email" placeholder="{{site.i18n[lg].signup.mail}}" autocomplete="on" required/>
-					<input type="submit" value="{{site.i18n[lg].signup.submit}}"/>
+					<p id="subscribe_success">{{site.i18n[lg].signup.success}}</p>
+					<p id="subscribe_error_401">{{site.i18n[lg].signup.code401}}</p>
+					<p id="subscribe_error_404">{{site.i18n[lg].signup.code404}}</p>
+					<p id="subscribe_error_500">{{site.i18n[lg].signup.code500}}</p>
+					<input type="submit" id="signup-button" value="{{site.i18n[lg].signup.submit}}"/>
 				</form>
 			</section>
 			<section id="technologies">

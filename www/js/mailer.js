@@ -4,28 +4,28 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "http://www.clever-cloud.com/resources/mail/add",
+            url: "http://192.168.0.185:4000/resources/mail/add",
             data: "betasignup=" + mail,
 			statusCode: {
 				200: function() {
-	                //ajouter un p && supprimer des éléments
-	                $('#signup-form').empty();
-	                $('#signup-form').append('<p class="subscribe_success">Mail ok</p>');
+	                $('#signup-email').hide();
+					$('#signup-button').hide();
+	                $('#subscribe_success').show("fast");
 	            },
 				401: function() {
-					//ajouter un p && supprimer des éléments
-	                $('#signup-form').empty();
-	                $('#signup-form').append('<p class="subscribe_fail">Mail already exists existe</p>');
+	                $('#signup-email').hide();
+					$('#signup-button').hide();
+	                $('#subscribe_error_401').show("fast");
 			    },
 				404: function() {
-	                //ajouter un p && supprimer des éléments
-	                $('#signup-form').empty();
-	                $('#signup-form').append('<p class="subscribe_fail">404 error. Sorry about that</p>');
+	                $('#signup-email').hide();
+					$('#signup-button').hide();
+	                $('#subscribe_error_404').show("fast");
 	            },
 				500: function() {
-	                //ajouter un p && supprimer des éléments
-	                $('#signup-form').empty();
-	                $('#signup-form').append('<p class="subscribe_fail">Oops, somethiung went wrong… and we have no whale.</p>');
+	                $('#signup-email').hide();
+					$('#signup-button').hide();
+	                $('#subscribe_error_500').show("fast");
 	            },
 			  }
         });
