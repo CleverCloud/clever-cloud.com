@@ -222,7 +222,7 @@ h2 small{
 		background:#fcfcfc;
 		border-radius:4px;
 		box-shadow:0 0 0 1px #e1e1e1;
-		height:400px;
+		height:450px;
 		margin-top:20px;
 		padding:10px 0;
 		position:relative;
@@ -520,7 +520,8 @@ h2 small{
 		padding:0 10px;
 	}
 	#brand a{
-		width:277px;
+		background-size:80%;
+		width:250px;
 		padding:0;
 	}
 	#slider .slide img{ padding-top:160px; }
