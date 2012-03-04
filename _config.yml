@@ -62,11 +62,8 @@ i18n:
       prev: "Précédent"
       next: "Suivant"
     signup_title: "Inscription à la Beta"
-    signup_sub: "Votre adresse mail, et toute votre confiance"
+    signup_sub: "L'ouverture des comptes aux beta testeurs est imminente!"
     signup:
-      info: >
-        Inscrivez-vous dès maintenant pour obtenir un compte à
-        l'ouverture de nos serveurs !
       mail: "Votre e-mail"
       success: "Parfait, votre inscription s'est bien passée"
       code401: "Cette adresse email a déjà été enregistrée."
@@ -122,9 +119,9 @@ i18n:
     slider:
       prev: "Previous"
       next: "Next"
+    signup_title: "Sign up for private beta"
+    signup_sub: "To register for updates and to get an invite for the private beta, sign up now!"
     signup:
-      info: >
-            Sign up for private beta. To register for updates and to get an invite for the private beta, sign up now!
       mail: "Mail adress"
       submit: "Sign up for Beta"
       google: "Sign up with Google"
