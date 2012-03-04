@@ -83,6 +83,7 @@ h2 small{
 		display:none;
 		left:-12px;
 		position:absolute;
+		width: 150%;
 	}
 	#main-nav .toggled+.drop{ display:block; }
 		#main-nav .drop a{
