@@ -508,6 +508,10 @@ h2 small{
 	#signup [type="submit"]{
 		position:static;
 	}
+	#signup-email{
+		text-align: center;
+		font-size:150%;
+	}
 	p#subscribe_success,
 	p#subscribe_error_401,
 	p#subscribe_error_404,
@@ -517,6 +521,9 @@ h2 small{
 @media (min-width: 768px) and (max-width: 979px){
 	#signup [type="submit"]{
 		font-size:110%;
+	}
+	#signup-email{
+		font-size:130%;
 	}
 	#bottle:before{ left:117px; }
 	#advantages,#signup,#technologies{ background-position:125px; }

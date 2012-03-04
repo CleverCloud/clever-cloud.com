@@ -1,7 +1,7 @@
 ---
 # SEO
-title: "Notre offre"
-description: "Lorem ipsum day-o banana"
+title: "Espace presse"
+description: ""
 keywords: []
 lang: fr_FR
 # site generation
