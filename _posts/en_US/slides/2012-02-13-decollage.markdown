@@ -1,12 +1,14 @@
 ---
 # SEO
-title: "Just code&nbsp;"
-icon: "slide-img.png"
+title: "Only code&nbsp;"
+icon: "slider-cloud.png"
 lang: en_US
 # site generation
 layout: document
 categories: [en_US, slides]
 ---
 
-Clever Cloud s'apprête à tout changer dans le monde de l'hébergement. Et on n'en a jamais été aussi près. inscrivez vous dès maintenant à la bêta privée de Clever Cloud et soyez parmi les premiers testeurs d'un hébergement du nouveau genre.  
+Clever Cloud is about to change everything in the world of hosting. And we have never been so close. Register now to our closed beta and be among the early testers of a new kind of hosting service.
+
+
 <a href="#signup">S'inscrire à la beta</a>

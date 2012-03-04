@@ -136,7 +136,7 @@ i18n:
     signup_title: "Sign up for private beta"
     signup_sub: "To register for updates and to get an invite for the private beta, sign up now!"
     signup:
-      mail: "Mail adress"
+      mail: "Mail adress, please"
       submit: "Sign up for Beta"
       success: "All right, everything went well. We'll sign you up asap!"
       code401: "Calm down, we already got your mail. Thank you again!"
