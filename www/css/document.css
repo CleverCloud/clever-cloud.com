@@ -34,7 +34,7 @@ h2 small{
 		box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1;
 		color:#4c4c4c;
 		display:block;
-		font-size:120%;
+		font-size:110%;
 		font-weight:bold;
 		text-decoration:none;
 		text-shadow:0 1px #fff;
@@ -46,15 +46,23 @@ h2 small{
 	}
 	#main-nav ul{ float:right; }
 	#main-nav .lg_choice a{
+		background:url('#') center no-repeat;
 		box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1;
+		overflow:hidden;
 		position:relative;
+		text-indent:200px;
+		width:20px;
 	}
 		#main-nav .lg_choice a:hover,#main-nav .lg_choice a:focus{
-			background:#eee;
+			background:#eee url('#') center no-repeat;
 			box-shadow:inset 0 50px 30px -20px #fff,-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1;
 		}
+		#main-nav .lg_choice .fr_FR{ background-image:url('../img/fr_FR.png'); }
+			#main-nav .lg_choice .fr_FR:hover,#main-nav .lg_choice .fr_FR:focus{ background-image:url('../img/fr_FR-hover.png'); }
+		#main-nav .lg_choice .en_US{ background-image:url('../img/en_US.png'); }
+			#main-nav .lg_choice .en_US:hover,#main-nav .lg_choice .en_US:focus{ background-image:url('../img/en_US-hover.png'); }
 	#main-nav .support,#main-nav .lg_choice{ position:relative; }
-	#main-nav .support>a:after,#main-nav .lg_choice>a:after{
+	#main-nav .support>a:after{
 		border:5px solid #4c4c4c;
 		border-color:#4c4c4c transparent transparent;
 		content:" ";
@@ -72,13 +80,15 @@ h2 small{
 	}
 	#main-nav .toggled+.drop{ display:block; }
 		#main-nav .drop a{
-			background:#eee;
+			background:#eee center no-repeat;
 			border-left:1px solid #fff;
 			border-top:1px solid #fff;
 			box-shadow:inset 0 1px 0 #f5f5f5,inset 0 15px 20px -10px #fff;
 			height:30px;
 			line-height:30px;
 		}
+			#main-nav .drop a:hover,#main-nav .drop a:focus,
+			#main-nav .lg_choice .drop a:hover,#main-nav .lg_choice .drop a:focus{ background-color:#fff; }
 		#main-nav .drop li{
 			display:block;
 			float:none;
@@ -386,12 +396,12 @@ h2 small{
 			text-decoration:none;
 		}
 @media (max-width: 479px){
-		#main-nav a{
-			margin:0;
+		#brand a,#brand a:hover,#brand a:focus{ background-size:60%; }
+		#brand+ul>li>a{
+			margin:0 5px;
 			padding:0;
 		}
-		#main-nav li+li a{ margin-left:10px; }
-		#main-nav ul{
+		#brand+ul{
 			font-size:80%;
 		}
 		#main-nav .support>a:after{
@@ -416,7 +426,7 @@ h2 small{
 	}
 }
 @media (min-width: 480px) and (max-width: 767px){
-	#main-nav a{
+	#brand+ul>li>a{
 		margin:0 20px 0 0;
 		padding:0 5px;
 	}
@@ -438,6 +448,19 @@ h2 small{
 			box-shadow:none;
 			font-weight:normal;
 		}
+	#main-nav .lg_choice{
+	   position:absolute;
+	   right:0;
+	   top:0;
+	}
+		#main-nav .lg_choice a{
+			height:50px;
+		}
+		#main-nav .lg_choice a:hover,#main-nav .lg_choice a:focus{
+			background-color:transparent;
+			box-shadow:none;
+		}
+	#main-nav .drop a{ padding:0 6px; width:30px; }
 		#main-nav ul{
 			float:left;
 			line-height:30px;
