@@ -10,7 +10,7 @@ $(function() {
   $("a[href*=#]").click(function() {
     if (location.hostname+location.pathname+location.search == this.hostname+this.pathname.replace(/^([^\/].*)/, "/$1")+this.search) {
       var hash = "#"+$(this).attr("href").split("#")[1];
-      var target = $(hash == "#" ? body : hash);
+      var target = $(hash == "#" ? $('body') : hash);
       if (target.length) {
         var id = target.attr("id");
         target.attr("id", "");

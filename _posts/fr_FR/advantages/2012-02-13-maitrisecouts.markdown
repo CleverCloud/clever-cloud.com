@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Maîtrise de vos coûts"
-icon: "slide01.png"
+icon: "illus-maitrise.png"
 lang: fr_FR
 # site generation
 layout: document

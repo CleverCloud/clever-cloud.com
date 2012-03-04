@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Déploiement accéléré"
-icon: "slide01.png"
+icon: "illus-deploiement.png"
 lang: fr_FR
 # site generation
 layout: document

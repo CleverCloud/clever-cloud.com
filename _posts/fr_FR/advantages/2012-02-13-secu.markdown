@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Sécurité optimale"
-icon: "slide01.png"
+icon: "illus-securite.png"
 lang: fr_FR
 # site generation
 layout: document
