@@ -60,8 +60,8 @@ h2 small{
 		width:27px;
 	}
 		#main-nav .lg_choice a:hover,#main-nav .lg_choice a:focus{
-			background:#eee url('#') center no-repeat;
-			box-shadow:inset 0 45px 30px -20px #fff,-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1;
+			background:url('#') center no-repeat;
+			box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1;
 		}
 		#main-nav .lg_choice .fr_FR{ background-image:url('../img/fr_FR.png'); }
 			#main-nav .lg_choice .fr_FR:hover,#main-nav .lg_choice .fr_FR:focus{ background-image:url('../img/fr_FR-hover.png'); }
@@ -81,7 +81,7 @@ h2 small{
 	#main-nav .drop{
 		border:1px solid #ccc;
 		display:none;
-		left:-17px;
+		left:-12px;
 		position:absolute;
 	}
 	#main-nav .toggled+.drop{ display:block; }
@@ -93,8 +93,7 @@ h2 small{
 			height:30px;
 			line-height:30px;
 		}
-			#main-nav .drop a:hover,#main-nav .drop a:focus,
-			#main-nav .lg_choice .drop a:hover,#main-nav .lg_choice .drop a:focus{ background-color:#fff; }
+			#main-nav .drop a:hover,#main-nav .drop a:focus{ background-color:#fff; }
 		#main-nav .drop li{
 			display:block;
 			float:none;
@@ -493,7 +492,6 @@ h2 small{
 			height:50px;
 		}
 		#main-nav .lg_choice a:hover,#main-nav .lg_choice a:focus{
-			background-color:transparent;
 			box-shadow:none;
 		}
 	#main-nav .drop a{ padding:0 6px; width:30px; }
@@ -560,6 +558,7 @@ h2 small{
 	
 }
 @media (min-width: 1200px){
+	#main-nav .drop{ left:-17px; }
 	#signup [type="submit"]{
 		font-size:170%;
 	}

@@ -120,6 +120,16 @@ i18n:
       url: "addons"
     - title: "Support"
       url: "#"
+      sub: Yes
+      list:
+      - title: "Documentation"
+        url: "documentation"
+      - title: "Contactez-nous"
+        url: "contact"
+      - title: "Plan du site"
+        url: "plan-site"
+      - title: "Glossaire"
+        url: "glossaire"
     slider:
       prev: "Previous"
       next: "Next"
