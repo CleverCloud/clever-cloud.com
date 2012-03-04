@@ -81,7 +81,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 5px;
@@ -178,7 +178,7 @@ small {
     left: 50px;
     z-index: 1; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 5px;
@@ -215,7 +215,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 8px;
@@ -338,7 +338,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 8px;
@@ -396,7 +396,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -526,7 +526,7 @@ small {
     left: 240px;
     z-index: 1; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -555,7 +555,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -652,7 +652,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #technologies li img {
+  #technologies li figure {
     display: inline;
     float: left;
     margin-left: 15px;
