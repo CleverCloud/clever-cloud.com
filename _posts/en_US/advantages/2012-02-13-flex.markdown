@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Outstanding flexibility"
+icon: "illus-flexibilite.png"
+lang: en_US
+# site generation
+layout: document
+categories: [en_US, advantages]
+---
+
+Users number growing, activity peaks and activity drops… The Clever Cloud technology fits your needs and instantly provides all the computing power necessary to cope with any scenario or circumstance.

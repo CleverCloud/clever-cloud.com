@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Enhanced security"
+icon: "illus-securite.png"
+lang: en_US
+# site generation
+layout: document
+categories: [en_US, advantages]
+---
+
+Clever Cloud guarantees the safety of your data, hosted in secure data centers offering a level of security compliant APSAD R82 and R81.

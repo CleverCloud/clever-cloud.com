@@ -8,4 +8,4 @@ layout: document
 categories: [fr_FR, advantages]
 ---
 
-Clever Cloud garanti la sécurité de vos données, hébergées dans des datacenters sécurisés offrant un niveau de sécurité conforme aux normes APSAD R82 et R81.
+Clever Cloud garantit la sécurité de vos données, hébergées dans des datacenters sécurisés offrant un niveau de sécurité conforme aux normes APSAD R82 et R81.

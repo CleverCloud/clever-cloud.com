@@ -1,0 +1,11 @@
+---
+# SEO
+title: "Ruby"
+icon: "ruby-logo.png"
+lang: en_US
+# site generation
+website: "http://www.ruby-lang.org/"
+layout: document
+categories: [en_US, technologies]
+---
+www.ruby-lang.org
