@@ -55,12 +55,12 @@
 					</li>
 					{%endfor%}
 					<li class="login"><a href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</a></li>
-					<li class="lg_choice {{lg}}">
-						<a href="#" title="{{site.i18n[lg].name}}">{{lg}}</a>
+					<li class="lg_choice">
+						<a class="{{lg}}" href="#" title="{{site.i18n[lg].name}}">{{lg}}</a>
 						<ul class="drop">
 							{%for i in site.i18n.list%}
 							{%unless i.iso == lg%}
-							<li class="{{i.iso}}"><a href="{%if i.iso == site.i18n.default%}/{%else%}{{site.lg_url[i.iso]}}{%endif%}" title="{{i.name}}">{{i.iso}}</a></li>
+							<li><a class="{{i.iso}}" href="{%if i.iso == site.i18n.default%}/{%else%}{{site.lg_url[i.iso]}}{%endif%}" title="{{i.name}}">{{i.iso}}</a></li>
 							{%endunless%}
 							{%endfor%}
 						</ul>

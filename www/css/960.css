@@ -472,6 +472,12 @@ small {
   #technologies .info, #technologies li:nth-child(odd) {
     margin-left: 0; }
 
+  #brand {
+    margin-left: 0; }
+
+  #brand + ul {
+    margin-right: 0; }
+
   #advantages .advantage {
     display: inline;
     float: left;
