@@ -42,6 +42,7 @@ h2 small{
 		display:block;
 		font-size:110%;
 		font-weight:bold;
+		height:50px;
 		text-decoration:none;
 		text-shadow:0 1px #fff;
 		padding:0 20px;
@@ -69,13 +70,10 @@ h2 small{
 			#main-nav .lg_choice .en_US:hover,#main-nav .lg_choice .en_US:focus{ background-image:url('../img/en_US-hover.png'); }
 	#main-nav .support,#main-nav .lg_choice{ position:relative; }
 	#main-nav .support>a:after{
-		border:5px solid #4c4c4c;
-		border-color:#4c4c4c transparent transparent;
-		content:" ";
-		height:0;
+		content:"▼";
+		font-size: 70%;
+		height:50px;
 		margin-left:5px;
-		position:relative;
-		top:12px;
 	}
 	#main-nav .login{ position:relative; }
 	#main-nav .drop{
