@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Décollage imminent"
+title: "Décollage&nbsp; imminent&nbsp;"
 icon: "slide-img.png"
 lang: fr_FR
 # site generation
