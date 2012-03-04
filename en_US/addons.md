@@ -7,7 +7,7 @@ lang: en_US
 # site generation
 layout: document
 ---
-# Add - ons
+# Add-ons
 ## Apps on steriods 
 Clever Cloud offers a catalog of add-ons that allow you to add new features to your applications, optimize the platform or connect to third party services.
 ## Feel ready ?
