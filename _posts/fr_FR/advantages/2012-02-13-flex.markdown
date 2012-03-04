@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Flexibilité infinie"
-icon: "slide01.png"
+icon: "illus-flexibilite.png"
 lang: fr_FR
 # site generation
 layout: document

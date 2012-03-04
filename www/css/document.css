@@ -229,18 +229,18 @@ h2 small{
 		#advantages .advantage h3{
 			font-family:serif;
 			font-style:italic;
-			padding:15px 20px 0;
+			padding:17px 15px 15px;
 			text-align:center;
 		}
 		#advantages .advantage .content{
+			text-align:justify;
 			padding:0 20px;
 		}
 		#advantages .advantage img{
-			background:#eee;
 			display:block;
+			padding-top:20px;
 			height:180px;
 			margin:auto;
-			width:260px;
 		}
 #main{
 	background:#fff;
@@ -430,8 +430,7 @@ h2 small{
 	p#subscribe_error_404,
 	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
 	#advantages .advantage img{
-		height:90px;
-		width:130px;
+		height:130px;
 	}
 	#advantages .advantage .content{
 		display:none;
@@ -448,7 +447,6 @@ h2 small{
 	}
 	#advantages .advantage img{
 		height:135px;
-		width:195px;
 	}
 	#signup [type="submit"]{
 		margin-left:6px;
@@ -514,7 +512,6 @@ h2 small{
 	#advantages .advantage img{
 		height:135px;
 		margin:0 20px;
-		width:195px;
 	}
 }
 @media (min-width: 980px)  and (max-width: 1199px){
@@ -523,9 +520,9 @@ h2 small{
 	#main-footer .sitemap:before{ left:24px; }
 	#slider .slide img{ padding-top:60px; }
 	#advantages .advantage{ height:350px; }
+	#advantages .advantage .content{padding:0px 10px 0px 10px}
 	#advantages .advantage img{
 		height:135px;
-		width:195px;
 	}
 }
 @media (min-width: 1200px){}
