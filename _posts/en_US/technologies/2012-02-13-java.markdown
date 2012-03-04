@@ -4,8 +4,9 @@ title: "Java"
 icon: "java-logo.png"
 lang: en_US
 # site generation
+website: "http://www.java.com/"
 layout: document
 categories: [en_US, technologies]
 ---
 
-<a href="http://www.java.com/">www.java.com</a>
+www.java.com

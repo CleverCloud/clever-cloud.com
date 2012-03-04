@@ -4,8 +4,9 @@ title: "PHP"
 icon: "php-logo.png"
 lang: en_US
 # site generation
+website: "http://www.php.net/"
 layout: document
 categories: [en_US, technologies]
 ---
 
-<a href="http://www.php.net/">www.php.net</a>
+www.php.net

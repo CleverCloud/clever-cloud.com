@@ -4,8 +4,8 @@ title: "Scala"
 icon: "scala-logo.png"
 lang: en_US
 # site generation
+website: "http://www.scala-lang.org/"
 layout: document
 categories: [en_US, technologies]
 ---
-<a href="http://www.scala-lang.org/">www.scala-lang.org</a>
-
+www.scala-lang.org
