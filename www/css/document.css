@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'PacificoRegular';
+    src: url('../fonts/Pacifico-webfont.eot');
+    src: url('../fonts/Pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Pacifico-webfont.woff') format('woff'),
+         url('../fonts/Pacifico-webfont.ttf') format('truetype'),
+         url('../fonts/Pacifico-webfont.svg#PacificoRegular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
 *{ outline:none; }
 body{
 	background:url('../img/footer-bg.png');
 	color:#4c4c4c;
-	font-family:sans-serif;
+	font-family:Helvetica,Verdana,sans-serif;
 	position:relative;
 }
 button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
@@ -144,8 +154,8 @@ h2 small{
 		}
 		#slider h2{
 			color:#eee;
-			font-family:serif;
-			font-size:400%;
+			font-family:'PacificoRegular',serif;
+			font-size:420%;
 			font-style:italic;
 			line-height:120%;
 			padding:40px 0;
@@ -200,10 +210,11 @@ h2 small{
 		#advantages .advantage h3{
 			font-family:serif;
 			font-style:italic;
+			padding:15px 20px 0;
 			text-align:center;
 		}
-		#advantages .advantage h3, #advantages .advantage .content{
-			padding:15px 20px 0;
+		#advantages .advantage .content{
+			padding:0 20px;
 		}
 		#advantages .advantage img{
 			background:#eee;
