@@ -104,6 +104,20 @@ small {
     margin-right: 5px;
     width: 90px; }
 
+  #page > aside {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 140px; }
+
+  #page > article {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 290px; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -141,7 +155,7 @@ small {
     width: 290px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 200px; }
+    padding-left: 150px; }
 
   #slider .pagination {
     position: relative;
@@ -238,6 +252,20 @@ small {
     margin-right: 8px;
     width: 96px; }
 
+  #page > aside {
+    display: inline;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 152px; }
+
+  #page > article {
+    display: inline;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 432px; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -275,7 +303,7 @@ small {
     width: 432px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 224px; }
+    padding-left: 168px; }
 
   #slider .pagination {
     position: relative;
@@ -419,6 +447,20 @@ small {
     margin-right: 10px;
     width: 100px; }
 
+  #page > aside {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 160px; }
+
+  #page > article {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 520px; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -456,7 +498,7 @@ small {
     width: 520px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 240px; }
+    padding-left: 180px; }
 
   #slider .pagination {
     position: relative;
@@ -532,7 +574,10 @@ small {
     margin-left: 10px;
     margin-right: 10px;
     width: 100px;
-    margin-right: 0; } }
+    margin-right: 0; }
+
+  #main-footer .sitemap > li:first-child {
+    padding-left: 240px; } }
 @media (min-width: 980px)  and (max-width: 1199px) {
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
@@ -578,6 +623,20 @@ small {
     margin-right: 10px;
     width: 140px; }
 
+  #page > aside {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 220px; }
+
+  #page > article {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 700px; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -615,7 +674,7 @@ small {
     width: 700px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 320px; }
+    padding-left: 240px; }
 
   #slider .pagination {
     position: relative;
@@ -629,10 +688,7 @@ small {
     margin-right: 0; }
 
   #technologies .info, #technologies li:nth-child(odd) {
-    margin-left: 0; }
-
-  #main-footer .sitemap > li:first-child {
-    padding-left: 240px; } }
+    margin-left: 0; } }
 @media (min-width: 1200px) {
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page {
     /* @include debug; */
@@ -678,6 +734,20 @@ small {
     margin-right: 15px;
     width: 170px; }
 
+  #page > aside {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 270px; }
+
+  #page > article {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 870px; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -715,7 +785,7 @@ small {
     width: 870px; }
 
   #main-footer .sitemap > li:first-child {
-    padding-left: 400px; }
+    padding-left: 300px; }
 
   #slider .pagination {
     position: relative;

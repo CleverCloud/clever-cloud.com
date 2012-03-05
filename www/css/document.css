@@ -467,6 +467,30 @@ h2 small{
 		#main-footer li a:hover,#main-footer li a:focus{
 			color:#f17571;
 		}
+	#page>aside li{
+		list-style:none;
+	}
+	#page>aside a{
+		border-bottom:1px solid #fff;
+		box-shadow:inset 0 -1px 0 #ccc;
+		color:#aaa;
+		display:block;
+		font-family:'CreteRoundRegular',serif;
+		font-size:160%;
+		padding:10px 0;
+		text-decoration:none;
+	}
+		#page>aside a:hover,#page>aside a:focus{
+			color:#4c4c4c;
+		}
+	#page>article h1{
+		background:#eee;
+		border:1px solid #ccc;
+		font-family:'CreteRoundRegular',serif;
+		font-size:160%;
+		line-height:inherit;
+		padding:10px 0;
+	}
 /* media queries */
 @media (max-width: 479px){
 		#brand a,#brand a:hover,#brand a:focus{ background-size:60%; }
@@ -569,7 +593,7 @@ h2 small{
 		font-weight:normal;
 		padding:0 10px;
 	}
-	#brand a{
+	#brand,#brand a,#brand a:hover,#brand a:focus{
 		background-size:80%;
 		width:250px;
 		padding:0;
