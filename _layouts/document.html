@@ -29,22 +29,23 @@
 
 		      </script>
 		<script type="text/javascript">
-			$(document).ready(function(){
-				$('#main-nav li:has(.drop)>a').click(function(e){
+			jQuery(document).ready(function(){
+				jQuery('#main-nav li:has(.drop)>a').click(function(e){
 					e.preventDefault();
 					e.stopPropagation();
-					if($(e.currentTarget).hasClass('toggled')){
-						$(e.currentTarget).removeClass('toggled');
-						$(e.currentTarget).blur();
+					if(jQuery(e.currentTarget).hasClass('toggled')){
+						jQuery(e.currentTarget).removeClass('toggled');
+						jQuery(e.currentTarget).blur();
 					}
 					else{
-						$('#main-nav .toggled').removeClass('toggled');
-						$(e.currentTarget).addClass('toggled');
+						jQuery('#main-nav .toggled').removeClass('toggled');
+						jQuery(e.currentTarget).addClass('toggled');
 					}
 				});
-				$('body').click(function(e){
-					$('#main-nav .toggled').removeClass('toggled');
+				jQuery('body').click(function(e){
+					jQuery('#main-nav .toggled').removeClass('toggled');
 				});
+				jQuery('#page .sidebar a').scrollspy();
 			});
 		</script>
 	</head>
