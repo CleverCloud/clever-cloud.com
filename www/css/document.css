@@ -127,8 +127,9 @@ h2 small{
 		#main-nav .drop li+li{
 			border-top:1px solid #ccc;
 		}
+	#brand{background:url('../img/logo.png') center no-repeat;}
 	#brand a{
-		background:url('../img/logo.png') center no-repeat;
+		background:url('../img/logo-hover.png') center no-repeat;
 		box-shadow:none;
 		display:block;
 		font-size:medium;
@@ -138,15 +139,21 @@ h2 small{
 		overflow:hidden;
 		text-indent:500px;
 		width:277px;
+		opacity:0;
 	}
 	/* Pixel ratio of 2. Background-size is 1/2 = 50% (of a 200px image) */
 	@media only screen and (-moz-min-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-		#brand a{background:url('../img/logo@2x.png') center no-repeat;background-size: 50%}
+		#brand{background:url('../img/logo@2x.png') center no-repeat;background-size: 50%}
 
 	}
 		#brand a:hover,#brand a:focus{
 			background:url('../img/logo-hover.png') center no-repeat;
+			opacity:1;
 			box-shadow:none;
+			-webkit-transition: all .2s ease-in;
+            -moz-transition: all .2s ease-in;
+            -o-transition: all .2s ease-in;
+            transition: all .2s ease-in;
 		}
 #main-header{
 	background:url('../img/header-bg.png');
