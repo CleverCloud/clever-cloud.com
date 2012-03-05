@@ -5,9 +5,13 @@ description: ""
 keywords: []
 lang: fr_FR
 # site generation
-layout: document
+sections:
+- id: "une_seule_unit_de_mesure__les_drops"
+  title: "Une seule unité de mesure"
+- id: "un_paiement__la_consommation"
+  title: "Un paiement à la consommation"
+layout: page
 ---
-# Tarif
 
 ## Une seule unité de mesure : les Drops 
 Peu importe que vous soyez une start-up, une web agency ou une SSII, notre offre est simple, claire et abordable pour tous. Pas de coûts cachés ou de mauvaises surprises.
