@@ -22,12 +22,12 @@ layout: page
 44000 Nantes
 
 *Société par actions simplifiée*. 
-Company share capital: 12 000 €  
+Company share capital: 17 625 €  
 Nantes registered trade number 524 172 699
  
 ## Publication Directors
 
-Clément Nivolle, project manager  
+Clément Nivolle, project manager   
 Kevin Decherf, production manager
  
 ## Hosting Services Provider
