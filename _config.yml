@@ -3,12 +3,12 @@ title: "Clever Cloud"
 keywords: [cloud computing, solution cloud, cloud, clever cloud]
 since: "2012-03-01T12:00"
 # uri/urls                                          change before upload
-url: http://localhost:4000
+url: ""
 www: /www
 media: /media
 lg_url: # locale (i18n) urls                        change before upload
-  fr_FR: "http://localhost:4000/fr_FR"
-  en_US: "http://localhost:4000/en_US"
+  fr_FR: "/fr_FR"
+  en_US: "/en_US"
 # dirty jekyll conf
 destination: ../out
 auto:        true

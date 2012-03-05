@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Only code&nbsp;"
+title: "Only&nbsp;code&nbsp;"
 icon: "slider-cloud.png"
 lang: en_US
 # site generation
@@ -11,4 +11,4 @@ categories: [en_US, slides]
 Clever Cloud is about to change everything in the world of hosting. And we have never been so close. Register now to our closed beta and be among the early testers of a new kind of hosting service.
 
 
-<a href="#signup">S'inscrire à la beta</a>
+<a href="#signup">Sign up for beta</a>

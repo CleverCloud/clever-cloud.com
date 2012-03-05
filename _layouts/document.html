@@ -68,7 +68,7 @@
 						{%endif%}
 					</li>
 					{%endfor%}
-					<li class="login"><a href="{{site.lg_url[lg]}}/login-signup.html">{{site.i18n[lg].login}}</a></li>
+					<li class="login"><a href="{%unless site.i18n.default == lg%}{{site.lg_url[lg]}}{%endunless%}/#signup">{{site.i18n[lg].login}}</a></li>
 					<li class="lg_choice">
 						<a class="{{lg}}" href="#" title="{{site.i18n[lg].name}}">{{lg}}</a>
 						<ul class="drop">

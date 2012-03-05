@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Que du code"
+title: "'Make apps'"
 icon: "slider-cloud.png"
 lang: fr_FR
 # site generation

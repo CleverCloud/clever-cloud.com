@@ -511,6 +511,8 @@ h2 small{
 		text-align: center;
 		font-size:150%;
 	}
+	#signup-email::-webkit-input-placeholder{ text-align: center; }
+	#signup-email:-moz-placeholder{ text-align: center; }
 	p#subscribe_success,
 	p#subscribe_error_401,
 	p#subscribe_error_404,
