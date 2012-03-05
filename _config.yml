@@ -82,7 +82,7 @@ i18n:
       - title: "Facebook"
         url: "#"
       - title: "Twitter"
-        url: "#"
+        url: "http://twitter.com/clever_cloud"
     - head: "Support"
       list:
       - title: "Documentation"
