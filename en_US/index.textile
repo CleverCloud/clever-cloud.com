@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "First steps on the Cloud?"
-description: "Clever Cloud, the international cloud solution!"
+description: ""
 keywords: []
 lang: en_US
 # page vars
@@ -10,9 +10,3 @@ img: [img1.png, coucou/img2.jpg, img3.gif]
 layout: index
 id: index
 ---
-
-p. Home content
-
-p. Another
-
-p. Another !

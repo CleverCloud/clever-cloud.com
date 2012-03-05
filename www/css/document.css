@@ -536,6 +536,9 @@ h2 small{
 		font-style: italic;
 		text-decoration: none;
 	}
+		#page>article .content a:hover,#page>article .content a:focus{
+			text-decoration:underline;
+		}
 #page-wrap+#main-footer:before{
 	background:#fff;
 	content:" ";

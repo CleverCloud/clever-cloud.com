@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Espace presse"
+title: "Press"
 description: ""
 keywords: []
 lang: en_US

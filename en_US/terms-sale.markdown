@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Term of sale"
+title: "Terms of sale"
 description: ""
 keywords: []
 lang: en_US

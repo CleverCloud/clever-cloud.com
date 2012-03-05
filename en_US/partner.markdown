@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Become a partner "
+title: "Become a partner"
 description: ""
 keywords: []
 lang: en_US
@@ -14,9 +14,9 @@ layout: page
 
 You are a startup, a web agency or a consulting company? Clever Cloud is always looking for new partners to develop and sell our offer.
 
-Become a Partner Clever Cloud offers many advantages:
+Becoming a Clever Cloud Partner offers many advantages:
 * **Pluralize** your commercial offer
-* **Aswser** to the growing demands of your customers
+* **Answser** to the growing demands of your customers
 * **Get rid of** infrastructure management
 
-For more information, please contact us.
+For more information, please [contact](/contact.html) us.

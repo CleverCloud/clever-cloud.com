@@ -13,9 +13,9 @@ sections:
 layout: page
 ---
 
-## Only one type of unit : Drops 
-No matter whether you're a startup, a web agency or a consulting company, our offer is simple, clear and affordable for all. No hidden costs.
-Your computer energy needs are assessed from a single unit of measurement: the drops (drops from clouds). It serves to quantify all your IT energy and integrate all network metrics, RAM, CPU, etc. ... The purchase of the drops is done via your admin interface quickly and independently.
- 
+## One unit : the Drop
+You are: a startup? a web agency or a consulting company? Our offer is simple and affordable to every business. No hidden costs.
+Your computer energy needs are assessed from a single unit of measurement: the drop (drops from the Cloud). It allows us to measure your consumption and integrate all network metrics, RAM, CPU... You can instantly purchase drops via your administration interface.
+
 ## Pay as you go
-You only pay for resources consumed, that's all simple.
+You only pay for consumed resources. It's that simple.
