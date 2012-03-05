@@ -8,4 +8,4 @@ layout: document
 categories: [en_US, advantages]
 ---
 
-Clever Cloud helps enterprises to reduce IT costs. Renting too expensive servers that won't be used most of the time? It's over: Now you only pay for resources consumed.
+Clever Cloud helps enterprises to reduce IT costs. Renting too expensive servers that which won't be used most of the time? It's over: You only have to pay for consumed resources.
