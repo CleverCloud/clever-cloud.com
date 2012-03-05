@@ -1,10 +1,10 @@
 ---
 # SEO
-title: "Contact us"
-description: "Contact us"
+title: "Contactez-nous"
+description: ""
 keywords: []
 lang: fr_FR
-# site genloeration
+# site generation
 sections:
 - id: "par_email"
   title: "Par email"

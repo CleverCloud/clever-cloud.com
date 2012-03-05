@@ -532,12 +532,11 @@ h2 small{
 		z-index:3;
 	}
 	#page>article .content a{
-		color: #7C7C7C;
-		font-style: italic;
-		text-decoration: none;
+		color:#f17571;
+		text-decoration:underline;
 	}
 		#page>article .content a:hover,#page>article .content a:focus{
-			text-decoration:underline;
+			color:#842623;
 		}
 #page-wrap+#main-footer:before{
 	background:#fff;

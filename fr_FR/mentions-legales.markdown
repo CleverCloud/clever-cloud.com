@@ -21,7 +21,7 @@ Clever Cloud SAS
 3, rue de l'Allier
 44000 Nantes
 <br/>
-Société par actions simplifiée au capital social de 17 625 €
+Société par action simplifiée au capital social de 17 625 €
 immatriculée au RCS de Nantes sous le numéro 524 172 699
  
 ## Directeurs de publication

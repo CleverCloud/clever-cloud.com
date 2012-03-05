@@ -27,10 +27,10 @@ Clever Cloud met à votre disposition sa Plate-forme as a Service (PaaS) pour vo
 
 Oubliées les opérations de gestion, de maintenance et de sécurisation fastidieuses et chronophages ! Clever Cloud s’occupe de tout et maintient la plate-forme (virtualisation, middleware, base de données) et l'infrastructure (matériel serveur, stockage et réseaux …) opérationnelle en toutes circonstances. 
 
-Convaincu ? Il vous suffit de moins de 2 minutes pour vous inscrire à notre beta privée. 
+Convaincu ? Il vous suffit de moins de 2 minutes pour vous inscrire à notre [beta privée](/#signup "Inscription"). 
 
-### En savoir plus ? 
-Consultez notre documentation, contactez-nous ou suivez @clever_cloud sur Twitter.
+### En savoir plus ?
+Toutes nos infos sur la [page de contact](/contact.html "Contact") ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.
 
 ## Caractéristiques 
 
@@ -41,16 +41,16 @@ Besoin d’augmenter ou réduire vos ressources informatiques. Rien de plus simp
 ### Aucune modification de code
 
 Nul besoin de retoucher ou modifier votre code. Une fois installée sur la plateforme Clever Cloud, votre application tournera de manière optimale en seulement quelques minutes. 
-Nombreux langages et technos supportés
-Pour l’instant, la plate forme as a Service (PaaS) Clever Cloud supporte les langages de programmation  JEE 4 - 5 – 6, PHP, MySQL, Ruby, Scala. D’autres langages seront intégrés dans le futur.  
+Nombreux langages et technologies supportés.
+Pour l’instant, la plate forme as a Service (PaaS) Clever Cloud supporte les langages de programmation  JEE 4 - 5 – 6, PHP, MySQL, Ruby, Scala. D’autres langages seront intégrés dans le futur.
 
 ### Simplicité d’installation 
 
-Avec Clever Cloud, déployer une application dans le cloud est à la portée de tous. Un simple « drag and drop » suffit pour installer votre application sur notre Plate-forme as a Service (PaaS). Ensuite, il suffit de la déployer en fonction de vos besoins. 
+Avec Clever Cloud, déployer une application dans le cloud est à la portée de tous. Un simple « drag and drop » suffit pour charger votre application sur notre Plate-forme as a Service (PaaS). Ensuite, nous la déployons en fonction de vos besoins. 
 
 ### Élasticité
 
-Peu importe l’importance de vos besoins en ressources, la plate-forme as a Service (PaaS) Clever Cloud met à votre disposition une énergie informatique infinie disponible en continu à tout moment. 
+Peu importe l’importance de vos besoins en ressources, la plate-forme as a Service (PaaS) Clever Cloud met à votre disposition une énergie informatique infinie disponible à tout moment. 
 
 ### Facturation à l'usage : « Pay as you go » 
 
@@ -71,26 +71,26 @@ La plate forme Clever Cloud permet de mener à bien des projets urgents ou qui n
 ## Avantages Clever Cloud
 
 ### Maîtrise des coûts
-La plate forme as a Service (PaaS) Clever Cloud permet aux entreprises de réduire leurs coûts informatiques. Plus besoin de louer à prix d’or des serveurs qui seront sous utilisés la plupart du temps. Désormais, vous payez uniquement les ressources informatiques réellement consommées. 
+La plate forme as a Service (PaaS) Clever Cloud permet aux entreprises de réduire leurs coûts informatiques. Plus besoin de louer à prix d’or des serveurs qui seront sous-utilisés la plupart du temps. Désormais, vous payez uniquement les ressources informatiques réellement consommées. 
 
-Vous passez  d’un modèle fondé sur les dépenses d’investissement à un modèle de coûts d’exploitation. Vous  limitez ainsi les risques financiers à des versements mensuels et disposez d’une flexibilité accrue pour gérer vos dépenses sur la durée. En cas de ralentissement du marché, vous n’êtes pas lié par des frais qui peuvent grever vos budgets. 
+Vous passez  d’un modèle fondé sur les dépenses d’investissement à un modèle de coûts d’exploitation. Vous limitez ainsi les risques financiers à des versements mensuels et disposez d’une flexibilité accrue pour gérer vos dépenses sur la durée. En cas de ralentissement du marché, vous n’êtes pas lié par des frais qui peuvent grever vos budgets. 
 
 
 ### Déploiement accéléré 
 Plus besoin de perdre du temps et des ressources à héberger et maintenir vos serveurs. Clever Cloud s’occupe de tout. Vous pouvez vous recentrer sur votre métier et développer des applications à forte valeur ajoutée stratégiques pour votre métier.
 
 ### Sécurité optimale
-Avec la plate forme as a Service (PaaS) Clever Cloud, vos données sont hébergées dans des datacenters sécurisés offrant un niveau de sécurité conforme aux normes APSAD R82 et R81.  
+Avec la Plateforme as a Service (PaaS) Clever Cloud, vos données sont hébergées dans des datacenters sécurisés offrant un niveau de sécurité conforme aux normes APSAD R82 et R81.  
 
 ### Flexibilité infinie
 Croissance du nombre d’utilisateurs, pics d’activités, baisse de régime …  la plateforme as a Service (PaaS) Clever Cloud s’ajuste en temps à vos besoins et fournit instantanément toute l’énergie informatique nécessaire pour faire face à toute situation. 
 
 ### Réactivité accrue
-La plate forme as a Service 5PaaS) Clever Cloud est idéale pour toute entreprise (startup, agence web ou SSII) ayant besoin de déployer rapidement et à moindres coûts de nouvelles applications ou sites web. Vous gagnez en réactivité face aux évolutions  de l’entreprise et du marché. 
+La Plateforme as a Service (PaaS) Clever Cloud est idéale pour toute entreprise (startup, agence web ou SSII) ayant besoin de déployer rapidement et à moindres coûts de nouvelles applications ou sites web. Vous gagnez en réactivité face aux évolutions  de l’entreprise et du marché. 
 
 ## Fonctionnement 
-Pour vous inscrire à la bêta privée, il vous suffit de renseigner votre email et cliquer sur OK.  Attention, n’oubliez pas de lire et d’accepter nos GGU & GGV
+Il vous suffit de moins de 2 minutes pour vous inscrire à notre [beta privée](/#signup "Inscription").
 
 ##Envie d’en savoir plus ?
 
-Consultez notre documentation, contactez-nous ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.
+Toutes nos infos sur la [page de contact](/contact.html "Contact") ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.

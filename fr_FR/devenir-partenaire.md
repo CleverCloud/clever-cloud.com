@@ -21,4 +21,4 @@ Devenir partenaire Clever Cloud offre de nombreux avantages, vous pouvez :
 * **Proposer** des prestations de développement flexibles et adaptées aux besoins du marché 
 * **Vous affranchir** de la gestion de l'infrastructure 
 
-Pour en savoir plus, n’hésitez pas à nous contacter. 
+Pour en savoir plus, n’hésitez pas à nous [contacter](/contact.html "Contact"). 

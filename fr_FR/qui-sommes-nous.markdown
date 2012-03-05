@@ -19,4 +19,4 @@ Spécialisée dans l'hébergement de type 'Cloud Computing', c'est à travers un
  <br/>
 Avec des compétences techniques axées principalement autour de la machine virtuelle java et du langage JEE 6, Clever Cloud est un acteur majeur dans l'expertise des technologies JEE à Nantes.  
  <br/>
-Clever Cloud est membre actif de l'association Atlantic 2.0, le réseau des professionnels des technologies de l'information et de la communication de référence en région Nantaise. Egalement membre du CENIO (le Club des Entreprises Numériques et Informatiques de l'Ouest) et d'Atlangames, le cluster régionnal des entreprises de l'industrie du jeu vidéo.
+Clever Cloud est membre actif de l'association Atlantic 2.0, le réseau des professionnels des technologies de l'information et de la communication de référence en région Nantaise. Egalement membre du CENIO (le Club des Entreprises Numériques et Informatiques de l'Ouest) et d'Atlangames, le cluster régional des entreprises de l'industrie du jeu vidéo.
