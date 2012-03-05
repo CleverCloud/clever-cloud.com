@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Term of use"
+title: "Terms of use"
 description: ""
 keywords: []
 lang: en_US
