@@ -5,11 +5,13 @@ layout: document
 		<div id="page-wrap">
 			<section id="page">
 				<aside>
-					<ul>
-						{%for section in page.sections%}
-						<li><a href="#{{section.id}}">{{section.title}}</a></li>
-						{%endfor%}
-					</ul>
+					<div class="sidebar">
+						<ul>
+							{%for section in page.sections%}
+							<li><a href="#{{section.id}}">{{section.title}}</a></li>
+							{%endfor%}
+						</ul>
+					</div>
 				</aside>
 				<article>
 					<header>
