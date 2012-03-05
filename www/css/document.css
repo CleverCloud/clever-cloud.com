@@ -123,7 +123,7 @@ h2 small{
 
 	}
 		#brand a:hover,#brand a:focus{
-			background:url('../img/logo.png') center no-repeat;
+			background:url('../img/logo-hover.png') center no-repeat;
 			box-shadow:none;
 		}
 #main-header{
@@ -189,6 +189,7 @@ h2 small{
 			font-size:120%;
 			margin-bottom:20px;
 		}
+		#slider .text a:hover,#slider .text a:focus{ text-decoration:underline; }
 		#slider .pagination{
 			position:relative;
 			z-index:3;
@@ -367,7 +368,7 @@ h2 small{
 			font-style:italic;
 			text-decoration: none
 		}
-		#technologies a{ display:block; height:70px; }
+		#technologies a{ display:block; height:70px; padding:10px 0; }
 		#technologies a:hover h3+*{
 			text-decoration: underline
 		}
@@ -389,9 +390,8 @@ h2 small{
 				border-radius:4px;
 				box-shadow:0 0 0 1px #e1e1e1;
 				margin-bottom:20px;
-				padding:10px 0;
 			}
-			#technologies ul li:hover{background-color:#EEE}
+			#technologies ul a:hover,#technologies ul a:focus{background-color:#EEE}
 			#technologies ul .text p{
 				padding-right:10px;
 			}
@@ -430,6 +430,9 @@ h2 small{
 		#main-footer li a{
 			color:#eee;
 			text-decoration:none;
+		}
+		#main-footer li a:hover,#main-footer li a:focus{
+			color:#f17571;
 		}
 /* media queries */
 @media (max-width: 479px){
