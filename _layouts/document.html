@@ -10,6 +10,7 @@
 		<link rel="stylesheet" type="text/css" href="{{site.www}}/css/960.css" media="all"/>
 		<link rel="stylesheet" type="text/css" href="{{site.www}}/css/document.css" media="all"/>
 		<link rel="shortcut icon" type="image/x-icon" href="{{site.www}}/img/favicon.png"/>
+		<script type="text/javascript" src="{{site.www}}/js/jquery-1.7.1.min.js"></script>
 		{%for script in page.scripts%}
 		<script type="text/javascript" src="{{site.www}}/js/{{script}}"></script>
 		{%endfor%}
@@ -83,14 +84,14 @@
 			</div>
 		</nav>
 		{{content}}
-		<footer id="main-footer">
+		<footer id="main-footer"{%if page.id == 'index'%} class="bottled"{%endif%}>
 			<ul class="sitemap">
 				{%for col in site.i18n[lg].footer%}
 				<li>
 					<h3>{{col.head}}</h3>
 					<ul>
 						{%for link in col.list%}
-						<li><a href="{{site.lg_url[lg]}}/{{link.url}}.html">{{link.title}}</a></li>
+						<li><a {%if link.external%}target="_blank" href="{{link.url}}"{%else%}href="{{site.lg_url[lg]}}/{{link.url}}.html"{%endif%}>{{link.title}}</a></li>
 						{%endfor%}
 					</ul>
 				</li>

@@ -3,13 +3,13 @@
 title: "Qui sommes nous"
 description: ""
 keywords: []
-lang: fr_FR
+lang: en_US
 # site generation
-layout: document
+layout: page
 ---
-# Clever Cloud 
+## Clever Cloud 
 
-## A cloud oriented startup
+### A cloud oriented startup
 
 Clever Cloud is a computer services company based in Nantes created in 2010. This start-up has two years of R & D, a management 2.0 and genuine technical expertise in the areas of software and hardware.
 

@@ -81,8 +81,10 @@ i18n:
         url: "presse"
       - title: "Facebook"
         url: "http://www.facebook.com/pages/Clever-Cloud/207415405943531"
+        external: Yes
       - title: "Twitter"
         url: "http://twitter.com/clever_cloud"
+        external: Yes
     - head: "Support"
       list:
       - title: "Documentation"
@@ -136,7 +138,7 @@ i18n:
     signup_title: "Sign up for private beta"
     signup_sub: "To register for updates and to get an invite for the private beta, sign up now!"
     signup:
-      mail: "Mail adress, please"
+      mail: "Mail address, please!"
       submit: "Sign up for Beta"
       success: "All right, everything went well. We'll sign you up asap!"
       code401: "Calm down, we already got your mail. Thank you again!"
@@ -148,32 +150,22 @@ i18n:
       list:
       - title: "Who are we?"
         url: "about"
-      - title: "Press releases"
-        url: "press"
-      - title: "The team"
-        url: "team"
-      - title: "Facebook"
-        url: "http://www.facebook.com/pages/Clever-Cloud/207415405943531"
-      - title: "Twitter"
-        url: "#"
-    - head: "Testimonials"
-      list:
-      - title: "Companies"
-        url: "companies"
-      - title: "Managers"
-        url: "managers"
       - title: "Become our partner"
         url: "partner"
+      - title: "Press releases"
+        url: "press"
+      - title: "Facebook"
+        url: "http://www.facebook.com/pages/Clever-Cloud/207415405943531"
+        external: Yes
+      - title: "Twitter"
+        url: "http://twitter.com/clever_cloud"
+        external: Yes
     - head: "Support"
       list:
       - title: "Documentation"
         url: "documentation"
-      - title: "FAQ"
-        url: "faq"
       - title: "Contact us"
         url: "contact"
-      - title: "Overview"
-        url: "overview"
       - title: "Site map"
         url: "sitemap"
       - title: "Glossary"
@@ -182,12 +174,10 @@ i18n:
       list:
       - title: "Legal notice"
         url: "legal-notice"
-      - title: "Data privacy"
-        url: "privacy"
+      - title: "Data protection"
+        url: "protection"
       - title: "Terms of Sale"
         url: "terms-sale"
       - title: "Terms of Use"
         url: "terms-use"
-      - title: "Site map"
-        url: "sitemap"
     

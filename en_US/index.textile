@@ -8,6 +8,7 @@ lang: en_US
 img: [img1.png, coucou/img2.jpg, img3.gif]
 # page generation
 layout: index
+id: index
 ---
 
 p. Home content

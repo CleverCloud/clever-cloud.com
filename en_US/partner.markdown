@@ -3,12 +3,12 @@
 title: "Qui sommes nous"
 description: ""
 keywords: []
-lang: fr_FR
+lang: en_US
 # site generation
-layout: document
+layout: page
 ---
-# Become a partner 
-## We're always looking for partnerships 
+## Become a partner 
+### We're always looking for partnerships 
 
 You are a startup, a web agency or a consulting company? Clever Cloud is always looking for new partners to develop and sell our offer.
 

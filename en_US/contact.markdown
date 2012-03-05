@@ -5,8 +5,8 @@ description: "Contact us"
 keywords: []
 lang: en_US
 # site generation
-layout: document
+layout: page
 ---
-#hello
+##hello
 
 Here we are

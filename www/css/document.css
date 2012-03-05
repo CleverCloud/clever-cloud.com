@@ -33,6 +33,7 @@
 *{ outline:none; }
 body{
 	background:url('../img/footer-bg.png');
+	box-shadow:inset 0 -150px 150px -80px #731512;
 	color:#4c4c4c;
 	font-family:Helvetica,Verdana,sans-serif;
 	position:relative;
@@ -429,14 +430,16 @@ h2 small{
 				padding-right:10px;
 			}
 #main-footer{
-	box-shadow:inset 0 -150px 150px -80px #731512;
+	position:relative;
 }
 	#main-footer .sitemap{
-		min-height:251px;
 		padding:30px 0;
 		position:relative;
 	}
-		#main-footer .sitemap:before{
+	#main-footer.bottled .sitemap{
+		min-height:251px;
+	}
+		#main-footer.bottled .sitemap:before{
 			background:url('../img/bottle-bottom.png') center no-repeat;
 			content:" ";
 			display:block;
@@ -467,6 +470,15 @@ h2 small{
 		#main-footer li a:hover,#main-footer li a:focus{
 			color:#f17571;
 		}
+#page-wrap{
+	box-shadow:inset 0 -140px 15px -15px #000;
+}
+	#page{position:relative;}
+	#page>aside{
+		position:fixed;
+		left: 15px;
+		z-index:4;
+	}
 	#page>aside li{
 		list-style:none;
 	}
@@ -486,21 +498,56 @@ h2 small{
 	#page>article h1{
 		background:#eee;
 		border:1px solid #ccc;
+		border-bottom:none;
+		border-radius:4px 4px 0 0;
 		font-family:'CreteRoundRegular',serif;
 		font-size:160%;
 		line-height:inherit;
-		padding:10px 0;
+		padding:10px 40px;
 	}
+	#page>article h2,#page>article h3{
+		font-family:'CreteRoundRegular',serif;
+	}
+	#page>article h2{
+		font-size:160%;
+		line-height:100%;
+		padding:60px 0 5px;
+	}
+	#page>article h3{
+		font-size:130%;
+		padding:10px 0 5px;
+	}
+	#page>article .content{
+		background:#fff;
+		border:1px solid #ccc;
+		border-radius:0 0 4px 4px;
+		margin-bottom:40px;
+		padding:10px 40px 60px;
+		position:relative;
+		text-align:justify;
+		z-index:3;
+	}
+#page-wrap+#main-footer:before{
+	background:#fff;
+	content:" ";
+	display:block;
+	height:130px;
+	position:absolute;
+	top:-130px;
+	width:100%;
+}
 /* media queries */
 @media (max-width: 479px){
-		#brand a,#brand a:hover,#brand a:focus{ background-size:60%; }
+		#brand a,#brand a:hover,#brand a:focus{
+		background-size:60%;
+		}
 		#brand+ul>li>a{
-			margin:0 5px;
-			padding:0;
+			padding:0 5px;
 		}
 		#brand+ul{
 			font-size:80%;
 		}
+	#main-nav .support .drop{ width:180%; }
 	#advantages .advantage img{
 		display:block;
 		float:none;
@@ -536,12 +583,13 @@ h2 small{
 @media (max-width: 767px){
 	#bottle:before{ display:none; }
 	#advantages,#signup,#technologies{ background:none; }
-	#main-footer .sitemap:before{ display:none; }
+	#main-footer.bottled .sitemap:before{ display:none; }
 	#main-nav{ box-shadow:inset 0 40px 25px -20px #fff,0 -10px 10px 5px #000,0 30px 0 #e8e8e8; }
-		#main-nav a,#main-nav .lg_choice a{
+		#main-nav a,#main-nav a:hover,#main-nav a:focus,#main-nav .lg_choice a{
 			box-shadow:none;
 			font-weight:normal;
 		}
+		#brand+ul>li>a{ height:30px; }
 	#main-nav .lg_choice{
 	   position:absolute;
 	   right:0;
@@ -553,13 +601,18 @@ h2 small{
 		#main-nav .lg_choice a:hover,#main-nav .lg_choice a:focus{
 			box-shadow:none;
 		}
-	#main-nav .drop a{ padding:0 6px; width:30px; }
+	#main-nav .lg_choice .drop a{ padding:0 6px; width:30px; }
 		#main-nav ul{
 			float:left;
 			line-height:30px;
 		}
-		#brand a{
-			width:100%;
+		#brand {
+			background:none;
+		}
+		#brand a {
+			background-image:url('../img/logo.png');
+			opacity:1;
+			width: 100%;
 		}
 	#main-header{ padding-top:120px; }
 	#advantages .advantage{ height:auto; }
@@ -577,6 +630,7 @@ h2 small{
 	p#subscribe_error_401,
 	p#subscribe_error_404,
 	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
+	#page>aside{ display:none; }
 }
 @media (min-width: 768px){}
 @media (min-width: 768px) and (max-width: 979px){
@@ -588,7 +642,7 @@ h2 small{
 	}
 	#bottle:before{ left:117px; }
 	#advantages,#signup,#technologies{ background-position:125px; }
-	#main-footer .sitemap:before{ left:14px; }
+	#main-footer.bottled .sitemap:before{ left:14px; }
 	#main-nav a{
 		font-weight:normal;
 		padding:0 10px;
@@ -613,7 +667,7 @@ h2 small{
 @media (min-width: 980px)  and (max-width: 1199px){
 	#bottle:before{ left:127px; }
 	#advantages,#signup,#technologies{ background-position:135px; }
-	#main-footer .sitemap:before{ left:24px; }
+	#main-footer.bottled .sitemap:before{ left:24px; }
 	#slider .slide img{ padding-top:60px; }
 	#advantages .advantage{ height:450px; }
 	#advantages .advantage .content{padding:0px 10px 0px 10px}

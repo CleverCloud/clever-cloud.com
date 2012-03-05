@@ -11,7 +11,7 @@ sections:
 layout: page
 ---
 
-# Nous sommes toujours à la recherche de partenaires 
+## Nous sommes toujours à la recherche de partenaires 
 
 Vous êtes une start-up, une agence web ou une SSII ? Clever Cloud est toujours à la recherche de nouveaux partenaires pour développer et commercialiser son offre.  
 
