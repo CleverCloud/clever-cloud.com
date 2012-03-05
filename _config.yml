@@ -38,7 +38,6 @@ i18n:
     technologies_text: >
        Votre travail consiste à faire de grandes applications?
        Notre travail consiste à les faire fonctionner efficacement, et ce sur chaque langage pris en charge, tout en vous épargnant la gestion de votre infrastructure.
-    references: "Ils nous font confiance"
     top:
     - title: "Offre"
       url: "offre"
@@ -50,14 +49,14 @@ i18n:
       url: "#"
       sub: Yes
       list:
-      - title: "Documentation"
-        url: "documentation"
+#      - title: "Documentation"
+#        url: "documentation"
       - title: "Contactez-nous"
         url: "contact"
-      - title: "Plan du site"
-        url: "plan-site"
-      - title: "Glossaire"
-        url: "glossaire"
+#      - title: "Plan du site"
+#        url: "plan-site"
+#      - title: "Glossaire"
+#        url: "glossaire"
     slider:
       prev: "Précédent"
       next: "Suivant"
@@ -75,8 +74,6 @@ i18n:
       list:
       - title: "Qui sommes-nous ?"
         url: "qui-sommes-nous"
-      - title: "Devenir partenaire"
-        url: "devenir-partenaire"
       - title: "Espace presse"
         url: "presse"
       - title: "Facebook"
@@ -85,26 +82,39 @@ i18n:
       - title: "Twitter"
         url: "http://twitter.com/clever_cloud"
         external: Yes
+    - head: Offre
+      list:
+      - title: Détails
+        url: offre
+      - title: "Tarifs"
+        url: "tarifs"
+      - title: "Add-ons"
+        url: "add-ons"
+      - title: "Inscription"
+        url: "/#signup"
     - head: "Support"
       list:
-      - title: "Documentation"
-        url: "documentation"
+#      - title: "Documentation"
+#        url: "documentation"
       - title: "Contactez-nous"
         url: "contact"
-      - title: "Plan du site"
-        url: "plan-site"
-      - title: "Glossaire"
-        url: "glossaire"
-    - head: "Nos engagements"
+      - title: "Devenir partenaire"
+        url: "devenir-partenaire"
+#      - title: "Plan du site"
+#        url: "plan-site"
+#      - title: "Glossaire"
+#        url: "glossaire"
+    - head: "Engagements"
       list:
       - title: "Mentions légales"
         url: "mentions-legales"
-      - title: "Protection des données"
-        url: "protection-donnees"
-      - title: "Conditions Générales de Vente"
-        url: "cgv"
-      - title: "Conditions Générales d'Utilisation"
-        url: "cgu"
+#      - title: "Protection des données"
+#        url: "protection-donnees"
+#      - title: "Conditions Générales de Vente"
+#        url: "cgv"
+#      - title: "Conditions Générales d'Utilisation"
+#        url: "cgu"
+        
   en_US:  # traduction anglaise (américain)
     login: "Sign up"
     technologies: "Supported languages"
@@ -112,7 +122,6 @@ i18n:
     technologies_text: >
         Your job is to make great apps. Our job is to make them run efficiently, on every supported language. 
         Leave it to us!
-    references: "They trust us"
     top:
     - title: "Solution"
       url: "solution"
@@ -124,14 +133,14 @@ i18n:
       url: "#"
       sub: Yes
       list:
-      - title: "Documentation"
-        url: "documentation"
+ #     - title: "Documentation"
+ #       url: "documentation"
       - title: "Contact us"
         url: "contact"
-      - title: "Site map"
-        url: "sitemap"
-      - title: "Glossary"
-        url: "glossary"
+ #     - title: "Site map"
+ #       url: "sitemap"
+ #     - title: "Glossary"
+ #       url: "glossary"
     slider:
       prev: "Previous"
       next: "Next"
@@ -150,8 +159,6 @@ i18n:
       list:
       - title: "Who are we?"
         url: "about"
-      - title: "Become our partner"
-        url: "partner"
       - title: "Press releases"
         url: "press"
       - title: "Facebook"
@@ -160,24 +167,36 @@ i18n:
       - title: "Twitter"
         url: "http://twitter.com/clever_cloud"
         external: Yes
+    - head: Solution
+      list:
+      - title: Details
+        url: solution
+      - title: "Pricing"
+        url: "pricing"
+      - title: "Add-ons"
+        url: "add-ons"
+      - title: "Sign up"
+        url: "/#signup"
     - head: "Support"
       list:
-      - title: "Documentation"
-        url: "documentation"
+#      - title: "Documentation"
+#        url: "documentation"
       - title: "Contact us"
         url: "contact"
-      - title: "Site map"
-        url: "sitemap"
-      - title: "Glossary"
-        url: "glossary"
+      - title: "Become our partner"
+        url: "partner"
+#      - title: "Site map"
+#        url: "sitemap"
+#      - title: "Glossary"
+#        url: "glossary"
     - head: "Our commitment"
       list:
       - title: "Legal notice"
         url: "legal-notice"
-      - title: "Data protection"
-        url: "protection"
-      - title: "Terms of Sale"
-        url: "terms-sale"
-      - title: "Terms of Use"
-        url: "terms-use"
+#      - title: "Data protection"
+#        url: "protection"
+#      - title: "Terms of Sale"
+#        url: "terms-sale"
+#      - title: "Terms of Use"
+#        url: "terms-use"
     
