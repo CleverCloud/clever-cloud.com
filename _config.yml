@@ -36,8 +36,8 @@ i18n:
     technologies: "Langages supportés"
     technologies_sub: "Hébergez votre application en un clin d'œil"
     technologies_text: >
-        Quelle que soit la technologie qui la fait tourner, nous pouvons
-        héberger votre application sans rien changer au code d'origine !
+       Votre travail consiste à faire de grandes applications?
+       Notre travail consiste à les faire fonctionner efficacement, et ce sur chaque langage pris en charge, tout en vous épargnant la gestion de votre infrastructure.
     references: "Ils nous font confiance"
     top:
     - title: "Offre"
@@ -126,12 +126,12 @@ i18n:
       list:
       - title: "Documentation"
         url: "documentation"
-      - title: "Contactez-nous"
+      - title: "Contact us"
         url: "contact"
-      - title: "Plan du site"
-        url: "plan-site"
-      - title: "Glossaire"
-        url: "glossaire"
+      - title: "Site map"
+        url: "sitemap"
+      - title: "Glossary"
+        url: "glossary"
     slider:
       prev: "Previous"
       next: "Next"

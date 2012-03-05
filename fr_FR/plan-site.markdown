@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Espace presse"
+title: "Plan du site"
 description: ""
 keywords: []
 lang: fr_FR

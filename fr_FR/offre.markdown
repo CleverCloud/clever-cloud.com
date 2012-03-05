@@ -93,4 +93,4 @@ Pour vous inscrire à la bêta privée, il vous suffit de renseigner votre email
 
 ##Envie d’en savoir plus ?
 
-Consultez notre documentation, contactez-nous ou suivez @clever_cloud sur Twitter.
+Consultez notre documentation, contactez-nous ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.

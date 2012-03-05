@@ -5,6 +5,17 @@ description: ""
 keywords: []
 lang: en_US
 # site generation
+sections:
+- id: "global_offer"
+  title: "Global offer"
+- id: "features"
+  title: "Features"
+- id: "clever_cloud_benefits"
+  title: "Clever Cloud Benefits"
+- id: "how_to"
+  title: "How to"
+- id: "learn_more"
+  title: "Learn more"
 layout: page
 ---
 
@@ -32,7 +43,7 @@ No need to mess or modify your code. Once installed on the platform Clever Cloud
 Many languages and technologies ​​supported 
 For now, Clever Cloud’s the platform as a Service (PaaS) supports programming languages ​​JEE 4 - 5 - 6, PHP, MySQL, Ruby, Scala. Other languages ​​will be integrated in the future.
 
-### Easy installation
+### Easy setup
 
 With Clever Cloud, deploy an application in the cloud is for everyone. A simple "drag and drop" is enough to install your application on our Platform as a Service (PaaS). Then just deploy it to suit your needs.
 
@@ -76,8 +87,9 @@ Growth in the number of users, peak activity, loss of power ... Clever Cloud’s
 ### Increased responsiveness
 Clever Cloud’s The Platform as a Service (PaaS) is ideal for any company (startup, web agency or consulting) who need to rapidly deploy and cost-new applications or websites. You gain in responding to changing business and market.
 
-## Operation
+## How to
 To join the private beta, simply enter your email and click OK. Warning, do not forget to read and accept our GGU & GGV
-Want to know more?
 
-All leaflets, contact us or follow on Twitter @ clever_cloud.
+##Learn more?
+
+Contact us or follow on Twitter [@clever_cloud](http://twitter.com/clever_cloud "Twitter")

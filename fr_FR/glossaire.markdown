@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Espace presse"
+title: "Glossaire"
 description: ""
 keywords: []
 lang: fr_FR
@@ -8,4 +8,4 @@ lang: fr_FR
 layout: page
 ---
 
-![Texte alternatif](/media/coming-soon.png)
+![](/media/coming-soon.png)

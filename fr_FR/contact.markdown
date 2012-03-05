@@ -4,7 +4,18 @@ title: "Contact us"
 description: "Contact us"
 keywords: []
 lang: fr_FR
-# site generation
+# site genloeration
+sections:
+- id: "par_email"
+  title: "Par email"
+- id: "par_telephone"
+  title: "Par téléphone"
+- id: "sur_irc"
+  title: "Sur IRC"
+- id: "par_courrier"
+  title: "Par courrier"
+- id: "venez_nous_voir"
+  title: "Venez nous voir"
 layout: page
 ---
 ## Par email
