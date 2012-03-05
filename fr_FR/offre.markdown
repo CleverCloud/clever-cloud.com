@@ -14,6 +14,8 @@ sections:
   title: "Avantages Clever Cloud"
 - id: "fonctionnement"
   title: "Fonctionnement"
+- id: "envie_den_savoir_plus_"
+  title: "Envie d’en savoir plus ?"
 layout: page
 ---
 
@@ -88,6 +90,7 @@ La plate forme as a Service 5PaaS) Clever Cloud est idéale pour toute entrepris
 
 ## Fonctionnement 
 Pour vous inscrire à la bêta privée, il vous suffit de renseigner votre email et cliquer sur OK.  Attention, n’oubliez pas de lire et d’accepter nos GGU & GGV
-Envie d’en savoir plus ?
+
+##Envie d’en savoir plus ?
 
 Consultez notre documentation, contactez-nous ou suivez @clever_cloud sur Twitter.

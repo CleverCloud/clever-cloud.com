@@ -527,6 +527,11 @@ h2 small{
 		text-align:justify;
 		z-index:3;
 	}
+	#page>article .content a{
+		color: #7C7C7C;
+		font-style: italic;
+		text-decoration: none;
+	}
 #page-wrap+#main-footer:before{
 	background:#fff;
 	content:" ";

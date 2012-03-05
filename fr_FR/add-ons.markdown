@@ -22,4 +22,4 @@ Clever Cloud met à votre disposition son catalogue d’add - ons complémentair
 Pour vous inscrire à la bêta privée, rendez-vous sur l'acceuil du site: il suffit simplement de renseigner votre email, nous vous contacterons dès que des places seront disponibles au sein du panel de bêta-testeurs.
 
 ## Envie d’en savoir plus ?
-Consultez notre documentation, contactez-nous ou suivez @clever_cloud sur Twitter.
+Consultez notre documentation, contactez-nous ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.
