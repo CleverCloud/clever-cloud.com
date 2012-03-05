@@ -5,6 +5,15 @@ description: ""
 keywords: []
 lang: fr_FR
 # site generation
+sections:
+- id: "offre-globale"
+  title: "Offre Globale"
+- id: "caracteristiques"
+  title: "Caractéristiques"
+- id: "avantages"
+  title: "Avantages Clever Cloud"
+- id: "fonctionnement"
+  title: "Fonctionnement"
 layout: page
 ---
 
