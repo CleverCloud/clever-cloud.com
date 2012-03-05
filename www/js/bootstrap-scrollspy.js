@@ -121,6 +121,4 @@
       $spy.scrollspy($spy.data())
     })
   })
-
 }( window.jQuery );
-$('#page .sidebar').scrollspy();
