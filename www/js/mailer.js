@@ -4,7 +4,7 @@ $(document).ready(function() {
 
         $.ajax({
             type: "POST",
-            url: "http://192.168.0.185:4000/resources/mail/add",
+            url: "http://clever-cloud.com/resources/mail/add",
             data: "betasignup=" + mail,
 			statusCode: {
 				200: function() {

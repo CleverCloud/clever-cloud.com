@@ -491,6 +491,10 @@ h2 small{
 		font-size:160%;
 		padding:10px 0;
 		text-decoration:none;
+		-webkit-transition: all .2s ease-in;
+        -moz-transition: all .2s ease-in;
+        -o-transition: all .2s ease-in;
+        transition: all .2s ease-in;
 	}
 		#page>aside a:hover,#page>aside a:focus{
 			color:#4c4c4c;

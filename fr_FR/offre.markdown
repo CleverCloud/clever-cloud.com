@@ -21,7 +21,7 @@ layout: page
 
 ## Offre globale
 
-Clever Cloud met à votre disposition sa Plate-forme as a Service (PaaS) pour vous permettre d'héberger, de déployer, de tester et d'exécuter vos applications et sites web. Vous accédez à la plateforme via une simple connexion internet et surveillez votre consommation en ressources informatiques en temps réel via votre console d’administration. Vous êtes facturé à la consommation. Vos coûts informatiques sont donc proportionnels à votre utilisation et besoins réels. 
+Clever Cloud met à votre disposition sa Plate-forme as a Service (PaaS) pour vous permettre d'héberger, de déployer, de tester et d'exécuter vos applications et sites web. Vous accédez à la plateforme via une simple connexion internet et surveillez votre consommation en ressources informatiques en temps réel via votre console d’administration. Vous êtes facturé à la consommation. Vos coûts d'hébergement sont donc proportionnels à votre utilisation et besoins réels. 
 
 ### Une solution idéale pour vous recentrer sur l’essentiel : votre cœur de métier !
 
