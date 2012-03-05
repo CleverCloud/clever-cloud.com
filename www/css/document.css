@@ -8,6 +8,28 @@
     font-weight: bold;
     font-style: normal;
 }
+@font-face {
+    font-family: 'CreteRoundItalic';
+    src: url('../fonts/CreteRound-Italic-webfont.eot');
+    src: url('../fonts/CreteRound-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CreteRound-Italic-webfont.woff') format('woff'),
+         url('../fonts/CreteRound-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/CreteRound-Italic-webfont.svg#CreteRoundItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+
+}
+@font-face {
+    font-family: 'CreteRoundRegular';
+    src: url('../fonts/CreteRound-Regular-webfont.eot');
+    src: url('../fonts/CreteRound-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/CreteRound-Regular-webfont.woff') format('woff'),
+         url('../fonts/CreteRound-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/CreteRound-Regular-webfont.svg#CreteRoundRegular') format('svg');
+    font-weight: bold;
+    font-style: normal;
+
+}
 *{ outline:none; }
 body{
 	background:url('../img/footer-bg.png');
@@ -17,8 +39,8 @@ body{
 }
 button::-moz-focus-inner,input::-moz-focus-inner{ border:none; }
 h2 small{
-	font-family:sans-serif;
-	font-size:70%;
+	font-family:Helvetica,Verdana,sans-serif;
+	font-size:60%;
 	font-weight:normal;
 }
 ::selection {
@@ -242,10 +264,11 @@ h2 small{
 		width:100%;
 	}
 		#advantages .advantage h3{
-			font-family:serif;
+			font-family:'CreteRoundItalic',serif;
 			font-style:italic;
 			padding:17px 15px 15px;
 			text-align:center;
+			font-size:160%;
 		}
 		#advantages .advantage .content{
 			text-align:justify;
@@ -270,8 +293,9 @@ h2 small{
 	}
 	#signup h2{
 		border-bottom:1px solid #ddd;
-		font-family:serif;
+		font-family:'CreteRoundItalic',serif;
 		font-style:italic;
+		font-size:200%;
 		padding:40px 0 10px;
 		margin-bottom:20px;
 	}
@@ -374,15 +398,17 @@ h2 small{
 		}
 		#technologies h2{
 			border-bottom:1px solid #ddd;
-			font-family:serif;
+			font-family:'CreteRoundItalic',serif;
 			font-style:italic;
+			font-size:200%;
 			padding:40px 0 10px;
 			margin-bottom:20px;
 		}
 		#technologies h3{
 			color:#404040;
-			font-family:serif;
+			font-family:'CreteRoundItalic',serif;
 			font-style:italic;
+			font-size:160%;
 		}
 		#technologies .info{ margin-bottom:20px; }
 			#technologies ul li{
@@ -415,8 +441,8 @@ h2 small{
 		}
 	#main-footer h3{
 		color:#842623;
-		font-family:serif;
-		font-size:130%;
+		font-family:'CreteRoundItalic',serif;
+		font-size:150%;
 		font-style:italic;
 		text-shadow:0 1px 0 #e06460,0 -1px 0 #3b110f;
 	}
