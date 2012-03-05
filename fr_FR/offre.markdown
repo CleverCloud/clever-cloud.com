@@ -6,11 +6,11 @@ keywords: []
 lang: fr_FR
 # site generation
 sections:
-- id: "offre-globale"
+- id: "offre_globale"
   title: "Offre Globale"
-- id: "caracteristiques"
+- id: "caractristiques"
   title: "Caractéristiques"
-- id: "avantages"
+- id: "avantages_clever_cloud"
   title: "Avantages Clever Cloud"
 - id: "fonctionnement"
   title: "Fonctionnement"
