@@ -5,13 +5,15 @@ description: ""
 keywords: []
 lang: fr_FR
 # site generation
-layout: document
+sections:
+- id: "nous_sommes_toujours__la_recherche_de_partenaires"
+  title: "À la recherche de partenaires "
+layout: page
 ---
 
-# Devenir partenaire 
-## Nous sommes toujours à la recherche de partenaires 
+# Nous sommes toujours à la recherche de partenaires 
 
-Vous êtes une start-up, une agence web ou une SSII ? Clever Cloud est toujours à la recherche de nouveaux partenaires pour développer et commercialiser son offre. 
+Vous êtes une start-up, une agence web ou une SSII ? Clever Cloud est toujours à la recherche de nouveaux partenaires pour développer et commercialiser son offre.  
 
 Devenir partenaire Clever Cloud offre de nombreux avantages, vous pouvez : 
 * **Enrichir** votre offre commerciale 
