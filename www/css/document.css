@@ -155,7 +155,7 @@ h2 small{
             -o-transition: all .2s ease-in;
             transition: all .2s ease-in;
 		}
-#main-header{
+#main-header, #page-wrap{
 	background:url('../img/header-bg.png');
 	padding-top:180px;
 }

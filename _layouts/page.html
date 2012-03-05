@@ -2,18 +2,23 @@
 layout: document
 ---
 {%assign lg = page.lang%}
-		<div id="wrap">
-			<header>
-				<section>
-					<h1>{{page.title}}</h1>
-					<p>{{page.description}}</p>
-				</section>
-			</header>
-			<div id="page">
-				<section>
-					<article>
+		<div id="page-wrap">
+			<section id="page">
+				<aside>
+					<ul>
+						{%for section in page.sections%}
+						<li><a href="#{{section.id}}">{{section.title}}</a></li>
+						{%endfor%}
+					</ul>
+				</aside>
+				<article>
+					<header>
+						<h1>{{page.title}}</h1>
+						<p>{{page.description}}</p>
+					</header>
+					<div class="content">
 						{{content}}
-					</article>
-				</section>
-			</div>
+					</div>
+				</article>
+			</section>
 		</div>
