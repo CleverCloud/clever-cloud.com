@@ -30,7 +30,7 @@ Oubliées les opérations de gestion, de maintenance et de sécurisation fastidi
 Convaincu ? Il vous suffit de moins de 2 minutes pour vous inscrire à notre [beta privée](/#signup "Inscription"). 
 
 ### En savoir plus ?
-Toutes nos infos sur la [page de contact](/contact.html "Contact") ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.
+Toutes nos infos sur la [page de contact](/fr_FR/contact.html "Contact") ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.
 
 ## Caractéristiques 
 
@@ -92,5 +92,4 @@ La Plateforme as a Service (PaaS) Clever Cloud est idéale pour toute entreprise
 Il vous suffit de moins de 2 minutes pour vous inscrire à notre [beta privée](/#signup "Inscription").
 
 ##Envie d’en savoir plus ?
-
-Toutes nos infos sur la [page de contact](/contact.html "Contact") ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.
+Toutes nos infos sur la [page de contact](/fr_FR/contact.html "Contact") ou suivez [@clever_cloud](http://twitter.com/clever_cloud "Twitter") sur Twitter.

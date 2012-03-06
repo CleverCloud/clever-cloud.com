@@ -29,7 +29,7 @@ Convinced yet? Take a couple minutes to [sign up for our private beta](/#signup 
  
  
 ### More?
-To get more information, see our [contact](/contact.html) page or follow us on Twitter [@clever_cloud](http://twitter.com/clever_cloud "Twitter").
+To get more information, see our [contact](/en_US/contact.html) page or follow us on Twitter [@clever_cloud](http://twitter.com/clever_cloud "Twitter").
 
 ## Features
 
@@ -92,4 +92,4 @@ To join the private beta, simply enter your email [here](/#signup "Sign Up") and
 
 ##Learn more?
 
-See our [contact](/contact.html) page or follow on Twitter [@clever_cloud](http://twitter.com/clever_cloud "Twitter").
+See our [contact](/en_US/contact.html) page or follow on Twitter [@clever_cloud](http://twitter.com/clever_cloud "Twitter").
