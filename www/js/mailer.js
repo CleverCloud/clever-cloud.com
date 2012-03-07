@@ -1,10 +1,10 @@
 $(document).ready(function() {
     $('#signup-form').submit(function() {
-        var mail = $("#signup-email").val();
+        var mail = encodeURIComponent($("#signup-email").val());
 
         $.ajax({
             type: "POST",
-            url: "http://clever-cloud.com/resources/mail/add",
+            url: "http://www.clever-cloud.com/resources/mail/add",
             data: "betasignup=" + mail,
 			statusCode: {
 				200: function() {
