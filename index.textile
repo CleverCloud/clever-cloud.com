@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Accueil"
-description: "Clever Cloud, le cloud français !"
+description: ""
 keywords: []
 lang: fr_FR
 # page vars
