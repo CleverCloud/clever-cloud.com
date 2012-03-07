@@ -1,6 +1,6 @@
 ---
 # SEO
-title: "Premiers pas dans le Cloud ?"
+title: "Accueil"
 description: "Clever Cloud, le cloud français !"
 keywords: []
 lang: fr_FR
