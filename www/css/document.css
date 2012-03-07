@@ -493,13 +493,24 @@ h2 small{
 		padding:10px 0;
 		text-decoration:none;
 		-webkit-transition: all .2s ease-in;
-        -moz-transition: all .2s ease-in;
-        -o-transition: all .2s ease-in;
-        transition: all .2s ease-in;
+         -moz-transition: all .2s ease-in;
+           -o-transition: all .2s ease-in;
+              transition: all .2s ease-in;
 	}
 		#page>aside a:hover,#page>aside a:focus{
 			color:#4c4c4c;
 		}
+	#page .content{ position:relative; }
+	#page .content:after{
+		background:url('../img/big-shadow.png') center no-repeat;
+		bottom:-5px;
+		content:" ";
+		display:block;
+		height:5px;
+		left:0;
+		position:absolute;
+		width:100%;
+	}
 	#page>article h1{
 		background:#eee;
 		border:1px solid #ccc;
