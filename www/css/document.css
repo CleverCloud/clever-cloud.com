@@ -87,9 +87,9 @@ h2 small{
 			box-shadow:-1px 0 0 #fff,-2px 0 0 #e1e1e1,1px 0 0 #fff,2px 0 0 #e1e1e1;
 		}
 		#main-nav .lg_choice .fr_FR{ background-image:url('../img/fr_FR.png'); }
-			#main-nav .lg_choice .fr_FR:hover,#main-nav .lg_choice .fr_FR:focus{ background-image:url('../img/fr_FR-hover.png'); }
+			#main-nav .lg_choice .fr_FR:hover,#main-nav .lg_choice .fr_FR:focus{ background-image:url('../img/en_US-hover.png'); }
 		#main-nav .lg_choice .en_US{ background-image:url('../img/en_US.png'); }
-			#main-nav .lg_choice .en_US:hover,#main-nav .lg_choice .en_US:focus{ background-image:url('../img/en_US-hover.png'); }
+			#main-nav .lg_choice .en_US:hover,#main-nav .lg_choice .en_US:focus{ background-image:url('../img/fr_FR-hover.png'); }
 	#main-nav .support,#main-nav .lg_choice{ position:relative; }
 	#main-nav .support>a:after{
 		content:"▼";
