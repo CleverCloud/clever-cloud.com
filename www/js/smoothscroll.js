@@ -7,7 +7,7 @@ $(function() {
   else {
     scrollElement.scrollTop(scrollValue);
   }
-  $("a[href*=#]").click(function() {
+  $("a[class=smooth]").click(function() {
     if (location.hostname+location.pathname+location.search == this.hostname+this.pathname.replace(/^([^\/].*)/, "/$1")+this.search) {
       var hash = "#"+$(this).attr("href").split("#")[1];
       var target = $(hash == "#" ? $('body') : hash);
