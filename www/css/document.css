@@ -501,6 +501,8 @@ h2 small{
 			color:#4c4c4c;
 		}
 	#page .content{ position:relative; }
+		#page .content img,#page .content iframe{ max-width:100%; }
+		#page .content iframe{ margin:40px 0; }
 	#page .content:after{
 		background:url('../img/big-shadow.png') center no-repeat;
 		bottom:-5px;
