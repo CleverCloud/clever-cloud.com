@@ -121,6 +121,16 @@ small {
     left: 150px;
     z-index: 1; }
 
+  #page .content .half {
+    display: inline;
+    float: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    width: 190px; }
+
+  #page .content .half:nth-child(odd) {
+    margin-left: 0; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -278,6 +288,16 @@ small {
     position: relative;
     left: 168px;
     z-index: 1; }
+
+  #page .content .half {
+    display: inline;
+    float: left;
+    margin-left: 8px;
+    margin-right: 8px;
+    width: 208px; }
+
+  #page .content .half:nth-child(odd) {
+    margin-left: 0; }
 
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
@@ -484,6 +504,16 @@ small {
     left: 180px;
     z-index: 1; }
 
+  #page .content .half {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 220px; }
+
+  #page .content .half:nth-child(odd) {
+    margin-left: 0; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -680,6 +710,16 @@ small {
     left: 240px;
     z-index: 1; }
 
+  #page .content .half {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 300px; }
+
+  #page .content .half:nth-child(odd) {
+    margin-left: 0; }
+
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
@@ -731,7 +771,11 @@ small {
     margin-right: 0; }
 
   #technologies .info, #technologies li:nth-child(odd) {
-    margin-left: 0; } }
+    margin-left: 0; }
+
+  #page .content .half {
+    margin-left: 0;
+    margin-right: 0; } }
 @media (min-width: 1200px) {
   #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
     /* @include debug; */
@@ -793,6 +837,16 @@ small {
     position: relative;
     left: 300px;
     z-index: 1; }
+
+  #page .content .half {
+    display: inline;
+    float: left;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 370px; }
+
+  #page .content .half:nth-child(odd) {
+    margin-left: 0; }
 
   #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
