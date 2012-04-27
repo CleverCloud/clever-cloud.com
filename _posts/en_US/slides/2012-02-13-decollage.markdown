@@ -12,4 +12,4 @@ Clever Cloud is about to change everything in the world of hosting.
  Register now to our closed beta and be among the early testers of a new kind of hosting service.
 
 
-<a href="#signup">Sign up for beta</a>
+<a class="smooth" href="#signup">Sign up for beta</a>
