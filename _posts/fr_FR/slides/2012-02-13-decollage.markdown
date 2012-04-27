@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "'Make apps'"
-icon: "slider-cloud.png"
+icon: "home3.png"
 lang: fr_FR
 # site generation
 layout: document

@@ -185,6 +185,20 @@ h2 small{
 			position:absolute;
 			width:100%;
 		}
+		#slider a.smooth{
+			 background: none repeat scroll 0 0 #F7F7F7;
+			 border-radius: 4px 4px 4px 4px;
+			 box-shadow: 0 40px 25px -20px #FFFFFF inset, 0 5px 10px -7px #000000;
+			 color: #4C4C4C;
+			 cursor: pointer;
+			 display:inline-block;
+			 font-size: 100%;
+			 font-weight: bold;
+			 line-height: 120%;
+			 margin-top: 10px;
+			 padding:5px 10px;
+			 text-transform: uppercase;
+		}
 		#bottle{ position:relative; }
 		#bottle:before{
 			background:url('../img/bottle-top.png') center no-repeat;
@@ -632,6 +646,9 @@ h2 small{
 			width: 100%;
 		}
 	#main-header{ padding-top:120px; }
+	#slider h2{
+		font-size:300%;
+	}
 	#advantages .advantage{ height:auto; }
 	#signup-form{ height:30% }
 	#signup [type="submit"]{
@@ -685,7 +702,10 @@ h2 small{
 	#bottle:before{ left:127px; }
 	#advantages,#signup,#technologies{ background-position:135px; }
 	#main-footer.bottled .sitemap:before{ left:24px; }
-	#slider .slide img{ padding-top:60px; }
+	#slider .slide img{
+		margin-top:60px;
+		padding-top:0;
+	}
 	#advantages .advantage{ height:450px; }
 	#advantages .advantage .content{padding:0px 10px 0px 10px}
 	#advantages .advantage img{

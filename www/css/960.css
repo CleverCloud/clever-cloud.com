@@ -728,13 +728,13 @@ small {
     width: 220px; }
 
   #main-header .slide img {
-    padding-left: 80px;
     display: inline;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
-    width: 300px;
-    padding-right: 80px; }
+    padding-left:80px;
+    padding-right:80px;
+    width:300px; }
 
   #main-header .slide .text, #signup-email, #technologies ul {
     display: inline;
