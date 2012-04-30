@@ -10,7 +10,7 @@ lg_url: # locale (i18n) urls                        change before upload
   fr_FR: "/fr_FR"
   en_US: "/en_US"
 # dirty jekyll conf
-destination: ../out
+destination: out
 auto:        true
 lsi:         false
 server_port: 4000
