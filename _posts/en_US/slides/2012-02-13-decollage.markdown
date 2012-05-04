@@ -1,7 +1,7 @@
 ---
 # SEO
 title: "Only&nbsp;code&nbsp;"
-icon: "home3.png"
+icon: "home.png"
 lang: en_US
 # site generation
 layout: document
