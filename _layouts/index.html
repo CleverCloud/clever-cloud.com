@@ -66,4 +66,18 @@ layout: document
 					</ul>
 				</article>
 			</section>
+			<section id="newsletter">
+				<header>
+					<h2>{{site.i18n[lg].newsletter.title}}</h2>
+				</header>
+				<p class="info">{{site.i18n[lg].signup.info}}</p>
+
+<!-- Begin MailChimp Signup Form -->
+<form action="http://clever-cloud.us1.list-manage.com/subscribe/post?u=0928a3dc4855008ad5808ca4e&amp;id=acad5cf9a1" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+   <input type="email" value="" placeholder="{{site.i18n[lg].signup.mail}}" name="EMAIL" class="required email" id="mce-EMAIL">
+   <input type="submit" value="{{site.i18n[lg].newsletter.submit}}" name="subscribe" id="mc-embedded-subscribe" class="button">
+</form>
+<!--End mc_embed_signup-->
+
+			</section>
 		</div>

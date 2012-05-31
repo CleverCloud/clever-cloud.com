@@ -11,7 +11,7 @@ lg_url: # locale (i18n) urls                        change before upload
   en_US: "/en_US"
 # dirty jekyll conf
 destination: out
-auto:        true
+auto:        false
 lsi:         false
 server_port: 4000
 pygments:    true
@@ -69,6 +69,9 @@ i18n:
       code404: "Erreur 404: Essayez de redémarrer."
       code500: "Erreur 500: une erreur est survenue quelque part. Mais on ne sait où."
       submit: "Inscription Beta"
+    newsletter:
+      title:  Inscription à la newsletter
+      submit: Inscription
     footer:
     - head: "Clever Cloud"
       list:
@@ -154,6 +157,9 @@ i18n:
       code404: "Error 404: Try a reboot :)"
       code500: "Error 500: Something went wrong. No one knows where."
       google: "Sign up with Google"
+    newsletter:
+      title:  Suscribe to the newsletter
+      submit: Sign up
     footer:
     - head: "Clever Cloud"
       list:

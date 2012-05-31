@@ -60,13 +60,13 @@ small {
     font-size: medium;
     line-height: 22px; }
 
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #newsletter, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 300px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #newletter:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
       content: "";
       display: block;
       clear: both; }
@@ -131,7 +131,7 @@ small {
   #page .content .half:nth-child(odd) {
     margin-left: 0; }
 
-  #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
+  #advantages .advantage, #signup-form [type="submit"], #mc-embedded-subscribe-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
     margin-left: 5px;
@@ -147,17 +147,17 @@ small {
     width: 190px;
     padding-right: 50px; }
 
-  #main-header .slide .text, #signup-email, #technologies ul {
+  #main-header .slide .text, #signup-email, #mce-EMAIL, #technologies ul {
     display: inline;
     float: left;
     margin-left: 5px;
     margin-right: 5px;
     width: 290px; }
 
-  #signup-email {
+  #signup-email #mce-EMAIL {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
+  #signup-form, #signup .info, #newsletter .info, #technologies header, #signup header, #newsletter header, #technologies article {
     position: relative;
     left: 150px;
     z-index: 1;
@@ -175,7 +175,7 @@ small {
     left: 250px;
     z-index: 1; }
 
-  #signup-form [type="submit"] {
+  #signup-form [type="submit"], #mc-embedded-subscribe-form [type="submit"] {
     margin-right: 0; }
 
   #technologies li:nth-child(even), #technologies ul {
@@ -184,7 +184,7 @@ small {
   #technologies .info, #technologies li:nth-child(odd) {
     margin-left: 0; }
 
-  #signup-email, #signup-form [type="submit"], #technologies ul, #technologies li, #technologies .info {
+  #signup-email, #signup-form [type="submit"], #mce-EMAIL, #mc-embedded-subscribe-form [type="submit"], #technologies ul, #technologies li, #technologies .info {
     display: inline;
     float: left;
     margin-left: 5px;
@@ -193,7 +193,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #main-nav h2, #signup-form, #technologies header, #signup header, #main-footer .sitemap > li, #advantages .advantage {
+  #main-nav h2, #signup-form, #mc-embedded-subscribe-form, #technologies header, #signup header, #newsletter header, #main-footer .sitemap > li, #advantages .advantage {
     display: inline;
     float: left;
     margin-left: 5px;
@@ -228,13 +228,13 @@ small {
     margin-right: 5px;
     width: 290px; } }
 @media (min-width: 480px) and (max-width: 767px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #newsletter, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 448px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #newsletter:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
       content: "";
       display: block;
       clear: both; }
@@ -299,7 +299,7 @@ small {
   #page .content .half:nth-child(odd) {
     margin-left: 0; }
 
-  #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
+  #advantages .advantage, #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
     margin-left: 8px;
@@ -315,17 +315,17 @@ small {
     width: 208px;
     padding-right: 56px; }
 
-  #main-header .slide .text, #signup-email, #technologies ul {
+  #main-header .slide .text, #signup-email, #mce-EMAIL, #technologies ul {
     display: inline;
     float: left;
     margin-left: 8px;
     margin-right: 8px;
     width: 320px; }
 
-  #signup-email {
+  #signup-email,#mce-EMAIL{
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
+  #signup-form,#mc-embedded-subscribe-form, #signup .info,#newsletter .info, #technologies header, #signup header,#newsletter header, #technologies article {
     position: relative;
     left: 168px;
     z-index: 1;
@@ -343,7 +343,7 @@ small {
     left: 336px;
     z-index: 1; }
 
-  #signup-form [type="submit"] {
+  #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"] {
     margin-right: 0; }
 
   #technologies li:nth-child(even), #technologies ul {
@@ -367,7 +367,7 @@ small {
     margin-right: 8px;
     width: 432px; }
 
-  #signup-email, #signup-form [type="submit"], #technologies li {
+  #signup-email,#mce-EMAIL, #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"], #technologies li {
     display: inline;
     float: left;
     margin-left: 8px;
@@ -376,7 +376,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #main-nav h2, #signup-form, #technologies header, #signup header, #technologies ul, #technologies .info, #advantages .advantage, #main-footer .sitemap > li {
+  #main-nav h2, #signup-form,#mc-embedded-subscribe-form, #technologies header, #signup header,#newsletter header, #technologies ul, #technologies .info, #advantages .advantage, #main-footer .sitemap > li {
     display: inline;
     float: left;
     margin-left: 8px;
@@ -425,7 +425,7 @@ small {
   #main-footer .sitemap > li:first-child {
     padding-left: 0; }
 
-  #signup-form, #signup .info, #signup header, #technologies header, #technologies article, #page > article {
+  #signup-form, #signup .info, #signup header,#mc-embedded-subscribe-form,#newsletter .info,#newsletter header, #technologies header, #technologies article, #page > article {
     position: static;
     left: 0; }
 
@@ -443,13 +443,13 @@ small {
     font-size: x-large;
     line-height: 28px; } }
 @media (min-width: 768px) and (max-width: 979px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup,#newsletter, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 720px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #newsletter:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
       content: "";
       display: block;
       clear: both; }
@@ -514,7 +514,7 @@ small {
   #page .content .half:nth-child(odd) {
     margin-left: 0; }
 
-  #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
+  #advantages .advantage, #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -530,17 +530,17 @@ small {
     width: 220px;
     padding-right: 60px; }
 
-  #main-header .slide .text, #signup-email, #technologies ul {
+  #main-header .slide .text, #signup-email,#mce-EMAIL,#technologies ul {
     display: inline;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
     width: 340px; }
 
-  #signup-email {
+  #signup-email,#mce-EMAIL {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
+  #signup-form, #signup .info, #mc-embedded-subscribe-form,#newsletter .info,#technologies header, #signup header, #newsletter header,#technologies article {
     position: relative;
     left: 180px;
     z-index: 1;
@@ -558,7 +558,7 @@ small {
     left: 360px;
     z-index: 1; }
 
-  #signup-form [type="submit"] {
+  #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"] {
     margin-right: 0; }
 
   #technologies li:nth-child(even), #technologies ul {
@@ -593,7 +593,7 @@ small {
     margin-right: 10px;
     width: 220px; }
 
-  #signup-email {
+  #signup-email,#mce-EMAIL {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -607,7 +607,7 @@ small {
   #technologies li:nth-child(even) {
     margin-right: 0; }
 
-  #signup-form, #signup .info, #signup header, #technologies header, #technologies article, #technologies ul, #technologies .info {
+  #signup-form, #signup .info, #signup header,#mc-embedded-subscribe-form,#newsletter .info,#newsletter header, #technologies header, #technologies article, #technologies ul, #technologies .info {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -616,7 +616,7 @@ small {
     margin-left: 0;
     margin-right: 0; }
 
-  #signup-form, #signup .info, #signup header, #technologies header, #technologies article {
+  #signup-form, #signup .info, #signup header,#mc-embedded-subscribe-form,#newsletter .info,#newsletter header, #technologies header, #technologies article {
     position: relative;
     left: 240px;
     z-index: 1; }
@@ -649,13 +649,13 @@ small {
     left: 240px;
     z-index: 1; } }
 @media (min-width: 980px)  and (max-width: 1199px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup,#newsletter, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 960px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after,#newsletter:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
       content: "";
       display: block;
       clear: both; }
@@ -720,7 +720,7 @@ small {
   #page .content .half:nth-child(odd) {
     margin-left: 0; }
 
-  #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
+  #advantages .advantage, #signup-form [type="submit"], #mc-embedded-subscribe-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
     margin-left: 10px;
@@ -736,17 +736,17 @@ small {
     padding-right:80px;
     width:300px; }
 
-  #main-header .slide .text, #signup-email, #technologies ul {
+  #main-header .slide .text, #signup-email,#mce-EMAIL, #technologies ul {
     display: inline;
     float: left;
     margin-left: 10px;
     margin-right: 10px;
     width: 460px; }
 
-  #signup-email {
+  #signup-email,#mce-EMAIL {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header,#mc-embedded-subscribe-form,#newsletter .info,#newsletter header, #technologies article {
     position: relative;
     left: 240px;
     z-index: 1;
@@ -764,7 +764,7 @@ small {
     left: 480px;
     z-index: 1; }
 
-  #signup-form [type="submit"] {
+  #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"] {
     margin-right: 0; }
 
   #technologies li:nth-child(even), #technologies ul {
@@ -777,13 +777,13 @@ small {
     margin-left: 0;
     margin-right: 0; } }
 @media (min-width: 1200px) {
-  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
+  #main-nav div, #slider .slide, #bottle, #advantages, #signup, #newsletter,#technologies, #main-footer .sitemap, #slider .controls, #page, #page .sidebar {
     /* @include debug; */
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     clear: both; }
-    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
+    #main-nav div:after, #slider .slide:after, #bottle:after, #advantages:after, #signup:after, #newsletter:after,#technologies:after, #main-footer .sitemap:after, #slider .controls:after, #page:after, #page .sidebar:after {
       content: "";
       display: block;
       clear: both; }
@@ -848,7 +848,7 @@ small {
   #page .content .half:nth-child(odd) {
     margin-left: 0; }
 
-  #advantages .advantage, #signup-form [type="submit"], #technologies .info, #technologies li {
+  #advantages .advantage, #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"], #technologies .info, #technologies li {
     display: inline;
     float: left;
     margin-left: 15px;
@@ -871,10 +871,10 @@ small {
     margin-right: 15px;
     width: 570px; }
 
-  #signup-email {
+  #signup-email,#mce-EMAIL {
     margin-left: 0; }
 
-  #signup-form, #signup .info, #technologies header, #signup header, #technologies article {
+  #signup-form, #signup .info, #technologies header, #signup header, #mc-embedded-subscribe-form,#newsletter .info,#newsletter header,#technologies article {
     position: relative;
     left: 300px;
     z-index: 1;
@@ -892,7 +892,7 @@ small {
     left: 600px;
     z-index: 1; }
 
-  #signup-form [type="submit"] {
+  #signup-form [type="submit"],#mc-embedded-subscribe-form [type="submit"] {
     margin-right: 0; }
 
   #technologies li:nth-child(even), #technologies ul {

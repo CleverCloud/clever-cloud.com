@@ -308,11 +308,11 @@ h2 small{
 	position:relative;
 	z-index:2;
 }
-	#signup{
+	#signup,#newsletter{
 		background:url('../img/bottle-repeat.png') 140px repeat-y;
 		padding-top:40px;
 	}
-	#signup h2{
+	#signup h2,#newsletter h2{
 		border-bottom:1px solid #ddd;
 		font-family:'CreteRoundItalic',serif;
 		font-style:italic;
@@ -320,23 +320,23 @@ h2 small{
 		padding:40px 0 10px;
 		margin-bottom:20px;
 	}
-	#signup .info{
+	#signup .info,#newsletter .info{
 		margin-bottom:20px;
 	}
-	#signup-form{
+	#signup-form,#mc-embedded-subscribe-form{
 		background:#e8e8e8;
 		border-radius:4px;
 		box-shadow:inset 0 1px 1px #888;
 		color:#4c4c4c;
 		height:50px;
 	}
-	#signup-form img {
+	#signup-form img,#mc-embedded-subscribe-form img{
 		display:none;
 		padding-top: 12px;
 		float: right;
 		padding-right: 20px;
 	}
-		#signup-email{
+		#signup-email,#mce-EMAIL{
 			background:none;
 			color:#4c4c4c;
 			font-size:170%;
@@ -390,7 +390,7 @@ h2 small{
 				text-shadow: 0 1px 0 white;
 				padding-top: 16px;
 			}
-	#signup [type="submit"]{
+	#signup [type="submit"],#newsletter [type="submit"]{
 		background:#f7f7f7;
 		color:#4c4c4c;
 		border-radius:4px;
@@ -404,7 +404,7 @@ h2 small{
 		text-transform:uppercase;
 		cursor: pointer;
 	}
-	#signup [type="submit"]:hover{
+	#signup [type="submit"]:hover,#newsletter [type="submit"]:hover{
 		background:#E1E1E1;
 	}
 	#technologies{ background:url('../img/bottle-repeat.png') 140px repeat-y; }
@@ -591,7 +591,7 @@ h2 small{
 	#advantages .advantage .content{
 		display:none;
 	}
-	#signup [type="submit"]{
+	#signup [type="submit"],#newsletter [type="submit"]{
 		font-size:140%;
 		margin-left:5px;
 		width:280px;
@@ -607,7 +607,7 @@ h2 small{
 		margin:0 15px;
 	}
 	#advantages .advantage h3{ text-align:left; }
-	#signup [type="submit"]{
+	#signup [type="submit"],#newsletter [type="submit"]{
 		font-size:160%;
 		margin-left:6px;
 		width:420px;
@@ -652,32 +652,41 @@ h2 small{
 		font-size:300%;
 	}
 	#advantages .advantage{ height:auto; }
-	#signup-form{ height:30% }
-	#signup [type="submit"]{
+	#newsletter{
+	   background:none;
+	}
+	#signup-form,#mc-embedded-subscribe-form{ height:30% }
+	#signup [type="submit"],#newsletter [type="submit"]{
 		position:static;
 	}
-	#signup-email{
+	#signup-email,#mce-EMAIL{
 		text-align: center;
 		font-size:150%;
 	}
 	#signup-email::-webkit-input-placeholder{ text-align: center; }
 	#signup-email:-moz-placeholder{ text-align: center; }
+	#mce-EMAIL::-webkit-input-placeholder{ text-align: center; }
+	#mce-EMAIL:-moz-placeholder{ text-align: center; }
 	p#subscribe_success,
 	p#subscribe_error_401,
 	p#subscribe_error_404,
 	p#subscribe_error_500{font-size:120%; text-align:center; text-indent:0}
 	#page>aside{ display:none; }
 }
-@media (min-width: 768px){}
+@media (min-width: 768px){
+#newsletter [type="submit"]{
+   float:right;
+}
+}
 @media (min-width: 768px) and (max-width: 979px){
-	#signup [type="submit"]{
+	#signup [type="submit"],#newsletter [type="submit"]{
 		font-size:110%;
 	}
-	#signup-email{
+	#signup-email,#mce-EMAIL{
 		font-size:130%;
 	}
 	#bottle:before{ left:117px; }
-	#advantages,#signup,#technologies{ background-position:125px; }
+	#advantages,#signup,#technologies,#newsletter{ background-position:125px; }
 	#main-footer.bottled .sitemap:before{ left:14px; }
 	#main-nav a{
 		font-weight:normal;
@@ -702,7 +711,7 @@ h2 small{
 }
 @media (min-width: 980px)  and (max-width: 1199px){
 	#bottle:before{ left:127px; }
-	#advantages,#signup,#technologies{ background-position:135px; }
+	#advantages,#signup,#technologies,#newsletter{ background-position:135px; }
 	#main-footer.bottled .sitemap:before{ left:24px; }
 	#slider .slide img{
 		margin-top:60px;
@@ -713,14 +722,17 @@ h2 small{
 	#advantages .advantage img{
 		height:135px;
 	}
-	#signup [type="submit"]{
+	#signup [type="submit"],#newsletter [type="submit"]{
 		font-size:130%;
 	}
 	
 }
 @media (min-width: 1200px){
 	#main-nav .drop{ left:-17px; }
-	#signup [type="submit"]{
+	#signup [type="submit"],#newsletter [type="submit"]{
 		font-size:170%;
 	}
+}
+#newsletter{
+   padding-bottom:60px;
 }
