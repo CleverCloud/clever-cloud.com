@@ -489,6 +489,8 @@ h2 small{
 	box-shadow:inset 0 -10px 15px -15px #000;
 }
 	#page{position:relative;}
+	#drop{margin-left:40%; padding-top:10px}
+	#legend{font-style:italic;margin-left:40%;padding-left:20px}
 	#page>aside{
 		left:0;
 		position:fixed;
