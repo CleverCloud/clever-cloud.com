@@ -5,13 +5,13 @@ layout: main
 nav:
   
   advantages:
-    intro:
+    head:
       fr: avantages
       en: advantages
     fr: [avantages/maitrise-couts, avantages/deploiement-accelere, avantages/securite, avantages/flexibilite]
   
   technologies:
-    intro:
+    head:
       fr: technologies
       en: technologies
     fr: [technologies/php, technologies/scala, technologies/ruby, technologies/java]
@@ -25,9 +25,8 @@ nav:
       </div>
    </div>
    <div class="row">
-      <div class="span4"> {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ page.nav.advantages.intro[page.locale] }}/index.html{% endcapture %}{% if p.url == purl %}
-         <h2>{{ p.title }}</h2>
-         {{ p.content }} {% endif %} {% endfor %}
+      <div class="span4"> {% for p in site.pages %} {% assign cat = 'advantages' %}
+      {% include home-headline.html %} {% endfor %}
       </div>
       <div class="span8"> {% for advantage in page.nav.advantages[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ advantage }}.html{% endcapture %} {% if p.url == purl %}
          {% cycle '<div class="row">','' %}
@@ -38,15 +37,16 @@ nav:
          {% cycle '','</div>' %} {% endif %} {% endfor %} {% endfor %}
       </div>
    </div>
-   <div class="page-header"> {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ page.nav.technologies.intro[page.locale] }}/index.html{% endcapture %}{% if p.url == purl %}
-      <h2>{{ p.title }}</h2>
-      {{ p.content | markdownify }} {% endif %} {% endfor %}
+   <div class="page-header"> {% for p in site.pages %} {% assign cat = 'technologies' %}
+      {% include home-headline.html %} {% endfor %}
    </div>
    <div class="row"> {% for tech in page.nav.technologies[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ tech }}.html{% endcapture %} {% if p.url == purl %}
-      <div class="span3">
-         <div class="thumbnail pull-left">
+      <div class="span1">
+         <div class="thumbnail">
             <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
          </div>
+      </div>
+      <div class="span2">
          <h3>{{ p.title }}</h3>
          {{ p.content }}
       </div> {% endif %} {% endfor %} {% endfor %}
