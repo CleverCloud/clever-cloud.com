@@ -1,12 +1,8 @@
 ---
-# SEO
-title: "Java"
-icon: "java-logo.png"
-lang: fr_FR
-# site generation
-website: "http://www.java.com/"
-layout: document
-categories: [fr_FR, technologies]
+# data
+title:   Java
+icon:    java-logo.png
+website: http://www.java.com
 ---
-
-www.java.com
+Langage robuste, orienté entreprises et très largement utilisé pour le
+développement de nombreuses applications critiques et métier.

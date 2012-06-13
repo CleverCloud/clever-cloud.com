@@ -20,7 +20,7 @@ nav:
    <div class="row">
       <div class="span5 offset7">
          <div class="hero-unit">
-            {{ content | replace:'<a','<a class="btn btn-big btn-primary"' }}
+            {{ content | replace:'<a','<a class="btn btn-large btn-primary"' }}
          </div>
       </div>
    </div>
@@ -44,6 +44,9 @@ nav:
    </div>
    <div class="row"> {% for tech in page.nav.technologies[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ tech }}.html{% endcapture %} {% if p.url == purl %}
       <div class="span3">
+         <div class="thumbnail pull-left">
+            <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
+         </div>
          <h3>{{ p.title }}</h3>
          {{ p.content }}
       </div> {% endif %} {% endfor %} {% endfor %}
