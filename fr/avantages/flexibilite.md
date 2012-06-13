@@ -1,0 +1,6 @@
+---
+title: Flexibilité infinie
+---
+Croissance du nombre d’utilisateurs, pics d’activités, baisses de régime…  la
+technologie de Clever Cloud s’ajuste à vos besoins et fournit instantanément
+toute l’énergie informatique nécessaire pour faire face à toute situation. 

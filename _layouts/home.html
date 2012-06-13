@@ -1,0 +1,51 @@
+---
+layout: main
+
+# home nav
+nav:
+  
+  advantages:
+    intro:
+      fr: avantages
+      en: advantages
+    fr: [avantages/maitrise-couts, avantages/deploiement-accelere, avantages/securite, avantages/flexibilite]
+  
+  technologies:
+    intro:
+      fr: technologies
+      en: technologies
+    fr: [technologies/php, technologies/scala, technologies/ruby, technologies/java]
+---
+<div class="container">
+   <div class="row">
+      <div class="span5 offset7">
+         <div class="hero-unit">
+            {{ content | replace:'<a','<a class="btn btn-big btn-primary"' }}
+         </div>
+      </div>
+   </div>
+   <div class="row">
+      <div class="span4"> {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ page.nav.advantages.intro[page.locale] }}/index.html{% endcapture %}{% if p.url == purl %}
+         <h2>{{ p.title }}</h2>
+         {{ p.content }} {% endif %} {% endfor %}
+      </div>
+      <div class="span8"> {% for advantage in page.nav.advantages[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ advantage }}.html{% endcapture %} {% if p.url == purl %}
+         {% cycle '<div class="row">','' %}
+            <div class="span4">
+               <h3>{{ p.title }}</h3>
+               {{ p.content }}
+            </div>
+         {% cycle '','</div>' %} {% endif %} {% endfor %} {% endfor %}
+      </div>
+   </div>
+   <div class="page-header"> {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ page.nav.technologies.intro[page.locale] }}/index.html{% endcapture %}{% if p.url == purl %}
+      <h2>{{ p.title }}</h2>
+      {{ p.content | markdownify }} {% endif %} {% endfor %}
+   </div>
+   <div class="row"> {% for tech in page.nav.technologies[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ tech }}.html{% endcapture %} {% if p.url == purl %}
+      <div class="span3">
+         <h3>{{ p.title }}</h3>
+         {{ p.content }}
+      </div> {% endif %} {% endfor %} {% endfor %}
+   </div>
+</div>

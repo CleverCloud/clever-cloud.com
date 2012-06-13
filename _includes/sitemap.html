@@ -1,0 +1,9 @@
+{% capture width %}{{ site.nav.footer[page.locale] | size }}{% endcapture %}
+<div class="span{{ 12 | divided_by: width }}">
+   <ul class="nav nav-list">
+      <li class="nav-header">
+         {{ site.nav[cat].title[page.locale] }}
+      </li> {% for linkname in site.nav[cat][page.locale] %}
+      {% include nav.html %} {% endfor %}
+   </ul>
+</div>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{ page.locale }}">
+   <head>
+	   <meta charset="UTF-8"/>
+	   <title>{{ page.title | append:' | '}}{{ site.brand }}</title>
+	   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" media="all"/>
+	   <style type="text/css">body{padding-top:40px}</style>
+	   <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" media="all"/>
+   </head>
+   <body>
+      <!-- le navigation for le whole website -->
+      <div class="navbar navbar-fixed-top">
+         <div class="navbar-inner">
+            <div class="container">
+               <a href="/{{ page.locale }}" class="brand">{{ site.brand }}</a>
+               <ul class="nav pull-right"> {% for linkname in site.nav.main[page.locale] %}
+                  {% include nav.html %} {% endfor %}
+               </ul>
+            </div>
+         </div>
+      </div>
+      
+      {{ content }}
+      
+      <!-- le footer with le sitemap -->
+      <div class="container">
+         <div class="row"> {% for cat in site.nav.footer[page.locale] %} 
+            {% include sitemap.html %} {% endfor %}
+         </div>
+      </div>
+      
+      <!-- le copyrights -->
+      <p>&copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}</p>
+      
+      <!-- le js -->
+      <script type="text/javascript" src="/js/jquery.js"></script>
+      <script type="text/javascript" src="/js/bootstrap-dropdown.js"></script>
+   </body>
+</html>
