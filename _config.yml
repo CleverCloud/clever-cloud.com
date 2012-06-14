@@ -2,41 +2,36 @@
 brand: Clever Cloud
 since: 2010
 
-# site-wide nav
+# site-wide navigation
 nav:
   
-  main:
-    fr: [offre, tarifs, add-ons, support]
-    en: [solution, pricing, add-ons, support]
+  main: [solution, pricing, add-ons, support]
+  
+  support: [contact-us, partnership]
+  
+  footer: [clever-cloud, product, support, commitment]
+  
+  clever-cloud: [about, press-releases, "http://facebook.com/clevercloudsas", "http://twitter.com/clever_cloud"]
+  
+  product: [solution, pricing, add-ons, signup]
+  
+  commitment: [legal-notice]
+
+# i18n
+locales:
   
   support:
-    title:
-      fr: Support
-      en: Support
-    fr: [contactez-nous, devenir-partenaire]
-    en: [contact-us, partnership]
-  
-  footer:
-    fr: [clever-cloud, product, support, commitment]
-    en: [clever-cloud, product, support, commitment]
+    fr: Support
+    en: Support
   
   clever-cloud:
-    title:
-      fr: Clever Cloud
-      en: Clever Cloud
-    fr: [qui-sommes-nous, espace-presse, "http://facebook.com/clevercloudsas", "http://twitter.com/clever_cloud"]
-    en: [who-are-we, press-releases, "http://facebook.com/clevercloudsas", "http://twitter.com/clever_cloud"]
+    fr: Clever Cloud
+    en: Clever Cloud
   
   product:
-    title:
-      fr: Le produit
-      en: Product
-    fr: [offre, tarifs, add-ons, inscription]
-    en: [solution, pricing, add-ons, signup]
+    fr: Le produit
+    en: Product
   
   commitment:
-    title:
-      fr: Engagements
-      en: Our commitment
-    fr: [mentions-legales]
-    en: [legal-notice]
+    fr: Engagements
+    en: Our commitment

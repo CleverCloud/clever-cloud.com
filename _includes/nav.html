@@ -9,9 +9,9 @@
 </li> {% elsif site.nav[linkname] %}
 <li class="dropdown">
    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-      {{ site.nav[linkname].title[page.locale] }} <span class="caret"></span>
+      {{ site.locales[linkname][page.locale] }} <span class="caret"></span>
    </a>
-   <ul class="dropdown-menu"> {% for linkname in site.nav[linkname][page.locale] %}
+   <ul class="dropdown-menu"> {% for linkname in site.nav[linkname] %}
       {% include nav.html %} {% endfor %}
    </ul>
 </li> {% endif %}

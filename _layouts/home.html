@@ -1,46 +1,40 @@
 ---
 layout: main
 
-# home nav
+# home navigation
 nav:
   
   advantages:
-    head:
-      fr: avantages
-      en: advantages
-    fr: [avantages/maitrise-couts, avantages/deploiement-accelere, avantages/securite, avantages/flexibilite]
+  - [cost-control, faster-deployment]
+  - [security, flexibility]
   
-  technologies:
-    head:
-      fr: technologies
-      en: technologies
-    fr: [technologies/php, technologies/scala, technologies/ruby, technologies/java]
+  technologies: [php, scala, ruby, java]
 ---
 <div class="container">
    <div class="row">
       <div class="span5 offset7">
          <div class="hero-unit">
-            {{ content | replace:'<a','<a class="btn btn-large btn-primary"' }}
+            {{ content }}
          </div>
       </div>
    </div>
    <div class="row">
-      <div class="span4"> {% for p in site.pages %} {% assign cat = 'advantages' %}
-      {% include home-headline.html %} {% endfor %}
+      <div class="span4"> {% capture purl %}/{{ page.locale }}/home/advantages/index.html{% endcapture %}
+         {% include home-headline.html %}
       </div>
-      <div class="span8"> {% for advantage in page.nav.advantages[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ advantage }}.html{% endcapture %} {% if p.url == purl %}
-         {% cycle '<div class="row">','' %}
+      <div class="span8"> {% for row in page.nav.advantages %}
+         <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/home/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
             <div class="span4">
                <h3>{{ p.title }}</h3>
                {{ p.content }}
-            </div>
-         {% cycle '','</div>' %} {% endif %} {% endfor %} {% endfor %}
+            </div> {% endif %} {% endfor %} {% endfor %}
+         </div> {% endfor %}
       </div>
    </div>
-   <div class="page-header"> {% for p in site.pages %} {% assign cat = 'technologies' %}
-      {% include home-headline.html %} {% endfor %}
+   <div class="page-header"> {% capture purl %}/{{ page.locale }}/home/technologies/index.html{% endcapture %}
+      {% include home-headline.html %}
    </div>
-   <div class="row"> {% for tech in page.nav.technologies[page.locale] %} {% for p in site.pages %} {% capture purl %}/{{ page.locale }}/{{ tech }}.html{% endcapture %} {% if p.url == purl %}
+   <div class="row"> {% for tech in page.nav.technologies %} {% capture purl %}/{{ page.locale }}/home/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <div class="span1">
          <div class="thumbnail">
             <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
@@ -51,4 +45,18 @@ nav:
          {{ p.content }}
       </div> {% endif %} {% endfor %} {% endfor %}
    </div>
+   <div class="row"> {% capture purl %}/{{ page.locale }}/home/fuel-your-apps.html{% endcapture %}
+      <div class="span5">
+         {% include home-headline.html %}
+      </div>
+      <div class="span7">
+         <div class="thumbnail"><img src="http://placehold.it/800x400" alt="800x400"/></div>
+      </div>
+   </div>
+   <div class="page-header"> {% capture purl %}/{{ page.locale }}/home/partners.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+      <h2>{{ p.title }}</h2>
+   </div>
+   <ul class="thumbnails"> {% for link in p.list %}
+      <li><a href="{{ link.url }}" class="thumbnail"><img src="http://placehold.it/100x60" alt="{{ link.name }}"/></a></li> {% endfor %}
+   </ul> {% endif %} {% endfor %}
 </div>

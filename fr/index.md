@@ -11,4 +11,4 @@ title: Accueil
 Avec Clever Cloud consommez juste l'hébergement qu'il vous faut. Maîtrise de
 vos coûts et flexibilité accrue pour une scalabilité optimale.
 
-[Sign up for beta] (/fr/inscription.html)
+<a class="btn btn-primary btn-large" href="/fr/inscription.html">Sign up for beta</a>

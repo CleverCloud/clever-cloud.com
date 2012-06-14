@@ -13,7 +13,7 @@
          <div class="navbar-inner">
             <div class="container">
                <a href="/{{ page.locale }}" class="brand">{{ site.brand }}</a>
-               <ul class="nav pull-right"> {% for linkname in site.nav.main[page.locale] %}
+               <ul class="nav pull-right"> {% for linkname in site.nav.main %}
                   {% include nav.html %} {% endfor %}
                </ul>
             </div>
@@ -24,13 +24,15 @@
       
       <!-- le footer with le sitemap -->
       <div class="container">
-         <div class="row"> {% for cat in site.nav.footer[page.locale] %} 
+         <div class="row"> {% for cat in site.nav.footer %}
             {% include sitemap.html %} {% endfor %}
          </div>
+         
+         <!-- le copyrights -->
+         <p class="pull-right">
+            &copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}
+         </p>
       </div>
-      
-      <!-- le copyrights -->
-      <p>&copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}</p>
       
       <!-- le js -->
       <script type="text/javascript" src="/js/jquery.js"></script>

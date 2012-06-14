@@ -1,3 +1,6 @@
-{% capture purl %}/{{ page.locale }}/{{ page.nav[cat].head[page.locale] }}/index.html{% endcapture %} {% if p.url == purl %}
+{% for p in site.pages %} {% if p.url == purl %}
 <h2>{{ p.title }}</h2>
-{{ p.content | markdownify }} {% endif %}
+{{ p.content | markdownify }} {% if p.list %}
+<ul> {% for li in p.list %}
+   <li>{{ li }}</li> {% endfor %}
+</ul> {% endif %} {% endif %} {% endfor %}
