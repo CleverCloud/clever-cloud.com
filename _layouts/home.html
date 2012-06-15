@@ -36,9 +36,9 @@ nav:
    </div>
    <div class="row"> {% for tech in page.nav.technologies %} {% capture purl %}/{{ page.locale }}/home/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <div class="span1">
-         <div class="thumbnail">
+         <a href="{{ p.website }}" class="thumbnail" target="_blank">
             <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
-         </div>
+         </a>
       </div>
       <div class="span2">
          <h3>{{ p.title }}</h3>

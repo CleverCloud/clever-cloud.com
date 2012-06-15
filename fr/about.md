@@ -1,6 +1,6 @@
 ---
 # conf
-layout: main
+layout: page
 locale: fr
 
 # data
