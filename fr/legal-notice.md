@@ -9,20 +9,22 @@ title: Mentions légales
 
 ## Editeur
 
-Clever Cloud SAS
-3, rue de l'Allier
+**Clever Cloud SAS**<br/>
+3, rue de l'Allier<br/>
 44000 Nantes
-<br/>
-Société par action simplifiée au capital social de 17 625 €
+
+*Société par action simplifiée* au capital social de 17 625 € 
+
 immatriculée au RCS de Nantes sous le numéro 524 172 699
  
 ## Directeurs de publication
 
-Clément Nivolle, chef de projet  
-Kevin Decherf, responsable de production
+**Clément Nivolle**, chef de projet  
+
+**Kevin Decherf**, responsable de production
  
 ## Hébergeur
 
-Clever Cloud SAS
-3, rue de l'Allier
+**Clever Cloud SAS**<br/>
+3, rue de l'Allier<br/>
 44000 Nantes

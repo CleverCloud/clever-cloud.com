@@ -1,16 +1,12 @@
-{% for link in site.pages %} {% capture linkurl %}/{{ page.locale }}/{{ linkname }}.html{% endcapture %} {% if link.locale == page.locale and link.url == linkurl %}
+{% capture linkurl %}/{{ page.locale }}/{{ linkname }}.html{% endcapture %} {% for link in site.pages %} {% if link.locale == page.locale and link.url == linkurl %}
 <li{% if link.url == page.url %} class="active"{% endif %}>
    <a href="{{ link.url }}">{{ link.title }}</a>
 </li> {% endif %} {% endfor %} {% if linkname contains 'http://' %}
 <li>
-   <a href="{{ linkname }}" target="_blank">
-      {{ linkname | remove:'http://' | remove:'www.' | split:'.' | first | capitalize }}
-   </a>
+   <a href="{{ linkname }}" target="_blank">{{ linkname | remove:'http://' | remove:'www.' | split:'.' | first | capitalize }}</a>
 </li> {% elsif site.nav[linkname] %}
 <li class="dropdown">
-   <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-      {{ site.locales[linkname][page.locale] }} <span class="caret"></span>
-   </a>
+   <a class="dropdown-toggle" data-toggle="dropdown" href="#">{{ site.locales[linkname][page.locale] }} <span class="caret"></span></a>
    <ul class="dropdown-menu"> {% for linkname in site.nav[linkname] %}
       {% include nav.html %} {% endfor %}
    </ul>

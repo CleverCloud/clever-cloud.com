@@ -6,7 +6,7 @@ layout: main
    <!-- le breadcrumbs -->
    <ul class="breadcrumb"> {% capture index %}/{{ page.locale }}/index.html{% endcapture %} {% for p in site.pages %} {% if p.url == index %}
       <li>
-         <a href="{{ p.url }}">{{ p.title }}</a> <span class="divider">/</span>
+         <a href="{{ p.url }}">{{ p.title }}</a> <span class="divider">&gt;</span>
       </li> {% endif %} {% endfor %}
       <li class="active">{{ page.title }}</li>
    </ul>

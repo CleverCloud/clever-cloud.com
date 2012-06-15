@@ -11,6 +11,8 @@ nav:
   technologies: [php, scala, ruby, java]
 ---
 <div class="container">
+   
+   <!-- le nice home header -->
    <div class="row">
       <div class="span5 offset7">
          <div class="hero-unit">
@@ -18,12 +20,14 @@ nav:
          </div>
       </div>
    </div>
+   
+   <!-- le little summary of advantages -->
    <div class="row">
-      <div class="span4"> {% capture purl %}/{{ page.locale }}/home/advantages/index.html{% endcapture %}
+      <div class="span4"> {% capture purl %}/{{ page.locale }}/advantages/index.html{% endcapture %}
          {% include home-headline.html %}
       </div>
       <div class="span8"> {% for row in page.nav.advantages %}
-         <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/home/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+         <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
             <div class="span4">
                <h3>{{ p.title }}</h3>
                {{ p.content }}
@@ -31,10 +35,12 @@ nav:
          </div> {% endfor %}
       </div>
    </div>
-   <div class="page-header"> {% capture purl %}/{{ page.locale }}/home/technologies/index.html{% endcapture %}
+   
+   <!-- le list of tech we support -->
+   <div class="page-header"> {% capture purl %}/{{ page.locale }}/technologies/index.html{% endcapture %}
       {% include home-headline.html %}
    </div>
-   <div class="row"> {% for tech in page.nav.technologies %} {% capture purl %}/{{ page.locale }}/home/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+   <div class="row"> {% for tech in page.nav.technologies %} {% capture purl %}/{{ page.locale }}/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <div class="span1">
          <a href="{{ p.website }}" class="thumbnail" target="_blank">
             <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
@@ -45,6 +51,8 @@ nav:
          {{ p.content }}
       </div> {% endif %} {% endfor %} {% endfor %}
    </div>
+   
+   <!-- le amazing screen capture -->
    <div class="row"> {% capture purl %}/{{ page.locale }}/home/fuel-your-apps.html{% endcapture %}
       <div class="span5">
          {% include home-headline.html %}
@@ -53,6 +61,8 @@ nav:
          <div class="thumbnail"><img src="http://placehold.it/800x400" alt="800x400"/></div>
       </div>
    </div>
+   
+   <!-- le nice partners we love -->
    <div class="page-header"> {% capture purl %}/{{ page.locale }}/home/partners.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <h2>{{ p.title }}</h2>
    </div>
