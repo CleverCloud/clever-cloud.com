@@ -1,11 +1,13 @@
 ---
 layout: page
 ---
-<div class="row"> {% for item in page.list %}
+{% for item in page.list %} {% capture url %}/{{ page.locale }}/{{ item }}.html{% endcapture %}
+<div class="row"> {% for p in site.pages %} {% if p.url == url %}
    <div class="span3">
-      <a href="{{ item.url }}" class="thumbnail"><img src="{{ item.img }}" alt="{{ item.name }}" /></a>
+      <a href="{{ p.website }}" class="thumbnail"><img src="{{ p.img }}" alt="{{ p.title }}" /></a>
    </div>
    <div class="span9">
-      <h2>{{ item.name }}</h2>
-   </div> {% endfor %}
-</div>
+      <h2>{{ p.title }}</h2>
+      {{ p.content }}
+   </div> {% endif %} {% endfor %}
+</div> {% endfor %}

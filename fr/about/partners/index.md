@@ -6,21 +6,11 @@ locale: fr
 # data
 title: Nos partenaires
 list:
-- img:  bla
-  name: Kima Ventures
-  url:  http://haha
-- img:  bla
-  name: Oséo
-  url:  http://haha
-- img:  bla
-  name: Région Pays de la Loire
-  url:  http://haha
-- img:  bla
-  name: Atlanpole
-  url:  http://haha
-- img:  bla
-  name: Microsoft BizSpark
-  url:  http://haha
+- about/partners/kima-ventures
+- about/partners/oseo
+- about/partners/region-pays-de-la-loire
+- about/partners/atlanpole
+- about/partners/microsoft-bizpark
 ---
 ## Nous sommes toujours à la recherche de partenaires 
 

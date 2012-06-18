@@ -62,10 +62,10 @@ technologies: [php, scala, ruby, java]
    </div>
    
    <!-- le nice partners we love -->
-   <div class="page-header"> {% capture purl %}/{{ page.locale }}/about/partners.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+   <div class="page-header"> {% capture purl %}/{{ page.locale }}/about/partners/index.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <h2>{{ p.title }}</h2>
    </div>
-   <ul class="thumbnails"> {% for link in p.list %}
-      <li><a href="{{ link.url }}" class="thumbnail"><img src="http://placehold.it/100x60" alt="{{ link.name }}"/></a></li> {% endfor %}
+   <ul class="thumbnails"> {% for link in p.list %} {% capture url %}/{{ page.locale }}/{{ link }}.html{% endcapture %} {% for s in site.pages %} {% if s.url == url %}
+      <li><a href="{{ s.website }}" class="thumbnail"><img src="http://placehold.it/100x60" alt="{{ s.title }}"/></a></li>{% endif %} {% endfor %} {% endfor %}
    </ul> {% endif %} {% endfor %}
 </div>
