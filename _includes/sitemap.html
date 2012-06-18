@@ -1,9 +1,9 @@
-{% capture width %}{{ site.nav.footer | size }}{% endcapture %}
+{% capture width %}{{ site.sitemap | size }}{% endcapture %}
 <div class="span{{ 12 | divided_by: width }}">
    <ul class="nav nav-list">
       <li class="nav-header">
-         {{ site.locales[cat][page.locale] }}
-      </li> {% for linkname in site.nav[cat] %}
+         {{ link[page.locale] }}
+      </li> {% for link in site[link.ref] %}
       {% include nav.html %} {% endfor %}
    </ul>
 </div>

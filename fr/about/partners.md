@@ -1,12 +1,27 @@
 ---
 # conf
-layout: page
+layout: big-list
 locale: fr
 
 # data
-title: Devenir partenaire
+title: Nos partenaires
+list:
+- img:  bla
+  name: Kima Ventures
+  url:  http://haha
+- img:  bla
+  name: Oséo
+  url:  http://haha
+- img:  bla
+  name: Région Pays de la Loire
+  url:  http://haha
+- img:  bla
+  name: Atlanpole
+  url:  http://haha
+- img:  bla
+  name: Microsoft BizSpark
+  url:  http://haha
 ---
-
 ## Nous sommes toujours à la recherche de partenaires 
 
 Vous êtes une start-up, une agence web ou une SSII ? Clever Cloud est toujours à la recherche de nouveaux partenaires pour développer et commercialiser son offre.  
@@ -17,4 +32,4 @@ Devenir partenaire Clever Cloud offre de nombreux avantages, vous pouvez :
 * **Proposer** des prestations de développement flexibles et adaptées aux besoins du marché 
 * **Vous affranchir** de la gestion de l'infrastructure 
 
-Pour en savoir plus, n’hésitez pas à nous [contacter](/contact.html "Contact"). 
+Pour en savoir plus, n’hésitez pas à nous [contacter](/contact.html "Contact").

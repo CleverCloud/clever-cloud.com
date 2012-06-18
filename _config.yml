@@ -2,36 +2,125 @@
 brand: Clever Cloud
 since: 2010
 
-# site-wide navigation
-nav:
-  
-  main: [solution, pricing, add-ons, support]
-  
-  support: [contact-us, partnership]
-  
-  footer: [clever-cloud, product, support, commitment]
-  
-  clever-cloud: [about, press-releases, "http://facebook.com/clevercloudsas", "http://twitter.com/clever_cloud"]
-  
-  product: [solution, pricing, add-ons, signup]
-  
-  commitment: [legal-notice]
+# navigation
 
-# i18n
-locales:
-  
-  support:
-    fr: Support
-    en: Support
-  
-  clever-cloud:
-    fr: Clever Cloud
-    en: Clever Cloud
-  
-  product:
-    fr: Le produit
-    en: Product
-  
-  commitment:
-    fr: Engagements
-    en: Our commitment
+sitemap:
+
+- ref: about
+  fr:  Clever Cloud
+  en:  Clever Cloud
+
+- ref: product
+  fr:  Le produit
+  en:  Our solution
+
+- ref: support
+  fr:  Support
+  en:  Support
+
+- ref: legal-notice
+  fr:  Nos engagements
+  en:  Commitment
+
+- ref: follow-us
+  fr:  Nous suivre
+  en:  Follow us
+
+about:
+
+- ref: about/index
+
+- ref: about/press
+
+- ref: about/team
+
+- ref: lab
+  url: lab.clever-cloud.com
+  fr:  Clever Lab
+  en:  Clever Lab
+
+- ref: about/partners
+
+the-cloud:
+
+- ref: the-cloud/index
+
+- ref: the-cloud/pricing
+
+- ref: the-cloud/services
+
+- ref: the-cloud/support
+  sub: support
+  fr:  Support
+  en:  Support
+
+- ref: account
+  url: "#login-signup"
+  btn: Yes
+  fr:  Mon compte
+  en:  My account
+
+product:
+
+- ref: the-cloud/index
+
+- ref: the-cloud/pricing
+
+- ref: the-cloud/services
+
+- ref: account
+  url: "#login-signup"
+  fr:  Mon compte
+  en:  My account
+
+support:
+
+- ref: docs
+  url: docs.clever-cloud.com
+  fr:  Documentation
+  en:  Documentation
+
+- ref: status
+  url: status.clever-cloud.com
+  fr:  État du service
+  en:  Cloud status
+
+- ref: tutorials
+  url: docs.clever-cloud.com/tutorials
+  fr:  Tutoriels
+  en:  Tutorials
+
+- ref: engineer
+  url: engineer.clever-cloud.com
+  fr:  Engineer Blog
+  en:  Engineer Blog
+
+legal-notice:
+
+- ref: legal-notice/index
+
+- ref: legal-notice/terms-of-sale
+
+- ref: legal-notice/terms-of-use
+
+follow-us:
+
+- ref: twitter
+  url: twitter.com/clever_cloud
+  fr:  Twitter
+  en:  Twitter
+
+- ref: facebook
+  url: facebook.com/clevercloudsas
+  fr:  Facebook
+  en:  Facebook
+
+- ref: github
+  url: github.com/bla
+  fr:  Github
+  en:  Github
+
+- ref: linkedin
+  url: linkedin.truc/haha!
+  fr:  LinkedIn
+  en:  LinkedIn

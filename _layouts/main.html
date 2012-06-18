@@ -13,7 +13,7 @@
          <div class="navbar-inner">
             <div class="container">
                <a href="/{{ page.locale }}" class="brand">{{ site.brand }}</a>
-               <ul class="nav pull-right"> {% for linkname in site.nav.main %}
+               <ul class="nav pull-right"> {% for link in site.the-cloud %}
                   {% include nav.html %} {% endfor %}
                </ul>
             </div>
@@ -24,7 +24,7 @@
       
       <!-- le footer with le sitemap -->
       <div class="container">
-         <div class="row"> {% for cat in site.nav.footer %}
+         <div class="row"> {% for link in site.sitemap %}
             {% include sitemap.html %} {% endfor %}
          </div>
          

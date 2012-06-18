@@ -1,0 +1,11 @@
+---
+layout: page
+---
+<div class="row"> {% for item in page.list %}
+   <div class="span3">
+      <a href="{{ item.url }}" class="thumbnail"><img src="{{ item.img }}" alt="{{ item.name }}" /></a>
+   </div>
+   <div class="span9">
+      <h2>{{ item.name }}</h2>
+   </div> {% endfor %}
+</div>

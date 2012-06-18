@@ -2,13 +2,12 @@
 layout: main
 
 # home navigation
-nav:
-  
-  advantages:
-  - [cost-control, faster-deployment]
-  - [security, flexibility]
-  
-  technologies: [php, scala, ruby, java]
+
+advantages:
+- [cost-control, faster-deployment]
+- [security, flexibility]
+
+technologies: [php, scala, ruby, java]
 ---
 <div class="container">
    
@@ -23,11 +22,11 @@ nav:
    
    <!-- le little summary of advantages -->
    <div class="row">
-      <div class="span4"> {% capture purl %}/{{ page.locale }}/advantages/index.html{% endcapture %}
+      <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/index.html{% endcapture %}
          {% include home-headline.html %}
       </div>
-      <div class="span8"> {% for row in page.nav.advantages %}
-         <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+      <div class="span8"> {% for row in page.advantages %}
+         <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
             <div class="span4">
                <h3>{{ p.title }}</h3>
                {{ p.content }}
@@ -37,10 +36,10 @@ nav:
    </div>
    
    <!-- le list of tech we support -->
-   <div class="page-header"> {% capture purl %}/{{ page.locale }}/technologies/index.html{% endcapture %}
+   <div class="page-header"> {% capture purl %}/{{ page.locale }}/the-cloud/technologies/index.html{% endcapture %}
       {% include home-headline.html %}
    </div>
-   <div class="row"> {% for tech in page.nav.technologies %} {% capture purl %}/{{ page.locale }}/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+   <div class="row"> {% for tech in page.technologies %} {% capture purl %}/{{ page.locale }}/the-cloud/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <div class="span1">
          <a href="{{ p.website }}" class="thumbnail" target="_blank">
             <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
@@ -53,7 +52,7 @@ nav:
    </div>
    
    <!-- le amazing screen capture -->
-   <div class="row"> {% capture purl %}/{{ page.locale }}/home/fuel-your-apps.html{% endcapture %}
+   <div class="row"> {% capture purl %}/{{ page.locale }}/the-cloud/features/fuel-your-apps.html{% endcapture %}
       <div class="span5">
          {% include home-headline.html %}
       </div>
@@ -63,7 +62,7 @@ nav:
    </div>
    
    <!-- le nice partners we love -->
-   <div class="page-header"> {% capture purl %}/{{ page.locale }}/home/partners.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+   <div class="page-header"> {% capture purl %}/{{ page.locale }}/about/partners.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <h2>{{ p.title }}</h2>
    </div>
    <ul class="thumbnails"> {% for link in p.list %}

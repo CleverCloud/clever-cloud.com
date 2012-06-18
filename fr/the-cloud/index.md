@@ -1,6 +1,6 @@
 ---
 # conf
-layout: solution
+layout: the-cloud
 locale: fr
 
 # data
@@ -18,7 +18,6 @@ advantages:
   - [faster-deployment, security]
   - [flexibility, responsivness]
 ---
-
 ## Offre globale
 
 Clever Cloud met à votre disposition sa Plate-forme as a Service (PaaS) pour
