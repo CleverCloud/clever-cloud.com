@@ -4,8 +4,10 @@
 	   <meta charset="UTF-8"/>
 	   <title>{{ page.title | append:' | '}}{{ site.brand }}</title>
 	   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" media="all"/>
-	   <link rel="stylesheet" type="text/css" href="/css/cloudstrap.css" media="all"/>
+	   <link rel="stylesheet" type="text/css" href="/css/clevercloud-common.css" media="all"/>
+	   <link rel="stylesheet" type="text/css" href="/css/clevercloud-website.css" media="all"/>
 	   <link rel="stylesheet" type="text/css" href="/css/bootstrap-responsive.min.css" media="all"/>
+	   <link rel="stylesheet" type="text/css" href="/css/main.css" media="all"/>
    </head>
    <body>
       <!-- le navigation for le whole website -->
@@ -23,15 +25,17 @@
       {{ content }}
       
       <!-- le footer with le sitemap -->
-      <div class="container">
-         <div class="row"> {% for link in site.sitemap %}
-            {% include sitemap.html %} {% endfor %}
+      <div id="footer">
+         <div class="container">
+            <div class="row"> {% for link in site.sitemap %}
+               {% include sitemap.html %} {% endfor %}
+            </div>
+            
+            <!-- le copyrights -->
+            <p class="pull-right">
+               &copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}
+            </p>
          </div>
-         
-         <!-- le copyrights -->
-         <p class="pull-right">
-            &copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}
-         </p>
       </div>
       
       <!-- le js -->

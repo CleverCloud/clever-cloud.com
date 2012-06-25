@@ -60,12 +60,6 @@ body{
    .navbar .nav:hover .active > a:after{
       content:none;
    }
-   .navbar .nav li:first-child{
-      font-weight:bold;
-   }
-   .navbar .nav li:first-child+li{
-      font-weight:normal;
-   }
    
    /* le classical fixed navbar */
    .navbar-fixed-top .navbar-inner{
@@ -77,15 +71,22 @@ body{
    }
    .navbar-fixed-top .nav .active > a:after,
    .navbar-fixed-top .nav > li > a:hover:after,
+   .navbar-fixed-top .nav:hover > li > a:hover:after,
+   .navbar-fixed-top .nav:hover > .active > a:hover:after,
    .navbar-fixed-top .nav > li > a:focus:after{
       content:none;
    }
+   .navbar .nav .active > a,
+   .navbar .nav .active > a:hover,
    .navbar-fixed-top .nav > li > a,
    .navbar-fixed-top .btn-group .dropdown-toggle,
    .navbar-fixed-top .dropdown .dropdown-toggle,
    .navbar-fixed-top .btn-group > a,
    .navbar-fixed-top .nav > li > a:hover,
-   .navbar-fixed-top .nav > li > a:focus{
+   .navbar-fixed-top .nav > li > a:focus,
+   .btn-primary,
+   .btn-primary:hover,
+   .btn-primary:focus{
       color:#fff;
       text-shadow:0 1px 0 #000;
    }
@@ -93,7 +94,9 @@ body{
    .navbar-fixed-top .btn-group.open .dropdown-toggle,
    .navbar-fixed-top form .input-append,
    .navbar-fixed-top form .add-on,
-   .navbar-fixed-top .btn-navbar:hover{
+   .navbar-fixed-top .btn-navbar:hover,
+   .btn-primary,
+   .btn-primary:hover{
       background:#5b1d1e;
       border:none;
       border-radius:2px;
@@ -108,6 +111,19 @@ body{
                  0 1px 0 3px #a56,
                  0 0 1px 3px #a56,
                  0 25px 20px -20px #8e292d inset;
+   }
+   .btn-primary{
+      box-shadow:0 -1px 0 #9f3a40,
+                 0 1px 0 #662829,
+                 0 2px 0 #501011,
+                 0 0 0 1px #501011,
+                 0 0 0 3px #501011,
+                 0 25px 20px -20px #8e292d inset;
+   }
+   .btn-primary:hover,
+   .btn-primary:focus{
+      box-shadow:0 0 1px 2px #5b1d1e,
+                 0 0 0 3px #501011;
    }
    .navbar-fixed-top .btn-inversed,
    .navbar-fixed-top .btn-group.open .dropdown-toggle,
