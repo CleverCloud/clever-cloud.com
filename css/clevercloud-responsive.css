@@ -1,0 +1,13 @@
+/* le responsive stuff*/
+@media (max-width:767px){
+   .cc-hero-unit{
+      margin-left:-20px;
+      margin-right:-20px;
+      padding:40px 20px;
+   }
+}
+@media (max-width:979px){
+   .navbar-fixed-top{
+     margin-bottom:0; 
+   }
+}
