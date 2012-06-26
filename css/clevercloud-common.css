@@ -298,5 +298,13 @@ h2,h3{
       line-height:26px;
    }
    .cc-hero-unit .btn{
+      font-size:180%;
       margin:10px 0;
+   }
+   .cc-hero-unit .btn-primary{
+      background:rgba(142,41,45,.5);
+      box-shadow:0 0 0 1px #9F3A40,
+                 0 0 10px #311;
+      color:#501011;
+      text-shadow:0 1px 0 #a56;
    }
