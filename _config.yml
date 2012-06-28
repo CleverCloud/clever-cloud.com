@@ -94,7 +94,7 @@ i18n:
       - title: "Add-ons"
         url: "add-ons"
       - title: "Inscription"
-        url: "/#signup"
+        url: "http://clever-cloud.com/#signup"
     - head: "Support"
       list:
 #      - title: "Documentation"
