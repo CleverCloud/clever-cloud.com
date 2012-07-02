@@ -10,7 +10,7 @@ list:
 - about/partners/oseo
 - about/partners/region-pays-de-la-loire
 - about/partners/atlanpole
-- about/partners/microsoft-bizpark
+- about/partners/microsoft-bizspark
 ---
 ## Nous sommes toujours à la recherche de partenaires 
 

@@ -1,6 +1,6 @@
 ---
 title: Atlanpole
-img:   hihi
+img:   atlanpole.png
 url:   coucou
 ---
 (some funky & incredible text)

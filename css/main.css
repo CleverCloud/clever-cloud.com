@@ -1,11 +1,50 @@
 body{   
-   background:#f6f6f6;
+   background-color:#f6f6f6;
 }
+.thumbnail{
+   border:none;
+   box-shadow:none;
+}
+#home-tech p,
+#home-fuel p{
+   font-size:16px;
+}
+#home-fuel{
+   min-height:140px;
+   padding-top:60px;
+}
+   #home-fuel p{
+      padding-top:10px;
+   }
+#home-bottom{
+   background: #fcfcfc;
+   padding-top:10px;
+}
+   #home-bottom ol li{
+      font-family:'CreteRoundRegular';
+      font-size:20px;
+      margin:5px 0 10px;
+   }
+   #home-bottom ol li+li{
+      color:#999;
+   }
+   #home-bottom .span7{
+      margin-top:-200px;
+   }
+   #home-partners h2{
+      font-family:'CreteRoundItalic';
+   }
 #footer{
+   background-color:#f6f6f6;
    border-top:1px solid #d6d6d6;
    color:#c4c4c4;
    padding-top:10px;
 }
+   #footer .nav-header{
+      font-family:'CreteRoundRegular';
+      font-size:16px;
+      text-transform:none;
+   }
    #footer .nav-list{
       padding:0;
    }

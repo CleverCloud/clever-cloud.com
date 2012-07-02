@@ -1,6 +1,3 @@
 {% for p in site.pages %} {% if p.url == purl %}
 <h2>{{ p.title }}</h2>
-{{ p.content | markdownify }} {% if p.list %}
-<ul> {% for li in p.list %}
-   <li>{{ li }}</li> {% endfor %}
-</ul> {% endif %} {% endif %} {% endfor %}
+{{ p.content | markdownify }} {% endif %} {% endfor %}

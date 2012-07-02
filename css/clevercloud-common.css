@@ -15,7 +15,9 @@
 .navbar .nav > li > a:focus:after{
    content:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAICAIAAACtROKYAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AYLDxsSoLr5ugAAAOVJREFUGNONyrGKg0AQBuB/xlkwprAxT5Ayp01Kff8yxUoCgUBIRLkrAoYt3HN39LqD6+6rP3q/30TEzACYOYRgrT0cDnmeO+eMMarKzExEIpIkCRF57y+XCxFdr1fn3GazUdUYIwAWERFZ19V7f7vdjDHH49EYY62NMRLRdrsFwEQUYxzHcRiGeZ6rjzIhLssyTdPz+SwiqgqAl2WZpun1evV9X9c1AAAiUlWVqp5OpxACAPr6HJ7PZ5Zl+/2eSfCLlhhj13X3+71pGnk8Hmma7na7PwnAyiJSFAUzt21Ls//GP/wA55lvQwGBaHoAAAAASUVORK5CYII=");
 }
-
+body{
+   background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcCDiwMixho4AAAABtJREFUCNdjfP/+PQMDAzs7OxMDDLCws7NDWABRbgL/xZLljgAAAABJRU5ErkJggg==");
+}
 /* fonts  */
 @font-face {
     font-family: 'CreteRoundItalic';
@@ -24,7 +26,7 @@
          url('../fonts/CreteRound-Italic-webfont.woff') format('woff'),
          url('../fonts/CreteRound-Italic-webfont.ttf') format('truetype'),
          url('../fonts/CreteRound-Italic-webfont.svg#CreteRoundItalic') format('svg');
-    font-weight: normal;
+    font-weight: bold;
     font-style: italic;
 
 }
@@ -43,6 +45,8 @@
 /* layout */
 body{
    background-color:#faf8f9;
+   color:#444;
+   font-size:15px;
    padding-top:52px;
 }
 h2,h3{
@@ -118,6 +122,9 @@ h2,h3{
    .btn-primary:focus{
       color:#fff;
       text-shadow:0 1px 0 #000;
+   }
+   .navbar-fixed-top .nav > li > a{
+      padding:9px 10px 11px;
    }
    .navbar-fixed-top .btn,
    .navbar-fixed-top .btn-group.open .dropdown-toggle,
@@ -285,7 +292,7 @@ h2,h3{
       box-shadow:0 15px 20px -20px #000 inset;
       color:#fff;
       font-family:'CreteRoundRegular';
-      padding:40px 0;
+      padding:30px 0;
    }
    .cc-hero-unit h2{
       color:#501011;
@@ -294,17 +301,24 @@ h2,h3{
    }
    .cc-hero-unit p{
       font-family:'CreteRoundRegular';
-      font-size:24px;
-      line-height:26px;
+      font-size:28px;
+      line-height:30px;
    }
    .cc-hero-unit .btn{
-      font-size:180%;
-      margin:10px 0;
+      font-size:200%;
+      margin:15px 0;
    }
    .cc-hero-unit .btn-primary{
-      background:rgba(142,41,45,.5);
+      background:rgba(142,41,45,.4);
       box-shadow:0 0 0 1px #9F3A40,
-                 0 0 10px #311;
+                 0 0 20px #311;
       color:#501011;
       text-shadow:0 1px 0 #a56;
    }
+   .cc-hero-unit .btn-primary:hover,
+   .cc-hero-unit .btn-primary:focus{
+      background:rgba(162,51,55,.4);
+      box-shadow:0 0 0 1px #c45,
+                 0 0 10px #311;
+      text-shadow:0 1px 0 #c45;
+   } 

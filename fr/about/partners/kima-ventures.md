@@ -1,6 +1,6 @@
 ---
 title: Kima Ventures
-img:   huhu
+img:   kima.png
 url:   coucou
 ---
 (some funky & incredible text)
