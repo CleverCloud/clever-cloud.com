@@ -20,23 +20,28 @@ technologies: [php, scala, ruby, java]
       </div>
    </div>
 </div>
-<div class="container">
-   
-   <!-- le little summary of advantages -->
-   <div class="row">
-      <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/index.html{% endcapture %}
-         {% include home-headline.html %}
-      </div>
-      <div class="span8"> {% for row in page.advantages %}
-         <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
-            <div class="span4">
-               <h3>{{ p.title }}</h3>
-               {{ p.content }}
-            </div> {% endif %} {% endfor %} {% endfor %}
-         </div> {% endfor %}
+
+<div id="home-page">
+   <div class="container">
+      
+      <!-- le little summary of advantages -->
+      <div id="home-advantages" class="row">
+         <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/index.html{% endcapture %}
+            {% include home-headline.html %}
+         </div>
+         <div class="span8"> {% for row in page.advantages %}
+            <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+               <div class="span4">
+                  <h3>{{ p.title }}</h3>
+                  {{ p.content }}
+               </div> {% endif %} {% endfor %} {% endfor %}
+            </div> {% endfor %}
+         </div>
       </div>
    </div>
-   
+</div>
+
+<div class="container">
    <!-- le list of tech we support -->
    <div id="home-tech" class="page-header"> {% capture purl %}/{{ page.locale }}/the-cloud/technologies/index.html{% endcapture %}
       {% include home-headline.html %}

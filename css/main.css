@@ -5,6 +5,16 @@ body{
    border:none;
    box-shadow:none;
 }
+#home-page,
+#home-advantages{
+   padding-top:30px;
+}
+   #home-advantages h2,
+   #home-advantages h3{
+      font-size:24px;
+      line-height:32px;
+   }
+#home-advantages > .span4 p,
 #home-tech p,
 #home-fuel p{
    font-size:16px;
