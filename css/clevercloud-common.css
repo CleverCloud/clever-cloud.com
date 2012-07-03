@@ -51,7 +51,7 @@ a:hover, a:focus{
 }
 body{
    background-color:#faf8f9;
-   color:#444;
+   color:#3e3d3d;
    font-size:15px;
    padding-top:52px;
 }
@@ -302,10 +302,9 @@ h2,h3{
    
    /* le breadcrumb */
    ul.breadcrumb{
-      background:none;
+      background:url('../img/big-shadow-top.png') center bottom no-repeat;
       border:none;
-      padding-left:0;
-      padding-right:0;
+      padding:15px 0;
    }
    ul.breadcrumb a, ul.breadcrumb .divider,ul.breadcrumb .active{
       font-family:'CreteRoundRegular';

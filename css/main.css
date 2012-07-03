@@ -1,9 +1,24 @@
+#home-tech-wrap{
+   background-image:url('data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcDDSEHE54WGQAAABtJREFUCNdjvHnzJgMDAwcHBxMDDLBwcHBAWABKkALD9/AmnAAAAABJRU5ErkJggg==');
+}
+.page-header{
+   border-bottom:1px solid #ddd;
+   box-shadow:0 1px 0 #fcfcfc;
+   padding-bottom:6px;
+}
 body{   
    background-color:#f6f6f6;
 }
 .thumbnail{
    border:none;
    box-shadow:none;
+}
+#home-page{
+   background:url('../img/wave-top.png') center bottom repeat-x;
+   padding-bottom:60px;
+}
+#home-advantages,#home-fuel{
+   background:url('../img/big-shadow-top.png') center top no-repeat;
 }
 #home-page,
 #home-advantages{
@@ -17,7 +32,7 @@ body{
    }
 #home-advantages > .span8 .span4 h3,
 #home-advantages > .span8 .span4 p{
-   border-left:1px solid #444;
+   border-left:1px solid #3e3d3d;
    margin-bottom:0;
    padding-left:20px;
 }
@@ -31,14 +46,21 @@ body{
 #home-advantages > .span8 p{
    padding-bottom:20px;
 }
+#home-tech{
+   border-bottom:1px solid #aaa;
+}
 #home-advantages > .span4 p,
 #home-tech p,
 #home-fuel p{
    font-size:16px;
 }
+#home-fuel-wrap{
+   background:url('../img/wave-bottom.png') center top repeat-x;
+}
 #home-fuel{
+   background-position:center bottom;
    min-height:140px;
-   padding-top:60px;
+   padding-top:130px;
 }
    #home-fuel p{
       padding-top:10px;
@@ -99,6 +121,14 @@ body{
 }
 #partners-page .thumbnail{
    background:#fcfcfc;
+}
+@media(max-width:767px){
+   #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer{
+      margin-left:-20px;
+      margin-right:-20px;
+      padding-left:20px;
+      padding-right:20px;
+   }
 }
 @media(min-width:768px){
    #home-bottom .span7{
