@@ -123,7 +123,8 @@ body{
    background:#fcfcfc;
 }
 @media(max-width:767px){
-   #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer{
+   #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer,
+   #home-advantages,#home-fuel{
       margin-left:-20px;
       margin-right:-20px;
       padding-left:20px;
