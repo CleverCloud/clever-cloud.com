@@ -1,7 +1,11 @@
 ---
 layout: page
 ---
-{{ content }}
+<div id="offer-page">
+<div class="row">
+   <div class="span6">{{ content }}</div>
+</div>
+
 <hr/>
 
 <!-- le clever cloud features -->
@@ -30,4 +34,5 @@ layout: page
       <h3>{{ p.title }}</h3>
       {{ p.content }}
    </div> {% endif %} {% endfor %}
+</div>
 </div>

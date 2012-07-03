@@ -43,11 +43,21 @@ body{
 }
 
 /* layout */
+a{
+   color:#9F3A40;
+}
+a:hover, a:focus{
+   color:#7d1820;
+}
 body{
    background-color:#faf8f9;
    color:#444;
    font-size:15px;
    padding-top:52px;
+}
+hr{
+   border-bottom:1px solid #fcfcfc;
+   border-top:1px solid #ccc;
 }
 p{
    font-size:15px;
@@ -289,6 +299,18 @@ h2,h3{
    .well [class*="span"]:first-child{
       box-shadow:1px 0 0 #ddd;
    }
+   
+   /* le breadcrumb */
+   ul.breadcrumb{
+      background:none;
+      border:none;
+      padding-left:0;
+      padding-right:0;
+   }
+   ul.breadcrumb a, ul.breadcrumb .divider,ul.breadcrumb .active{
+      font-family:'CreteRoundRegular';
+      color:#444;
+   }
 
    /* bootstrap extensions: cc-hero-unit */
    .cc-hero-unit{
@@ -324,4 +346,4 @@ h2,h3{
       box-shadow:0 0 0 1px #c45,
                  0 0 10px #311;
       text-shadow:0 1px 0 #c45;
-   } 
+   }
