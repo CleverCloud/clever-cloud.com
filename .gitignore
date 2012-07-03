@@ -1,3 +1,4 @@
 /lib/
 _site/
 old.yml
+*.swp

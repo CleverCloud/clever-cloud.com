@@ -33,7 +33,7 @@ technologies: [php, scala, ruby, java]
             <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
                <div class="span4">
                   <h3>{{ p.title }}</h3>
-                  {{ p.content }}
+                  {{ p.content | markdownify }}
                </div> {% endif %} {% endfor %} {% endfor %}
             </div> {% endfor %}
          </div>

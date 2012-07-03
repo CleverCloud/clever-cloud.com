@@ -49,6 +49,9 @@ body{
    font-size:15px;
    padding-top:52px;
 }
+p{
+   font-size:15px;
+}
 h2,h3{
    font-family:'CreteRoundRegular';
 }
