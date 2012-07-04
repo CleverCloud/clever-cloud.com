@@ -1,5 +1,6 @@
 ---
 title: Idéal pour les projets SaaS ou urgents
+icon:  ideak
 ---
 La plate forme Clever Cloud permet de mener à bien des projets urgents ou qui
 nécessiteraient des ressources informatiques à la demande. Elle permet aussi aux

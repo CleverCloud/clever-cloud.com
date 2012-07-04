@@ -1,5 +1,6 @@
 ---
 title: Aucune modification de code
+icon:  modif
 ---
 Nul besoin de retoucher ou modifier votre code. Une fois installée sur la
 plateforme Clever Cloud, votre application tournera de manière optimale en

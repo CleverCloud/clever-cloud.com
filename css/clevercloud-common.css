@@ -52,6 +52,7 @@ a:hover, a:focus{
 body{
    background-color:#faf8f9;
    color:#3e3d3d;
+   font-family:Helvetica,Arial,sans-serif;
    font-size:15px;
    padding-top:52px;
 }
@@ -310,7 +311,55 @@ h2,h3{
       font-family:'CreteRoundRegular';
       color:#444;
    }
-
+   
+   /* bootstrap extensions: custom icons */
+   i[class*="cc-icon-"]{
+      background:url('#') center no-repeat;
+      display:inline-block;
+      height:24px;
+      vertical-align:top;
+      width:24px;
+   }
+   i.cc-icon-deploiement{
+      background-image:url('../img/icons/deploiement.png');
+   }
+   i.cc-icon-elasticite{
+      background-image:url('../img/icons/elasticite.png');
+   }
+   i.cc-icon-facturation{
+      background-image:url('../img/icons/facturation.png');
+   }
+   i.cc-icon-flexibilite{
+      background-image:url('../img/icons/flexibilite.png');
+   }
+   i.cc-icon-gestion{
+      background-image:url('../img/icons/gestion.png');
+   }
+   i.cc-icon-ideak{
+      background-image:url('../img/icons/ideak.png');
+   }
+   i.cc-icon-maitrise{
+      background-image:url('../img/icons/maitrise.png');
+   }
+   i.cc-icon-modif{
+      background-image:url('../img/icons/modif.png');
+   }
+   i.cc-icon-reactivite{
+      background-image:url('../img/icons/reactivite.png');
+   }
+   i.cc-icon-securite{
+      background-image:url('../img/icons/securite.png');
+   }
+   i.cc-icon-securitee{
+      background-image:url('../img/icons/securitee.png');
+   }
+   i.cc-icon-selfservice{
+      background-image:url('../img/icons/selfservice.png');
+   }
+   i.cc-icon-simplicite{
+      background-image:url('../img/icons/simplicite.png');
+   }
+   
    /* bootstrap extensions: cc-hero-unit */
    .cc-hero-unit{
       box-shadow:0 15px 20px -20px #000 inset;

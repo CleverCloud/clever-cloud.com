@@ -1,5 +1,6 @@
 ---
-title: Simplicité d’installation 
+title: Simplicité d’installation
+icon:  simplicite
 ---
 Avec Clever Cloud, déployer une application dans le cloud est à la portée de
 tous. Un simple « drag and drop » suffit pour charger votre application sur

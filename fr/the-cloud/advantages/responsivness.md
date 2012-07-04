@@ -1,5 +1,6 @@
 ---
 title: Réactivité accrue
+icon:  reactivite
 ---
 La Plateforme as a Service (PaaS) Clever Cloud est idéale pour toute entreprise
 (startup, agence web ou SSII) ayant besoin de déployer rapidement et à moindres

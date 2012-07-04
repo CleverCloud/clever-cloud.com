@@ -1,5 +1,6 @@
 #home-tech-wrap{
-   background-image:url('data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcDDSEHE54WGQAAABtJREFUCNdjvHnzJgMDAwcHBxMDDLBwcHBAWABKkALD9/AmnAAAAABJRU5ErkJggg==');
+   background-image:url('data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==');
+   background-position:top left;
 }
 .page-header{
    border-bottom:1px solid #ddd;
@@ -32,15 +33,15 @@ body{
    }
 #home-advantages > .span8 .span4 h3,
 #home-advantages > .span8 .span4 p{
-   border-left:1px solid #3e3d3d;
+   border-left:1px solid #aaa;
    margin-bottom:0;
    padding-left:20px;
 }
 #home-advantages > .span8 .row p{
-   height:110px;
+   min-height:110px;
 }
 #home-advantages > .span8 .row:last-child p{
-   height:auto;
+   min-height:auto;
    padding-bottom:40px;
 }
 #home-advantages > .span8 p{
