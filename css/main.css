@@ -53,8 +53,19 @@ body{
    min-height:110px;
 }
 #home-advantages > .span8 .row:last-child p{
-   min-height:auto;
+   min-height:0;
    padding-bottom:40px;
+}
+#home-advantages > .span8 .row:last-child .span4:after{
+   border:2px solid #aaa;
+   border-radius:7px;
+   content:" ";
+   display:block;
+   height:7px;
+   left:-5px;
+   position:relative;
+   top:-2px;
+   width:7px;
 }
 #home-advantages > .span8 p{
    padding-bottom:20px;
