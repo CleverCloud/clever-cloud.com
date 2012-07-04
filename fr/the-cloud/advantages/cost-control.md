@@ -2,7 +2,6 @@
 title: Maîtrise de vos coûts
 icon:  maitrise
 ---
-Clever Cloud permet aux entreprises de réduire leurs coûts informatiques. Plus
-besoin de louer à prix d’or des serveurs qui seront sous-utilisés la plupart
-du temps. Désormais, vous payez uniquement les ressources informatiques
-réellement consommées.
+Plutôt que d’investir dans des serveurs surdimensionnés « au cas où », passez au
+Cloud et adaptez vos besoins en hébergements en temps réel / en fonction de
+votre activité.

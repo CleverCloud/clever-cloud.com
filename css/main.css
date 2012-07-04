@@ -2,6 +2,13 @@
    background-image:url('data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==');
    background-position:top left;
 }
+.navbar-fixed-top .brand{
+   background:url('../img/cleverlogo.png') center no-repeat;
+   height:15px;
+   overflow:hidden;
+   text-indent:-400%;
+   width:163px;
+}
 .page-header{
    border-bottom:1px solid #ddd;
    box-shadow:0 1px 0 #fcfcfc;
@@ -30,6 +37,11 @@ body{
       font-size:24px;
       line-height:32px;
       padding-bottom:10px;
+   }
+   #home-advantages i[class*="cc-icon-"]{
+      left:-32px;
+      position:relative;
+      top:-4px;
    }
 #home-advantages > .span8 .span4 h3,
 #home-advantages > .span8 .span4 p{
@@ -81,6 +93,9 @@ body{
    #home-partners h2{
       font-family:'CreteRoundItalic';
    }
+#home-partners+.thumbnails img{
+   height:60px;
+}
 #footer{
    background-color:#f6f6f6;
    border-top:1px solid #d6d6d6;

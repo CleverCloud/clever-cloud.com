@@ -1,5 +1,5 @@
 ---
 title: Technologies déjà disponibles
 ---
-Pouvoir supporter les langages standards est notre credo : à terme, nous allons
-ajouter de plus en plus de langages. **Stay tuned!**
+En plus de proposer les langages standards, Clever Cloud s'efforce de rendre sa
+plateforme compatible avec les autres langages du marché.

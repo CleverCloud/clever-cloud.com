@@ -2,7 +2,7 @@
 title: Sécurisation de vos données
 icon:  securitee
 ---
-Clever Cloud assure la sauvegarde, le maintien et la protection de vos données
-de façon transparente. Une fois déployées vos applications ou votre site web,
-vous êtes libéré des tracas relatifs aux procédures de sécurité habituelles
-entièrement gérées par nos soins.  
+Une fois de plus, Clever Cloud s’assure de gérer pour vous des problématiques
+qui vous font perdre votre temps. Avec notre offre, une fois que vos sites web
+et applications sont déployées, vous n’avez plus à vous souciez de la sécurité,
+nous gérons tout pour vous.

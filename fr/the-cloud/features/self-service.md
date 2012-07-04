@@ -2,6 +2,6 @@
 title: Self service
 icon:  selfservice
 ---
-Besoin d’augmenter ou réduire vos ressources informatiques. Rien de plus simple.
-La console d’administration vous permet de monitorer et d’acheter rapidement et
-en toute autonomie les ressources informatiques dont vous avez besoin. 
+Avec le tableau de bord de Clever Cloud, vous pouvez augmenter ou réduire votre
+consommation en ressources infomatiques. Vous gérez de façon autonome la réserve
+de drops dont vous avez besoin.

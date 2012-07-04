@@ -2,6 +2,5 @@
 title: Gestion en temps réel 24/24 & 7/7 
 icon:  gestion
 ---
-Vous gérez en temps réel et en toute autonomie votre besoins en ressources via
-la console d’administration Clever Cloud accessible depuis n’importe quel
-terminal relié à internet : tablettes, pc, smartphone …
+Le dashboard (tableau de bord) de Clever Cloud est accessible en permanence
+et n’importe où avec une simple connexion internet, peu importe le terminal.

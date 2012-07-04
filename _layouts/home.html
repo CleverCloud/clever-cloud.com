@@ -32,7 +32,7 @@ technologies: [php, scala, ruby, java]
          <div class="span8"> {% for row in page.advantages %}
             <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
                <div class="span4">
-                  <h3>{{ p.title }}</h3>
+                  <h3><i class="cc-icon-{{ p.icon }}-circle"></i> {{ p.title }}</h3>
                   {{ p.content | markdownify }}
                </div> {% endif %} {% endfor %} {% endfor %}
             </div> {% endfor %}
@@ -79,7 +79,7 @@ technologies: [php, scala, ruby, java]
          </div>
          <div class="span7">
             <div class="thumbnail">
-               <img src="http://placehold.it/800x400" alt="800x400"/>
+               <img src="/img/dashboard.png" alt="dashboard"/>
             </div>
          </div>
       </div>
@@ -90,7 +90,7 @@ technologies: [php, scala, ruby, java]
       </div>
       <ul class="thumbnails"> {% for link in p.list %} {% capture url %}/{{ page.locale }}/{{ link }}.html{% endcapture %} {% for s in site.pages %} {% if s.url == url %}
          <li>
-            <a href="{{ s.website }}" class="thumbnail">
+            <a href="http://{{ s.website }}" class="thumbnail" target="_blank">
                <img src="/img/partners/{{ s.img }}" alt="{{ s.title }}"/>
             </a>
          </li>{% endif %} {% endfor %} {% endfor %}
