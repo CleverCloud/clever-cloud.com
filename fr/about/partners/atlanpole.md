@@ -1,6 +1,6 @@
 ---
 title:   Atlanpole
-img:     atlanpole.png
+img:     atlanpole
 website: www.atlanpole.com
 ---
 Clever Cloud est officiellement incubé par Atlanpole et a pu bénéficier à ce

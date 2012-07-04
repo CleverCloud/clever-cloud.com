@@ -1,6 +1,6 @@
 ---
 title:   Oséo
-img:     oseo.png
+img:     oseo
 website: www.oseo.fr
 ---
 Oséo est une entreprise publique d’aide à l’innovation, d’investissement en

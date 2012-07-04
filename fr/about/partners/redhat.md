@@ -1,6 +1,6 @@
 ---
 title:   RedHat
-img:     redhat.png
+img:     redhat
 website: www.redhat.com
 ---
 Clever Cloud fait partie de la communauté des partenaires de Redhat et est donc

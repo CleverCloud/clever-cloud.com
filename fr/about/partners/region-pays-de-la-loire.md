@@ -1,6 +1,6 @@
 ---
 title:   Région Pays de la Loire
-img:     pays-de-loire.png
+img:     pays-de-loire
 website: www.paysdelaloire.fr
 ---
 Le conseil régional des Pays de la Loire soutient financièrement Clever Cloud

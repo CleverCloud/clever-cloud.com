@@ -56,17 +56,6 @@ body{
    min-height:0;
    padding-bottom:40px;
 }
-#home-advantages > .span8 .row:last-child .span4:after{
-   border:2px solid #aaa;
-   border-radius:7px;
-   content:" ";
-   display:block;
-   height:7px;
-   left:-5px;
-   position:relative;
-   top:-2px;
-   width:7px;
-}
 #home-advantages > .span8 p{
    padding-bottom:20px;
 }
@@ -146,8 +135,14 @@ body{
 .page p{
    margin-bottom:30px;
 }
+#partners-page > .row{
+   min-height:120px;
+}
 #partners-page .thumbnail{
    background:#fcfcfc;
+}
+#partners-page .thumbnail img{
+   max-height:65px;
 }
 @media(max-width:767px){
    #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer,
@@ -157,9 +152,31 @@ body{
       padding-left:20px;
       padding-right:20px;
    }
+   #home-advantages > .span8 .row:last-child .span4:last-child:after{
+      border:2px solid #aaa;
+      border-radius:7px;
+      content:" ";
+      display:block;
+      height:7px;
+      left:-5px;
+      position:relative;
+      top:-2px;
+      width:7px;
+   }
 }
 @media(min-width:768px){
    #home-bottom .span7{
       margin-top:-200px;
+   }
+   #home-advantages > .span8 .row:last-child .span4:after{
+      border:2px solid #aaa;
+      border-radius:7px;
+      content:" ";
+      display:block;
+      height:7px;
+      left:-5px;
+      position:relative;
+      top:-2px;
+      width:7px;
    }
 }

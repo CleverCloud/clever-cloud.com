@@ -1,6 +1,6 @@
 ---
 title:   Kima Ventures
-img:     kima.png
+img:     kima
 website: www.kimaventures.com
 ---
 Créé en 2010 par des entrepreneurs et pour des entrepreneurs, Kima Ventures

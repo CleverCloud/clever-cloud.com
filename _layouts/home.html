@@ -91,7 +91,7 @@ technologies: [php, scala, ruby, java]
       <ul class="thumbnails"> {% for link in p.list %} {% capture url %}/{{ page.locale }}/{{ link }}.html{% endcapture %} {% for s in site.pages %} {% if s.url == url %}
          <li>
             <a href="http://{{ s.website }}" class="thumbnail" target="_blank">
-               <img src="/img/partners/{{ s.img }}" alt="{{ s.title }}"/>
+               <img src="/img/partners/{{ s.img }}-small.png" alt="{{ s.title }}"/>
             </a>
          </li>{% endif %} {% endfor %} {% endfor %}
       </ul> {% endif %} {% endfor %}
