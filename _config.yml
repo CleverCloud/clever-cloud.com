@@ -76,7 +76,7 @@ product:
 support:
 
 - ref: docs
-  url: docs.clever-cloud.com
+  url: documents.clever-cloud.com
   fr:  Documentation
   en:  Documentation
 
@@ -86,12 +86,12 @@ support:
   en:  Cloud status
 
 - ref: tutorials
-  url: docs.clever-cloud.com/tutorials
+  url: documents.clever-cloud.com/tutorials
   fr:  Tutoriels
   en:  Tutorials
 
 - ref: engineer
-  url: engineer.clever-cloud.com
+  url: engineering.clever-cloud.com
   fr:  Engineer Blog
   en:  Engineer Blog
 
