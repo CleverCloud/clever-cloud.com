@@ -165,6 +165,9 @@ body{
    }
 }
 @media(min-width:768px){
+   .cc-hero-unit .container{
+      background:url('../img/curve-top.png') left bottom no-repeat;
+   }
    #home-bottom .span7{
       margin-top:-200px;
    }

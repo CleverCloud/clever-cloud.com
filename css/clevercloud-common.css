@@ -378,6 +378,8 @@ h2,h3{
       box-shadow:0 15px 20px -20px #000 inset;
       color:#fff;
       font-family:'CreteRoundRegular';
+   }
+   .cc-hero-unit .container{
       padding:30px 0;
    }
    .cc-hero-unit h2{
