@@ -11,10 +11,12 @@ list:
 - about/partners/region-pays-de-la-loire
 - about/partners/atlanpole
 - about/partners/microsoft-bizspark
+- about/partners/redhat
 ---
 ## We're always looking for partnerships 
 
-You are a startup, a web agency or a consulting company? Clever Cloud is always looking for new partners to develop and sell our offer.
+You are a startup, a web agency or a consulting company? Clever Cloud is always
+looking for new partners to develop and sell our offer.
 
 Becoming a Clever Cloud Partner offers many advantages:
 * **Pluralize** your commercial offer
