@@ -1,7 +1,7 @@
 ---
 # conf
 layout: page
-locale: fr
+locale: en
 
 # data
 title: Mentions légales

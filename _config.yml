@@ -43,7 +43,7 @@ about:
 
 the-cloud:
 
-- ref: the-cloud/index
+- ref: the-cloud/solution/index
 
 - ref: the-cloud/pricing
 
@@ -62,7 +62,7 @@ the-cloud:
 
 product:
 
-- ref: the-cloud/index
+- ref: the-cloud/solution/index
 
 - ref: the-cloud/pricing
 

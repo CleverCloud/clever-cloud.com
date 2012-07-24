@@ -144,6 +144,12 @@ body{
 #partners-page .thumbnail img{
    max-height:65px;
 }
+#solution-navbar{
+   background:#222;
+}
+#solution-navbar a{
+   color:#fff;
+}
 @media(max-width:767px){
    #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer,
    #home-advantages,#home-fuel{
