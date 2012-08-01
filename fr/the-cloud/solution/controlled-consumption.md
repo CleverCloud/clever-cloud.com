@@ -21,7 +21,7 @@ part:   consumption
 <div id="part-drop">
    <div class="container">
       <div class="row">
-         <div class="span5 offset7">
+         <div class="span4 offset8">
             <h2>Une unité : la Drop.</h2>
             <p>
                La Drop est l’énergie informatique de Clever Cloud. Avec elle vos

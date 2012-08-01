@@ -30,6 +30,12 @@ part:   part-innovation
                   Scala, PHP, Ruby, Java...autant de langages déjà supportés sur notre
                   plateforme qui va encore évoluer.
                </p>
+               <div id="lang-display">
+                  <img src="/img/technos/scala.png" alt="scala" />
+                  <img src="/img/technos/php.png" alt="php" />
+                  <img src="/img/technos/ruby.png" alt="ruby" />
+                  <img src="/img/technos/java.png" alt="java" />
+               </div>
             </div>
          </div>
       </div>
@@ -54,7 +60,7 @@ part:   part-innovation
    <div class="container">
       <div class="span5">
          <div class="row">
-            <div class="span5 offset7">
+            <div class="span4 offset8">
                <h2>Peering</h2>
                <p>
                   Offrez à vos clients une meilleure expérience online. Notre plateforme
