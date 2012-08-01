@@ -45,8 +45,6 @@ the-cloud:
 
 - ref: the-cloud/solution/index
 
-- ref: the-cloud/pricing
-
 - ref: the-cloud/services
 
 - ref: the-cloud/support
@@ -63,8 +61,6 @@ the-cloud:
 product:
 
 - ref: the-cloud/solution/index
-
-- ref: the-cloud/pricing
 
 - ref: the-cloud/services
 
