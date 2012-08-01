@@ -2,12 +2,12 @@
 layout: main
 nav:
 - ref: the-cloud/solution/index
-- ref: the-cloud/solution/vision
+- ref: the-cloud/solution/innovating-plateform
 - ref: the-cloud/solution/controlled-consumption
-- ref: the-cloud/solution/simple-and-global-management
+- ref: the-cloud/solution/simple-management
 ---
 <div id="solution-navbar">
-   <div class="container">
+   <div class="container {{ page.part }}">
       <div class="navbar">
          <ul class="nav"> {% for link in page.nav %}
             {% include nav.html %} {% endfor %}
@@ -15,6 +15,4 @@ nav:
       </div>
    </div>
 </div>
-<div class="container">
-   {{ content }}
-</div>
+<div class="solution-page">{{ content }}</div>

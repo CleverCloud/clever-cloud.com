@@ -97,7 +97,6 @@ body{
    height:60px;
 }
 #footer{
-   background-color:#f6f6f6;
    border-top:1px solid #d6d6d6;
    color:#c4c4c4;
    padding-top:10px;
@@ -146,9 +145,86 @@ body{
 }
 #solution-navbar{
    background:#222;
+   box-shadow:0 10px 20px #444 inset;
 }
 #solution-navbar a{
    color:#fff;
+}
+#part-summary{
+   border-top:1px solid #ccc;
+}
+#part-summary .span4{
+   padding:20px;
+   -webkit-box-sizing:border-box;
+      -moz-box-sizing:border-box;
+           box-sizing:border-box;
+}
+#part-summary .span4+.span4{
+   border-left:1px solid #ccc;
+}
+.solution-page .container{
+   padding-top:40px;
+}
+.solution-page .row{
+   margin-bottom:40px;
+}
+.solution-page iframe{
+   display:block;
+   margin:auto;
+}
+#part-by-cc{
+   box-shadow:0 2px 2px #000 inset;
+   background:#222;
+   background:-moz-radial-gradient(#444, #222222);
+   color:#faf8f9;
+}
+#part-code-as-you-are{
+   background:url("/img/solution/bg-carreau2.jpg");
+}
+#part-code-as-you-are,#part-easy-use{
+   box-shadow:0 -4px 4px -4px #aaa inset;
+}
+#part-scalable-as-hell{
+   box-shadow:0 -50px 50px -50px #aaa inset;
+}
+#part-peering,#part-self-service,#part-easy-use{
+   background:#eee;
+   background:-moz-linear-gradient(top,#fcfcfc,#f5f5f5);
+}
+#part-drop{
+   background:url("/img/solution/bg-carreau1.jpg");
+   box-shadow:0 -80px 80px -50px #300 inset,
+              0 50px 30px -50px #300 inset;
+   color:#faf8f9;
+}
+#part-self-service .container{
+   background:url("/img/solution/server-top.png") bottom right no-repeat;
+   height:300px;
+}
+#part-optimum-security{
+   background:url("/img/solution/bg-carreau2.jpg");
+   box-shadow:0 -4px 4px -4px #aaa inset,
+              0 50px 30px -50px #aaa inset;
+}
+#part-optimum-security .container{
+   background:url("/img/solution/server-bottom.png") bottom right no-repeat;
+   height:399px;
+}
+#part-easy-use .container{
+   background:url("/img/solution/scala-box.png") 80% 60% no-repeat;
+   height:350px;
+}
+#part-real-time{
+   background:#fafafa;
+}
+#illus-dashboard{
+   margin-top:-85px;
+}
+.part-innovation .navbar .nav .active > a:after,
+.part-innovation .navbar .nav > li > a:hover:after,
+.part-innovation .navbar .nav > li > a:focus:after{
+   background:#222;
+   box-shadow:2px 2px 2px #000 inset;
 }
 @media(max-width:767px){
    #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer,
