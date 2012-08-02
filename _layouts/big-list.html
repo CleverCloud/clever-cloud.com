@@ -9,6 +9,9 @@ layout: page
    </div>
    <div class="span9">
       <h2>{{ p.title }}</h2>
+      <p class="intro">
+         {{ p.intro }}
+      </p>
       {{ p.content | markdownify }}
    </div> {% endif %} {% endfor %}
 </div> {% endfor %}

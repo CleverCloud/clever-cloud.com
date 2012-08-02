@@ -137,8 +137,14 @@ body{
 #partners-page > .row{
    min-height:120px;
 }
+#partners-page .intro{
+   font-size:90%;
+   line-height:90%;
+   font-style:italic;
+   margin-bottom:10px;
+}
 #partners-page .thumbnail{
-   background:#fcfcfc;
+   padding:20px 0;
 }
 #partners-page .thumbnail img{
    max-height:65px;
