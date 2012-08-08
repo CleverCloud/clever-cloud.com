@@ -6,9 +6,8 @@ locale: fr
 # data
 title: Accueil
 ---
-## Drop it in the cloud!
+## Clever Cloud, l’hébergement PaaS
 
-Avec Clever Cloud consommez juste l'hébergement qu'il vous faut. Maîtrise de
-vos coûts et flexibilité accrue pour une scalabilité optimale.
+L’hébergement nouvelle génération : Maîtrisez vos coûts et gagnez en scalabilité sur vos projets web.
 
-<a class="btn btn-primary btn-large" href="/fr/#login-signup">Sign up for beta</a>
+<a class="btn btn-primary btn-large" href="/fr/#login-signup">Inscription à la beta</a>
