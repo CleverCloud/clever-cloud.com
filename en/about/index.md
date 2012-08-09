@@ -23,16 +23,7 @@ contact:
 ---
 ## A cloud oriented startup
 
-Clever Cloud (created in 2010) is a IT company based in Nantes. This start-up
-has two years worth of R&D experience, 2.0 management and genuine technical
-expertise in the software and hardware areas.
-  
-Specialized in 'Cloud Computing' hosting, Clever Cloud creates constant
-innovation in open source technologies through an atypical and dynamic approach.
-  
-With an expertise primarily focused around the java virtual machine technologies
-and JEE 6, Clever Cloud is a major player in the JEE technology expertise in
-Nantes.   
+Clever Cloud (created in 2010) is a startup based in Nantes. The hosting platform builded by Clever Cloud required tree years of R&D, in order to run languages like Java, Scala, Ruby and PHP.
 
 Clever Cloud is an active member of the association Atlantic 2.0, the network of
 professionals in information technology and communications, a reference in the
