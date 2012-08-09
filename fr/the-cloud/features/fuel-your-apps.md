@@ -1,10 +1,10 @@
 ---
-title: Fuel your apps.
+title: Facturation intelligente
 list:
-- Solutions sécurisées de déploiement.
-- Facturation innovante via les "drops".
-- "Différents modes de gestion : simple et expert."
+- Créditez votre compte de "drops"
+- Déployez votre application sur Clever Cloud
+- Votre service web fonctionne et consomme vos "drops" dans le temps
 ---
-Comme dans votre voiture, vous gérez votre réservoir de drops, l'unité de mesure
-de Clever Cloud, à l'aide de votre dashboard. Pas le temps de gérer votre
-consommation ? Clever Cloud s'occupe de vous recharger avant la panne sèche !
+Clever Cloud simplifie et rationnalise votre hébergement.  
+
+La facturation se fait désormais en fonction de votre consommation, via un système intelligent et transparent.

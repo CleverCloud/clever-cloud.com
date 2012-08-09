@@ -2,4 +2,4 @@
 title: Élasticité à la demande
 icon:  securite
 ---
-Votre application peut être la plus gourmande qui soit, Clever Cloud met les ressources nécéssaires pour absorber la charge.
+Grâce à un suivi constant, Clever Cloud adapte les ressources et l'infrastructure de votre application en permanence. Plus aucun problème de charge n'est à craindre pour vos services web.
