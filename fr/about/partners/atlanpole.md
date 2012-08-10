@@ -3,7 +3,7 @@ title:   Atlanpole
 img:     atlanpole
 website: www.atlanpole.com
 intro: |
-  Multi-casquettes, le Technopole Nantes Atlantique est aussi le Centre Européen
+  Multi-casquettes, le technopôle Nantes Atlantique est aussi le Centre Européen
   d’Entreprises et d’Innovation de Nantes Atlantique. Atlanpole est également le
   premier Incubateur Régional des Pays de la Loire.
 ---
