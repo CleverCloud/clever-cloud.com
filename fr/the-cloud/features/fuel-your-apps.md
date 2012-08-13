@@ -1,10 +1,11 @@
 ---
-title: Facturation intelligente
+title: Lancement en 3 étapes 
 list:
+- Créez votre compte en 60 secondes
 - Créditez votre compte de "drops"
-- Déployez votre application sur Clever Cloud
-- Votre service web fonctionne et consomme vos "drops" dans le temps
+- Déployez votre application en quelques clics
 ---
-Clever Cloud simplifie et rationalise votre hébergement.  
+Juste après la création de votre compte, vous _provisionnez_ votre future application&nbsp;:
 
-La facturation se fait désormais en fonction de votre consommation, via un système intelligent et transparent.
+Telle une voiture avec de l'essence, vous remplissez votre réservoir d'énergie informatique, que vous consommerez au file de votre hébergement.  
+<a href="./the-cloud/solution/controlled-consumption.html">En savoir plus</a>
