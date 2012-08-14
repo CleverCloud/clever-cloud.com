@@ -2,6 +2,9 @@
    background-image:url('data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==');
    background-position:top left;
 }
+.navbar-fixed-top {
+    box-shadow:0 -18px 20px -20px #200 inset;
+}
 .navbar-fixed-top .brand{
    background:url('../img/cleverlogo.png') center top no-repeat;
    height:15px;
@@ -115,8 +118,9 @@ body{
    }
    #footer .nav-list > .nav-header{
       display:table-cell;
-      padding:5px 0 10px;
+      font-size:17px;
       height:50px;
+      padding:5px 0 10px;
       vertical-align:bottom;
       width:100%;
    }
@@ -128,6 +132,7 @@ body{
       border:none;
       box-shadow:none;
       color:#c4c4c4;
+      font-size:14px;
       height:auto;
       padding:5px 0;
       margin:0;
@@ -286,7 +291,8 @@ body{
 }
 @media(min-width:768px){
    .cc-hero-unit .container{
-      background:url('../img/curve-top.png') left bottom no-repeat;
+      background:url('../img/dropgun.png') left bottom no-repeat;
+      padding:160px 0;
    }
    #home-bottom .span7{
       margin-top:-200px;
