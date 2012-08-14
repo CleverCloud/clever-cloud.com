@@ -36,15 +36,26 @@
     font: 19px/24px "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-shadow: none;
     text-transform: uppercase;
+	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-o-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 }
 
 .cc-hero-unit .btn-primary:hover,.cc-hero-unit .btn-primary:focus {
     background: none repeat scroll 0 0 #ddd;
     box-shadow: 0 0 10px 5px #f5f5f5 inset,0 0 10px 10px rgba(200,50,70,.3), 0 0 0 2px #552222, 0 0 0 3px #773322;
-    color: #501011;
+    color: #000000;
     font: 19px/24px "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-shadow: none;
     text-transform: uppercase;
+	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-o-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+
 }
 .cc-hero-unit p {
     font-family: 'AdelleBasic-Bold','CreteRoundRegular';
