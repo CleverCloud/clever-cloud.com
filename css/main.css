@@ -1,5 +1,5 @@
 #home-tech-wrap{
-   background-image:url('data:image/png; base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==');
+   background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==');
    background-position:top left;
 }
 .navbar-fixed-top {
@@ -33,9 +33,21 @@
     background: none repeat scroll 0 0 #F2F2F2;
     box-shadow: 0 -38px 20px -20px #AAAAAA inset, 0 0 0 2px #552222, 0 0 0 3px #773322;
     color: #501011;
-    font: 19px/24px sans-serif;
+    font: 19px/24px "Helvetica Neue",Helvetica,Arial,sans-serif;
     text-shadow: none;
     text-transform: uppercase;
+}
+
+.cc-hero-unit .btn-primary:hover,.cc-hero-unit .btn-primary:focus {
+    background: none repeat scroll 0 0 #ddd;
+    box-shadow: 0 0 10px 5px #f5f5f5 inset,0 0 10px 10px rgba(200,50,70,.3), 0 0 0 2px #552222, 0 0 0 3px #773322;
+    color: #501011;
+    font: 19px/24px "Helvetica Neue",Helvetica,Arial,sans-serif;
+    text-shadow: none;
+    text-transform: uppercase;
+}
+.cc-hero-unit p {
+    font-family: 'AdelleBasic-Bold','CreteRoundRegular';
 }
 body{   
    background-color:#f6f6f6;
