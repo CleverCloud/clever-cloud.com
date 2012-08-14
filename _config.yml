@@ -55,8 +55,8 @@ the-cloud:
 - ref: account
   url: "#login-signup"
   btn: Yes
-  fr:  Mon compte
-  en:  My account
+  fr:  Login
+  en:  Login
 
 product:
 

@@ -3,7 +3,7 @@
    background-position:top left;
 }
 .navbar-fixed-top .brand{
-   background:url('../img/cleverlogo.png') center no-repeat;
+   background:url('../img/cleverlogo.png') center top no-repeat;
    height:15px;
    overflow:hidden;
    text-indent:-400%;
@@ -138,8 +138,7 @@ body{
    min-height:120px;
 }
 #partners-page .intro{
-   font-size:90%;
-   line-height:90%;
+   color:#888;
    font-style:italic;
    margin-bottom:10px;
 }
