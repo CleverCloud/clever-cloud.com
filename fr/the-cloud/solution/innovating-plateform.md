@@ -1,7 +1,7 @@
 ---
 layout: solution
 locale: fr
-title:  Une plateforme innovante
+title:  Une plateforme accueillante
 part:   part-innovation
 ---
 <div id="part-by-cc">
@@ -11,9 +11,7 @@ part:   part-innovation
       <div class="row">
          <div class="span5">
             <p>
-               Notre plateforme va simplifier votre activité. Que diriez-vous de
-               consacrer tout votre temps au développement d'app et sites web plutôt que
-               d'en gérer l'hébergement ? 
+               Clever Cloud simplifie votre hébergement. Prenant en charge les langages web les plus populaires du marché et  assurant une mise à l'échelle de vos applications sans faille, vous êtes libéré des inconvénients de l'hébergement traditionnel.
             </p>
          </div>
       </div>
@@ -25,16 +23,16 @@ part:   part-innovation
       <div class="span5">
          <div class="row">
             <div class="span5 offset7">
-               <h2>Code as you are</h2>
+               <h2>Quatre technologies supportés</h2>
                <p>
-                  Scala, PHP, Ruby, Java...autant de langages déjà supportés sur notre
-                  plateforme qui va encore évoluer.
+                  Scala, PHP, Ruby et Java sont actuellement supportés sur notre
+                  plateforme qui évolue en permanence, avec prochainement de nombreux choix de bases de données et de services supplémentaires.
                </p>
                <div id="lang-display">
-                  <img src="/img/technos/scala.png" alt="scala" />
-                  <img src="/img/technos/php.png" alt="php" />
-                  <img src="/img/technos/ruby.png" alt="ruby" />
-                  <img src="/img/technos/java.png" alt="java" />
+                  <img src="/img/technos/scala-logo.png" alt="scala" />
+                  <img src="/img/technos/php-logo.png" alt="php" />
+                  <img src="/img/technos/ruby-logo.png" alt="ruby" />
+                  <img src="/img/technos/java-logo.png" alt="java" />
                </div>
             </div>
          </div>
@@ -48,8 +46,10 @@ part:   part-innovation
          <div class="row">
             <div class="span5">
                <p>
-                  Notre plateforme supporte tous vos pics de charge. Une fois encore,
-                  concentrez-vous sur votre vrai métier. On s'occupe du reste.
+                  Les questions inhérentes à la stabilité de votre application en cas de charge impromptue ne se posent plus : Clever Cloud adapte les ressources de votre application automatiquement, afin qu'elle soit toujours disponible et réactive.
+               </p>
+               <p>
+                  Vous pouvez vous concentrezvous sur votre vrai métier. On s'occupe du reste.
                </p>
             </div>
          </div>
