@@ -21,5 +21,5 @@
 
 
   
- @font-face {font-family: 'AdelleBasic-Bold';src: url('webfonts/23C3A8_0_0.eot');src: url('webfonts/23C3A8_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/23C3A8_0_0.woff') format('woff'),url('webfonts/23C3A8_0_0.ttf') format('truetype');}
+ @font-face {font-family: 'AdelleBasic-Bold';src: url('../fonts/23C3A8_0_0.eot');src: url('../fonts/23C3A8_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/23C3A8_0_0.woff') format('woff'),url('../fonts/23C3A8_0_0.ttf') format('truetype');}
  
