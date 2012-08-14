@@ -9,7 +9,7 @@ part:   part-innovation
       <div class="span5">
       <h2>L'hébergement par Clever Cloud</h2>
       <div class="row">
-         <div class="span5">
+         <div class="span4">
             <p>
                Clever Cloud simplifie votre hébergement. Prenant en charge les langages web les plus populaires du marché et  assurant une mise à l'échelle de vos applications sans faille, vous êtes libéré des inconvénients de l'hébergement traditionnel.
             </p>
@@ -41,10 +41,10 @@ part:   part-innovation
 </div>
 <div id="part-scalable-as-hell">
    <div class="container">
-      <div class="span5">
+      <div class="span4">
          <h2>Scalable as hell</h2>
          <div class="row">
-            <div class="span5">
+            <div class="span4">
                <p>
                   Les questions inhérentes à la stabilité de votre application en cas de charge impromptue ne se posent plus : Clever Cloud adapte les ressources de votre application automatiquement, afin qu'elle soit toujours disponible et réactive.
                </p>

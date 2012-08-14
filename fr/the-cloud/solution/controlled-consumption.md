@@ -30,8 +30,8 @@ part:   consumption
          <div class="span4 offset8">
             <h2>Une unité : la Drop.</h2>
             <p>
-               La Drop est la mesure représentant “l’énergie&nbsp;informatique” de Clever Cloud. Avec elle, vos
-               factures sont toujours maîtrisées. Vous rechargez vos réserves au besoin, en fonction de la demande.
+			   La Drop est la mesure représentant “l’énergie&nbsp;informatique” de Clever Cloud. Avec elle, vos
+			                  coûts seront toujours maîtrisées sur le Cloud. Vous rechargez vos réserves au besoin, en fonction de la demande.
             </p>
          </div>
       </div>
