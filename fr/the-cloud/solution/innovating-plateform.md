@@ -49,7 +49,7 @@ part:   part-innovation
                   Les questions inhérentes à la stabilité de votre application en cas de charge impromptue ne se posent plus : Clever Cloud adapte les ressources de votre application automatiquement, afin qu'elle soit toujours disponible et réactive.
                </p>
                <p>
-                  Vous pouvez vous concentrezvous sur votre vrai métier. On s'occupe du reste.
+                  Vous pouvez vous concentrer sur votre vrai métier. On s'occupe du reste.
                </p>
             </div>
          </div>
@@ -63,9 +63,7 @@ part:   part-innovation
             <div class="span4 offset8">
                <h2>Peering</h2>
                <p>
-                  Offrez à vos clients une meilleure expérience online. Notre plateforme
-                  propose les meilleurs temps d'échanges entre votre application et le
-                  serveur ou elle est hébergée.
+                  Offrez à vos utilisateurs la meilleure expérience online. Avec son peering vers les plus grands acteurs du marché français et américain, Clever Cloud bénéficie d'une faible latence sur son trafic.
                </p>
             </div>
          </div>
