@@ -49,7 +49,7 @@ part:   part-innovation
                   Les questions inhérentes à la stabilité de votre application en cas de charge impromptue ne se posent plus : Clever Cloud adapte les ressources de votre application automatiquement, afin qu'elle soit toujours disponible et réactive.
                </p>
                <p>
-                  Vous pouvez vous concentrezvous sur votre vrai métier. On s'occupe du reste.
+                  Vous pouvez vous concentrer sur votre vrai métier. On s'occupe du reste.
                </p>
             </div>
          </div>
