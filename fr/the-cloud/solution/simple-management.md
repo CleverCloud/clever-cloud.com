@@ -10,9 +10,7 @@ part:   part-management
       <div class="row">
          <div class="span5">
             <p>
-               Avec le dashboard Clever Cloud, augmentez ou réduisez votre
-               consommation en énergie informatique. Vous gérez votre réservoir de
-               Drops selon vos besoins. En toute autonomie.
+               Ajoutez applications, services, ou sites web à tout moment. Déposez votre code source ou votre archive projet sur l'infrastructure de Clever Cloud, et votre application tourne dans les monutes qui suivent, sans aucune configuration serveur à effectuer. 
             </p>
          </div>
       </div>
@@ -20,13 +18,11 @@ part:   part-management
 </div>
 <div id="part-optimum-security">
    <div class="container">
-      <h2>Sécurité optimale</h2>
+      <h2>Sécurisation de vos apps</h2>
       <div class="row">
          <div class="span5">
             <p>
-               Dormez sur vos deux oreilles: Clever Cloud gère pour vous la sécurité
-               de vos sites web et applications déployés sur notre plateforme. Une
-               fois encore, concentrez-vous sur votre métier. On s'occupe du reste.
+               La sûreté de la connexion entre vos utilisateurs et votre site est un aspect critique de votre service web. Grâce au partenairiat entre Clever Cloud et Comodo, il vous est possible de générer directement depuis votre compte vos certificats de sécurité SSL. La  sera ainsi chiffrée.
             </p>
          </div>
       </div>
