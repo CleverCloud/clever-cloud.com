@@ -10,7 +10,7 @@ part:   part-management
       <div class="row">
          <div class="span5">
             <p>
-               Ajoutez applications, services, ou sites web à tout moment. Déposez votre code source ou votre archive projet sur l'infrastructure de Clever Cloud, et votre application tourne dans les monutes qui suivent, sans aucune configuration serveur à effectuer. 
+               Ajoutez applications, services, ou sites web à tout moment. Déposez votre application sur l'infrastructure de Clever Cloud, et celle-ci fonctionne dans les minutes qui suivent, sans aucune configuration serveur à effectuer. 
             </p>
          </div>
       </div>
@@ -22,7 +22,7 @@ part:   part-management
       <div class="row">
          <div class="span5">
             <p>
-               La sûreté de la connexion entre vos utilisateurs et votre site est un aspect critique de votre service web. Grâce au partenairiat entre Clever Cloud et Comodo, il vous est possible de générer directement depuis votre compte vos certificats de sécurité SSL. La  sera ainsi chiffrée.
+               La sûreté de la connexion entre vos utilisateurs et votre site est un aspect critique de votre service web. Grâce au partenairiat entre Clever Cloud et Comodo, il vous est possible de générer directement depuis votre compte vos certificats de sécurité SSL. Ils seront appliqués à votre site 
             </p>
          </div>
       </div>
@@ -30,12 +30,11 @@ part:   part-management
 </div>
 <div id="part-easy-use">
    <div class="container">
-      <h2>Simplicité d'utilisation</h2>
+      <h2>Déploiement rapide et sécurisé</h2>
       <div class="row">
          <div class="span5">
             <p>
-               Déployer un site web ou une application n'a jamais été aussi simple. Un
-               simple drag and drop sur notre plateforme suffit.
+               Par Git ou par SFTP, choisssiez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud.
             </p>
          </div>
       </div>
