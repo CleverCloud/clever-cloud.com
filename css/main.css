@@ -58,7 +58,7 @@
 
 }
 .cc-hero-unit p {
-    font-family: 'AdelleBasic-Bold','CreteRoundRegular';
+    font-family: 'AdelleBasic-Bold';
 }
 body{   
    background-color:#f6f6f6;
@@ -129,7 +129,7 @@ body{
    padding-top:10px;
 }
    #home-bottom ol li{
-      font-family:'CreteRoundRegular';
+      font-family:'AdelleBasic-Bold','CreteRoundRegular';
       font-size:20px;
       margin:5px 0 10px;
    }
@@ -137,7 +137,7 @@ body{
       color:#999;
    }
    #home-partners h2{
-      font-family:'CreteRoundItalic';
+      font-family:'AdelleBasic-Bold','CreteRoundRegular';
    }
 #home-partners+.thumbnails img{
    height:60px;
@@ -149,7 +149,7 @@ body{
    padding-top:10px;
 }
    #footer .nav-header{
-      font-family:'CreteRoundRegular';
+      font-family:'AdelleBasic-Bold','CreteRoundRegular';
       font-size:16px;
       text-transform:none;
    }
