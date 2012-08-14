@@ -1,9 +1,6 @@
 ---
-title: Make it, run it.
+title: Codez et déployez. Instantanément.
 ---
-Choisir Clever Cloud c’est opter pour la simplicité. Recentrez vous sur votre
-métier !
-Gestion, maintenance et sécurisation de vos applications et sites web sur notre
-Plate-forme as a Service (PaaS), on s’occupe de tout ! Votre métier n’est pas
-l’hébergement, inutile d’investir. Exploitez plutôt nos ressources disponibles,
-passez au Cloud&nbsp;!
+Le PaaS de Clever Cloud s’ajuste automatiquement à votre consommation d’hébergement simplement et rapidement, pour vos applications PHP, Java, Scala et Ruby.  
+
+Le cycle de vie de vos applications, de la mise en production à la maintenance en passant par la sécurisation, est intégrée via une interface unifiée.

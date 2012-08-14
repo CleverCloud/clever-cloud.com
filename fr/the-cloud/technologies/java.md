@@ -4,5 +4,4 @@ title:   Java
 icon:    java-logo.png
 website: http://www.java.com
 ---
-Langage robuste, orienté entreprises et très largement utilisé pour le
-développement de nombreuses applications critiques et métier.
+La plateforme Java tient aujourd'hui une place prépondérante dans toutes sortes de développements web.

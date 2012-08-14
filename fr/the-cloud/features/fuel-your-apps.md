@@ -1,10 +1,11 @@
 ---
-title: Fuel your apps.
+title: Lancement en 3 étapes 
 list:
-- Solutions sécurisées de déploiement.
-- Facturation innovante via les "drops".
-- "Différents modes de gestion : simple et expert."
+- Créez votre compte en 60 secondes
+- Créditez votre compte de "drops"
+- Déployez votre application en quelques clics
 ---
-Comme dans votre voiture, vous gérez votre réservoir de drops, l'unité de mesure
-de Clever Cloud, à l'aide de votre dashboard. Pas le temps de gérer votre
-consommation ? Clever Cloud s'occupe de vous recharger avant la panne sèche !
+Juste après la création de votre compte, vous _provisionnez_ votre future application&nbsp;:
+
+Telle une voiture avec de l'essence, vous remplissez votre réservoir d'énergie informatique, que vous consommerez au file de votre hébergement.  
+<a href="./the-cloud/solution/controlled-consumption.html">En savoir plus</a>

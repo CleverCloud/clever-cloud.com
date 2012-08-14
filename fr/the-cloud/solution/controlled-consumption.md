@@ -10,9 +10,15 @@ part:   consumption
       <div class="row">
          <div class="span5">
             <p>
-               Notre Plateform as a Service (PaaS) est a votre disposition partout,
-               tout le temps. Gérez votre consommation via notre dashboard, en toute
-               simplicité.
+               Pour profiter d'une scalabilité automatique tout en contrôlant vos coûts, Clever Cloud s'est inspiré du modèle de la voiture à essence.
+            </p>
+			<p>
+               À l'instar d'un réservoir d'essence, vous remplissez un réservoir d'énergie informatique. Ce dernier se vide au fil de vos besoins en hébergement.
+            </p>
+         </div>
+		<div class="span5 offset2">
+            <p>
+              
             </p>
          </div>
       </div>

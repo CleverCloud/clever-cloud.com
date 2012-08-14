@@ -7,5 +7,5 @@ intro: |
   qui développent des logiciels. BizSpark fournit logiciels, support technique
   et visibilité aux entrepreneurs.
 ---
-Clever Cloud est membre du programme d’accès aux logiciels de développement de
+Clever Cloud est membre du programme d’accès aux ressources de développement de
 Microsoft.

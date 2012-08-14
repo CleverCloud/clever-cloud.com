@@ -6,9 +6,10 @@ locale: en
 # data
 title: Home
 ---
-## Drop it in the cloud!
+## Clever Cloud, PaaS hosting
 
-With Clever Cloud, host it just like you need. Cost control and enhanced
-flexibility in order to get the best scalability.
+Cutting-edge hosting: 
+Just consume what you need. Get control of your hosting's costs and scale automatically your web services.
+
 
 <a class="btn btn-primary btn-large" href="/en/#login-signup">Sign up for beta</a>

@@ -4,8 +4,8 @@ layout: main
 # home navigation
 
 advantages:
-- [cost-control, faster-deployment]
-- [security, flexibility]
+- [cost-control, zen-integration]
+- [scalability, availability]
 
 technologies: [php, scala, ruby, java]
 ---
@@ -50,7 +50,7 @@ technologies: [php, scala, ruby, java]
    <div class="row"> {% for tech in page.technologies %} {% capture purl %}/{{ page.locale }}/the-cloud/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
       <div class="span1">
          <a href="{{ p.website }}" class="thumbnail" target="_blank">
-            <img src="/img/lang/{{ p.icon }}" alt="{{ p.title }}"/>
+            <img src="/img/technos/{{ p.icon }}" alt="{{ p.title }}"/>
          </a>
       </div>
       <div class="span2">
