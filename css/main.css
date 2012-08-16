@@ -216,6 +216,8 @@ body{
 #solution-navbar{
    background:#222;
    box-shadow:0 10px 20px #444 inset;
+   position: fixed;
+   width: 100%;
 }
 #solution-navbar a{
    color:#fff;
@@ -234,6 +236,9 @@ body{
 }
 #part-summary .span4+.span4{
    border-left:1px solid #ccc;
+}
+.solution-page{
+   padding-top:39px;
 }
 .solution-page .container{
    padding-top:40px;
