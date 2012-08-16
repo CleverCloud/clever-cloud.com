@@ -11,13 +11,11 @@ part:   part-innovation
       <div class="row">
          <div class="span4">
             <p>
-               Clever Cloud offre à vos applications web l'hébergement haut de gamme qu'elles méritent, avec une scalabilité automatique et un support des technologies les plus populaires du marché&nbsp;:
-            </p>
-			<ul>
-				<li>Support multi-languages</li>
-				<li>Haute disponibilité</li>
-				<li>Peering avancé</li>
-			</ul>
+               Clever Cloud offre à vos applications web l'hébergement haut de gamme qu'elles méritent, avec une scalabilité automatique et un support des technologies les plus populaires du marché.
+		   </p>
+		   <p>
+				Le déploiement de votre application au sein de Clever Cloud est simple, rapide et optimisé au milimètre en termes de performances.
+		   </p>
          </div>
       </div>
       </div>

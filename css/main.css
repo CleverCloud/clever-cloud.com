@@ -271,8 +271,14 @@ body{
 #part-code-as-you-are,#part-easy-use{
    box-shadow:0 -4px 4px -4px #aaa inset;
 }
+#part-code-as-you-are .container .span5 .offset7{
+	padding-top: 85px;
+}
 #part-scalable-as-hell{
    box-shadow:0 -50px 50px -50px #aaa inset;
+}
+#part-scalable-as-hell .container .span4 h2{
+	padding-top: 40px;
 }
 #part-scalable-as-hell .container{
    background:url("/img/solution/courbe.png") center no-repeat;
