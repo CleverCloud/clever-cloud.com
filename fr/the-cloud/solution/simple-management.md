@@ -22,7 +22,7 @@ part:   part-management
       <div class="row">
          <div class="span5">
             <p>
-               La sûreté de la connexion entre vos utilisateurs et votre site est un aspect critique de votre service web. Grâce au partenairiat entre Clever Cloud et Comodo, il vous est possible de générer directement depuis votre compte vos certificats de sécurité SSL. Ils seront appliqués à votre site 
+               La sûreté de la connexion entre vos utilisateurs et votre site est un aspect critique de votre service web. Grâce au partenairiat entre Clever Cloud et Comodo, il vous est possible de générer directement depuis votre compte vos certificats de sécurité SSL. Les appliquer à votre service web n'en sera que plus simple. 
             </p>
          </div>
       </div>
@@ -34,8 +34,14 @@ part:   part-management
       <div class="row">
          <div class="span5">
             <p>
-               Par Git ou par SFTP, choisssiez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud.
+               Choisssiez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud&nbsp;:
             </p>
+			<ul>
+				<li>Git</li>
+				<li>SFTP</li>
+				<li>Fichiers .war ou .zip</li>
+				<li>Dropbox</li>
+			</ul>
          </div>
       </div>
    </div>
