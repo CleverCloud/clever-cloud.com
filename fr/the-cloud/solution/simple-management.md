@@ -34,8 +34,14 @@ part:   part-management
       <div class="row">
          <div class="span5">
             <p>
-               Par Git ou par SFTP, choisssiez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud.
+               Choisssiez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud&nbsp;:
             </p>
+			<ul>
+				<li>Git</li>
+				<li>SFTP</li>
+				<li>Fichiers .war ou .zip</li>
+				<li>Dropbox</li>
+			</ul>
          </div>
       </div>
    </div>
