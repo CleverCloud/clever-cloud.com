@@ -1,7 +1,7 @@
 ---
 layout: solution
 locale: fr
-title:  Une consommation contrôlée
+title:  Tarifs
 part:   consumption
 ---
 <div id="part-pay-as-you-go">

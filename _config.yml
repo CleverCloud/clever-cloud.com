@@ -50,7 +50,9 @@ the-cloud:
 
 - ref: the-cloud/solution/index
 
-- ref: the-cloud/services
+- ref: the-cloud/solution/controlled-consumption
+  fr:  Tarifs
+  en:  Pricing
 
 - ref: the-cloud/support
   sub: support
@@ -67,7 +69,9 @@ product:
 
 - ref: the-cloud/solution/index
 
-- ref: the-cloud/services
+- ref: the-cloud/solution/controlled-consumption
+  fr:  Tarifs
+  en:  Pricing
 
 - ref: account
   url: "#login-signup"
