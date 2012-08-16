@@ -1,7 +1,7 @@
 ---
 layout: solution
 locale: fr
-title:  Une plateforme accueillante
+title:  Performances et technologies
 part:   part-innovation
 ---
 <div id="part-by-cc">
@@ -11,8 +11,13 @@ part:   part-innovation
       <div class="row">
          <div class="span4">
             <p>
-               Clever Cloud simplifie votre hébergement. Prenant en charge les langages web les plus populaires du marché et  assurant une mise à l'échelle de vos applications sans faille, vous êtes libéré des inconvénients de l'hébergement traditionnel.
+               Clever Cloud offre à vos applications web l'hébergement haut de gamme qu'elles méritent, avec une scalabilité automatique et un support des technologies les plus populaires du marché&nbsp;:
             </p>
+			<ul>
+				<li>Support multi-languages</li>
+				<li>Haute disponibilité</li>
+				<li>Peering avancé</li>
+			</ul>
          </div>
       </div>
       </div>
@@ -23,10 +28,10 @@ part:   part-innovation
       <div class="span5">
          <div class="row">
             <div class="span5 offset7">
-               <h2>Quatre technologies supportés</h2>
+               <h2>Support multi-languages</h2>
                <p>
                   Scala, PHP, Ruby et Java sont actuellement supportés sur notre
-                  plateforme qui évolue en permanence, avec prochainement de nombreux choix de bases de données et de services supplémentaires.
+                  plateforme. Le support de mySQL est également présent, avec prochainement de nombreux choix de bases de données et de services supplémentaires.
                </p>
                <div id="lang-display">
                   <img src="/img/technos/scala-logo.png" alt="scala" />
@@ -42,7 +47,7 @@ part:   part-innovation
 <div id="part-scalable-as-hell">
    <div class="container">
       <div class="span4">
-         <h2>Scalable as hell</h2>
+         <h2>Haute disponibilité</h2>
          <div class="row">
             <div class="span4">
                <p>
@@ -61,7 +66,7 @@ part:   part-innovation
       <div class="span5">
          <div class="row">
             <div class="span4 offset8">
-               <h2>Peering</h2>
+               <h2>Peering avancé</h2>
                <p>
                   Offrez à vos utilisateurs la meilleure expérience online. Avec son peering vers les plus grands acteurs du marché français et américain, Clever Cloud bénéficie d'une faible latence sur son trafic.
                </p>
