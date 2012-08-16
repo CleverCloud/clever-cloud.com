@@ -229,6 +229,9 @@ body{
       -moz-box-sizing:border-box;
            box-sizing:border-box;
 }
+#part-summary .span4:first-child {
+    padding-left: 0;
+}
 #part-summary .span4+.span4{
    border-left:1px solid #ccc;
 }
