@@ -38,7 +38,12 @@ about:
   url: lab.clever-cloud.com
   fr:  Clever Lab
   en:  Clever Lab
-
+  
+- ref: engineer
+  url: engineering.clever-cloud.com
+  fr:  Engineer Blog
+  en:  Engineer Blog
+  
 - ref: about/partners/index
 
 the-cloud:
@@ -66,8 +71,8 @@ product:
 
 - ref: account
   url: "#login-signup"
-  fr:  Mon compte
-  en:  My account
+  fr:  Login
+  en:  Login
 
 support:
 
@@ -85,11 +90,6 @@ support:
   url: documents.clever-cloud.com/tutorials
   fr:  Tutoriels
   en:  Tutorials
-
-- ref: engineer
-  url: engineering.clever-cloud.com
-  fr:  Engineer Blog
-  en:  Engineer Blog
 
 legal-notice:
 

@@ -4,7 +4,7 @@ layout: page
 locale: fr
 
 # data
-title: Services
+title: Tarifs
 ---
 
 ## Boostez vos applications en 1 clic 
