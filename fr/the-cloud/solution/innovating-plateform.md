@@ -7,7 +7,7 @@ part:   part-innovation
 <div id="part-by-cc">
    <div class="container">
       <div class="span5">
-      <h2>L'hébergement par Clever Cloud</h2>
+      <h2>Intégration zen</h2>
       <div class="row">
          <div class="span4">
             <p>
