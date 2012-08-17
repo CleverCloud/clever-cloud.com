@@ -10,7 +10,7 @@ part:   consumption
       <div class="row">
          <div class="span5">
             <p>
-               Pour profiter d'une scalabilité automatique sans pour autant perdre le controle de vos coûts, Clever Cloud s'est inspiré d'un modèle simple et bien connu: celui du réservoir à essence de la voiture.
+               Pour profiter d'une scalabilité automatique sans pour autant perdre le controle de vos coûts, Clever Cloud s'est inspiré d'un modèle simple et bien connu&nbsp;: celui du réservoir à essence de la voiture.
             </p>
 			<p>
                En effet, à l'instar de celui-ci, vous remplissez un réservoir d'énergie informatique sur votre compte Clever Cloud. Ce réservoir se vide dans le temps, au fil de votre consommation en hébergement.
