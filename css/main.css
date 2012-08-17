@@ -223,6 +223,9 @@ body{
    width: 100%;
 }
 #solution-navbar a{
+   color:#ababab;
+}
+#solution-navbar a:hover,#solution-navbar a:focus,#solution-navbar .active a{
    color:#fff;
 }
 #part-summary{
