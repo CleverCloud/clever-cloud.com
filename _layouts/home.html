@@ -13,7 +13,6 @@ technologies: [php, scala, ruby, java]
 <div class="cc-hero-unit">
    <div class="container">
       
-      <!-- le nice home header -->
       <div class="row">
          <div class="span4 offset8">
             {{ content }}
@@ -25,7 +24,6 @@ technologies: [php, scala, ruby, java]
 <div id="home-page">
    <div class="container">
       
-      <!-- le little summary of advantages -->
       <div id="home-advantages" class="row">
          <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/index.html{% endcapture %}
             {% include home-headline.html %}
@@ -44,7 +42,6 @@ technologies: [php, scala, ruby, java]
 
 <div id="home-tech-wrap">
 <div class="container">
-   <!-- le list of tech we support -->
    <div id="home-tech" class="page-header"> {% capture purl %}/{{ page.locale }}/the-cloud/technologies/index.html{% endcapture %}
       {% include home-headline.html %}
    </div>
@@ -64,7 +61,6 @@ technologies: [php, scala, ruby, java]
 <div id="home-fuel-wrap">
 <div class="container">
    
-   <!-- le amazing screen capture -->
    <div id="home-fuel" class="row"> {% capture purl %}/{{ page.locale }}/the-cloud/features/fuel-your-apps.html{% endcapture %}
       <div class="span5">
          {% include home-headline.html %}
@@ -85,7 +81,6 @@ technologies: [php, scala, ruby, java]
          </div>
       </div>
       
-      <!-- le nice partners we love -->
       <div id="home-partners" class="page-header"> {% capture purl %}/{{ page.locale }}/about/partners/index.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
          <h2>{{ p.title }}</h2>
       </div>
