@@ -3,7 +3,7 @@ title: Oseo
 img:   oseo
 website: www.oseo.fr
 ---
-Oseo est une entreprise publique d’aide à l’innovation, d’investissement en
-fonds propres et de financement en partenariats. Oséo a validé le projet de
-recherche et développement de Clever Cloud et assuré une participation
-financière.
+OSEO is a french public company supporting innovation, doing investment
+capital and funding partnerships. OSEO has approved the draft
+research and development of Clever Cloud's platform and ensured a
+financial participation.
