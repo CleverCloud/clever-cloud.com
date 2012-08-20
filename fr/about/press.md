@@ -6,4 +6,4 @@ locale: fr
 # data
 title: Espace presse
 ---
-(coming soon)
+# Coming soon

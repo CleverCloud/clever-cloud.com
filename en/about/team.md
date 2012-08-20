@@ -6,4 +6,4 @@ locale: en
 # data
 title: The team
 ---
-(coming soon)
+# Coming soon
