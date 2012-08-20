@@ -2,3 +2,4 @@
 _site/
 old.yml
 *.swp
+.DS_Store
