@@ -40,7 +40,7 @@ part:   part-management
 				<li>Git</li>
 				<li>SFTP</li>
 				<li>Fichiers .war ou .zip</li>
-				<li>Dropbox</li>
+				<li>Et même Dropbox&nbsp;!</li>
 			</ul>
          </div>
       </div>
