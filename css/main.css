@@ -263,13 +263,28 @@ body{
    max-width:100%;
 }
 .error-page{
+   background:#fff;
    text-align:center;
 }
 .error-page .container{
-   padding:100px 0;
+   padding:150px 0 200px;
 }
-.error-page h2{
-   padding:40px 0;
+.error-page h1{
+   font-size:60px;
+   padding-bottom:160px;
+}
+.error-page p{
+   font-size:20px;
+   margin-bottom:30px;
+}
+.error-page .btn-large{
+   border-radius:2px;
+   box-shadow:0 1px 0 rgba(255, 255, 255, 0.2) inset,
+              0 1px 2px rgba(0, 0, 0, 0.05),
+              0 0 0 5px #ddd;
+   font-size:20px;
+   font-weight:bold;
+   text-transform:uppercase;
 }
 #lang-display img+img{
    margin:30px;
