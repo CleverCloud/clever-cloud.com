@@ -200,6 +200,9 @@ body{
       margin:0;
    }
 .page{
+   padding-top:40px;
+}
+.sub-navbar+.page{
    padding-top:79px;
 }
 .page p{
