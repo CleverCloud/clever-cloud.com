@@ -47,11 +47,11 @@ part:   part-innovation
          <div class="row">
             <div class="span4">
                <p>
-                  Problems related to the stability of your application under unexpected load no longer arise: Clever Cloud adapts the resources of your application automatically, so it's always available and responsive.
+                  Problems related to the stability of your application under unexpected high traffic no longer arise: Clever Cloud adapts the resources of your app automatically, so it's always available and responsive.
                </p>
                <ul>
-                  <li>Calcul en temps-réél de la charge de votre app | Real-time monitoring of your app's load.</li>
-				  <li>Ajustement automatique de la puissance nécéssaire</li>
+                  <li>Real-time monitoring of your app's load.</li>
+				  <li>Automatic adjustment of necessary computing power</li>
                </ul>
             </div>
          </div>
@@ -63,7 +63,7 @@ part:   part-innovation
       <div class="span5">
          <div class="row">
             <div class="span4 offset8">
-               <h2>Peering avancé</h2>
+               <h2>Advanced peering</h2>
                <p>
                   Offrez à vos utilisateurs la meilleure expérience online. Avec son peering vers les plus grands acteurs du marché français et américain, Clever Cloud bénéficie d'une faible latence sur son trafic.
                </p>
