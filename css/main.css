@@ -26,8 +26,11 @@
    width:163px;
 }
 .navbar-fixed-top .btn-group .btn {
-   font-weight:bold;
-    box-shadow: 0 -1px 0 #9F3A40, 0 1px 0 #662829, 0 2px 0 #501011, 0 0 0 1px #501011, 0 0 2px 3px #5B1D1E, 0 0 0 3px #501011, 0 1px 0 3px #AA5566, 0 0 1px 3px #AA5566, 0 25px 20px -20px #AA292D inset;
+   /*
+   box-shadow: 0 -1px 0 #9F3A40, 0 1px 0 #662829, 0 2px 0 #501011, 0 0 0 1px #501011, 0 0 2px 3px #5B1D1E, 0 0 0 3px #501011, 0 1px 0 3px #AA5566, 0 0 1px 3px #AA5566, 0 25px 20px -20px #AA292D inset;
+   */
+   background:#000;
+   box-shadow:0 -1px 0 #333, 0 1px 0 #333, 0 2px 0 #501011, 0 0 0 1px #501011, 0 0 2px 3px #5B1D1E, 0 0 0 3px #501011, 0 1px 0 3px #AA5566, 0 25px 20px -10px #444 inset;
 }
 .btn-group > .btn:first-child {
     border-radius: 2px !important;
