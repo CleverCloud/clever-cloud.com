@@ -358,7 +358,8 @@ body{
 @media(min-width:768px){
    .cc-hero-unit .container{
       background:url('../img/dropgun.png') left bottom no-repeat;
-      padding:160px 0;
+      height:320px;
+      padding:100px 0;
    }
    #home-bottom .span7{
       margin-top:-200px;
