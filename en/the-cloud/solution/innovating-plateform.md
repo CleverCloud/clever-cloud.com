@@ -65,7 +65,8 @@ part:   part-innovation
             <div class="span4 offset8">
                <h2>Advanced peering</h2>
                <p>
-                  Offrez à vos utilisateurs la meilleure expérience online. Avec son peering vers les plus grands acteurs du marché français et américain, Clever Cloud bénéficie d'une faible latence sur son trafic.
+				  Give your users the best online experience. Clever Cloud has a low latency traffic 
+				  thanks to its peering, giving great web performance to your app across multiple datacenters. 
                </p>
             </div>
          </div>
