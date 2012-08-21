@@ -6,8 +6,8 @@ locale: en
 # data
 title: Home
 ---
-Cutting-edge hosting: 
-Just consume what you need. Get control of your hosting's costs and scale automatically your web services.
+Next-gen Cloud computing: 
+Scale up and down your apps automatically and control your hosting's costs.
 
 
 <a class="btn btn-primary btn-large" href="/en/#login-signup">Sign up for beta</a>
