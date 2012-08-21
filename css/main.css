@@ -262,6 +262,15 @@ body{
    margin:auto;
    max-width:100%;
 }
+.error-page{
+   text-align:center;
+}
+.error-page .container{
+   padding:100px 0;
+}
+.error-page h2{
+   padding:40px 0;
+}
 #lang-display img+img{
    margin:30px;
 }
