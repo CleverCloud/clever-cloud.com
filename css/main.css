@@ -199,6 +199,9 @@ body{
       padding:5px 0;
       margin:0;
    }
+.page{
+   padding-top:79px;
+}
 .page p{
    margin-bottom:30px;
 }
@@ -216,16 +219,18 @@ body{
 #partners-page .thumbnail img{
    max-height:65px;
 }
-#solution-navbar{
+.sub-navbar{
    background:#222 url("/img/texture-sousbarre.jpg") repeat-x;
    box-shadow:0 10px 20px #444 inset;
    position: fixed;
    width: 100%;
 }
-#solution-navbar a{
+.sub-navbar .navbar .nav > li > a{
    color:#ababab;
 }
-#solution-navbar a:hover,#solution-navbar a:focus,#solution-navbar .active a{
+.sub-navbar .navbar .nav > li > a:hover,
+.sub-navbar .navbar .nav > li > a:focus,
+.sub-navbar .navbar .nav > .active a{
    color:#fff;
 }
 #part-summary{
