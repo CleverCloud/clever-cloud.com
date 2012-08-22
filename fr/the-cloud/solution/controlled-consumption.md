@@ -18,7 +18,6 @@ part:   consumption
          </div>
 		<div class="span5 offset2">
             <p>
-              
             </p>
          </div>
       </div>

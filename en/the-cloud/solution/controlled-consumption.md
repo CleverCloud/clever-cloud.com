@@ -10,15 +10,14 @@ part:   consumption
       <div class="row">
          <div class="span5">
             <p>
-               Pour profiter d'une scalabilité automatique sans pour autant perdre le controle de vos coûts, Clever Cloud s'est inspiré d'un modèle simple et bien connu&nbsp;: celui du réservoir à essence de la voiture.
+               To enjoy automatic scalability without losing control of your costs because of very high trafic on your app, Clever Cloud has been inspired by a simple and well known model&nbsp;: the gas tank of you car.
             </p>
 			<p>
-               En effet, à l'instar de celui-ci, vous remplissez un réservoir d'énergie informatique sur votre compte Clever Cloud. Ce réservoir se vide dans le temps, au fil de votre consommation en hébergement.
+               Like it, you fill a virtual tank of "computing power" in your Clever Cloud's account. The tank empties in time, over consumption of your app's hosting.
             </p>
          </div>
 		<div class="span5 offset2">
             <p>
-              
             </p>
          </div>
       </div>
@@ -30,15 +29,15 @@ part:   consumption
          <div class="span4 offset8">
             <h2>The Drop&nbsp;: unit of computing energy</h2>
             <p>
-			   La Drop est l'unité de mesure représentant “l’énergie&nbsp;informatique” de Clever Cloud. Vous rechargez vos réserves au besoin.
+			   The Drop is the unit representing Clever Cloud's "computing energy". You fuel your app with Drops, in case of need.
             </p>
 			<p>
-				Le tableau de bord de votre compte Clever Cloud vous informe en temps-réél de l'état de votre consommation&nbsp;:
+				Your Clever Cloud's dashboard account show you in real-time the state of your consumption:&nbsp; 
 			</p>
 			<ul>
-				<li>Le compte de Drops restantes</li>
-				<li>L'estimation du temps avant la prochaine recharge</li>
-				<li>La gestion des alertes de consommation</li>
+				<li>Your remaining Drops</li>
+				<li>The estimated time before the next recharge</li>
+				<li>Management of your consumption's notification</li>
 			</ul>
          </div>
       </div>
