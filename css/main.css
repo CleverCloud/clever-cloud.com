@@ -65,7 +65,9 @@
       right:25px;
       top:4px;
       width:1px;
-      -moz-transform:none;
+      -webkit-transform:none;
+         -moz-transform:none;
+              transform:none;
    }
    #dropdown-lang:hover:after,#dropdown-lang:focus:after{
       top:-1px;
