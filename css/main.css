@@ -42,13 +42,6 @@
    box-shadow:0 1px 0 #fcfcfc;
    padding-bottom:6px;
 }
-.cc-hero-unit .btn-primary:after {
-	content: url("../img/icon-arrow-beta.png");
-	display: block;
-	float: right;
-	height: 31px;
-	padding-left: 15px;
-}
 .cc-hero-unit .btn-primary {
     background: no-repeat center right #F2F2F2 ;
     box-shadow: 0 -38px 20px -20px #AAAAAA inset, 0 0 0 2px #552222, 0 0 0 3px #773322;
@@ -401,6 +394,13 @@ body{
    }
 }
 @media(min-width:1200px){
+   .cc-hero-unit .btn-primary:after {
+	   content: url("../img/icon-arrow-beta.png");
+	   display: block;
+	   float: right;
+	   height: 31px;
+	   padding-left: 15px;
+   }
    #part-by-cc .container{
       background:url("/img/solution/server.png") center right no-repeat;
       height:250px;
