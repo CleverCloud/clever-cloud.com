@@ -59,6 +59,11 @@ the-cloud:
   fr:  Support
   en:  Support
 
+- ref: lang
+  sub: lang
+  fr:  Fr
+  en:  En
+
 - ref: account
   url: "#login-signup"
   btn: Yes
@@ -94,6 +99,18 @@ support:
   url: documents.clever-cloud.com/tutorials
   fr:  Tutoriels
   en:  Tutorials
+
+lang:
+
+- ref:  fr/index
+  switch: fr
+  fr:   Français
+  en:   French
+
+- ref:  en/index
+  switch: en
+  fr:   Anglais
+  en:   English
 
 legal-notice:
 
