@@ -10,10 +10,10 @@ part:   consumption
       <div class="row">
          <div class="span5">
             <p>
-               To enjoy automatic scalability without losing control of your costs because of very high trafic on your app, Clever Cloud has been inspired by a simple and well known model&nbsp;: the gas tank of you car.
+               Scaling your app up and down automatically is a great feature, but you should not lose sight of cost control in the case of very high traffic. In order to allow for a simple monitoring process, Clever Cloud chose a straightforward image: the gas tank of a car.
             </p>
 			<p>
-               Like it, you fill a virtual tank of "computing power" in your Clever Cloud's account. The tank empties in time, over consumption of your app's hosting.
+               You get to fill your virtual tank with computer power –represented by drops- and then all you have to do is to monitor your activity. Once you run out of drops, you can fill the tank again without any intervention on our part.
             </p>
          </div>
 		<div class="span5 offset2">
@@ -32,7 +32,7 @@ part:   consumption
 			   The Drop is the unit representing Clever Cloud's "computing energy". You fuel your app with Drops, in case of need.
             </p>
 			<p>
-				Your Clever Cloud's dashboard account show you in real-time the state of your consumption:&nbsp; 
+				The Clever Cloud dashboard shows you in real time what’s left in the tank in terms of drops, time and consumed computing energy&nbsp;: 
 			</p>
 			<ul>
 				<li>Your remaining Drops</li>

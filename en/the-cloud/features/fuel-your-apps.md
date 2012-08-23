@@ -1,10 +1,12 @@
 ---
-title: Fuel your apps.
+title: Launch your app in 3 steps
 list:
-- Secure deployment solution.
-- Innovative billing via "drops".
-- "Choose your management mode : simple or expert."
+- Create your account in seconds
+- Get some Drops
+- Deploy your app 
 ---
-Like with your car, manage your "drops" tank (Clever Cloud's consumption unit)
-from your dashboard. No time to manage your consumption? Clever Cloud takes care
-of the refill before you run out!
+Clever Cloud allows you to manage your IT consumption through a very intuitive “Drops” system. 
+
+Each Drop represents a certain amount of computer energy, which allows you to monitor closely how much your apps actually cost you to run. 
+
+If you don’t have the time to manage your drops yourself, Clever Cloud is happy to take care of it for you.

@@ -2,6 +2,4 @@
 title: Cost control
 icon:  maitrise
 ---
-Clever Cloud helps enterprises to reduce IT costs. Renting too expensive servers
-that which won't be used most of the time? It's over: You only have to pay for
-consumed resources.
+Tired of renting overpriced servers that stay unused most of the time? Clever cloud helps you reduce dramatically your IT cost by charging you only for what you actually consume.

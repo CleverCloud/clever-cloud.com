@@ -10,7 +10,7 @@ part:   part-management
       <div class="row">
          <div class="span4">
             <p>
-               Add applications, services, or websites at any time. Deploying your app on  Clever Cloud's infrastructure, and it works in minutes, without any server configuration to perform. 
+               You can add applications, services or websites at any time. Just deploy on our infrastructure and it will work within minutes with no server configuration required. 
             </p>
          </div>
       </div>
@@ -22,9 +22,9 @@ part:   part-management
       <div class="row">
          <div class="span4">
             <p>
-				Security of the connection between your users and your site is a critical aspect of your Web service
+				Secure connection between app and user is a critical aspect of any web-based service.
 			</p>
-			<p>Through a partnership between Clever Cloud and Comodo , it's possible to generate - directly from your account - SSL security certificates. Applying security to your web services will never be easier.
+			<p>Thanks to a partnership developed between Clever Cloud and Comodo, it is possible to generate SSL security certificates directly from your account. It does not get any easier than that.
             </p>
          </div>
       </div>
@@ -32,11 +32,11 @@ part:   part-management
 </div>
 <div id="part-easy-use">
    <div class="container">
-      <h2>Secure and blazing fast deploy</h2>
+      <h2>Secured and unbelievably fast deployment</h2>
       <div class="row">
          <div class="span4">
             <p>
-               Choose your favorite Clever Cloud's deployment process for your app:&nbsp;
+               You get to choose the best deployment process for your app:&nbsp;
             </p>
 			<ul>
 				<li>Git</li>
@@ -53,9 +53,9 @@ part:   part-management
       <div class="row">
          <div class="span7"><img id="illus-dashboard" src="/img/solution/screen.png" alt="dashboard" /></div>
          <div class="span5">
-         <h2>24/7 real-time management</h2>
+         <h2>24/7 management</h2>
 	         <p>
-	            Clever Cloud's dashboard is accessible in your browser, anywhere, anytime. You only need a simple Internet access.
+	            Clever Cloud’s dashboard is accessible from any browser anywhere, anytime. All you need is an access to the web.
 	         </p>
          </div>
       </div>
