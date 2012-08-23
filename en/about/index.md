@@ -16,7 +16,7 @@ contact:
     3, rue de l'Allier  
     44000 Nantes
 ---
-## 
+## Scalability and pay-as-you-go hosting: Clever Cloud's solution
 
 Clever Cloud (created in 2010) is a startup based in Nantes. The hosting platform builded by Clever Cloud required tree years of R&D, in order to run languages like Java, Scala, Ruby and PHP.
 

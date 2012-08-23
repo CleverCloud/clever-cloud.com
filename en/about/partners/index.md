@@ -5,6 +5,12 @@ locale: en
 
 # data
 title: Our partners
+important:
+- about/partners/kima-ventures
+- about/partners/atlanpole
+- about/partners/comodo
+- about/partners/redhat
+- about/partners/company-campus
 list:
 - about/partners/kima-ventures
 - about/partners/atlanpole
