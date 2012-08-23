@@ -29,7 +29,7 @@
    background:#000;
    box-shadow:0 -1px 0 #222, 0 1px 0 #333, 0 2px 0 #501011, 0 0 0 1px #501011, 0 0 2px 3px #5B1D1E, 0 0 0 3px #501011, 0 1px 0 3px #AA5566, 0 25px 20px -10px #444 inset;
 }
-[href="#login-signup"]{
+.navbar [href="#login-signup"]{
    font-weight:bold;
 }
 #dropdown-lang{
@@ -221,6 +221,10 @@ body{
    }
    #footer .nav-list > li{
       margin:0;
+   }
+   #footer .nav-list > li > a:hover{
+      background:none;
+      font-weight:bold;
    }
    #footer .nav-list > .nav-header{
       display:table-cell;
