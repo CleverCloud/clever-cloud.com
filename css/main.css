@@ -304,6 +304,16 @@ body{
 #part-summary .span4+.span4{
    border-left:1px solid #ccc;
 }
+   #part-summary .nav-list{
+      padding-left:0;
+   }
+   #part-summary .nav-list li{
+      line-height:25px;
+      padding:5px 0;
+   }
+   #part-summary .nav-list [class*="cc-icon-"]{
+      vertical-align:top;
+   }
 .solution-page{
    padding-top:39px;
 }
