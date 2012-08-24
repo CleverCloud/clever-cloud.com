@@ -257,9 +257,7 @@ body{
 .page{
    padding-top:40px;
 }
-.sub-navbar+.page{
-   padding-top:79px;
-}
+
 .page p{
    margin-bottom:30px;
 }
@@ -278,10 +276,8 @@ body{
    max-height:65px;
 }
 .sub-navbar{
-   background:#222 url("/img/texture-sousbarre.jpg") repeat-x;
+   background:#222 url("") repeat-x;
    box-shadow:0 10px 20px #444 inset;
-   position: fixed;
-   width: 100%;
 }
 .sub-navbar .navbar .nav > li > a{
    color:#ababab;
@@ -316,9 +312,6 @@ body{
    #part-summary .nav-list [class*="cc-icon-"]{
       vertical-align:top;
    }
-.solution-page{
-   padding-top:39px;
-}
 .solution-page .container{
    padding-top:40px;
 }
@@ -406,8 +399,8 @@ body{
 }
 @media(max-width:767px){
    #home-page,#home-tech-wrap,#home-fuel-wrap,#home-bottom,#footer,
-   #home-advantages,#home-fuel{
-      margin-left:-15px;
+   #home-advantages,#home-fuel,.sub-navbar,.full-bg{
+      margin-left:-20px;
       margin-right:-20px;
       padding-left:20px;
       padding-right:20px;
@@ -424,11 +417,22 @@ body{
       width:7px;
    }
    .cc-hero-unit p{
-         font-size: 20px;
-         line-height: 28px;
-      }
+      font-size: 20px;
+      line-height: 28px;
+   }
 }
 @media(min-width:768px){
+   .solution-page{
+      padding-top:39px;
+   }   
+   .sub-navbar{
+      background-image:url("/img/texture-sousbarre.jpg");
+      position: fixed;
+      width: 100%;
+   }
+   .sub-navbar+.page{
+      padding-top:79px;
+   }
    .cc-hero-unit .container{
       background:url('../img/dropgun.png') left bottom no-repeat;
       height:320px;

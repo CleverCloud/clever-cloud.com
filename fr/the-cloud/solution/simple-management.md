@@ -4,7 +4,7 @@ locale: fr
 title:  Une gestion simple et maîtrisée
 part:   part-management
 ---
-<div id="part-self-service">
+<div id="part-self-service" class="full-bg">
    <div class="container">
       <h2>Self-service</h2>
       <div class="row">
@@ -16,7 +16,7 @@ part:   part-management
       </div>
    </div>
 </div>
-<div id="part-optimum-security">
+<div id="part-optimum-security" class="full-bg">
    <div class="container">
       <h2>Sécurisation de vos apps</h2>
       <div class="row">
@@ -32,7 +32,7 @@ part:   part-management
       </div>
    </div>
 </div>
-<div id="part-easy-use">
+<div id="part-easy-use" class="full-bg">
    <div class="container">
       <h2>Déploiement rapide et sécurisé</h2>
       <div class="row">
@@ -50,7 +50,7 @@ part:   part-management
       </div>
    </div>
 </div>
-<div id="part-real-time">
+<div id="part-real-time" class="full-bg">
    <div class="container">
       <div class="row">
          <div class="span7"><img id="illus-dashboard" src="/img/solution/screen.png" alt="dashboard" /></div>
