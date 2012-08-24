@@ -74,9 +74,13 @@ product:
 
 - ref: the-cloud/solution/index
 
+- ref: the-cloud/solution/innovating-plateform
+
 - ref: the-cloud/solution/controlled-consumption
   fr:  Tarifs
   en:  Pricing
+
+- ref: the-cloud/solution/simple-management
 
 - ref: account
   url: "#login-signup"

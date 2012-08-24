@@ -4,7 +4,7 @@ locale: fr
 title:  Tarifs
 part:   consumption
 ---
-<div id="part-pay-as-you-go">
+<div id="part-pay-as-you-go" class="full-bg">
    <div class="container">
       <h2>Paiement à la consommation</h2>
       <div class="row">
@@ -23,7 +23,7 @@ part:   consumption
       </div>
    </div>
 </div>
-<div id="part-drop">
+<div id="part-drop" class="full-bg">
    <div class="container">
       <div class="row">
          <div class="span4 offset8">

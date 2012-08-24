@@ -4,7 +4,7 @@ locale: fr
 title:  Performances et technologies
 part:   part-innovation
 ---
-<div id="part-by-cc">
+<div id="part-by-cc" class="full-bg">
    <div class="container">
       <div class="span5">
       <h2>Intégration zen</h2>
@@ -21,7 +21,7 @@ part:   part-innovation
       </div>
    </div>
 </div>
-<div id="part-code-as-you-are">
+<div id="part-code-as-you-are" class="full-bg">
    <div class="container">
       <div class="span5">
          <div class="row">
@@ -42,7 +42,7 @@ part:   part-innovation
       </div>
    </div>
 </div>
-<div id="part-scalable-as-hell">
+<div id="part-scalable-as-hell" class="full-bg">
    <div class="container">
       <div class="span4">
          <h2>Haute disponibilité</h2>
@@ -60,7 +60,7 @@ part:   part-innovation
       </div>
    </div>
 </div>
-<div id="part-peering">
+<div id="part-peering" class="full-bg">
    <div class="container">
       <div class="span5">
          <div class="row">
