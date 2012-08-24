@@ -1,5 +1,4 @@
 ---
 title: Available technologies
 ---
-Our creed : to support standard languages. There are more languages and services to come, so
-**Stay tuned!**
+Our goal is to support every standard language. There are more languages and services to come so, **stay tuned!**

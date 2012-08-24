@@ -2,4 +2,4 @@
 title: Zen integration
 icon:  deploiement
 ---
-Clever Cloud perfectly fits to your activty and simplify apps and websites hosting, without breaking your workflow.
+Whatever your activity is, Clever Cloud will fit right into it. It simplifies greatly the hosting of apps and websites with no negative influence on your workflow.

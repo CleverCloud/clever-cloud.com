@@ -6,8 +6,6 @@ locale: en
 # data
 title: Home
 ---
-Next-gen Cloud computing: 
-Scale up and down your apps automatically and control your hosting's costs.
+Next-gen Cloud computing&nbsp;:Scale up or scale down your apps automatically and get a better control over your hosting costs.
 
-
-<a class="btn btn-primary btn-large" href="/en/#login-signup">Sign up for beta</a>
+<a class="btn btn-primary btn-large" href="/en/#login-signup">Sign Up for beta</a>
