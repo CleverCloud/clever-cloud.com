@@ -391,6 +391,15 @@ body{
               0 50px 30px -50px #300 inset;
    color:#faf8f9;
 }
+   #part-self-service .row,#part-optimum-security .row{
+      margin-bottom:0;
+   }
+   #part-optimum-security .container{
+      padding-top:0;
+   }
+   #part-optimum-security .span4{
+      padding-top:40px;
+   }
 #part-optimum-security{
    background:url("/img/solution/bg-carreau2.jpg");
    box-shadow:0 -4px 4px -4px #aaa inset,
@@ -400,7 +409,6 @@ body{
    background:#fafafa;
 }
 #illus-dashboard{
-   display:none;
    margin-top:-96px;
 }
 
@@ -493,20 +501,5 @@ body{
       background:url("/img/solution/drops.png") bottom left no-repeat;
       height:335px;
       
-   }
-   #part-self-service .container{
-      background:url("/img/solution/server-top.png") bottom right no-repeat;
-      height:300px;
-   }
-   #part-optimum-security .container{
-      background:url("/img/solution/server-bottom.png") bottom right no-repeat;
-      height:399px;
-   }
-   #part-easy-use .container{
-      background:url("/img/solution/scala-box.png") 80% 60% no-repeat;
-      height:350px;
-   }
-   #illus-dashboard{
-      display:block;
    }
 }
