@@ -4,7 +4,7 @@ layout: page
 locale: en
 
 # data
-title: Mentions légales
+title: Legal
 ---
 
 ## Editor
