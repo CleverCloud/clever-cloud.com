@@ -94,26 +94,26 @@ support:
   fr:  Documentation
   en:  Documentation
 
-- ref: status
-  url: status.clever-cloud.com
-  fr:  État du service
-  en:  Cloud status
-
 - ref: tutorials
   url: documents.clever-cloud.com/tutorials
   fr:  Tutoriels
   en:  Tutorials
+
+- ref: status
+  url: status.clever-cloud.com
+  fr:  État du service
+  en:  Service status
 
 lang:
 
 - ref:  fr/index
   switch: fr
   fr:   Français
-  en:   French
+  en:   Français
 
 - ref:  en/index
   switch: en
-  fr:   Anglais
+  fr:   English
   en:   English
 
 legal-notice:
