@@ -113,6 +113,13 @@
 	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 
 }
+.cc-hero-unit .btn-primary:after, #go-suscribe .btn-primary:after {
+   content: url("../img/icon-arrow-beta.png");
+   display: block;
+   float: right;
+   height: 31px;
+   padding-left: 15px;
+}
 .cc-hero-unit p {
     font-family: 'AdelleBasic-Bold';
 }
@@ -527,9 +534,7 @@ body{
       background-image:url("/img/texture-sousbarre.jpg");
    }
    .cc-hero-unit .container{
-      background:url('../img/dropgun.png') left bottom no-repeat;
-      height:320px;
-      padding:100px 0;
+      padding:100px 0 0;
    }
    #home-bottom .span7{
       margin-top:-200px;
@@ -546,14 +551,16 @@ body{
       width:7px;
    }
 }
-@media(min-width:980px){
-   .cc-hero-unit .btn-primary:after, #go-suscribe .btn-primary:after {
-	   content: url("../img/icon-arrow-beta.png");
-	   display: block;
-	   float: right;
-	   height: 31px;
-	   padding-left: 15px;
+@media(max-width:979px){
+   .cc-hero-unit .span7{
+      display:none;
    }
+   .cc-hero-unit .span4{
+      margin-left:20px;
+      width:auto;
+   }
+}
+@media(min-width:980px){
    .sub-navbar{
       position: fixed;
       width: 100%;
