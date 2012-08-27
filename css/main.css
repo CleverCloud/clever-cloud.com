@@ -91,6 +91,8 @@
 	font-weight:bold;
     text-shadow: none;
     text-transform: uppercase;
+	position: relative;
+	padding-right: 42px;
 	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
@@ -116,9 +118,11 @@
 .cc-hero-unit .btn-primary:after, #go-suscribe .btn-primary:after {
    content: url("../img/icon-arrow-beta.png");
    display: block;
-   float: right;
    height: 31px;
    padding-left: 15px;
+   position: absolute;
+   top: 8px;
+   right: 3px
 }
 .cc-hero-unit p {
     font-family: 'AdelleBasic-Bold';
