@@ -492,6 +492,23 @@ body{
       font-size: 20px;
       line-height: 28px;
    }
+   #part-by-cc img,#part-self-service img{
+      margin-top:20px;
+   }
+   #part-code-as-you-are img,#part-peering img,#illus-dashboard{
+      margin-bottom:20px;
+   }
+   #part-scalable-as-hell .span4{
+      margin-bottom:-20px;
+      position:static;
+   }
+   #part-optimum-security img{
+      display:none;
+   }
+   #part-easy-use img{
+      margin:50px auto 20px;
+      display:block;
+   }
 }
 @media(min-width:768px){
    .sub-navbar{
