@@ -16,6 +16,7 @@ packages:
   price:    70
   discount: 13
   per_drop: 0.024
+  best_offer: Yes
 - title:    Macro
   count:    5000
   price:    115
@@ -60,7 +61,7 @@ packages:
          <div class="span3">
             <div class="well">
                <h3>{{ package.title }}</h3>
-               <a href="#" class="btn btn-large btn-inverse">
+               <a href="#" class="btn btn-large {% if package.best_offer %}btn-success{% else %}btn-inverse{% endif %}">
                   {{ package.count }} D
                   / {{ package.price }} &euro;
                </a>
