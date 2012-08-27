@@ -261,8 +261,21 @@ body{
 .page p{
    margin-bottom:30px;
 }
+#partners-page p{
+   margin-bottom:0;
+}
 #partners-page > .row{
-   min-height:120px;
+   border-bottom:1px solid #d6d6d6;
+   border-top:1px solid #fff;
+   min-height:100px;
+   padding:40px 0;
+}
+#partners-page > .row:first-child{
+   border-top:none;
+}
+
+#partners-page > .row:last-child{
+   border-bottom:none;
 }
 #partners-page .intro{
    color:#888;
