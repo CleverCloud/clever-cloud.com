@@ -223,6 +223,9 @@ body{
    #footer .nav-list > li{
       margin:0;
    }
+   #footer .nav-list > .active > a{
+      font-weight:normal;
+   }
    #footer .nav-list > li > a:hover{
       background:none;
       font-weight:bold;
