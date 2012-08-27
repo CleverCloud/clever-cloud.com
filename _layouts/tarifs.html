@@ -1,0 +1,71 @@
+---
+layout: main
+nav:
+- ref: the-cloud/solution/index
+- ref: the-cloud/solution/innovating-plateform
+- ref: the-cloud/solution/controlled-consumption
+- ref: the-cloud/solution/simple-management
+packages:
+- title:    Starting
+  count:    1000
+  price:    25
+  discount: 8
+  per_drop: 0.025
+- title:    In da place
+  count:    2500
+  price:    70
+  discount: 13
+  per_drop: 0.024
+- title:    Macro
+  count:    5000
+  price:    115
+  discount: 18
+  per_drop: 0.023
+- title:    Big Biz
+  count:    10000
+  price:    200
+  discount: 28
+  per_drop: 0.020
+---
+<div class="sub-navbar">
+   <div class="container {{ page.part }}">
+      <div class="navbar">
+         <ul class="nav"> {% for link in page.nav %}
+            {% include nav.html %} {% endfor %}
+         </ul>
+      </div>
+   </div>
+</div>
+<div class="solution-page">{{ content }}</div>
+<div id="go-suscribe" class="full-bg">
+   <div class="container">
+      <p>
+         Bénéficiez de <strong>50 drops</strong> pour toute création de compte
+         afin de tester notre produit.
+         <a href="" class="btn btn-large btn-primary pull-right">
+            Rejoindre la bêta privée
+         </a>
+      </p>
+   </div>
+</div>
+<div id="packages">
+   <div class="container">
+      <div class="row"> {% for package in page.packages %}
+         <div class="span3">
+            <div class="well">
+               <h3>{{ package.title }}</h3>
+               <a href="#" class="btn btn-large btn-inverse">
+                  {{ package.count }} D
+                  / {{ package.price }} &euro;
+               </a>
+               <p>
+                  <em>
+                     soit {{ package.discount }}% de réduction
+                     ({{ package.per_drop }}&euro;/D)
+                  </em>
+               </p>
+            </div>
+         </div> {% endfor %}
+      </div>
+   </div>
+</div>
