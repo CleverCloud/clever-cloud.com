@@ -83,7 +83,7 @@
    box-shadow:0 1px 0 #fcfcfc;
    padding-bottom:6px;
 }
-.cc-hero-unit .btn-primary {
+.cc-hero-unit .btn-primary, #go-suscribe .btn-primary {
     background: no-repeat center right #F2F2F2 ;
     box-shadow: 0 -38px 20px -20px #AAAAAA inset, 0 0 0 2px #552222, 0 0 0 3px #773322;
     color: #501011;
@@ -421,8 +421,9 @@ body{
    padding-top:20px;
 }
    #go-suscribe p{
-      font-size:16px;
-      line-height:34px;
+      font-size:20px;
+      line-height:30px;
+      padding-top:10px;
    }
 #packages{
    padding-top:20px;
@@ -517,16 +518,11 @@ body{
    }
 }
 @media(min-width:1200px){
-   .cc-hero-unit .btn-primary:after {
+   .cc-hero-unit .btn-primary:after, #go-suscribe .btn-primary:after {
 	   content: url("../img/icon-arrow-beta.png");
 	   display: block;
 	   float: right;
 	   height: 31px;
 	   padding-left: 15px;
-   }
-   #part-drop .container{
-      background:url("/img/solution/drops.png") bottom left no-repeat;
-      height:335px;
-      
    }
 }
