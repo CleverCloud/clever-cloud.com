@@ -100,7 +100,7 @@
 	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 }
 
-.cc-hero-unit .btn-primary:hover,.cc-hero-unit .btn-primary:focus {
+.cc-hero-unit .btn-primary:hover,#go-suscribe .btn-primary:hover,.cc-hero-unit .btn-primary:focus {
     background-color: #ddd;
     box-shadow: 0 0 10px 5px #f5f5f5 inset,0 0 10px 10px rgba(200,50,70,.3), 0 0 0 2px #552222, 0 0 0 3px #773322;
     color: #000000;
