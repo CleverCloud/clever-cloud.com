@@ -487,6 +487,62 @@ body{
       padding:10px 20px;
       text-align:center;
    }
+.auth-page{
+   background:#fdfdfd;
+}
+   .auth-page form{
+      margin-bottom:160px;
+      margin-top:160px;
+   }
+      .auth-page form p{
+         margin-bottom:0;
+      }
+   .auth-page .well{
+      background:none;
+      padding:10px 20px;
+   }
+   .auth-page .full-width input{
+      font-size:15px;
+      height:36px;
+      width:100%;
+      -webkit-box-sizing:border-box;
+         -moz-box-sizing:border-box;
+           -o-box-sizing:border-box;
+              box-sizing:border-box;
+   }
+   .auth-page .help-inline{
+      font-size:14px;
+      font-style:italic;
+      line-height:28px;
+   }
+   .auth-page .btn.pull-right{
+      width:80px;
+   }
+   .auth-page a.btn.pull-right{
+      width:60px;
+   }
+   .auth-page .btn-inverse{
+      box-shadow:0 0 0 3px #ccc;
+      font-weight:bold;
+   }
+   .auth-page .a-important{
+      color:#4d4d4d;
+      text-decoration:underline;
+   }
+   .auth-page #login{
+      padding:25px 20px;
+   }
+   .auth-page #signup{
+      padding:25px 20px 40px;
+   }
+   .auth-page #email{
+      font-weight:bold;
+      color:#4d4d4d;
+      margin-bottom:10px;
+   }
+   .auth-page #password{
+      margin-bottom:20px;
+   }
 @media(max-width:480px){
    .navbar-fixed-top .nav li:last-child{
       clear:left;
