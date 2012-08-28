@@ -43,10 +43,10 @@ part:   part-management
 				Choisissez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud&nbsp;:
             </p>
 			<ul class="nav nav-list">
-				<li>Git</li>
-				<li>SFTP</li>
-				<li>Fichiers .war ou .zip</li>
-				<li>Et même Dropbox&nbsp;!</li>
+				<li><i class="cc-icon-tick"> </i> Git</li>
+				<li><i class="cc-icon-tick"> </i> SFTP</li>
+				<li><i class="cc-icon-tick"> </i> Fichiers .war ou .zip</li>
+				<li><i class="cc-icon-tick"> </i> Et même Dropbox&nbsp;!</li>
 			</ul>
          </div>
          <div class="span4 offset2"><img src="/img/solution/scala-box.png" alt="scala box" /></div>

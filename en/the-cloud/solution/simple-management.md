@@ -42,10 +42,10 @@ part:   part-management
                You get to choose the best deployment process for your app:&nbsp;
             </p>
 			   <ul>
-				   <li>Git</li>
-				   <li>SFTP</li>
-				   <li>.war or .zip files</li>
-				   <li>Even Dropbox&nbsp;!</li>
+				   <li><i class="cc-icon-tick"> </i> Git</li>
+				   <li><i class="cc-icon-tick"> </i> SFTP</li>
+				   <li><i class="cc-icon-tick"> </i> .war or .zip files</li>
+				   <li><i class="cc-icon-tick"> </i> Even Dropbox&nbsp;!</li>
 			   </ul>
          </div>
          <div class="span4 offset2"><img src="/img/solution/scala-box.png" alt="scala box" /></div>
