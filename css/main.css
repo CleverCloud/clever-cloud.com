@@ -322,9 +322,13 @@ body{
 }
 #part-summary{
    border-top:1px solid #ccc;
+   padding-bottom:40px;
+}
+#part-summary .row{
+   margin-bottom:0;
 }
 #part-summary .span4{
-   padding:20px;
+   padding:0 20px;
    -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
            box-sizing:border-box;

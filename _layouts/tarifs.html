@@ -42,14 +42,11 @@ packages:
    <div class="container">
       <div class="row">
          <div class="span8">
-            <p>
-               Bénéficiez de <strong>50 drops</strong> pour toute création de compte
-               afin de tester notre produit.
-            </p>
+            {{ page.baseline | markdownify }}
          </div>
          <div class="span4">
             <a href="#" class="btn btn-large btn-primary pull-right">
-               Inscription
+               {{ page.suscribe }}
             </a>
          </div>
       </div>
@@ -66,7 +63,7 @@ packages:
                </a>
                <p>
                   <em>
-                     soit {{ package.discount }}% de réduction
+                     {{ page.as }} {{ package.discount }}% {{ page.discount }}
                      ({{ package.per_drop }}&euro;/Dr)
                   </em>
                </p>
