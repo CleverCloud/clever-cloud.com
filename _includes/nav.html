@@ -4,7 +4,7 @@
 </li> {% elsif link.url %}
 <li>
    {% if link.btn %}<div class="btn-group">{% endif %}
-      <a{% if link.btn %} class="btn"{% endif %} {% unless link.url contains '#' %}href="http://{{ link.url }}" target="_blank"{% else %}href="{{ link.url }}"{% endunless %}>
+      <a{% if link.btn %} class="btn"{% endif %} {% unless link.url contains '#' %}href="{{ link.url }}" target="_blank"{% else %}href="{{ link.url }}"{% endunless %}>
          {{ link[page.locale] }}
       </a>
    {% if link.btn %}</div>{% endif %}

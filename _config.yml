@@ -35,12 +35,12 @@ about:
 - ref: about/team
 
 - ref: lab
-  url: lab.clever-cloud.com
+  url: http://lab.clever-cloud.com
   fr:  Clever Lab
   en:  Clever Lab
   
 - ref: engineer
-  url: engineering.clever-cloud.com
+  url: http://engineering.clever-cloud.com
   fr:  Engineer Blog
   en:  Engineer Blog
   
@@ -65,7 +65,7 @@ the-cloud:
   en:  En
 
 - ref: account
-  url: "#login-signup"
+  url: /en/auth/login.html
   btn: Yes
   fr:  Login
   en:  Login
@@ -83,24 +83,24 @@ product:
 - ref: the-cloud/solution/simple-management
 
 - ref: account
-  url: "#login-signup"
+  url: /en/auth/login.html
   fr:  Login
   en:  Login
 
 support:
 
 - ref: docs
-  url: documents.clever-cloud.com
+  url: http://documents.clever-cloud.com
   fr:  Documentation
   en:  Documentation
 
 - ref: tutorials
-  url: documents.clever-cloud.com/tutorials
+  url: http://documents.clever-cloud.com/tutorials
   fr:  Tutoriels
   en:  Tutorials
 
 - ref: status
-  url: status.clever-cloud.com
+  url: http://status.clever-cloud.com
   fr:  État du service
   en:  Service status
 
@@ -127,21 +127,21 @@ legal-notice:
 follow-us:
 
 - ref: twitter
-  url: twitter.com/clever_cloud
+  url: http://twitter.com/clever_cloud
   fr:  Twitter
   en:  Twitter
 
 - ref: facebook
-  url: facebook.com/clevercloudsas
+  url: http://facebook.com/clevercloudsas
   fr:  Facebook
   en:  Facebook
 
 - ref: github
-  url: github.com/clevercloud
+  url: http://github.com/clevercloud
   fr:  Github
   en:  Github
 
 - ref: linkedin
-  url: linkedin.com/company/clever-cloud
+  url: http://linkedin.com/company/clever-cloud
   fr:  LinkedIn
   en:  LinkedIn
