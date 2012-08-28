@@ -2,16 +2,20 @@
 layout: auth
 locale: en
 title:  Signup
+sp: signup
 ---
-<div id="signup" class="well">
+<div class="alert">
+   <p>some info</p>
+</div>
+<div class="well">
    <div class="full-width">
-      <input id="email" name="email" type="email" placeholder="Email"/>
-      <input id="password" name="password" type="password" placeholder="Mot de passe"/>
+      <input name="email" type="email" placeholder="Email"/>
+      <input name="password" type="password" placeholder="Mot de passe"/>
    </div>
-   <label for="conditions" class="checkbox">
-      <input id="conditions" name="conditions" type="checkbox" />
-      J'ai lu et j'accepte les
-      <a href="#" class="a-important">Conditions Générales d'Utilisation</a>.
+   <label for="sp-signup-conditions" class="checkbox">
+      <input id="sp-signup-conditions" name="conditions" type="checkbox" />
+      I agree to Clever Cloud's
+      <a href="#" class="a-important">Terms of Use</a>.
    </label>
    <p>
       <button type="submit" class="btn btn-inverse pull-right">Sign up</button>
