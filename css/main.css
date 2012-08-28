@@ -529,18 +529,40 @@ body{
       color:#4d4d4d;
       text-decoration:underline;
    }
-   .auth-page #login{
+   .auth-page .alert{
+      background:none;
+      border:none;
+      box-shadow:0 0 2px #aaa inset;
+      color:#888;
+   }
+   .auth-page .alert-info{
+      box-shadow:0 0 2px #2af inset;
+      color:#08c;
+   }
+   .auth-page .alert-error{
+      box-shadow:0 0 2px #f20 inset;
+      color:#c00;
+   }
+   .auth-page .alert-success{
+      box-shadow:0 0 2px #4c2 inset;
+      color:#280;
+   }
+   .auth-page #sp-login-fields{
       padding:25px 20px;
    }
-   .auth-page #signup{
+   .auth-page #sp-signup-fields{
       padding:25px 20px 40px;
    }
-   .auth-page #email{
-      font-weight:bold;
-      color:#4d4d4d;
+   .auth-page [type="email"]{
       margin-bottom:10px;
    }
-   .auth-page #password{
+   .auth-page .full-width input:focus{
+      border-color:#888;
+      box-shadow:0 0 3px #aaa;
+      color:#4d4d4d;
+      font-weight:bold;
+   }
+   .auth-page [type="password"]{
       margin-bottom:20px;
    }
 @media(max-width:480px){
