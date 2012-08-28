@@ -10,6 +10,7 @@ important:
 - about/partners/atlanpole
 - about/partners/comodo
 - about/partners/redhat
+- about/partners/iliad
 - about/partners/company-campus
 list:
 - about/partners/kima-ventures
