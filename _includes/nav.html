@@ -1,6 +1,6 @@
 {% if link.switch %} {% capture from %}/{{ page.locale }}/{% endcapture %} {% capture to %}/{{ link.switch }}/{% endcapture %}
 <li>
-   <a href="{{ page.url | replace: from, to }}">{{ link[page.locale] }}</a>
+   <a href="{% if page.url == '/en/auth/login.html' and to != '/en/' %}{{ to }}{% else %}{{ page.url | replace: from, to }}{% endif %}">{{ link[page.locale] }}</a>
 </li> {% elsif link.url %}
 <li>
    {% if link.btn %}<div class="btn-group">{% endif %}
