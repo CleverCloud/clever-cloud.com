@@ -6,24 +6,24 @@ nav:
 - ref: the-cloud/solution/controlled-consumption
 - ref: the-cloud/solution/simple-management
 packages:
-- title:    Starting
-  count:    1000
+- title:    First Steps
+  count:    1 000
   price:    25
   discount: 8
   per_drop: 0.025
-- title:    In da place
-  count:    2500
+- title:    Highway Driver
+  count:    2 500
   price:    70
   discount: 13
   per_drop: 0.024
   best_offer: Yes
-- title:    Macro
-  count:    5000
+- title:    Aviator
+  count:    5 000
   price:    115
   discount: 18
   per_drop: 0.023
-- title:    Big Biz
-  count:    10000
+- title:    Astronaut
+  count:    10 000
   price:    200
   discount: 28
   per_drop: 0.020
@@ -62,13 +62,12 @@ packages:
             <div class="well">
                <h3>{{ package.title }}</h3>
                <a href="#" class="btn btn-large {% if package.best_offer %}btn-success{% else %}btn-inverse{% endif %}">
-                  {{ package.count }} D
-                  / {{ package.price }} &euro;
+                  {{ package.count }}<i class="cc-icon-drops-blanc"></i>/{{ package.price }}&euro;
                </a>
                <p>
                   <em>
                      soit {{ package.discount }}% de réduction
-                     ({{ package.per_drop }}&euro;/D)
+                     ({{ package.per_drop }}&euro;/Dr)
                   </em>
                </p>
             </div>
