@@ -273,7 +273,11 @@ body{
       border-top:1px solid #fff;
       box-shadow:0 -1px 0 #d6d6d6;
       margin-top:20px;
-      padding-top:5px;
+	  padding-top: 11px;
+	  margin-bottom: 17px;
+   }
+   #copy span{
+   	  font-size: 14px;
    }
 .page{
    padding-top:40px;
@@ -476,6 +480,12 @@ body{
       line-height:30px;
       padding-top:10px;
    }
+.fb-like{
+      float: right;
+}
+.twitter-follow-button{
+      float: right;
+}
 #packages{
    padding-top:20px;
    text-align:center;

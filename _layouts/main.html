@@ -14,6 +14,15 @@
       <link rel="shortcut icon" href="/img/favicon.png">
    </head>
    <body>
+	   <div id="fb-root"></div>
+	   <script>(function(d, s, id) {
+	     var js, fjs = d.getElementsByTagName(s)[0];
+	     if (d.getElementById(id)) return;
+	     js = d.createElement(s); js.id = id;
+	     js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=222389161149826";
+	     fjs.parentNode.insertBefore(js, fjs);
+	   }(document, 'script', 'facebook-jssdk'));
+	   </script>
       <!-- le navigation for le whole website -->
       <div class="navbar navbar-fixed-top">
          <div class="navbar-inner">
@@ -37,15 +46,18 @@
          </div>
          <div id="copy" class="container">
             <!-- le copyrights -->
-            <p>
-               &copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}
-            </p>
+           <span>&copy {{ site.brand }} {{ site.since }}-{{ site.time | date:'%Y' }}</span>
+		   <div class="fb-like" data-href="https://www.facebook.com/clevercloudsas" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
+		   <a href="https://twitter.com/clever_cloud" class="twitter-follow-button" data-show-count="false" data-lang="{{ page.locale }}">@Clever_Cloud</a>			
          </div>
       </div>
       
       <!-- le js -->
       <script type="text/javascript" src="/js/jquery.js"></script>
       <script type="text/javascript" src="/js/bootstrap-dropdown.js"></script>
+      <script>
+	  	!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");
+      </script>
       <script type="text/javascript">
          var _gaq = _gaq || [];
          _gaq.push(['_setAccount', 'UA-19997759-1']);
