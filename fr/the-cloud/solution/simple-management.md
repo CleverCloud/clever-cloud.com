@@ -42,11 +42,11 @@ part:   part-management
             <p>
 				Choisissez votre moyen préféré pour déployer votre projet sur l'infrastructure de Clever Cloud&nbsp;:
             </p>
-			<ul>
-				<li>Git</li>
-				<li>SFTP</li>
-				<li>Fichiers .war ou .zip</li>
-				<li>Et même Dropbox&nbsp;!</li>
+			<ul class="nav nav-list">
+				<li><i class="cc-icon-tick"> </i> Git</li>
+				<li><i class="cc-icon-tick"> </i> SFTP</li>
+				<li><i class="cc-icon-tick"> </i> Fichiers .war ou .zip</li>
+				<li><i class="cc-icon-tick"> </i> Et même Dropbox&nbsp;!</li>
 			</ul>
          </div>
          <div class="span4 offset2"><img src="/img/solution/scala-box.png" alt="scala box" /></div>
@@ -57,7 +57,7 @@ part:   part-management
    <div class="container">
       <div class="row">
          <div class="span7"><img id="illus-dashboard" src="/img/solution/screen.png" alt="dashboard" /></div>
-         <div class="span5">
+         <div class="span4 offset1">
          	<h2>Gestion en temps réel 24/7</h2>
          		<p>
             		Le dashboard de Clever Cloud est accessible partout, tout le temps. Une

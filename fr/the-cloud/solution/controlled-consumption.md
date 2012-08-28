@@ -3,6 +3,14 @@ layout: tarifs
 locale: fr
 title:  Tarifs
 part:   consumption
+
+baseline: |
+  Bénéficiez de **50 drops** pour toute création de compte
+  afin de tester notre produit.
+
+suscribe: Inscription
+as: soit
+discount: de réduction
 ---
 <div id="part-drop" class="full-bg">
    <div class="container">

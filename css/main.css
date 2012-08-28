@@ -159,13 +159,14 @@ body{
    }
    #home-advantages i[class*="cc-icon-"]{
       left:-13px;;
-      position:relative;
+      position:absolute;
       top:-4px;
    }
 #home-advantages > .span8 .span4 h3{
    border-left:1px solid #3f3f3f;
    margin-bottom:0;
-
+   padding-left:31px;
+   position:relative;
 }
 #home-advantages > .span8 .span4 p{
    border-left:1px solid #3f3f3f;
@@ -322,9 +323,13 @@ body{
 }
 #part-summary{
    border-top:1px solid #ccc;
+   padding-bottom:40px;
+}
+#part-summary .row{
+   margin-bottom:0;
 }
 #part-summary .span4{
-   padding:20px;
+   padding:0 20px;
    -webkit-box-sizing:border-box;
       -moz-box-sizing:border-box;
            box-sizing:border-box;
