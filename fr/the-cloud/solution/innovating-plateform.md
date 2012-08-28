@@ -57,9 +57,15 @@ part:   part-innovation
             <p>
                Les questions inhérentes à la stabilité de votre application en cas de charge impromptue ne se posent plus : Clever Cloud adapte les ressources de votre application automatiquement, afin qu'elle soit toujours disponible et réactive.
             </p>
-            <ul>
-               <li>Calcul en temps-réél de la charge de votre app</li>
-         	         <li>Ajustement automatique de la puissance nécéssaire</li>
+            <ul class="nav nav-list">
+               <li>
+                  <i class="cc-icon-tick"> </i>
+                  Calcul en temps-réél de la charge de votre app
+               </li>
+         	   <li>
+         	      <i class="cc-icon-tick"> </i>
+         	      Ajustement automatique de la puissance nécessaire
+      	      </li>
             </ul>
          </div>
          <div class="span12"><img src="/img/solution/courbe.png" alt="stat" /></div>
