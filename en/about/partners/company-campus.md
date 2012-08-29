@@ -2,7 +2,7 @@
 title:   Company Campus
 img:     companycampus
 website: www.companycamp.us
+intro: |
+  The Company Campus is the first french "self-incubator". Composed of 8 startups and created in june 2012, Company Campus has been created to share experiences between talented people, and help hight-potential ideas to grow up.
 ---
-Clever Cloud est un des membres fondateurs du Company Campus. Lieu d’innovation
-créative, le Company Campus est situé au coeur du Quartier de la Création, à
-Nantes.
+Part of the founders of the Company Campus, Clever Cloud has helped the creation of this area of innovation and disruption.
