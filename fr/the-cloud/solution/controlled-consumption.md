@@ -15,7 +15,7 @@ discount: de réduction
 <div id="part-drop" class="full-bg">
    <div class="container">
       <div class="row">
-         <div class="span4">
+         <div class="span5">
             <h2>Paiement à la consommation</h2>
             <p>
                Pour profiter d'une scalabilité automatique sans pour autant perdre le controle de vos coûts, Clever Cloud s'est inspiré d'un modèle simple et bien connu&nbsp;: celui du réservoir à essence de la voiture.
@@ -37,6 +37,9 @@ discount: de réduction
 				   <li>La gestion des alertes de consommation</li>
 			   </ul>
          </div>
+		 <div class="span6 offset1">
+		 	<img src="/img/solution/tarifs-fr.jpg" alt="server">
+		 </div>
       </div>
    </div>
 </div>
