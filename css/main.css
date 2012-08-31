@@ -489,6 +489,12 @@ body{
    }
 .fb-like{
       float: right;
+	  margin-right: 32px;
+	  padding-left: 5px;
+	  border: none;
+	  overflow: hidden;
+	  width: 105px;
+	  height: 21px;
 }
 .twitter-follow-button{
       float: right;
