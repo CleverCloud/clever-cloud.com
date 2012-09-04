@@ -3,7 +3,6 @@ brand: Clever Cloud
 since: 2010
 
 # navigation
-
 sitemap:
 
 - ref: about
@@ -125,7 +124,11 @@ legal-notice:
 - ref: legal-notice/terms-of-use
 
 follow-us:
-
+- ref: newsletter
+  url: http://eepurl.com/lobZH
+  fr:  Newsletter
+  en:  Newsletter
+  
 - ref: twitter
   url: http://twitter.com/clever_cloud
   fr:  Twitter
