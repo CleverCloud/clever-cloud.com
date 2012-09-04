@@ -565,6 +565,24 @@ body{
    .auth-page [type="password"]{
       margin-bottom:20px;
    }
+.long-doc{
+   padding-bottom:40px;
+}
+.long-doc h2,.long-doc h3{
+   font:bold 14px /16px Arial,sans-serif;
+   margin:20px 0;
+}
+.long-doc h2{
+   font:bold 16px /20px Arial,sans-serif;
+   margin:40px 0 20px;
+}
+.long-doc h4{
+   font:normal 14px /16px Arial,sans-serif;
+   margin-bottom:10px;
+}
+.long-doc p{
+   margin:10px 0;
+}
 @media(max-width:480px){
    .navbar-fixed-top .nav li:last-child{
       clear:left;
