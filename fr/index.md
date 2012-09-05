@@ -9,4 +9,8 @@ desc: Clever Cloud est une plateforme Cloud qui permet d'assurer hautes performa
 ---
 #L’hébergement nouvelle génération&nbsp;: Maîtrisez vos coûts et gagnez en scalabilité sur vos applications web.
 
-<a class="btn btn-primary btn-large" href="/fr/#login-signup">Inscription</a>
+
+<div class="call-for-action">
+   <a class="btn btn-inverse btn-large" href="/fr/the-cloud/solution">Découvrir</a>
+   <a class="btn btn-primary btn-large" href="/fr/#login-signup">Inscription</a>
+</div>

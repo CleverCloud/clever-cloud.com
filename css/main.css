@@ -83,21 +83,39 @@
    box-shadow:0 1px 0 #fcfcfc;
    padding-bottom:6px;
 }
-.cc-hero-unit .btn-primary, #go-suscribe .btn-primary {
-    background: no-repeat center right #F2F2F2 ;
-    box-shadow: 0 -38px 20px -20px #AAAAAA inset, 0 0 0 2px #552222, 0 0 0 3px #773322;
-    color: #501011;
-    font: 19px/32px "Helvetica Neue",Helvetica,Arial,sans-serif;
+.cc-hero-unit h1{
+   font-size:26px;
+}
+.cc-hero-unit .call-for-action{
+   background:#501011;
+   border-radius:2px;
+   box-shadow:0 0 2px #000;
+   margin:40px 0 20px;
+   padding:3px;
+}
+.cc-hero-unit .call-for-action .btn{
+   display:block;
+   margin:0;
+}
+.cc-hero-unit .call-for-action .btn, #go-suscribe .btn-primary {
+   border:none;
+   border-radius:2px;
+    font: 19px/32px Arial,sans-serif;
 	font-weight:bold;
     text-shadow: none;
     text-transform: uppercase;
 	position: relative;
 	padding-right: 42px;
-	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	-o-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+}
+.cc-hero-unit .call-for-action .btn-inverse {
+    box-shadow: 0 1px 2px -2px #fff inset;
+    color: #fafafa;
+    text-shadow:0 1px 0 #000;
+}
+.cc-hero-unit .call-for-action .btn-primary,#go-suscribe .btn-primary{
+    background: no-repeat center right #F2F2F2 ;
+    box-shadow: 0 -38px 20px -20px #AAAAAA inset;
+    color: #501011;
 }
 a#btn-subscribe-pricing.btn.btn-large.btn-primary.pull-right{
     box-shadow: 0 -38px 20px -20px #AAA inset, 0 0 0 2px black, 0 0 0 3px black;
@@ -111,27 +129,35 @@ a#btn-subscribe-pricing.btn.btn-large.btn-primary.pull-right{
 .cc-hero-unit .btn-primary:hover,.cc-hero-unit .btn-primary:focus,
 #go-suscribe .btn-primary:hover,#go-suscribe .btn-primary:focus {
     background-color: #ddd;
-    box-shadow: 0 0 10px 5px #f5f5f5 inset,0 0 10px 10px rgba(200,50,70,.3), 0 0 0 2px #552222, 0 0 0 3px #773322;
-    color: #000000;
-    font: 19px/32px "Helvetica Neue",Helvetica,Arial,sans-serif;
-	font-weight:bold;
+    box-shadow:0 1px 2px -2px #fff inset,0 0 10px 5px #f5f5f5 inset;
+	 font-weight:bold;
     text-shadow: none;
     text-transform: uppercase;
-	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	-o-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
-	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+
+}
+.cc-hero-unit .btn-inverse:hover,.cc-hero-unit .btn-inverse:focus{
+    background: #222;
+    box-shadow: 0 1px 2px -2px #fff inset,0 0 10px 5px #444 inset;
+	 font-weight:bold;
+    text-shadow: none;
+    text-transform: uppercase;
 
 }
 .cc-hero-unit .btn-primary:after, #go-suscribe .btn-primary:after {
    content: url("../img/icon-arrow-beta.png");
    display: block;
-   height: 31px;
    padding-left: 15px;
    position: absolute;
-   top: 8px;
-   right: 3px
+   top: 9px;
+   right: 4px;
+}
+.cc-hero-unit .call-for-action .btn-inverse:after{
+   content: url("../img/decouvrir.png");
+   display: block;
+   padding-left: 15px;
+   position: absolute;
+   top: 14px;
+   right: 8px;
 }
 .cc-hero-unit p {
     font-family: 'AdelleBasic-Bold';
@@ -702,5 +728,7 @@ body{
    }
 }
 @media(min-width:1200px){
-   
+   .cc-hero-unit .call-for-action,.cc-hero-unit .call-for-action .btn{
+      display:inline-block;
+   }
 }
