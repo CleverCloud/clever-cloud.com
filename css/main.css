@@ -111,11 +111,21 @@
     box-shadow: 0 1px 2px -2px #fff inset;
     color: #fafafa;
     text-shadow:0 1px 0 #000;
+	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-o-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 }
 .cc-hero-unit .call-for-action .btn-primary,#go-suscribe .btn-primary{
     background: no-repeat center right #F2F2F2 ;
     box-shadow: 0 -38px 20px -20px #AAAAAA inset;
     color: #501011;
+	-webkit-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-moz-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-ms-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	-o-transition: box-shadow 0.5s,color 0.5s, background 0.5s;
+	transition: box-shadow 0.5s,color 0.5s, background 0.5s;
 }
 a#btn-subscribe-pricing.btn.btn-large.btn-primary.pull-right{
     box-shadow: 0 -38px 20px -20px #AAA inset, 0 0 0 2px black, 0 0 0 3px black;
