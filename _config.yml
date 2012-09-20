@@ -64,7 +64,7 @@ the-cloud:
   en:  En
 
 - ref: account
-  url: https://console.clever-coud.com
+  url: https://console.clever-cloud.com/
   btn: Yes
   fr:  Login
   en:  Login
@@ -82,7 +82,7 @@ product:
 - ref: the-cloud/solution/simple-management
 
 - ref: account
-  url: https://console.clever-coud.com
+  url: https://console.clever-cloud.com
   fr:  Login
   en:  Login
 
