@@ -11,3 +11,20 @@ layout: main
    </div>
 </div>
 {{ content }}
+<div class="container"> {% for release in site.categories.about %} {% if release.categories contains page.locale %}
+	<div class="row press-release">
+		<div class="span10">
+      <h2>"{{ release.title }}"</h2>
+      <blockquote>{{ release.content }}</blockquote>
+      <p>
+        <a href="{{ release.link }}" target="_blank">{{ page.read_more }}</a>
+      </p>
+      <p>
+        <em>{{ release.author }} - {{ release.date | date: '%d %m %Y' }}</em>
+      </p>
+    </div>
+		<div class="span2">
+			<img src="{{ release.icon }}" alt="{{ release.author }}"/>
+		</div>
+	</div>{% endif %} {% endfor %}
+</div>

@@ -4,7 +4,9 @@
 ::-moz-selection {
 	background: #D0D0D0; /* Firefox */
 }
-
+.press-release{
+  
+}
 #home-tech-wrap{
    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==");
    background-position:top left;
@@ -335,23 +337,35 @@ body{
 .page p{
    margin-bottom:30px;
 }
-#partners-page p{
+#partners-page pi,.press-release p{
    margin-bottom:0;
 }
-#partners-page > .row{
+#partners-page > .row,.press-release{
    border-bottom:1px solid #d6d6d6;
    border-top:1px solid #fff;
    min-height:100px;
    padding:40px 0;
 }
-#partners-page > .row:first-child{
+#partners-page > .row:first-child,.press-release:first-child{
    border-top:none;
 }
 
-#partners-page > .row:last-child{
+#partners-page > .row:last-child,.press-release:last-child{
    border-bottom:none;
 }
+.press-release blockquote{
+  border:none;
+  margin:0;
+  padding:0;
+}
+.press-release blockquote:before,.press-release blockquote:after{
+  content:"\"";
+}
+.press-release blockquote > *{
+  display:inline;
+}
 #partners-page .intro{
+
    color:#888;
    font-style:italic;
    margin-bottom:10px;

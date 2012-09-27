@@ -11,6 +11,7 @@ nav:
 
 # data
 title: Press page
+read_more: Read more
 ---
 <div id="press-header" class="full-bg">
 	<div class="container page">

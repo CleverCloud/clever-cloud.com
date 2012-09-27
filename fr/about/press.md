@@ -11,16 +11,17 @@ nav:
 
 # data
 title: Page presse
+read_more: "Lire l'article"
 ---
 <div id="press-header" class="full-bg">
 	<div class="container page">
     <div class="row">
     	<div class="span9">
-        <h2>Press kit</h2>
+        <h2>Dossier de presse</h2>
         <p>
           Lorem ipsum
         </p>
-        <p>You will find:</p>
+        <p>Ci-joint :</p>
         <div class="row">
         	<div class="span2">
         		<ul>
@@ -42,10 +43,10 @@ title: Page presse
         </div>
       </div>
     	<div class="span3">
-        <h2>Press contact</h2>
-        <p>Clement Nivolle</p>
+        <h2>Contact presse</h2>
+        <p>Clément Nivolle</p>
         <p>press@clever-cloud.com</p>
-        <p>tel: 02 85 52 07 69</p>
+        <p>tel: +332 85 52 07 69</p>
       </div>
     </div>
   </div>
