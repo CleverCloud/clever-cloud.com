@@ -4,6 +4,9 @@
 ::-moz-selection {
 	background: #D0D0D0; /* Firefox */
 }
+body{
+	-webkit-font-smoothing: antialiased;
+}
 .press-release{
   
 }
