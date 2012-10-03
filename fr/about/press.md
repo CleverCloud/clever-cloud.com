@@ -45,7 +45,7 @@ read_more: "Lire l'article"
     	<div class="span3">
         <h2>Contact presse</h2>
         <p>Clément Nivolle</p>
-        <p>press@clever-cloud.com</p>
+        <p>contact@clever-cloud.com</p>
         <p>tel: +332 85 52 07 69</p>
       </div>
     </div>
