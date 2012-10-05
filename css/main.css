@@ -88,6 +88,11 @@ html{
    box-shadow:0 1px 0 #fcfcfc;
    padding-bottom:6px;
 }
+#canvas-1 {
+  width:100%;
+  height:100px;
+  background:white;
+}
 .cc-hero-unit h1{
    font-size:26px;
 }
@@ -193,7 +198,9 @@ body{
     width: 50px;
 }
 #home-page{
-   background:url('../img/wave-top.png') center bottom repeat-x;
+   /*background-image:url('../img/wave-top.png');*/
+   background-position: center bottom;
+   background-repeat: repeat-x;
    padding-bottom:60px;
 }
 #home-fuel{
