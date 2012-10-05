@@ -38,17 +38,43 @@ function init() {
   var canvas = document.getElementById('canvas-1');
   stage = new createjs.Stage(canvas);
   stage.autoClear = true;
-  
+  var size = canvas.width % 371; 
+  var a = new Array; 
+
+  function range(array, size) {
+    if (size < 0) {
+      return array;  	
+    }
+    array.push(size-1);
+    range(array, size-1);
+  }
+  a = range(a, size);
   var img = new Image();
   img.src = "../img/wave-top.png";
   img.onload = function(e){
-    var title = new createjs.Bitmap(e.target);
+
+   for (var i in a) {
+     var window["title" + a[i]]	= new createjs.Bitmap(e.target);
+     window["title" + a[i]] = 1;
+     window["title" + a[i]] = 2.2;
+     var tween[i] = createjs.Tween.get(window["title" + a[i]], {loop:true}).to({x:canvas.width + 371 * i, y:0}, 7000);
+     stage.addChild(window["title" + a[i]]);
+     stage.update();
+   }
+   /* var title = new createjs.Bitmap(e.target);
     title.scaleX = 1;
-    title.scaleY = 2.1;    
-     var tween = createjs.Tween.get(title, {loop:true})
-                 .to({x:canvas.width, y:0}, 5000);
+    title.scaleY = 2.2;    
+    var title2 =new createjs.Bitmap(e.target); 
+    title2.scaleX = 1;
+    title2.scaleY = 2.2;
+    title2.x = 371;
+    var tween = createjs.Tween.get(title, {loop:true})
+                .to({x:canvas.width, y:0}, 7000);
+    var tween2 = createjs.Tween.get(title2, {loop:true})
+                .to({x:canvas.width + 371, y:0}, 7000);
     stage.addChild(title);
-    stage.update();
+    stage.addChild(title2);
+    stage.update();*/
   }
   createjs.Ticker.addListener(window);
 }
