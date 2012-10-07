@@ -6,7 +6,9 @@ locale: en
 # nav
 nav:
 - ref: about/press
-- url: http://blog.clever-cloud.com/official/
+- ref: blog
+  url: http://blog.clever-cloud.com/Press
+  en: Press Releases
 - ref: about/identity
 
 # data

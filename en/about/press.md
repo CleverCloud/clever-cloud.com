@@ -6,7 +6,9 @@ locale: en
 # nav
 nav:
 - ref: about/press
-- url: http://blog.clever-cloud.com/official/
+- ref: blog
+  url: http://blog.clever-cloud.com/Press
+  en: Press Releases
 - ref: about/identity
 
 # data
@@ -17,27 +19,27 @@ read_more: Read more
 	<div class="container page">
     <div class="row">
     	<div class="span9">
-        <h2>Press kit</h2>
+        <h2>Press Area</h2>
         <p>
-          Lorem ipsum
+          Welcome to Clever Cloud press and medias relations.
         </p>
-        <p>You will find:</p>
+        <p>Start here to find :</p>
         <div class="row">
         	<div class="span2">
         		<ul>
-        			<li>logos</li>
-              <li>up-to-date screenshots</li>
+        			<li>contact information</li>
+        			<li>Trademark guidelines</li>
         		</ul>
         	</div>
         	<div class="span2">
         		<ul>
-        			<li>pics of the team</li>
-              <li>other things</li>
+        			<li>Corporate fact sheet</li>
+        			<li>Press reviews</li>
         		</ul>
         	</div>
           <div class="span4 offset1">
             <a id="download-press-kit" href="clever-cloud-press-kit.pdf" class="btn btn-primary btn-large">
-              Download .pdf
+              Corporate sfact sheet
             </a>
           </div>
         </div>
@@ -45,8 +47,8 @@ read_more: Read more
     	<div class="span3">
         <h2>Press contact</h2>
         <p>Clement Nivolle</p>
-        <p>press@clever-cloud.com</p>
-        <p>tel: 02 85 52 07 69</p>
+        <p>mail:&nbsp;media@clever-cloud.com</p>
+        <p>tel:&nbsp;+332 85 52 07 69</p>
       </div>
     </div>
   </div>
