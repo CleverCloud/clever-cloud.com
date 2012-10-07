@@ -144,6 +144,7 @@ a#btn-subscribe-pricing.btn.btn-large.btn-primary.pull-right,
 }
 #download-press-kit{
   margin-bottom:10px;
+  color:#3E3D3D;
 }
 .cc-hero-unit .btn-primary:hover,.cc-hero-unit .btn-primary:focus,
 #go-suscribe .btn-primary:hover,#go-suscribe .btn-primary:focus, #download-press-kit:hover {
@@ -178,6 +179,16 @@ a#btn-subscribe-pricing.btn.btn-large.btn-primary.pull-right,
    top: 14px;
    right: 8px;
 }
+.btn-primary:after, #download-press-kit .btn-primary:after{
+    content: url("../img/icon-download.png");
+    display: block;
+    padding-left: 15px;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+
+
 .cc-hero-unit p {
     font-family: 'AdelleBasic-Bold';
 }
