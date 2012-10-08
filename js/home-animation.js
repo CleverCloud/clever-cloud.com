@@ -29,12 +29,16 @@ else if (hex_left > "efefef" || hex_down <= "efefef") {
  // descendre
 }*/
 
-var stage;
-function tick() {
-  stage.update();
-}
+function init(){
+  var stage;
 
-function init() {
+  var store = {
+    tick: function() {
+      stage.update();
+    }
+  };
+
+function launch() {
   var canvas = document.getElementById('canvas-1');
   stage = new createjs.Stage(canvas);
   stage.autoClear = true;
@@ -44,14 +48,16 @@ function init() {
   img.src = "../img/wave-top.png";
   img.onload = function(e){
     for (var i = -size; i < size; i++) {
-      window["title" + i]	= new createjs.Bitmap(e.target);
-      window["title" + i].scaleX = 1;
-      window["title" + i].scaleY = 2.2;
-      window["title" + i].x = 371 * i;
-      window["tween" + i] = createjs.Tween.get(window["title" + i], {loop:true}).to({x:371 * (Math.floor(size) + i), y:0}, 30000);
-      stage.addChild(window["title" + i]);
+      store["wave" + i]	= new createjs.Bitmap(e.target);
+      store["wave" + i].scaleX = 1;
+      store["wave" + i].scaleY = 2.2;
+      store["wave" + i].x = 371 * i;
+      createjs.Tween.get(store["wave" + i], {loop:true}).to({x:371 * (Math.floor(size) + i), y:0}, 30000);
+      stage.addChild(store["wave" + i]);
       stage.update();
     }
   }
-  createjs.Ticker.addListener(window);
+  createjs.Ticker.addListener(store);
+}
+launch();
 }
