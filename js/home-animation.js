@@ -42,17 +42,17 @@ function launch() {
   var canvas = document.getElementById('canvas-1');
   stage = new createjs.Stage(canvas);
   stage.autoClear = true;
-  var size = canvas.width / 371 + 1; 
-
+  var size = canvas.width / 278.25 + 1;  
+  // original image size(371) / scaleX = size
   var img = new Image();
   img.src = "../img/wave-top.png";
   img.onload = function(e){
     for (var i = -size; i < size; i++) {
       store["wave" + i]	= new createjs.Bitmap(e.target);
-      store["wave" + i].scaleX = 1;
+      store["wave" + i].scaleX = 0.75;
       store["wave" + i].scaleY = 2.2;
-      store["wave" + i].x = canvas.width - 371 * i;
-      createjs.Tween.get(store["wave" + i], {loop:true}).to({x:canvas.width - (371 * (Math.floor(size) + i)), y:0}, 30000);
+      store["wave" + i].x = canvas.width - 278.25 * i;
+      createjs.Tween.get(store["wave" + i], {loop:true}).to({x:canvas.width - (278.25 * (Math.floor(size) + i)), y:0}, 100000);
       stage.addChild(store["wave" + i]);
       stage.update();
     }
