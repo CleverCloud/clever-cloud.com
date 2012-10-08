@@ -43,30 +43,15 @@ function init() {
   var img = new Image();
   img.src = "../img/wave-top.png";
   img.onload = function(e){
-
-   for (var i = -size; i < size; i++) {
-     window["title" + i]	= new createjs.Bitmap(e.target);
-     window["title" + i].scaleX = 1;
-     window["title" + i].scaleY = 2.2;
-     window["title" + i].x = 371 * i;
-     window["tween" + i] = createjs.Tween.get(window["title" + i], {loop:true}).to({x:canvas.width + 371 * i, y:0}, 15000);
-     stage.addChild(window["title" + i]);
-     stage.update();
-   }
-   /* var title = new createjs.Bitmap(e.target);
-    title.scaleX = 1;
-    title.scaleY = 2.2;    
-    var title2 =new createjs.Bitmap(e.target); 
-    title2.scaleX = 1;
-    title2.scaleY = 2.2;
-    title2.x = 371;
-    var tween = createjs.Tween.get(title, {loop:true})
-                .to({x:canvas.width, y:0}, 7000);
-    var tween2 = createjs.Tween.get(title2, {loop:true})
-                .to({x:canvas.width + 371, y:0}, 7000);
-    stage.addChild(title);
-    stage.addChild(title2);
-    stage.update();*/
+    for (var i = -size; i < size; i++) {
+      window["title" + i]	= new createjs.Bitmap(e.target);
+      window["title" + i].scaleX = 1;
+      window["title" + i].scaleY = 2.2;
+      window["title" + i].x = 371 * i;
+      window["tween" + i] = createjs.Tween.get(window["title" + i], {loop:true}).to({x:371 * (Math.floor(size) + i), y:0}, 30000);
+      stage.addChild(window["title" + i]);
+      stage.update();
+    }
   }
   createjs.Ticker.addListener(window);
 }
