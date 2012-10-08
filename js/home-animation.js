@@ -38,27 +38,19 @@ function init() {
   var canvas = document.getElementById('canvas-1');
   stage = new createjs.Stage(canvas);
   stage.autoClear = true;
-  var size = canvas.width % 371; 
-  var a = new Array; 
+  var size = canvas.width / 371; 
 
-  function range(array, size) {
-    if (size < 0) {
-      return array;  	
-    }
-    array.push(size-1);
-    range(array, size-1);
-  }
-  a = range(a, size);
   var img = new Image();
   img.src = "../img/wave-top.png";
   img.onload = function(e){
 
-   for (var i in a) {
-     var window["title" + a[i]]	= new createjs.Bitmap(e.target);
-     window["title" + a[i]] = 1;
-     window["title" + a[i]] = 2.2;
-     var tween[i] = createjs.Tween.get(window["title" + a[i]], {loop:true}).to({x:canvas.width + 371 * i, y:0}, 7000);
-     stage.addChild(window["title" + a[i]]);
+   for (var i = -size; i < size; i++) {
+     window["title" + i]	= new createjs.Bitmap(e.target);
+     window["title" + i].scaleX = 1;
+     window["title" + i].scaleY = 2.2;
+     window["title" + i].x = 371 * i;
+     window["tween" + i] = createjs.Tween.get(window["title" + i], {loop:true}).to({x:canvas.width + 371 * i, y:0}, 15000);
+     stage.addChild(window["title" + i]);
      stage.update();
    }
    /* var title = new createjs.Bitmap(e.target);
