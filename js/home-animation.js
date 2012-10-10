@@ -42,22 +42,43 @@ function launch() {
   var canvas = document.getElementById('canvas-1');
   stage = new createjs.Stage(canvas);
   stage.autoClear = true;
-  var size = canvas.width / 278.25 + 1;  
-  // original image size(371) / scaleX = size
+  var size = canvas.width / 300 + 1;
+  var size2 = canvas.width / 200 + 1;
+  var size3 = canvas.width / 400 + 1
+  // original image size / scaleX = size
   var img = new Image();
-  img.src = "../img/wave-top.png";
+  img.src = "../img/vague3.png";
+  img.style.opacity = "0.5";
   img.onload = function(e){
     for (var i = -size; i < size; i++) {
       store["wave" + i]	= new createjs.Bitmap(e.target);
       store["wave" + i].scaleX = 0.75;
-      store["wave" + i].scaleY = 2.2;
-      store["wave" + i].x = canvas.width - 278.25 * i;
-      createjs.Tween.get(store["wave" + i], {loop:true}).to({x:canvas.width - (278.25 * (Math.floor(size) + i)), y:0}, 100000);
+      store["wave" + i].scaleY = 2;
+      store["wave" + i].x = canvas.width - 300 * i;
+      
+      store["wave2"+i] = new createjs.Bitmap(e.target);
+      store["wave2"+i].scaleX = 0.5;
+      store["wave2"+i].scaleY = 2;
+      store["wave2"+i].x = canvas.width - 200 * i;
+
+      store["wave3"+i] = new createjs.Bitmap(e.target);
+      store["wave3"+i].scaleX = 1;
+      store["wave3"+i].scaleY = 2;
+      store["wave3"+i].x = canvas.width - 400 * i;
+      store["wave3" + i].y = 50; 
+
+      createjs.Tween.get(store["wave" + i], {loop:true}).to({x:canvas.width - (300 * (Math.floor(size) + i)), y:0}, 100000);
+      createjs.Tween.get(store["wave2"+i], {loop:true}).to({x:canvas.width - (200 * (Math.floor(size2) + i)), y:0}, 80000);
+      createjs.Tween.get(store["wave3"+i], {loop:true}).to({x:canvas.width - (400 * (Math.floor(size3) + i)), y:0}, 60000);
+
       stage.addChild(store["wave" + i]);
+      stage.addChild(store["wave2"+i]);
+      stage.addChild(store["wave3"+i]);
+
       stage.update();
     }
+    createjs.Ticker.addListener(store);
   }
-  createjs.Ticker.addListener(store);
 }
 launch();
 }
