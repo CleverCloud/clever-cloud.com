@@ -13,10 +13,10 @@
 // Get color of canvas
 
 function movingPoints() {
-  var d1 = $('div.row:last div.span4:first p:first');
-  var d2 = $('div.row:last div.span4:first p:last');
-  var x1 = d1.offset().top - d1.height + 2;
-  var x2 = d2.offset().top - d2.height + 2;
+  var d1 = $('div.span8 div.row:last div.span4:first p:first');
+  var d2 = $('div.span8 div.row:last div.span4:last p:first');
+  var x1 = d1.offset().top - d1.height() + 2;
+  var x2 = d2.offset().top - d2.height() + 2;
 
   function rgbToHex(r, g, b) {
       if (r > 255 || g > 255 || b > 255)
@@ -24,11 +24,13 @@ function movingPoints() {
       return ((r << 16) | (g << 8) | b).toString(16);
   }
 
+  function h2d(h) {return parseInt(h,16);}
+  
   function getColor(x, y) {
     var c = document.getElementById('canvas-1').getContext('2d');
     var p = c.getImageData(x, y, 1, 1).data; 
     var hex = ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
-    return hex;
+    return h2d(hex);
   }
 
   function move(x) {
@@ -96,7 +98,7 @@ function init() {
         store["wave3"+i].x = canvas.width - 500 * i;
 
         createjs.Tween.get(store["wave" + i], {loop:true}).to({x:canvas.width - (300 * (Math.floor(size) + i)), y:0}, 100000);
-        createjs.Tween.get(store["wave2"+i], {loop:true}).to({x:canvas.width - (280 * (Math.floor(size2) + i)), y:0}, 100000);
+        createjs.Tween.get(store["wave2"+i], {loop:true}).to({x:canvas.width - (280 * (Math.floor(size2) + i)), y:0}, 75000);
         createjs.Tween.get(store["wave3"+i], {loop:true}).to({x:canvas.width - (500 * (Math.floor(size3) + i)), y:0}, 60000);
 
         stage.addChild(store["wave" + i]);
@@ -106,6 +108,7 @@ function init() {
         stage.update();
       }
       createjs.Ticker.addListener(store);
+    	movingPoints();
     }
   }
 launch();
