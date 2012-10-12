@@ -14,7 +14,7 @@ html{
    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==");
    background-position:top left;
 }
-#home-wrap{
+#home-wrap, #canvas-1{
    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcCDiwMixho4AAAABtJREFUCNdjfP/+PQMDAzs7OxMDDLCws7NDWABRbgL/xZLljgAAAABJRU5ErkJggg==");
 }
 .navbar-fixed-top {
@@ -87,6 +87,10 @@ html{
    border-bottom:1px solid #ddd;
    box-shadow:0 1px 0 #fcfcfc;
    padding-bottom:6px;
+}
+#canvas-1 {
+  width:100%;
+  height:100px;
 }
 .cc-hero-unit h1{
    font-size:26px;
@@ -204,8 +208,10 @@ body{
     width: 50px;
 }
 #home-page{
-   background:url('../img/wave-top.png') center bottom repeat-x;
-   padding-bottom:60px;
+   /*background-image:url('../img/wave-top.png');*/
+   background-position: center bottom;
+   background-repeat: repeat-x;
+   /*padding-bottom:60px;*/
 }
 #home-fuel{
    background:url('../img/big-shadow-top.png') center top no-repeat;
