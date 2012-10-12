@@ -13,8 +13,11 @@
 // Get color of canvas
 
 function movingPoints() {
-  var x1 = 0;
-  var x2 = 0;
+  var d1 = $('div.row:last div.span4:first p:first');
+  var d2 = $('div.row:last div.span4:first p:last');
+  var x1 = d1.offset().top - d1.height + 2;
+  var x2 = d2.offset().top - d2.height + 2;
+
   function rgbToHex(r, g, b) {
       if (r > 255 || g > 255 || b > 255)
           throw "Invalid color component";
@@ -43,11 +46,9 @@ function movingPoints() {
         else if (pplusmin != p) {
           // monter
         }
-        else if (pplusmin != p && pminmin != p) {
-          // pas bouger
-        }
+        else if (pplusmin != p && pminmin != p) {y++; continue;}
       }
-      else if (pplus != p) {y = y +1; continue;}
+      else if (pplus != p) {y++; continue;}
       else {continue;}
     }
   }
