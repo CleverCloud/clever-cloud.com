@@ -27,19 +27,19 @@ read_more: Read more
         <div class="row">
         	<div class="span2">
         		<ul>
-        			<li>contact information</li>
+        			<li>Contact informations</li>
         			<li>Trademark guidelines</li>
         		</ul>
         	</div>
-        	<div class="span2">
+        	<div class="span3">
         		<ul>
-        			<li>Corporate fact sheet</li>
+        			<li>Corporate fact sheet&nbsp;<span class="label">soon</span></li>
         			<li>Press reviews</li>
         		</ul>
         	</div>
-          <div class="span4 offset1">
-            <a id="download-press-kit" href="clever-cloud-press-kit.pdf" class="btn btn-primary btn-large">
-              Corporate sfact sheet
+          <div class="span3 offset1">
+            <a id="download-press-kit" href="#" class="btn btn-primary btn-large disabled">
+              Corp fact sheet
             </a>
           </div>
         </div>
@@ -47,7 +47,7 @@ read_more: Read more
     	<div class="span3">
         <h2>Press contact</h2>
         <p>Clement Nivolle</p>
-        <p>mail:&nbsp;media@clever-cloud.com</p>
+        <p>mail:&nbsp;press@clever-cloud.com</p>
         <p>tel:&nbsp;+332 85 52 07 69</p>
       </div>
     </div>

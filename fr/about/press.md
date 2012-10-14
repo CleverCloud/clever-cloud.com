@@ -31,14 +31,14 @@ read_more: "Lire l'article"
 					<li>l'identité graphique</li>
         		</ul>
         	</div>
-        	<div class="span2">
+        	<div class="span3">
         		<ul>
-        			<li>le dossier de presse</li>
+        			<li>le dossier de presse <span class="label">bientôt</span></li>
 					<li>la revue de presse</li>
         		</ul>
         	</div>
-          <div class="span4 offset1">
-            <a id="download-press-kit" href="clever-cloud-press-kit.pdf" class="btn btn-primary btn-large">
+          <div class="span3 offset1">
+            <a id="download-press-kit" href="#" class="btn btn-primary btn-large disabled">
               dossier de presse
             </a>
           </div>
@@ -47,7 +47,7 @@ read_more: "Lire l'article"
     	<div class="span3">
         <h2>Relation presse</h2>
         <p>Clément Nivolle</p>
-        <p>mail:&nbsp;media@clever-cloud.com</p>
+        <p>mail:&nbsp;press@clever-cloud.com</p>
         <p>tel:&nbsp;+332 85 52 07 69</p>
       </div>
     </div>
