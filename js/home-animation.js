@@ -113,3 +113,6 @@ function init() {
   }
 launch();
 }
+$(document).ready(function() {
+	init();
+ });
