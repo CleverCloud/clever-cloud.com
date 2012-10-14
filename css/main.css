@@ -7,8 +7,14 @@
 html{
 	-webkit-font-smoothing: antialiased;
 }
-.press-release{
-  
+.press-contacts span{
+	font-weight: bold;
+}
+.press-contacts ul{
+	list-style: none;
+}
+.street-address{
+	padding-left: 25px;
 }
 #home-tech-wrap{
    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcEDDI2v7oFPwAAACFJREFUCNcFwQcBAAAIw7Cd+vc3NZB4myQgtiW1BUhydw9P4gW6DNHnPgAAAABJRU5ErkJggg==");
