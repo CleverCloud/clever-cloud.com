@@ -1,18 +1,3 @@
-.marquee2{
-    padding-top:0px;
-    -webkit-animation: updown 3s cubic-bezier(0.25, 0.1, 0.25, 1);
-    -webkit-animation-iteration-count: infinite;
-}
-@-webkit-keyframes updown {
-    0%   {padding-top:1%;}
-    50%  {padding-top:0;}
-    100% {padding-top:1%;}
-}
-@-moz-keyframes updown {
-    0%   {padding-top:1%;}
-    50%  {padding-top:0;}
-    100% {padding-top:1%;}
-}
 ::selection {
 	background: #D0D0D0; /* Safari */
 	}
@@ -580,7 +565,25 @@ body{
       font-size:20px;
       line-height:30px;
       padding-top:10px;
-   }
+}
+.coming-soon{
+    padding-top:0px;
+    -webkit-animation: updown 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    -webkit-animation-iteration-count: infinite;
+    animation: updown 3s cubic-bezier(0.25, 0.1, 0.25, 1);
+    animation-iteration-count: infinite;
+}
+@-webkit-keyframes updown {
+    0%   {padding-top:2%;}
+    50%  {padding-top:0;}
+    100% {padding-top:2%;}
+}
+@keyframes updown {
+    0%   {padding-top:2%;}
+    50%  {padding-top:0;}
+    100% {padding-top:2%;}
+}
+
 .fb-like{
       float: right;
 	  margin-right: 32px;
