@@ -14,6 +14,7 @@ nav:
 # data
 title: Identity
 ---
-# Coming soon
-
-(you will find here downloadable material available for your communications).
+<div style="width:100%; height: 100px;">
+	<h2 class="marquee2" style="text-align: center;margin-top: 5%;padding-top: 0px;">Coming soon</h2>
+</div>
+​
