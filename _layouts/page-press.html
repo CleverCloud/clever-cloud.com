@@ -13,7 +13,7 @@ layout: main
 {{ content }}
 <div class="container"> {% for release in site.categories.about %} {% if release.categories contains page.locale %}
 	<div class="row press-release">
-		<div class="span10">
+		<div class="span9">
       <h2>"{{ release.title }}"</h2>
       <blockquote>{{ release.content }}</blockquote>
       <p>
@@ -23,7 +23,7 @@ layout: main
         <em>{{ release.author }} - {{ release.date | date: '%d %m %Y' }}</em>
       </p>
     </div>
-		<div class="span2">
+		<div class="span3">
 			<img src="{{ release.icon }}" alt="{{ release.author }}"/>
 		</div>
 	</div>{% endif %} {% endfor %}
