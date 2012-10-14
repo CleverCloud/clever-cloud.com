@@ -284,9 +284,6 @@ body{
 	  line-height: 24px;
       margin:5px 0 10px;
    }
-   #home-bottom ol li+li{
-      color:#999;
-   }
    #home-partners h2{
       font-family:'AdelleBasic-Bold','CreteRoundRegular';
    }
