@@ -13,6 +13,7 @@
 // Get color of canvas
 
 function movingPoints() {
+	/*
   var d1 = $('div.span8 div.row:last div.span4:first p:first');
   var d2 = $('div.span8 div.row:last div.span4:last p:first');
   var x1 = d1.offset().top - d1.height() + 2;
@@ -32,7 +33,7 @@ function movingPoints() {
     var hex = ("000000" + rgbToHex(p[0], p[1], p[2])).slice(-6);
     return h2d(hex);
   }
-
+  */
   function move(x) {
     for (y = 100; y > 0; y--) {  
       var p = getColor(x,y);
@@ -108,7 +109,7 @@ function init() {
         stage.update();
       }
       createjs.Ticker.addListener(store);
-    	movingPoints();
+    	//movingPoints();
     }
   }
 launch();

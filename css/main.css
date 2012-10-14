@@ -717,6 +717,11 @@ body{
       top:-2px;
       width:7px;
    }
+   #canvas-1 {
+      width: 111%;
+      height: 100px;
+      margin-left: -20px;
+   }
    .cc-hero-unit p{
       font-size: 20px;
       line-height: 28px;
