@@ -19,11 +19,10 @@ read_more: "Lire l'article"
 	<div class="container page">
     <div class="row">
     	<div class="span9">
-        <h2>Espace presse</h2>
+        <h2>Relations presse</h2>
         <p>
-		Bienvenue dans l'epace presse et médias de Clever Cloud.
+		Bienvenue dans l'epace presse et médias de Clever Cloud. Vous y trouverez :
         </p>
-        <p>Vous y trouverez :</p>
         <div class="row">
         	<div class="span2">
         		<ul>
@@ -38,17 +37,27 @@ read_more: "Lire l'article"
         		</ul>
         	</div>
           <div class="span3 offset1">
-            <a id="download-press-kit" href="#" class="btn btn-primary btn-large disabled">
+		  <!--
+			<a id="download-press-kit" href="#" class="btn btn-primary btn-large disabled">
               dossier de presse
             </a>
+		  -->
           </div>
         </div>
       </div>
-    	<div class="span3">
-        <h2>Relation presse</h2>
-        <p>Clément Nivolle</p>
-        <p>mail:&nbsp;press@clever-cloud.com</p>
-        <p>tel:&nbsp;+332 85 52 07 69</p>
+    	<div class="span3 press-contacts">
+        <h2>Contacter Clever Cloud</h2>
+        <span>Clément Nivolle</span>
+		<ul>
+			<li>press@clever-cloud.com</li>
+			<li>+332 85 52 07 69</li>
+		</ul>
+		<span>Ecrire au siège</span>
+		<p class="street-address">
+			3 rue de l'Allier<br>
+			44000, Nantes<br>
+			France
+		</p>
       </div>
     </div>
   </div>

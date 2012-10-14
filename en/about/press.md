@@ -19,11 +19,10 @@ read_more: Read more
 	<div class="container page">
     <div class="row">
     	<div class="span9">
-        <h2>Press Area</h2>
+        <h2>Press Relations</h2>
         <p>
-          Welcome to Clever Cloud press and medias relations.
+          Welcome to Clever Cloud press and medias relations. Start here to find :
         </p>
-        <p>Start here to find :</p>
         <div class="row">
         	<div class="span2">
         		<ul>
@@ -38,18 +37,28 @@ read_more: Read more
         		</ul>
         	</div>
           <div class="span3 offset1">
-            <a id="download-press-kit" href="#" class="btn btn-primary btn-large disabled">
+            <!--<a id="download-press-kit" href="#" class="btn btn-primary btn-large disabled">
               Corp fact sheet
             </a>
+			-->
           </div>
         </div>
       </div>
-    	<div class="span3">
-        <h2>Press contact</h2>
-        <p>Clement Nivolle</p>
-        <p>mail:&nbsp;press@clever-cloud.com</p>
-        <p>tel:&nbsp;+332 85 52 07 69</p>
-      </div>
+	<div class="span3 press-contacts">
+		<h2>Clever Cloud contact</h2>
+		<span>Clément Nivolle</span>
+		<ul>
+			<li>press@clever-cloud.com</li>
+			<li>+332 85 52 07 69</li>
+		</ul>
+	<span>Corporate address</span>
+	<p class="street-address">
+		3 rue de l'Allier<br>
+		44000, Nantes<br>
+		France
+	</p>
+    </div>
+    	
     </div>
   </div>
 </div>
