@@ -7,5 +7,4 @@ list:
 ---
 Juste après la création de votre compte, vous _provisionnez_ votre future application&nbsp;:
 
-Telle une voiture avec de l'essence, vous remplissez votre réservoir d'énergie informatique, que vous consommerez au fil de votre hébergement.  
-<a href="./the-cloud/solution/controlled-consumption.html">En savoir plus</a>
+Telle une voiture avec de l'essence, vous remplissez votre réservoir d'énergie informatique, que vous consommerez au fil de votre hébergement. <a href="./the-cloud/solution/controlled-consumption.html">En savoir plus</a>
