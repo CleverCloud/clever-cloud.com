@@ -8,4 +8,4 @@ intro: |
 As a partner which brought to Clever Cloud its network and expertise, betting on the project
 from the very beginning.
 
-Betting on the project from the very beginning, Kima Ventures brings to Clever Cloud an influential network and a great expertise since 2012. 
+Betting on the project from the very beginning, Kima Ventures brings to Clever Cloud an influential network and a great expertise since 2011. 
