@@ -704,9 +704,6 @@ body{
    margin:10px 0;
 }
 @media(max-width:480px){
-   .navbar-fixed-top .nav li:last-child{
-      clear:left;
-   }
 }
 @media(max-width:767px){
    .navbar-fixed-top .nav.pull-right{
@@ -739,9 +736,7 @@ body{
       width:7px;
    }
    #canvas-1 {
-      width: 111%;
-      height: 100px;
-      margin-left: -20px;
+     display:none;
    }
    .cc-hero-unit p{
       font-size: 20px;
