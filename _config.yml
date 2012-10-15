@@ -89,12 +89,12 @@ product:
 support:
 
 - ref: docs
-  url: http://documents.clever-cloud.com
+  url: http://doc.clever-cloud.com
   fr:  Documentation
   en:  Documentation
 
 - ref: tutorials
-  url: http://documents.clever-cloud.com/tutorials
+  url: http://doc.clever-cloud.com/tutorials
   fr:  Tutoriels
   en:  Tutorials
 

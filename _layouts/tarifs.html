@@ -7,25 +7,23 @@ nav:
 - ref: the-cloud/solution/simple-management
 packages:
 - title:    First Steps
-  count:    1 000
-  price:    25
-  discount: 8
+  count:    50 000
+  price:    15
   per_drop: 0.025
 - title:    Highway Driver
-  count:    2 500
-  price:    70
-  discount: 13
+  count:    100 000
+  price:    30
   per_drop: 0.024
-  best_offer: Yes
 - title:    Aviator
-  count:    5 000
-  price:    115
-  discount: 18
+  count:    250 000
+  price:    70
+  discount: 7.1
+  best_offer: yes
   per_drop: 0.023
 - title:    Astronaut
-  count:    10 000
-  price:    200
-  discount: 28
+  count:    500 000
+  price:    135
+  discount: 11.1
   per_drop: 0.020
 ---
 <div class="sub-navbar">
@@ -45,7 +43,7 @@ packages:
             {{ page.baseline | markdownify }}
          </div>
          <div class="span4">
-            <a href="#" id="btn-subscribe-pricing" class="btn btn-large btn-primary pull-right">
+            <a href="http://console.clever-cloud.com/auth/signup" id="btn-subscribe-pricing" class="btn btn-large btn-primary pull-right">
                {{ page.suscribe }}
             </a>
          </div>
@@ -58,14 +56,13 @@ packages:
          <div class="span3">
             <div class="well">
                <h3>{{ package.title }}</h3>
-               <a href="#" class="btn btn-large {% if package.best_offer %}btn-success{% else %}btn-inverse{% endif %}">
+               <a href="https://console.clever-cloud.com/users/me/billing/buy-drops" class="btn btn-large {% if package.best_offer %}btn-success{% else %}btn-inverse{% endif %}">
                   {{ package.count }}<i class="cc-icon-drops-blanc"></i>/{{ package.price }}&euro;
                </a>
                <p>
-                  <em>
+                  {% if package.discount %}<em>
                      {{ page.as }} {{ package.discount }}% {{ page.discount }}
-                     ({{ package.per_drop }}&euro;/Dr)
-                  </em>
+                  </em>{% else %}&nbsp;{% endif %}
                </p>
             </div>
          </div> {% endfor %}
