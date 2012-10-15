@@ -8,22 +8,27 @@ sitemap:
 - ref: about
   fr:  Clever Cloud
   en:  Clever Cloud
+  span: 2
 
 - ref: product
   fr:  Le produit
   en:  Our solution
+  span: 3
 
 - ref: support
   fr:  Support
   en:  Support
+  span: 2
 
 - ref: legal-notice
   fr:  Nos engagements
   en:  Commitment
+  span: 3
 
 - ref: follow-us
   fr:  Nous suivre
   en:  Follow us
+  span: 2
 
 about:
 
