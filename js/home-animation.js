@@ -111,9 +111,7 @@ function init() {
     	//movingPoints();
     }
   }
-  if (document.width > 767) {
-    launch();
-  }
+launch();
 }
 $(document).ready(function() {
 	init();
