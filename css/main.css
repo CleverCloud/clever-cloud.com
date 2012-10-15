@@ -706,6 +706,9 @@ body{
 @media(max-width:480px){
 }
 @media(max-width:767px){
+   .dropdown-menu{
+     min-width:0;
+   }
    .navbar-fixed-top .nav.pull-right{
       clear:left;
       float:none;
