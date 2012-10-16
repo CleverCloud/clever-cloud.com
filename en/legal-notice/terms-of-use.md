@@ -10,10 +10,10 @@ nav:
 - ref: legal-notice/terms-of-use
 
 # data
-title: Terms & Conditions
+title: Terms and Conditions
 ---
 
-# Terms & Conditions
+# Terms and Conditions
 *Version 1.1 dated 16 July 2012*
 
 ---
@@ -30,7 +30,7 @@ These Terms may be changed at any time without that users are notified in advanc
 
 ## Article 1 : Définitions
 
-### ComputerEnergy
+### Computer Energy
 Computer Energy&nbsp;: The computer is all energy resources consumed during the execution of an application.
 
 ### Drop

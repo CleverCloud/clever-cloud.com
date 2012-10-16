@@ -10,9 +10,9 @@ nav:
 - ref: legal-notice/terms-of-use
 
 # data
-title: Terms and Conditions
+title: Terms of sale
 ---
-# Terms and Conditions
+# Terms of sale
 *Version 1.1 en date du 16 juillet 2012*
 
 ---
