@@ -235,11 +235,13 @@ body{
    #home-advantages i[class*="cc-icon-"]{
       left:-13px;;
       position:absolute;
-      top:-4px;
+      top:0;
    }
+  #home-advantages > .span4{
+    padding-bottom:20px;
+  }
 #home-advantages > .span8 .span4 h3{
-   border-left:1px solid #3f3f3f;
-   margin-bottom:0;
+   margin-top:-5px;
    padding-left:31px;
    position:relative;
 }
@@ -249,7 +251,9 @@ body{
    padding-left:31px;
 }
 #home-advantages > .span8 .row p{
+   margin-top:-25px;
    min-height:110px;
+   padding-top:25px;
 }
 #home-advantages > .span8 .row:last-child p{
    min-height:0;
@@ -725,7 +729,10 @@ body{
       padding-left:20px;
       padding-right:20px;
    }
-   #home-advantages > .span8 .row:last-child .span4:last-child:after{
+  #home-advantages > .span8 .row p{
+    min-height:0;
+  }
+#home-advantages > .span8 .row:last-child .span4:last-child:after{
       border:2px solid #3f3f3f;
       border-radius:7px;
       content:" ";
