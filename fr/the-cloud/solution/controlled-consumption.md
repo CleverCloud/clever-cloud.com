@@ -5,7 +5,7 @@ title:  Tarifs
 part:   consumption
 
 baseline: |
-  Bénéficiez de **20 000 drops** pour toute création de compte
+  Bénéficiez de **2 000 drops** pour toute création de compte
   afin de tester notre produit.
 
 suscribe: Inscription
