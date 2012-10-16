@@ -5,7 +5,7 @@ title:  Pricing
 part:   consumption
 
 baseline: |
-  Get **20 000 drops** for every subscription to try out our product.
+  Get **2 000 drops** for every subscription to try out our product.
 
 suscribe: Sign up
 as: getting
