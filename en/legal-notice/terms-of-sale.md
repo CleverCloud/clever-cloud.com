@@ -10,152 +10,156 @@ nav:
 - ref: legal-notice/terms-of-use
 
 # data
-title: Conditions Générales de Vente
+title: Terms and Conditions
 ---
-# Conditions Générales de Vente
+# Terms and Conditions
 *Version 1.1 en date du 16 juillet 2012*
 
 ---
 
-**Entre :**
+**From :**
 
-Clever Cloud SAS (ci-après désigné par “Clever Cloud”), Société par Actions Simplifiées ayant son siège social au 3 rue de l’Allier à Nantes (44000), immatriculée sous le numéro 524 172 699 RCS Nantes, joignable par téléphone au 02.85.52.07.69.
+Clever Cloud SAS (hereinafter referred to as "Clever Cloud"), SAS French Company with its registered office at 3 rue de l'Allier in Nantes (44000) registered under number 524 172 699 RCS Nantes, reached by telephone at +33.2.85.52.07.69. 
 
-**Et :**
+**And :**
 
-Toute personne physique ou morale (ci-après désignée par “Client”) qui souhaite utiliser les services proposés par Clever Cloud.
+Any natural or legal person (hereinafter referred to as "Client") wishing to use services offered by Clever Cloud.
 
 ---
 
-## Article 1 : Objet
+## Article 1 : Object
 
-Le présent contrat a pour objet de déterminer les modalités de fourniture et d’utilisation de l’ensemble des services proposés par Clever Cloud pour son utilisation par le client.
+The goal of this contract is intended to determine how supply and use of all services offered by Clever Cloud for use by the customer.
 
-## Article 2 : Description du service
+## Article 2 : Service description
 
-Clever Cloud propose des offres PAAS pour héberger, déployer, tester et exécuter les applications et sites web du client.
+Clever Cloud offers PAAS to host, deploy , test and implement applications and websites to the customer.  
 
-L’ensemble des offres figure sur le site, à l’adresse suivante : http://www.clever-cloud.com/fr_FR/offre.html
+All Offers listed on the site, at the following address: http://next.clever-cloud.com/en/the-cloud/solution/controlled-consumption.html
 
-## Article 3 : Grille tarifaire
 
-L’ensemble des prix figure sur le site, à l’adresse suivante : http://www.clever-cloud.com/fr_FR/tarifs.html
 
-Ceux-ci sont exprimés en euros HT et TTC.
+## Article 3 : Price list
 
-Clever Cloud se réserve le droit de réviser ses tarifs.
+All prices shown on this website at the following address : http://next.clever-cloud.com/en/the-cloud/solution/controlled-consumption.html
 
-La facturation est faite à la consommation. Les coûts d’utilisation des services proposés par Clever Cloud sont proportionnels à l’utilisation qu’en fait le client.
+These are expressed in euros and VAT taxes.
 
-## Article 4 : Modalités de facturation
+Clever Cloud reserves the right to revise its rates.
 
-Suite à la formulation de la commande par le client, un récapitulatif de la commande est édité automatiquement par Clever Cloud afin que le client vérifie la véracité et l’exactitude des données déclarées et les modifier, le cas échéant.
+Billing is done for consumption. The cost of using the services offered by Clever Cloud are proportional to the use by the Customer.
 
-Suite à la confirmation de la commande, celle-ci est validée automatiquement par Clever Cloud.
+## Article 4 : Invoicing
 
-Suite à la validation automatique de la commande par Clever Cloud, le client procède au paiement selon les modalités de paiement énoncées à l’article 5.
+Following the formulation of the order by the customer, a summary of the order is automatically edited by Clever Cloud so that the customer checks the veracity and accuracy of reported data and modify them, if necessary.
 
-Suite à la réception du paiement de la commande par Clever Cloud, une facture est éditée automatiquement par Clever Cloud. Celle-ci est disponible expressément dans l’espace client et envoyée par e-mail à l’adresse indiquée par le client.
+Following the confirmation of the order, it is automatically validated by Clever Cloud.
 
-## Article 5 : Modalités de paiement
+Following the validation of the automatic control by Clever Cloud, the customer shall make payment according to the payment terms set out in Article 5.
 
-Le paiement s’effectue en ligne par Carte Bancaire ou via le service de paiement en ligne Paypal.
+Following the receipt of payment of the order by Clever Cloud, an invoice is automatically edited by Clever Cloud. This is explicitly available in the customer area and sent by e-mail to the address indicated by the customer.
 
-En cas de défaut de paiement et si le paiement est rejeté ou annulé, la commande du client est annulée.
+## Article 5 : Payment
 
-## Article 6 : Modalités du droit de rétractation
+Payment is made   online by credit card or via the online payment service Paypal.
 
-Le client, en sa qualité de consommateur, dispose en application du Code de la Consommation, d’un droit de rétractation de 7 jours francs à compter de l’acceptation de l’offre. Ce droit peut être exercé par mail à l’adresse suivante : commercial@clever-cloud.com
+Upon default of payment and the payment is rejected or canceled, the customer's order is canceled.
 
-Au-delà de ce délai, le client perd la faculté d’exercer son droit de rétractation.
+## Article 6 : Procedures for the right of withdrawal
 
-## Article 7 : Modalités de remboursement
+The customer, as a consumer, have under the Consumer Code, a right of withdrawal for 7 days from the date of acceptance of the offer. This right may be exercised by mail to the following address: commercial@clever-cloud.com
 
-L’exercice du droit de rétractation implique le remboursement de toutes les sommes dont le client a été prélevé ou débité, sauf exceptions. Ce remboursement s’effectue dans un délai de 30 jours à compter de l’acceptation de la demande de remboursement.
+Beyond this period, the customer loses the right to exercise his right of withdrawal.
 
-Par exception, la demande de remboursement est refusée si le client a utilisé totalement ou partiellement le service auquel il a souscrit.
+## Article 7 : Redemption
 
-## Article 8 : Modalités d’exécution du service
+The exercise of right of withdrawal involves the repayment of all sums for which the customer has been withdrawn or debited exceptions. This reimbursement shall be made   within 30 days of acceptance of the claim.
 
-L’exécution du service a lieu suite à la réception du paiement de la commande du client par Clever Cloud et au plus tard dans les 7 jours ouvrés suivant la réception de ce paiement.
+Exceptionally, the claim is denied if the customer has used totally or partially the service for which it has subscribed.
 
-## Article 9 : Garanties
+## Article 8 : Terms of service execution
 
-Les données du client sont hébergées par Clever Cloud dans des datacenters sécurisés offrant un niveau de sécurité conforme aux normes APSAD R82 et R81.
+The execution of the service takes place following receipt of payment from the customer's order by Clever Cloud and later within 7 working days of receipt of payment.
+
+## Article 9 : Guarantees
+
+The data of Clever Cloud customers are hosted in secure data centers Cloud provides a level of security meets R82 and R81 APSAD.
 
 ## Article 10 : Maintenance
 
-La maintenance des solutions devra être prévue. Il convient de distinguer la maintenance corrective de la maintenance évolutive. Les procédures peuvent varier selon les pratiques de chaque prestataire. Il est recommandé de définir les niveaux de sévérité des anomalies et de préciser qu’il incombe au prestataire de les qualifier.
-Une prestation de support par téléphone permettant de traiter les anomalies est disponible du lundi au vendredi, de 9h00 à 18h00. Les signalements d’anomalie doivent être confirmés par email à Clever Cloud sans délai. Clever Cloud procède au diagnostic de l’anomalie et met ensuite en œuvre sa correction.
+Maintenance solutions will be provided. Should be distinguished from corrective maintenance of ongoing maintenance. Procedures may vary depending on the practices of each provider. It is recommended to define levels of severity of abnormalities and specify that it is the recipient of the call. 
 
-Clever Cloud n’est pas responsable de la maintenance dans les cas suivants :
+Provide a telephone support to address the anomalies is available Monday to Friday from 9:00 to 18:00. Reports of abnormality should be confirmed by email to Clever Cloud without delay. Clever Cloud proceed to diagnose the problem and then put out his correction.
 
-* refus du Client de collaborer avec Clever Cloud dans la résolution des anomalies et notamment de répondre aux questions et demandes de renseignement ;
+Clever Cloud is not responsible for the maintenance in the following cases:
 
-* utilisation des services applicatifs de manière non conforme à leur destination ou à leur documentation ;
+- Client's refusal to cooperate with Clever Cloud in resolving anomalies including responding questions and inquiries
 
-* modification non autorisée des solutions par le client ou par un tiers ;
+- Use application services in a manner inconsistent with their destination or their documentation
 
-* manquement du client à ses obligations au titre du contrat ;
+- Unauthorized modification of solutions by the customer or by a third party
 
-* implantation de tous progiciels, logiciels ou système d'exploitation non compatibles avec les services applicatifs ;
+- Failure of the customer to meet its obligations under the contract;
 
-* utilisation de consommables incompatibles ;
+- Implementation of all software, software or operating system is not compatible with the application services
 
-* défaillance des réseaux de communication électronique ;
+- Use of incompatible consumables
 
-* acte volontaire de dégradation, malveillance, sabotage ;
+- Failure of electronic communication networks
 
-* détérioration due à un cas de force majeure ou à une mauvaise utilisation des services applicatifs.
+- Voluntary act of degradation, malice, sabotage
 
-Toutefois, Clever Cloud peut prendre en charge si possible la résolution des dysfonctionnements provoqués par les cas ci-dessus listés, au tarif en vigueur à la date d’intervention.
-Clever Cloud s’engage à transmettre les documentations mises à jour des nouvelles versions des solutions.
-Les corrections et évolutions des services applicatifs sont expressément soumises au contrat.
+- Deterioration due to a case of force majeure or improper use of application services.
+
+However, Clever Cloud can support the resolution if possible dysfunctions caused by the above listed cases, the rate in force at the time of intervention.
+
+Clever Cloud agrees to transmit documentation updates to new versions of solutions. Corrections and changes of application services are expressly subject to contract.
 
 
-## Article 10 : Support Technique
+## Article 10 : Support
 
-Le contrat peut prévoir une assistance correspondant à un accompagnement des Utilisateurs relativement à l’usage des solutions.
-Le service d’assistance technique s’applique à toutes Solutions fournies par le Prestataire et consiste à assister les utilisateurs par téléphone ou par télémaintenance
+The contract may provide assistance to meet an accompaniment of users regarding the use of solutions. 
 
-### 10.1 Définition du service
+Assistance service applies to all technical solutions provided by the Contractor and is to assist users by phone or remote maintenance.
 
-* Garantie de Temps d’Intervention (GTI): L’équipe technique doit intervenir sur l’incident durant cette période.
-* Garantie de Temps de Réparation (GTR): L’équipe technique doit réparer l’incident durant cette période.
-* Heures ouvrées: Lundi-Vendredi 9h00 à 18h00
+### 10.1 Definition of service
+
+1. Time Warranty Intervention (TWI): The technical team is working on the incident during this period.
+2. Time Warranty Repair (TWR): The technical team must repair the incident during this period.
+3. worked Hours: Monday-Friday 9:00 a.m. to 6:00 p.m.  CEST+2
 
 
 #### 10.1.2 Incident standard
 
-* GTI: 2 heures durant les heures ouvrées, 3 heures en dehors.
-* GTR: 4 heures
+1. TWI 2 hours during business hours , 3 hours apart.
+2. TWR: 6:00
 
-#### 10.1.3 Incident Critique
+#### 10.1.3 Critical Incident
 
-* GTI: 30 minutes
-* GTR: 1 heure
+1. TWI: 30 minutes during business hours, 2 hours away.
+2. TWR 2 hours during business hours, three hours apart.
 
-#### 10.1.4 Pénalités  
+#### 10.1.4 Penalties  
 
-* Accord de Niveau de Service Standard: 50% de la moyenne de consommation des applications.
-* Accord de Niveau de Service Critique: 75% de la moyenne de consommation des applications.
+1. Level Agreement Service Standard: 50% of the average consumer applications.
+2. Agreement Service Level Review: 75% of the average consumer applications.
 
-#### 10.1.5 Plan de Reprise d’Activité
+#### 10.1.5 Recovery Plan Activity
 
 ### 10.2 Contacts
 
-#### 10.2.1 Téléphone
+#### 10.2.1 Telephone
 
-L’équipe technique est disponible durant les heures ouvrées au +33 805 696 312 (prix d’un appel local).
+Technical team is available during business hours at +33 805 696 312.
 
 #### 10.2.2 Email
 
-L’équipe technique peut aussi être contactée via support@clever-cloud.com. Chaque email envoyé à cette adresse sera transféré sur notre système d’assistance technique.
+Technical team can also be contacted via support@clever-cloud.com. Every email sent to this address will be transferred to our technical assistance.
 
 #### 10.3 Service Après-Vente
 
-Le SAV est assuré par l’équipe technique durant les heures ouvrées et par l’astreinte durant les heures non ouvrées.
+The Service is provided by the technical team during working hours and the standby during the hours not worked.
 
-## Article 11 : Acceptation des CGV
+## Article 11 : Acceptance Conditions
 
-Le client déclare avoir pris connaissance et accepté expressément les présentes CGV.
+The customer declares to have read and expressly accepted these terms and conditions.

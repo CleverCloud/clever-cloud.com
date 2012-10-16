@@ -10,7 +10,7 @@ nav:
 - ref: legal-notice/terms-of-use
 
 # data
-title:  Conditions Générales d'Utilisation
+title: Terms & Conditions
 ---
 
 # Terms & Conditions
