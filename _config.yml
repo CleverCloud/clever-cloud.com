@@ -38,10 +38,10 @@ about:
 
 - ref: about/team
 
-- ref: lab
-  url: http://lab.clever-cloud.com
-  fr:  Clever Lab
-  en:  Clever Lab
+#- ref: lab
+#  url: http://lab.clever-cloud.com
+#  fr:  Clever Lab
+#  en:  Clever Lab
   
 - ref: engineer
   url: http://engineering.clever-cloud.com
@@ -98,15 +98,15 @@ support:
   fr:  Documentation
   en:  Documentation
 
-- ref: tutorials
-  url: http://doc.clever-cloud.com/tutorials
-  fr:  Tutoriels
-  en:  Tutorials
+#- ref: tutorials
+#  url: http://doc.clever-cloud.com/tutorials
+#  fr:  Tutoriels
+#  en:  Tutorials
 
-- ref: status
-  url: http://status.clever-cloud.com
-  fr:  État du service
-  en:  Service status
+#- ref: status
+#  url: http://status.clever-cloud.com
+#  fr:  État du service
+#  en:  Service status
 
 lang:
 
