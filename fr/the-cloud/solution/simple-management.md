@@ -24,7 +24,6 @@ part:   part-management
             <h2>Sécurisation de vos apps</h2>
             <p>
                 La sûreté de la connexion entre vos utilisateurs et votre site est un aspect critique de votre service web.
- 			   Security of the connection between your users and your site is a critical aspect of your Web service.
 		   </p>
 			<p>
 				Grâce au partenariat entre Clever Cloud et Comodo, il vous est possible de générer directement, depuis votre compte, vos certificats de sécurité SSL. Les appliquer à votre service web n'en sera que plus simple.
