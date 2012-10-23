@@ -43,6 +43,11 @@ about:
 #  fr:  Clever Lab
 #  en:  Clever Lab
   
+- ref: blog
+  url: http://blog.clever-cloud.com
+  fr:  Blog Clever Cloud
+  en:  Clever Cloud blog
+  
 - ref: engineer
   url: http://engineering.clever-cloud.com
   fr:  Engineer Blog
