@@ -597,7 +597,7 @@ body{
 	  width: 105px;
 	  height: 21px;
 }
-.twitter-follow-button{
+#copy .twitter-follow-button{
       float: right;
 }
 #packages{
@@ -706,6 +706,24 @@ body{
 }
 .long-doc p{
    margin:10px 0;
+}
+#team h4{
+  margin: 5px 0;
+}
+#team .member{
+  padding: 10px 0;
+  }
+  #team .member:after {
+    clear:   both;
+    content: "";
+    display: block;
+  }
+  #team .member + .member{
+    border-top: 1px solid #d6d6d6;
+}
+#team .avatar{
+    float:  left;
+    margin: 5px;
 }
 @media(max-width:767px){
    .dropdown-menu{

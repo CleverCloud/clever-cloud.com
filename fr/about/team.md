@@ -1,6 +1,6 @@
 ---
 # conf
-layout: page
+layout: team
 locale: fr
 
 # data

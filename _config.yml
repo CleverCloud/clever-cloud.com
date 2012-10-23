@@ -153,3 +153,72 @@ follow-us:
   url: http://linkedin.com/company/clever-cloud
   fr:  LinkedIn
   en:  LinkedIn
+
+# la team
+
+team:
+  
+  adam:
+    name:     Quentin Adam
+    job:
+      en:     Clever Cloud C.E.O
+      fr:     Clever Cloud C.E.O
+    twitter:  waxzce
+  
+  decherf:
+    name:     Kévin Decherf
+    job:
+      en:     Office & Production Manager
+      fr:     Office & Production Manager
+    twitter:  kdecherf
+  
+  tayrac:
+    name:     Arthur Tayrac
+    job:
+      en:     Interaction Designer
+      fr:     Interaction Designer
+    twitter:  crmfrsh
+  
+  durillon:
+    name:     Julien Durillon
+    job:
+      en:     Sytem Administrator and Developer
+      fr:     Sytem Administrator and Developer
+    twitter:  juuduu
+  
+  perennou:
+    name:     Marc-Antoine Perennou
+    job:
+      en:     Java and GNU/Linux Hacker
+      fr:     Java and GNU/Linux Hacker
+    twitter:  keruspe
+  
+  nivolle:
+    name:     Clément Nivolle
+    job:
+      en:     Project Manager
+      fr:     Project Manager
+    twitter:  cnivolle
+  
+  belouin:
+    name:     Rodolphe Belouin
+    job:
+      en:     Javascript & Scala Enthousiast
+      fr:     Javascript & Scala Enthousiast
+    twitter:  rbelouin
+  
+  thommy:
+    name:     Kevin Thommy
+    job:
+      en:     '"Integraphic" Designer'
+      fr:     '"Integraphic" Designer'
+    twitter:  mon_ke
+  
+  louerat:
+    name:     Bastien Louerat
+    job:
+      en:     Scala, Akka & Netty Software Developer
+      fr:     Scala, Akka & Netty Software Developer
+    twitter:  blouerat
+  
+  all: [adam, belouin, decherf, durillon, louerat, nivolle, perennou, tayrac, thommy]
