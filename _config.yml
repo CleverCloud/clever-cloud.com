@@ -78,7 +78,7 @@ product:
 
 - ref: the-cloud/solution/index
 
-- ref: the-cloud/solution/innovating-plateform
+- ref: the-cloud/solution/innovating-platform
 
 - ref: the-cloud/solution/controlled-consumption
   fr:  Tarifs

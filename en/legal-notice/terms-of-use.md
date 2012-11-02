@@ -48,7 +48,7 @@ A server is a "super-computer" that performs operations controlled by other comp
 ### Application
 An application can perform one or more tasks.
 
-### PaaS (Plateforme as a Service)
+### PaaS (Platform as a Service)
 PaaS is the cloud computing model in which the client company only handles the maintenance of its applications. The platform is fully managed by the provider cloud.
 
 ### Dashboard

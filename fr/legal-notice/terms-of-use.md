@@ -48,7 +48,7 @@ Un serveur est un “super-ordinateur” qui exécute des opérations commandés
 ### Application
 Une application permet de réaliser une ou plusieurs tâches.
 
-### PaaS (Plateforme as a Service)
+### PaaS (Platform as a Service)
 La PaaS est un modèle de cloud computing dans lequel l’entreprise cliente ne gère que le maintien de ses applications. La plateforme est entièrement gérées par le fournisseur cloud.
 
 ### Dashboard (fr: tableau de bord)
