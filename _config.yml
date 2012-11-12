@@ -63,6 +63,11 @@ the-cloud:
   fr:  Tarifs
   en:  Pricing
 
+- ref: instances
+  url: compatibility/index.html
+  fr:  Compatibilité
+  en:  Compatibility
+
 - ref: the-cloud/support
   sub: support
   fr:  Support

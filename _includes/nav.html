@@ -2,9 +2,9 @@
 <li>
    <a href="{% if page.url == '/en/auth/login.html' and to != '/en/' %}{{ to }}{% else %}{{ page.url | replace: from, to }}{% endif %}">{{ link[page.locale] }}</a>
 </li> {% elsif link.url %}
-<li>
+<li{% if page.url contains link.url %} class="active"{% endif %}>
    {% if link.btn %}<div class="btn-group">{% endif %}
-      <a{% if link.btn %} class="btn"{% endif %} {% unless link.url contains '#' %}href="{{ link.url }}" target="_blank"{% else %}href="{{ link.url }}"{% endunless %}>
+      <a{% if link.btn %} class="btn"{% endif %} {% if link.url contains '://' %}href="{{ link.url }}" target="_blank"{% else %}href="/{{ page.locale }}/{{ link.url }}"{% endif %}>
          {{ link[page.locale] }}
       </a>
    {% if link.btn %}</div>{% endif %}

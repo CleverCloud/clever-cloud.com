@@ -1,3 +1,6 @@
+body {
+  padding-top: 62px;
+}
 ::selection {
 	background: #D0D0D0; /* Safari */
 	}
@@ -775,6 +778,45 @@ body{
 #team .avatar{
     float:  left;
     margin: 5px;
+}
+/* compatibility pages */
+.compatibility {
+  margin-bottom: 40px;
+  }
+  .compatibility > .group {
+    background:    #f7f7f7;
+    border:        1px solid #dfdfdf;
+    border-radius: 4px;
+    margin-top:    20px;
+    padding:       20px;
+    }
+    .compatibility > .group h2,
+    .compatibility > .group h3 {
+      font: bold 18px/22px Arial,Verdana,sans-serif;
+}
+/* headbar3 */
+#headbar3 {
+  background:    #ececec;
+  border-bottom: 1px solid #d0d0d0;
+  left:          0;
+  position:      fixed;
+  right:         0;
+  top:           100px;
+  }
+  #headbar3 a {
+    color:        #3f3f3f;
+    font-size:    20px;
+    font-weight:  bold;
+    opacity:      .5;
+    margin-right: 10px;
+    }
+    #headbar3 a:hover,
+    #headbar3 .active{
+      opacity: 1;
+      text-decoration: none;
+  }
+  #headbar3 menu {
+    padding:         0;
 }
 @media(max-width:767px){
 	#home-page{

@@ -1,0 +1,33 @@
+---
+layout: page-sub
+
+nav:
+- ref: compatibility/index
+- ref: compatibility/services
+---
+<div id="headbar3">
+	<div class="container">
+		<menu>{% for group in page.groups.list %}
+      <a href="#{{ group.id }}">
+        <img src="/img/compatibility/{{ group.id }}.png" alt="*" />
+        {{ group.title }}
+      </a>{% endfor %}
+    </menu>
+	</div>
+</div>
+<div class="compatibility">{% for group in page.groups.list %}
+  <div id="{{ group.id }}" class="row-fluid group">
+    <div class="span4">
+      <h2>{{ group.title }}</h2>
+      <p>{{ group.desc }}</p>
+    </div>
+    <div class="span8">{% for item in group.items %}
+      {% cycle '<div class="row-fluid">','' %}
+      <div class="span6 item">
+        <h3>{{ item.title }}</h3>
+        <p>{{ item.desc }}</p>
+      </div>
+      {% cycle '','</div>' %}{% endfor %}{% capture filled %}{{ group.items | size | modulo: 2}}{% endcapture %}{% unless filled == '0' %}</div>{% endunless %}
+    </div>
+  </div>{% endfor %}
+</div>
