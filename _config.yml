@@ -164,6 +164,13 @@ follow-us:
   fr:  LinkedIn
   en:  LinkedIn
 
+# locale
+
+locale:
+  doclink:
+    fr: Documentation
+    en: Documentation
+
 # la team
 
 team:
