@@ -1,0 +1,38 @@
+---
+layout: compatibility
+locale: en
+
+title:  Services
+
+groups:
+  db: &db
+    title: Base de donnée
+    id: db
+    desc: |
+      Lorem Ipsum tralala.
+    doclink: /
+    items:
+    - title: MySQL
+      icon: mysql.png
+      desc: |
+        Lorem again.
+      doclink: /
+      released: Yes
+    - title: PostgreSQL
+      icon: postgreSQL.png
+      desc: |
+        Lorem again.
+      doclink: /
+      released: Yes
+    - title: Couchbase
+      icon: couchbase.png
+      desc: |
+        Lorem again.
+    - title: MongoDB
+      icon: mongoDB.png
+      desc: |
+        Lorem again.
+  indexation: &indexation
+  cache: &cache
+  list: [*db]
+---

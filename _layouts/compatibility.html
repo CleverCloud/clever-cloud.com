@@ -30,7 +30,7 @@ nav:
           <img src="/img/compatibility/{{ item.icon }}" alt="{{ item.title }}" class="item-icon"/>
           <h3>
             {{ item.title }}{% unless item.released %}
-            <span class="label">Soon</span>{% endunless %}
+            <span class="label">{{ site.locale.soon[page.locale] }}</span>{% endunless %}
           </h3>
           <p>
             {{ item.desc }}{% if item.doclink %}

@@ -170,6 +170,9 @@ locale:
   doclink:
     fr: Documentation
     en: Documentation
+  soon:
+    fr: Bientôt
+    en: Soon
 
 # la team
 

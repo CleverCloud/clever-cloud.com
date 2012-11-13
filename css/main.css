@@ -60,7 +60,7 @@ html{
     vertical-align: bottom;
     z-index:        5;
     }
-    #headbar .back:hover {
+    #headbar .brand:hover .back {
       background: none;
       box-shadow: none;
     }
@@ -87,6 +87,7 @@ html{
       margin:           -1px 0;
       padding-left:     10px;
       position:         relative;
+      text-decoration:  none;
       text-shadow:      0 1px 0 #3c1414;
       text-transform:   none;
       z-index:          6;
@@ -794,14 +795,15 @@ body{
     border:        1px solid #dfdfdf;
     border-radius: 4px;
     margin-top:    20px;
-    padding:       40px 20px 0;
+    padding:       40px 0 0;
     }
     .compatibility > .group h2,
     .compatibility > .group h3 {
-      font: bold 18px/22px Arial,Verdana,sans-serif;
+      font:        bold 18px/22px Arial,Verdana,sans-serif;
+      margin: 0 20px;
     }
     .compatibility > .group p {
-      margin-bottom: 10px;
+      margin: 0 20px 10px;
     }
     .compatibility > .group .item-icon {
       border:        3px solid #fff;
