@@ -1,5 +1,5 @@
 body {
-  padding-top: 62px;
+  padding-top: 0;
 }
 ::selection {
 	background: #D0D0D0; /* Safari */
@@ -31,11 +31,7 @@ html{
    background-image:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAIAAADZSiLoAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3AcCDiwMixho4AAAABtJREFUCNdjfP/+PQMDAzs7OxMDDLCws7NDWABRbgL/xZLljgAAAABJRU5ErkJggg==");
 }
 .navbar-fixed-top {
-  background: #3D1413;
-  background: -webkit-linear-gradient(center top , #501C1D 0px, #3D1413 100%);
-  background:    -moz-linear-gradient(center top , #501C1D 0px, #3D1413 100%);
-  background:      -o-linear-gradient(center top , #501C1D 0px, #3D1413 100%);
-  background:         linear-gradient(center top , #501C1D 0px, #3D1413 100%);
+  background: none;
   box-shadow: none;
   }
   .navbar-fixed-top .navbar-inner {
@@ -411,10 +407,10 @@ body{
    	  font-size: 14px;
    }
 .page{
-   padding-top:40px;
+   padding-top:99px;
 }
 .sub-navbar+.full-bg{
-  padding-top:40px;
+  padding-top:99px;
 }
 .page p{
    margin-bottom:30px;
@@ -458,8 +454,13 @@ body{
 #partners-page .thumbnail img{
    max-height:65px;
 }
-.sub-navbar{
-   background:    #3D1413;
+.sub-navbar {
+  background:  #3D1413;
+  background:  -webkit-linear-gradient(center top , #501C1D 0px, #3D1413 100%);
+  background:    -moz-linear-gradient(center top , #501C1D 0px, #3D1413 100%);
+  background:      -o-linear-gradient(center top , #501C1D 0px, #3D1413 100%);
+  background:         linear-gradient(center top , #501C1D 0px, #3D1413 100%);
+  padding-top: 60px;
 }
 .sub-navbar .navbar .nav > li > a{
    color:#ababab;
@@ -793,6 +794,12 @@ body{
     .compatibility > .group h2,
     .compatibility > .group h3 {
       font: bold 18px/22px Arial,Verdana,sans-serif;
+    }
+    .compatibility > .group .item-icon {
+      border-radius: 50%;
+      float:         left;
+      margin-right:  10px;
+      width:         70px;
 }
 /* headbar3 */
 #headbar3 {
@@ -922,10 +929,10 @@ body{
       z-index:3;
    }
    .sub-navbar+.page{
-      padding-top:79px;
+      padding-top:140px;
    }
    .solution-page{
-      padding-top:39px;
+      padding-top:99px;
    }
 }
 @media(min-width:1200px){
