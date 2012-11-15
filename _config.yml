@@ -43,6 +43,11 @@ about:
 #  fr:  Clever Lab
 #  en:  Clever Lab
   
+- ref: blog
+  url: http://blog.clever-cloud.com
+  fr:  Blog Clever Cloud
+  en:  Clever Cloud blog
+  
 - ref: engineer
   url: http://engineering.clever-cloud.com
   fr:  Engineer Blog
@@ -57,6 +62,11 @@ the-cloud:
 - ref: the-cloud/solution/controlled-consumption
   fr:  Tarifs
   en:  Pricing
+
+- ref: instances
+  url: compatibility/index.html
+  fr:  Compatibilité
+  en:  Compatibility
 
 - ref: the-cloud/support
   sub: support
@@ -153,6 +163,16 @@ follow-us:
   url: http://linkedin.com/company/clever-cloud
   fr:  LinkedIn
   en:  LinkedIn
+
+# locale
+
+locale:
+  doclink:
+    fr: Documentation
+    en: Documentation
+  soon:
+    fr: Bientôt
+    en: Soon
 
 # la team
 
