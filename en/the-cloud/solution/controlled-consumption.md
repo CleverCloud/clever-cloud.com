@@ -35,8 +35,8 @@ discount: "off"
 				   <li>Management of your consumption's notification</li>
 			   </ul>
          </div>
-		 <div class="span6 offset1">
-		 	<img src="/img/solution/tarifs-en.jpg" alt="server">
+		 <div class="span7">
+		 	<img src="/img/solution/tarifs.jpg" alt="server">
 		 </div>
       </div>
    </div>
