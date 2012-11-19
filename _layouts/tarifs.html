@@ -123,7 +123,7 @@ compare:
         </header>
         <div class="big-num">
           {{ package.count }}
-          <img src="/img/icons/facturation.png" alt="=D="/>
+          <img src="/img/icons/drop{% if forloop.first %}-white{% endif %}.png" alt="=D="/>
         </div>
         <a href="{{ package.url }}" class="btn">{% if package.price %}
           {{ package.price }}{% else %}

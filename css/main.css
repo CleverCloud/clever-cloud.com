@@ -915,7 +915,7 @@ body{
   width:      20%;
   }
   #packages [alt="=D="] {
-    vertical-align: middle;
+    vertical-align: baseline;
   }
   #packages .package header {
     border-bottom: 1px solid #d0d0d0;
