@@ -7,6 +7,10 @@ nav:
 - ref: the-cloud/solution/simple-management
 - ref: the-cloud/solution/controlled-consumption
 
+compatibility:
+  en: Compatibility
+  fr: Compatibilité
+
 packages:
 - title: Suscriber
   count: 2 000
@@ -131,6 +135,11 @@ compare:
     	<div class="span2 pres">
         <header><h3>{{ page.compare.title[page.locale] }}</h3></header>
         {{ page.compare.desc[page.locale] | markdownify }}
+        <div class="bottom-options">
+          <a href="/{{ page.locale }}/compatibility" class="btn">
+            {{ page.compatibility[page.locale] }}
+          </a>
+        </div>
       </div>{% for tech in page.compare.list %}
     	<div class="span2">
         <div class="cell head">
