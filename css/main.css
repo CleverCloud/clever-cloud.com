@@ -44,7 +44,8 @@ html{
   background-image:         linear-gradient(top, #782a29, #501b1f 100%);
   border:           1px solid #3c1414;
   border-radius:    6px;
-  box-shadow:       0 1px 0 #a73131 inset;
+  box-shadow:       0 1px 0 #a73131 inset,
+                    0 1px 4px rgba(0,0,0,.6);
   color:            #fff;
   height:           48px;
   }
@@ -377,6 +378,7 @@ body{
       color:      #999;
    }
    #footer .nav-list > .nav-header{
+     color: #c4c4c4;
       display:table-cell;
       font-size:17px;
       height:50px;
