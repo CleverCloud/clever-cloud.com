@@ -72,7 +72,7 @@ boards:
     en: Plans and Pricing
     fr: Offres et tarifs
   aboutdrops:
-    en: What is a Drop value?
+    en: What is a Drop's value?
     fr: Que vaut une Drop ?
 compare:
   title:
@@ -89,21 +89,24 @@ compare:
     instances:
     - title: Java only
       count: 2.3
-    - title: JEE (Glassfish / Jetty)
+    - title: JEE (Glassfish & Jetty)
       count: 2.35
-    - title: Play! (1 & 2)
+    - title: Play 1.2.x
       count: 2.35
       soon:  Yes
   - title: PHP
     instances:
     - title: PHP only
       count: 1.3
-    - title: Wordpress / Drupal
+    - title: Wordpress & Drupal
       count: 2.5
   - title: Scala
     instances:
     - title: Scala only
       count: 2.3
+      soon:  Yes
+    - title: Play 2.0
+      count: 2.35
       soon:  Yes
 ---
 <div class="sub-navbar">
@@ -152,7 +155,10 @@ compare:
         </div>{% for i in (0..page.compare.row_max) %}
         <div class="cell{% if tech.instances[i].soon %} soon{% endif %}">{% if tech.instances[i] %}
           <strong>{{ tech.instances[i].title }}</strong>
-          <h4>{{ tech.instances[i].count }}</h4>{% endif %}
+          <h4>{{ tech.instances[i].count }}<img src="/img/icons/drop.png" alt="=D=" style="
+    max-height: 15px;
+    padding-left: 4px;
+"></h4>{% endif %}
         </div>{% endfor %}
       </div>{% endfor %}
     </div>

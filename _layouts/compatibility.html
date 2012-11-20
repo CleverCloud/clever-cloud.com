@@ -55,3 +55,11 @@ nav:
     </div>{% endfor %}
   </div>
 </div>
+<script type="text/javascript">
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $(this).attr('href') ).offset().top - 170
+    }, 500);
+    return false;
+});
+</script>
