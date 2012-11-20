@@ -868,6 +868,7 @@ body{
     background:         linear-gradient(top, #fff, #eee 100%);
 }
 #packages .container > .row-fluid {
+  background:    #3f3f3f;
   border:        1px solid #d0d0d0;
   border-radius: 4px;
   box-shadow:    0 1px 0 #fff,
@@ -909,7 +910,8 @@ body{
       background:         linear-gradient(top, #3f3f3f, #444 100%);
 }
 #packages .package {
-  box-shadow: 1px 0 0 #d0d0d0;
+  background: #f6f6f6;
+  box-shadow: 1px 0 0 #d0d0d0 inset;
   margin:     0;
   text-align: center;
   width:      20%;
@@ -925,10 +927,6 @@ body{
     padding:       5px;
 }
 #table-compare {
-  background: -webkit-linear-gradient(left, #3f3f3f, #333 100%);
-  background:    -moz-linear-gradient(left, #3f3f3f, #3f3f3f 25%, transparent 25%, transparent 102%);
-  background:      -o-linear-gradient(left, #3f3f3f, #333 100%);
-  background:         linear-gradient(left, #3f3f3f, #333 100%);
   position:   relative;
   text-align: center;
   }
@@ -941,10 +939,13 @@ body{
     margin: 10px 15px;
   }
   #table-compare .cell {
+    background:    #f6f6f6;
     border-bottom: 1px solid #d0d0d0;
-    box-shadow:    0 1px 0 #fff;
+    box-shadow:    1px 0 0 #d0d0d0 inset,
+                   0 1px 0 #fff;
     height:        47px;
     padding:       10px 15px;
+    white-space:   nowrap;
     }
     #table-compare .cell h4 {
       border-top:  1px solid #eee;
@@ -959,7 +960,6 @@ body{
   }
   #table-compare .cell.head {
     background: #fbfbfb;
-    box-shadow: 1px 0 0 #d0d0d0 inset;
     height:     auto;
     }
     #table-compare .cell.head h3 {
@@ -1046,6 +1046,25 @@ body{
       display:block;
    }
 }
+@media(max-width:768px){
+  #packages .package {
+    padding: 5px 0;
+    width:   auto;
+    }
+    #packages .package header {
+      height: auto !important;
+  }
+  #table-compare [class*="span"] {
+    width: auto;
+  }
+  #table-compare .cell {
+    border-bottom: 1px solid #d0d0d0;
+    box-shadow:    none;
+    }
+    #table-compare .cell.head {
+      border-top: 1px solid #d0d0d0;
+  }
+}
 @media(min-width:768px){
    .sub-navbar{
    }
@@ -1075,6 +1094,9 @@ body{
       margin-left:20px;
       width:auto;
    }
+  #packages .package header {
+    height: 220px;
+  }
 }
 @media(min-width:980px){
    .sub-navbar{
