@@ -67,7 +67,13 @@ packages:
       Vous optez pour la recharge qui vous
       permettra de gérer vos applications en toute tranquillité.
   url: x
-
+boards:
+  plan:
+    en: Plans and Pricing
+    fr: xxxxxxxx
+  aboutdrops:
+    en: How much does a Drop cost?
+    fr: xxxxxxxx
 compare:
   title:
     en: About Drops
@@ -112,7 +118,7 @@ compare:
 <div class="solution-page">{{ content }}</div>
 <div id="packages">
   <div class="container">
-    <h2>Plans and Pricing</h2>
+    <h2>{{ page.boards.plan[page.locale] }}</h2>
     <div class="row-fluid">{% for package in page.packages %}
       <div class="package span2">
         <header>
@@ -129,7 +135,7 @@ compare:
         </a>
       </div>{% endfor %}
     </div>
-    <h2>How much does a Drop costs</h2>
+    <h2>{{ page.boards.aboutdrops[page.locale] }}</h2>
     <div id="table-compare" class="row-fluid">
     	<div class="span2 pres">
         <header><h3>{{ page.compare.title[page.locale] }}</h3></header>
