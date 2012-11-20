@@ -45,8 +45,8 @@ about:
   
 - ref: blog
   url: http://blog.clever-cloud.com
-  fr:  Blog Clever Cloud
-  en:  Clever Cloud blog
+  fr:  Blog 
+  en:  Blog
   
 - ref: engineer
   url: http://engineering.clever-cloud.com
