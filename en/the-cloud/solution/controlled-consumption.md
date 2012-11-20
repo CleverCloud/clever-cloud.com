@@ -22,7 +22,6 @@ discount: "off"
 			   <p>
                You get to fill your virtual tank with computer power –represented by drops- and then all you have to do is to monitor your activity. Once you run out of drops, you can fill the tank again without any intervention on our part.
             </p>
-			<hr/>
             <h2>The Drop&nbsp;: unit of computing energy</h2>
             <p>
 			   The Drop is the unit representing Clever Cloud's "computing energy". You fuel your app with Drops, in case of need.
@@ -36,8 +35,8 @@ discount: "off"
 				   <li>Management of your consumption's notification</li>
 			   </ul>
          </div>
-		 <div class="span6 offset1">
-		 	<img src="/img/solution/tarifs-en.jpg" alt="server">
+		 <div class="span7">
+		 	<img src="/img/solution/tarifs.jpg" alt="server">
 		 </div>
       </div>
    </div>

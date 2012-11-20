@@ -23,7 +23,6 @@ discount: de réduction
 			   <p>
                En effet, à l'instar de celui-ci, vous remplissez un réservoir d'énergie informatique sur votre compte Clever Cloud. Ce réservoir se vide dans le temps, au fil de votre consommation en hébergement.
             </p>
-            <hr/>
             <h2>La Drop&nbsp;: l'unité d'énergie informatique </h2>
             <p>
 			      La Drop est l'unité de mesure représentant “l’énergie&nbsp;informatique” de Clever Cloud. Vous rechargez vos réserves au besoin.
@@ -37,8 +36,8 @@ discount: de réduction
 				   <li>La gestion des alertes de consommation</li>
 			   </ul>
          </div>
-		 <div class="span6 offset1">
-		 	<img src="/img/solution/tarifs-fr.jpg" alt="server">
+		 <div class="span7">
+		 	<img src="/img/solution/tarifs.jpg" alt="refill now!">
 		 </div>
       </div>
    </div>
