@@ -12,26 +12,23 @@ compatibility:
   fr: Compatibilité
 
 packages:
-- title: Suscriber
+- title: New bird
   count: 2 000
   free:
     en: Free
-    fr: Gratuit
+    fr: Offert
   desc:
     en: |
-      Not suscribed yet? Get the first
-      2 000 drops free!
+      Not suscribed yet? <br/> You get 2,000 Drops for every new account created — to try out Clever Cloud.
     fr: |
-      Pas encore inscrit ? Créez un compte pour
-      obtenir gratuitement vos 2 000 premières
-      drops.
+      Pas encore inscrit ? <br/> 2 000 Drops vous sont offertes dès la création de votre compte pour un essai gratuit.
   url: http://console.clever-cloud.com/auth/signup
 - title: First Steps
   count: 2 500
   price: 24.25€
   desc:
     en: |
-      A small refill -- if this is what you need!
+      A small refill — if this is what you need!
     fr: |
       Une recharge minimale pour s'adapter à vos besoins !
   url: http://console.clever-cloud.com/drops/pkg-1
@@ -52,10 +49,10 @@ packages:
   best_offer: yes
   desc:
     en: |
-      A good balance between costs and durability : our best
+      A good balance between costs and durability: our best
       offer yet!
     fr: |
-      Notre meilleure offre! Un bon compromis entre coût et
+      Un bon compromis entre coût et
       durée.
   url: x
 - title:    Astronaut
@@ -64,27 +61,33 @@ packages:
   discount: 10
   desc:
     en: |
-      You are a boss! You choose the refill that will let you
+      You choose the refill that will let you
       manage your applications with your mind at peace.
     fr: |
-      Vous êtes un chef ! Vous optez pour la recharge qui vous
-      permettra de gérer vos aplications en toute tranquillité.
+      Vous optez pour la recharge qui vous
+      permettra de gérer vos applications en toute tranquillité.
   url: x
-
+boards:
+  plan:
+    en: Plans and Pricing
+    fr: Offres et tarifs
+  aboutdrops:
+    en: What is a Drop value?
+    fr: Que vaut une Drop ?
 compare:
   title:
-    en: Drops
-    fr: Drops
+    en: About Drops
+    fr: Les Drops
   desc:
     en: |
-      Lorem ipsum.
+      This board show you how many Drops are consumed by slices of <br/><span style="text-decoration:underline">10 minutes</span> for every type of instances.
     fr: |
-      Lorem ipsum.
+      Ce tableau indique combien de Drops sont consommées par tranches<br/> de <span style="text-decoration:underline">10 minutes</span> pour chaque type d'instances.
   row_max: 3
   list:
   - title: Java
     instances:
-    - title: Base
+    - title: Java only
       count: 2.3
     - title: JEE (Glassfish / Jetty)
       count: 2.35
@@ -93,13 +96,13 @@ compare:
       soon:  Yes
   - title: PHP
     instances:
-    - title: Base
+    - title: PHP only
       count: 1.3
     - title: Wordpress / Drupal
       count: 2.5
   - title: Scala
     instances:
-    - title: Base
+    - title: Scala only
       count: 2.3
       soon:  Yes
 ---
@@ -115,6 +118,7 @@ compare:
 <div class="solution-page">{{ content }}</div>
 <div id="packages">
   <div class="container">
+    <h2>{{ page.boards.plan[page.locale] }}</h2>
     <div class="row-fluid">{% for package in page.packages %}
       <div class="package span2">
         <header>
@@ -131,6 +135,7 @@ compare:
         </a>
       </div>{% endfor %}
     </div>
+    <h2>{{ page.boards.aboutdrops[page.locale] }}</h2>
     <div id="table-compare" class="row-fluid">
     	<div class="span2 pres">
         <header><h3>{{ page.compare.title[page.locale] }}</h3></header>

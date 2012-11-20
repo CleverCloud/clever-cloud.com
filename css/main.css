@@ -818,7 +818,7 @@ body{
   }
   #headbar3 a {
     color:        #3f3f3f;
-    font-size:    20px;
+    font-size:    16px;
     font-weight:  bold;
     line-height:  40px;
     opacity:      .5;
@@ -886,7 +886,7 @@ body{
   border-radius: 4px;
   box-shadow:    0 1px 0 #fff,
                  0 1px 0 #fff inset;
-  margin:        100px 0;
+  margin:        15px 0 40px;
   overflow:      hidden;
 }
 #packages .package:first-child,
