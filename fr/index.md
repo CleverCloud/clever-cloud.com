@@ -12,5 +12,5 @@ desc: Clever Cloud est une plateforme Cloud qui permet d'assurer hautes performa
 
 <div class="call-for-action">
    <a class="btn btn-inverse btn-large" href="/fr/the-cloud/solution">Découvrir</a>
-   <a class="btn btn-primary btn-large" href="https://console.clever-cloud.com/auth/signup">Inscription</a>
+   <a class="btn btn-primary btn-large" href="https://console.clever-cloud.com/auth/signup">Essai gratuit</a>
 </div>
