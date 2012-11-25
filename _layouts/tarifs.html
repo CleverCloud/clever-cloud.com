@@ -67,6 +67,9 @@ packages:
       Vous optez pour la recharge qui vous
       permettra de gérer vos applications en toute tranquillité.
   url: x
+negociate :
+  fr: Si vous souhaitez établir un forfait mensuel pour votre application, nous pouvons vous proposer une offre à prix stable, contactez <a href="mailto:deals@clever-cloud.com">deals@clever-cloud.com</a> 
+  en: If you need more stable price, we can offer you a plan with fixed price. Be in touch with our team by email <a href="mailto:deals@clever-cloud.com">deals@clever-cloud.com</a> 
 boards:
   plan:
     en: Plans and Pricing
@@ -76,37 +79,36 @@ boards:
     fr: Que vaut une Drop ?
 compare:
   title:
-    en: About Drops
-    fr: Les Drops
+    en: Drops consumption for running applications
+    fr: Drops consommées par votre application
   desc:
     en: |
-      This board show you how many Drops are consumed by slices of <br/>10 minutes for every type of instances.
+      This board show you how many Drops are consumed by slices of <br/><i>10 minutes</i> for every type of instances.
     fr: |
-      Ce tableau indique combien de Drops sont consommées par tranches<br/> de 10 minutes pour chaque type d'instances.
+      Ce tableau indique combien de Drops sont consommées par tranches<br/> de <i>10 minutes</i> pour chaque type d'instances.
   row_max: 3
   list:
   - title: Java
     instances:
-    - title: Java only
-      count: 2.3
-    - title: JEE (Glassfish & Jetty)
-      count: 2.35
+    - title: Java maven
+      count: 2
+    - title: JEE (Glassfish or Jetty)
+      count: 2
+      soon:  Yes
     - title: Play 1.2.x
-      count: 2.35
+      count: 2
       soon:  Yes
   - title: PHP
     instances:
-    - title: PHP only
-      count: 1.3
-    - title: Wordpress & Drupal
-      count: 2.5
+    - title: PHP (git or ftp)
+      count: 1
   - title: Scala
     instances:
-    - title: Scala only
-      count: 2.3
+    - title: Scala 
+      count: 2
       soon:  Yes
     - title: Play 2.0
-      count: 2.35
+      count: 2
       soon:  Yes
 ---
 <div class="sub-navbar">
@@ -138,6 +140,11 @@ compare:
         </a>
       </div>{% endfor %}
     </div>
+	 <div id="negociate-row" class="row-fluid" style="border:0px">
+		 <div id="negociate-cell" class="span12">
+	       {{ page.negociate[page.locale] }}
+       </div>
+	</div>
     <h2>{{ page.boards.aboutdrops[page.locale] }}</h2>
     <div id="table-compare" class="row-fluid">
     	<div class="span2 pres">

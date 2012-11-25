@@ -946,6 +946,10 @@ body{
     margin:        10px 15px;
     padding:       5px;
 }
+#negociate-row, #negociate-cell{
+	background-color: #F6F6F6;
+	border: 0px;
+}
 #table-compare {
   position:   relative;
   text-align: center;
