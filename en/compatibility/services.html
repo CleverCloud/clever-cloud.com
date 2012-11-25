@@ -1,0 +1,38 @@
+---
+layout: compatibility
+locale: en
+
+title:  Services
+
+groups:
+  db: &db
+    title: Databases
+    id: db
+    desc: |
+      Customize any app's architecture with SQL and noSQL databases.
+    doclink: /services.html
+    items:
+    - title: MySQL
+      icon: mysql.png
+      desc: |
+        Database widely used in web applications, also a central component of LAMP open source stack.
+      doclink: /
+      released: Yes
+    - title: PostgreSQL
+      icon: postgreSQL.png
+      desc: |
+        PostgreSQL is an object-relational database management system (ORDBMS).
+      doclink: /
+      released: Yes
+#    - title: Couchbase
+#      icon: couchbase.png
+#      desc: |
+#        Couchbase is an Open-source document-oriented or pure key-value NoSQL database.
+#    - title: MongoDB
+#      icon: mongoDB.png
+#      desc: |
+#        MongoDB is an open source document-oriented NoSQL database system.
+  indexation: &indexation
+  cache: &cache
+  list: [*db]
+---

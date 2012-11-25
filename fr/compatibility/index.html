@@ -1,0 +1,78 @@
+---
+layout: compatibility
+locale: fr
+
+title:  Instances
+
+groups:
+  java: &java
+    title: Java Engine
+    id: java
+    desc: |
+      La plateforme Java tient aujourd'hui une place prépondérante dans toutes sortes de développements web. Une liste des CMS compatibles est présente dans la documentation. 
+    doclink: /java.html
+    items:
+#    - title: Java + Glassfish
+#      icon: glassfish.png
+#      desc: |
+#       Serveur d'application Open-source et référence de l'impémentation de Servetls 3.0.
+#      doclink: /java.html
+#      released: Yes
+#    - title: Java + Ant
+#      icon: ant.png
+#      desc: |
+#        Apache Ant est un logiciel automatisant les opérations répétitives de développements logiciel.
+    - title: Java + Maven
+      icon: maven.png
+      desc: |
+        Apache Maven est un outil Open-source de gestion et d'automatisation de production de projets logiciels Java.
+      doclink: /java.html
+      released: Yes
+  php: &php
+    title: PHP Engine
+    id: php
+    desc: |
+      PHP est un langage de scripts Open-source principalement utilisé pour produire des pages Web dynamiques.
+    doclink: /php.html
+    items:
+    - title: PHP
+      icon: php.png
+      desc: |
+        Modèle d'instance pour application PHP simples.
+      doclink: /php.html
+      released: Yes
+    - title: Wordpress
+      icon: wp.png
+      desc: |
+        WordPress est un système de gestion de contenu libre écrit en PHP et reposant sur MySQL.
+      doclink: /php.html
+      released: Yes
+    - title: Magento
+      icon: magento.png
+      desc: |
+        Magento is an open source ecommerce web application.
+      doclink: /php.html
+      released: Yes
+  ruby: &ruby
+    title: Ruby Engine
+    id: ruby
+    desc: |
+      Ruby est un langage open-source dynamique qui met l'accent sur la simplicité et la productivité. Une liste des CMS compatibles est présente dans la documentation. 
+    doclink: /
+    items:
+    - title: Ruby
+      icon: ruby.png
+      desc: |
+        Ruby est un langage open-source dynamique qui met l'accent sur la simplicité et la productivité
+      doclink: /
+      released: Yes
+    - title: JRuby
+      icon: jruby.png
+      desc: |
+        JRuby est une implémentation de l'interpréteur de Ruby en Java.
+      doclink: /
+      released: Yes
+  scala: &scala
+  nodejs: &nodejs
+  list: [*java, *php]
+---

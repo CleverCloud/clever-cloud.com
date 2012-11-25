@@ -1,0 +1,22 @@
+---
+layout: page
+---
+{{ content }}
+<div class="row">
+   <div class="span3">
+      <h3>Email</h3>
+      <p><a href="mailto:{{ page.contact.email }}">{{ page.contact.email }}</a></p>
+   </div>
+   <div class="span3">
+      <h3>Tel</h3>
+      <p>{{ page.contact.tel }}</p>
+   </div>
+   <div class="span3">
+      <h3>IRC</h3>
+      <p><a href="irc://irc.freenode.net:6667/clevercloud">{{ page.contact.irc }}</a></p>
+   </div>
+   <div class="span3">
+      <h3>{{ page.postal }}</h3>
+      <p>{{ page.contact.postal | newline_to_br }}</p>
+   </div>
+</div>

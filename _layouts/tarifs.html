@@ -1,0 +1,166 @@
+---
+layout: main
+
+nav:
+- ref: the-cloud/solution/index
+- ref: the-cloud/solution/innovating-platform
+- ref: the-cloud/solution/simple-management
+- ref: the-cloud/solution/controlled-consumption
+
+compatibility:
+  en: Compatibility
+  fr: Compatibilité
+
+packages:
+- title: New bird
+  count: 2 000
+  free:
+    en: Free
+    fr: Offert
+  desc:
+    en: |
+      Not suscribed yet? <br/> You get 2,000 Drops for every new account created — to try out Clever Cloud.
+    fr: |
+      Pas encore inscrit ? <br/> 2 000 Drops vous sont offertes dès la création de votre compte pour un essai gratuit.
+  url: http://console.clever-cloud.com/auth/signup
+- title: First Steps
+  count: 2 500
+  price: 24.25€
+  desc:
+    en: |
+      A small refill — if this is what you need!
+    fr: |
+      Une recharge minimale pour s'adapter à vos besoins !
+  url: http://console.clever-cloud.com/drops/pkg-1
+- title: Highway Driver
+  count: 10 000
+  price: 94.58€
+  desc:
+    en: |
+      Getting more traffic? A package to foresee a bit more.
+    fr: |
+      Plus de trafic ? Voici une recharge qui vous permettra
+      de voir un peu plus loin.
+  url: http://console.clever-cloud.com/drops/pkg-2
+- title:    Aviator
+  count:    25 000
+  price:    230.38€
+  discount: 5
+  best_offer: yes
+  desc:
+    en: |
+      A good balance between costs and durability: our best
+      offer yet!
+    fr: |
+      Un bon compromis entre coût et
+      durée.
+  url: x
+- title:    Astronaut
+  count:    50 000
+  price:    436.5€
+  discount: 10
+  desc:
+    en: |
+      You choose the refill that will let you
+      manage your applications with your mind at peace.
+    fr: |
+      Vous optez pour la recharge qui vous
+      permettra de gérer vos applications en toute tranquillité.
+  url: x
+boards:
+  plan:
+    en: Plans and Pricing
+    fr: Offres et tarifs
+  aboutdrops:
+    en: What is a Drop's value?
+    fr: Que vaut une Drop ?
+compare:
+  title:
+    en: About Drops
+    fr: Les Drops
+  desc:
+    en: |
+      This board show you how many Drops are consumed by slices of <br/>10 minutes for every type of instances.
+    fr: |
+      Ce tableau indique combien de Drops sont consommées par tranches<br/> de 10 minutes pour chaque type d'instances.
+  row_max: 3
+  list:
+  - title: Java
+    instances:
+    - title: Java only
+      count: 2.3
+    - title: JEE (Glassfish & Jetty)
+      count: 2.35
+    - title: Play 1.2.x
+      count: 2.35
+      soon:  Yes
+  - title: PHP
+    instances:
+    - title: PHP only
+      count: 1.3
+    - title: Wordpress & Drupal
+      count: 2.5
+  - title: Scala
+    instances:
+    - title: Scala only
+      count: 2.3
+      soon:  Yes
+    - title: Play 2.0
+      count: 2.35
+      soon:  Yes
+---
+<div class="sub-navbar">
+   <div class="container {{ page.part }}">
+      <div class="navbar">
+         <ul class="nav"> {% for link in page.nav %}
+            {% include nav.html %} {% endfor %}
+         </ul>
+      </div>
+   </div>
+</div>
+<div class="solution-page">{{ content }}</div>
+<div id="packages">
+  <div class="container">
+    <h2>{{ page.boards.plan[page.locale] }}</h2>
+    <div class="row-fluid">{% for package in page.packages %}
+      <div class="package span2">
+        <header>
+          <h3>{{ package.title }}</h3>
+          {{ package.desc[page.locale] | markdownify }}
+        </header>
+        <div class="big-num">
+          {{ package.count }}
+          <img src="/img/icons/drop{% if forloop.first %}-white{% endif %}.png" alt="=D="/>
+        </div>
+        <a href="{{ package.url }}" class="btn">{% if package.price %}
+          {{ package.price }}{% else %}
+          {{ package.free[page.locale] }}{% endif %}
+        </a>
+      </div>{% endfor %}
+    </div>
+    <h2>{{ page.boards.aboutdrops[page.locale] }}</h2>
+    <div id="table-compare" class="row-fluid">
+    	<div class="span2 pres">
+        <header><h3>{{ page.compare.title[page.locale] }}</h3></header>
+        {{ page.compare.desc[page.locale] | markdownify }}
+        <div class="bottom-options">
+          <a href="/{{ page.locale }}/compatibility" class="btn">
+            {{ page.compatibility[page.locale] }}
+          </a>
+        </div>
+      </div>{% for tech in page.compare.list %}
+    	<div class="span2">
+        <div class="cell head">
+          <h3>{{ tech.title }}</h3>
+        </div>{% for i in (0..page.compare.row_max) %}
+        <div class="cell{% if tech.instances[i].soon %} soon{% endif %}">{% if tech.instances[i] %}
+          <strong>{{ tech.instances[i].title }}</strong>
+          <h4>{{ tech.instances[i].count }}<img src="/img/icons/drop.png" alt="=D=" style="
+    max-height: 15px;
+    padding-left: 4px;
+"></h4>{% endif %}
+        </div>{% endfor %}
+      </div>{% endfor %}
+    </div>
+  </div>
+</div>

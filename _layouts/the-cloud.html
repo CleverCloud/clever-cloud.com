@@ -1,0 +1,38 @@
+---
+layout: page
+---
+<div id="offer-page">
+<div class="row">
+   <div class="span6">{{ content }}</div>
+</div>
+
+<hr/>
+
+<!-- le clever cloud features -->
+<h2>{{ page.features.title }}</h2>
+{% for row in page.features.all %}
+<div class="row"> {% for f in row %} {% capture purl %}/{{ page.locale }}/the-cloud/features/{{ f }}.html{% endcapture %}{% for p in site.pages %} {% if p.url == purl %}
+   <div class="span4">
+      <h3><i class="cc-icon-{{ p.icon }}"></i> {{ p.title }}</h3>
+      {{ p.content }}
+   </div> {% endif %} {% endfor %} {% endfor %}
+</div> {% endfor %}
+<hr/>
+
+<!-- our advantages -->
+<h2>{{ page.advantages.title }}</h2>
+<div class="row">
+   <div class="span8"> {% for row in page.advantages.rest %}
+      <div class="row"> {% for a in row %} {% capture aurl %}/{{ page.locale }}/the-cloud/advantages/{{ a }}.html{% endcapture %}{% for p in site.pages %} {% if p.url == aurl %}
+         <div class="span4">
+            <h3><i class="cc-icon-{{ p.icon }}"></i> {{ p.title }}</h3>
+            {{ p.content }}
+         </div> {% endif %} {% endfor %} {% endfor %}
+      </div> {% endfor %}
+   </div>
+   <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ page.advantages.main }}.html{% endcapture %}{% for p in site.pages %} {% if p.url == purl %}
+      <h3><i class="cc-icon-{{ p.icon }}"></i> {{ p.title }}</h3>
+      {{ p.content }}
+   </div> {% endif %} {% endfor %}
+</div>
+</div>

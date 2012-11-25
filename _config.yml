@@ -1,208 +1,244 @@
-# SEO
-title: "Clever Cloud"
-keywords: [cloud computing, solution cloud, cloud, clever cloud]
-since: "2012-03-01T12:00"
-# uri/urls                                          change before upload
-url: ""
-www: /www
-media: /media
-lg_url: # locale (i18n) urls                        change before upload
-  fr_FR: "/fr_FR"
-  en_US: "/en_US"
-# dirty jekyll conf
-destination: out
-auto:        false
-lsi:         false
-server_port: 4000
-pygments:    true
-markdown:    maruku
-permalink:   /:categories/:title.html
-maruku:
-  use_tex:   false
-  use_divs:  false
-  png_dir:   images/latex
-  png_url:   /images/latex
+# about clever cloud
+brand: Clever Cloud
+since: 2010
+
+# navigation
+sitemap:
+
+- ref: about
+  fr:  Clever Cloud
+  en:  Clever Cloud
+  span: 2
+
+- ref: product
+  fr:  Le produit
+  en:  Our solution
+  span: 3
+
+- ref: support
+  fr:  Support
+  en:  Support
+  span: 2
+
+- ref: legal-notice
+  fr:  Nos engagements
+  en:  Commitment
+  span: 3
+
+- ref: follow-us
+  fr:  Nous suivre
+  en:  Follow us
+  span: 2
+
+about:
+
+- ref: about/index
+
+- ref: about/press
+
+- ref: about/team
+
+#- ref: lab
+#  url: http://lab.clever-cloud.com
+#  fr:  Clever Lab
+#  en:  Clever Lab
+  
+- ref: blog
+  url: http://blog.clever-cloud.com
+  fr:  Blog 
+  en:  Blog
+  
+- ref: engineer
+  url: http://engineering.clever-cloud.com
+  fr:  Engineer Blog
+  en:  Engineer Blog
+  
+- ref: about/partners/index
+
+the-cloud:
+
+- ref: the-cloud/solution/index
+
+- ref: the-cloud/solution/controlled-consumption
+  fr:  Tarifs
+  en:  Pricing
+
+- ref: instances
+  url: compatibility/index.html
+  fr:  Compatibilité
+  en:  Compatibility
+
+- ref: the-cloud/support
+  sub: support
+  fr:  Support
+  en:  Support
+
+- ref: lang
+  sub: lang
+  fr:  Fr
+  en:  En
+
+- ref: account
+  url: https://console.clever-cloud.com/
+  btn: Yes
+  fr:  Login
+  en:  Login
+
+product:
+
+- ref: the-cloud/solution/index
+
+- ref: the-cloud/solution/innovating-platform
+
+- ref: the-cloud/solution/controlled-consumption
+  fr:  Tarifs
+  en:  Pricing
+
+- ref: the-cloud/solution/simple-management
+
+- ref: account
+  url: https://console.clever-cloud.com
+  fr:  Login
+  en:  Login
+
+support:
+
+- ref: docs
+  url: http://doc.clever-cloud.com
+  fr:  Documentation
+  en:  Documentation
+
+#- ref: tutorials
+#  url: http://doc.clever-cloud.com/tutorials
+#  fr:  Tutoriels
+#  en:  Tutorials
+
+#- ref: status
+#  url: http://status.clever-cloud.com
+#  fr:  État du service
+#  en:  Service status
+
+lang:
+
+- ref:  fr/index
+  switch: fr
+  fr:   Français
+  en:   Français
+
+- ref:  en/index
+  switch: en
+  fr:   English
+  en:   English
+
+legal-notice:
+
+- ref: legal-notice/index
+
+- ref: legal-notice/terms-of-sale
+
+- ref: legal-notice/terms-of-use
+
+follow-us:
+- ref: newsletter
+  url: http://eepurl.com/lobZH
+  fr:  Newsletter
+  en:  Newsletter
+  
+- ref: twitter
+  url: http://twitter.com/clever_cloud
+  fr:  Twitter
+  en:  Twitter
+
+- ref: facebook
+  url: http://facebook.com/clevercloudsas
+  fr:  Facebook
+  en:  Facebook
+
+- ref: github
+  url: http://github.com/clevercloud
+  fr:  Github
+  en:  Github
+
+- ref: linkedin
+  url: http://linkedin.com/company/clever-cloud
+  fr:  LinkedIn
+  en:  LinkedIn
+
 # locale
-i18n:
-  list:
-  - iso: fr_FR
-    name: "Français"
-  - iso: en_US
-    name: "English"
-  default: fr_FR
-  fr_FR:  # traduction française
-    name: "Français"
-    login: "Inscription"
-    technologies: "Langages supportés"
-    technologies_sub: "Hébergez votre application en un clin d'œil"
-    technologies_text: >
-       Votre travail consiste à faire de grandes applications?
-       Notre travail consiste à les faire fonctionner efficacement, et ce sur chaque langage pris en charge, tout en vous épargnant la gestion de votre infrastructure.
-    top:
-    - title: "Offre"
-      url: "offre"
-    - title: "Tarifs"
-      url: "tarifs"
-    - title: "Add-ons"
-      url: "add-ons"
-    - title: "Support"
-      url: "#"
-      sub: Yes
-      list:
-#      - title: "Documentation"
-#        url: "documentation"
-      - title: "Contactez-nous"
-        url: "contact"
-#      - title: "Plan du site"
-#        url: "plan-site"
-#      - title: "Glossaire"
-#        url: "glossaire"
-    slider:
-      prev: "Précédent"
-      next: "Suivant"
-    signup_title: "Inscription à la Beta"
-    signup_sub: "Ouverture des comptes aux beta testeurs imminente. Inscrivez-vous!"
-    signup:
-      mail: "Votre e-mail"
-      success: "Parfait, votre inscription s'est bien passée"
-      code401: "Cette adresse email a déjà été enregistrée."
-      code404: "Erreur 404: Essayez de redémarrer."
-      code500: "Erreur 500: une erreur est survenue quelque part. Mais on ne sait où."
-      submit: "Inscription Beta"
-    newsletter:
-      title:  Inscription à la newsletter
-      submit: Inscription
-    footer:
-    - head: "Clever Cloud"
-      list:
-      - title: "Qui sommes-nous ?"
-        url: "qui-sommes-nous"
-      - title: "Espace presse"
-        url: "presse"
-      - title: "Facebook"
-        url: "http://www.facebook.com/pages/Clever-Cloud/207415405943531"
-        external: Yes
-      - title: "Twitter"
-        url: "http://twitter.com/clever_cloud"
-        external: Yes
-    - head: Offre
-      list:
-      - title: Détails
-        url: offre
-      - title: "Tarifs"
-        url: "tarifs"
-      - title: "Add-ons"
-        url: "add-ons"
-      - title: "Inscription"
-        url: "http://clever-cloud.com/#signup"
-    - head: "Support"
-      list:
-#      - title: "Documentation"
-#        url: "documentation"
-      - title: "Contactez-nous"
-        url: "contact"
-      - title: "Devenir partenaire"
-        url: "devenir-partenaire"
-#      - title: "Plan du site"
-#        url: "plan-site"
-#      - title: "Glossaire"
-#        url: "glossaire"
-    - head: "Engagements"
-      list:
-      - title: "Mentions légales"
-        url: "mentions-legales"
-#      - title: "Protection des données"
-#        url: "protection-donnees"
-#      - title: "Conditions Générales de Vente"
-#        url: "cgv"
-#      - title: "Conditions Générales d'Utilisation"
-#        url: "cgu"
-        
-  en_US:  # traduction anglaise (américain)
-    login: "Sign up"
-    technologies: "Supported languages"
-    technologies_sub: "Code your app, we take care of it"
-    technologies_text: >
-        Your job is to make great apps. Our job is to make them run efficiently, on every supported language. 
-        Leave it to us!
-    top:
-    - title: "Solution"
-      url: "solution"
-    - title: "Pricing"
-      url: "pricing"
-    - title: "Add-ons"
-      url: "addons"
-    - title: "Support"
-      url: "#"
-      sub: Yes
-      list:
- #     - title: "Documentation"
- #       url: "documentation"
-      - title: "Contact us"
-        url: "contact"
- #     - title: "Site map"
- #       url: "sitemap"
- #     - title: "Glossary"
- #       url: "glossary"
-    slider:
-      prev: "Previous"
-      next: "Next"
-    signup_title: "Sign up for private beta"
-    signup_sub: "To register for updates and to get an invite for the private beta, sign up now!"
-    signup:
-      mail: "Email address, please"
-      submit: "Sign up for Beta"
-      success: "All right, everything went well. We'll sign you up asap!"
-      code401: "Calm down, we already got your mail. Thank you again!"
-      code404: "Error 404: Try a reboot :)"
-      code500: "Error 500: Something went wrong. No one knows where."
-      google: "Sign up with Google"
-    newsletter:
-      title:  Suscribe to the newsletter
-      submit: Sign up
-    footer:
-    - head: "Clever Cloud"
-      list:
-      - title: "Who are we?"
-        url: "about"
-      - title: "Press releases"
-        url: "press"
-      - title: "Facebook"
-        url: "http://www.facebook.com/pages/Clever-Cloud/207415405943531"
-        external: Yes
-      - title: "Twitter"
-        url: "http://twitter.com/clever_cloud"
-        external: Yes
-    - head: Solution
-      list:
-      - title: Details
-        url: solution
-      - title: "Pricing"
-        url: "pricing"
-      - title: "Add-ons"
-        url: "add-ons"
-      - title: "Sign up"
-        url: "/#signup"
-    - head: "Support"
-      list:
-#      - title: "Documentation"
-#        url: "documentation"
-      - title: "Contact us"
-        url: "contact"
-      - title: "Become our partner"
-        url: "partner"
-#      - title: "Site map"
-#        url: "sitemap"
-#      - title: "Glossary"
-#        url: "glossary"
-    - head: "Our commitment"
-      list:
-      - title: "Legal notice"
-        url: "legal-notice"
-#      - title: "Data protection"
-#        url: "protection"
-#      - title: "Terms of Sale"
-#        url: "terms-sale"
-#      - title: "Terms of Use"
-#        url: "terms-use"
-    
+
+locale:
+  doclink:
+    fr: Documentation
+    en: Documentation
+  soon:
+    fr: Bientôt
+    en: Soon
+
+# la team
+
+team:
+  
+  adam:
+    name:     Quentin Adam
+    job:
+      en:     Clever Cloud C.E.O
+      fr:     Clever Cloud C.E.O
+    twitter:  waxzce
+  
+  decherf:
+    name:     Kévin Decherf
+    job:
+      en:     Office & Production Manager
+      fr:     Office & Production Manager
+    twitter:  kdecherf
+  
+  tayrac:
+    name:     Arthur Tayrac
+    job:
+      en:     Interaction Designer
+      fr:     Interaction Designer
+    twitter:  crmfrsh
+  
+  durillon:
+    name:     Julien Durillon
+    job:
+      en:     Sytem Administrator and Developer
+      fr:     Sytem Administrator and Developer
+    twitter:  juuduu
+  
+  perennou:
+    name:     Marc-Antoine Perennou
+    job:
+      en:     Java and GNU/Linux Hacker
+      fr:     Java and GNU/Linux Hacker
+    twitter:  keruspe
+  
+  nivolle:
+    name:     Clément Nivolle
+    job:
+      en:     Project Manager
+      fr:     Project Manager
+    twitter:  cnivolle
+  
+  belouin:
+    name:     Rodolphe Belouin
+    job:
+      en:     Javascript & Scala Enthousiast
+      fr:     Javascript & Scala Enthousiast
+    twitter:  rbelouin
+  
+  thommy:
+    name:     Kevin Thommy
+    job:
+      en:     '"Integraphic" Designer'
+      fr:     '"Integraphic" Designer'
+    twitter:  mon_ke
+  
+  louerat:
+    name:     Bastien Louerat
+    job:
+      en:     Scala, Akka & Netty Software Developer
+      fr:     Scala, Akka & Netty Software Developer
+    twitter:  blouerat
+  
+  all: [adam, belouin, decherf, durillon, louerat, nivolle, perennou, tayrac, thommy]

@@ -1,0 +1,9 @@
+{% capture width %}{{ site.sitemap | size }}{% endcapture %}
+<div class="span{{ link.span }}">
+   <ul class="nav nav-list">
+      <li class="nav-header">
+         {{ link[page.locale] }}
+      </li> {% for link in site[link.ref] %}
+      {% include nav.html %} {% endfor %}
+   </ul>
+</div>

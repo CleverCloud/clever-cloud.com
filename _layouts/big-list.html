@@ -1,0 +1,18 @@
+---
+layout: page
+---
+<div id="partners-page">
+{% for item in page.list %} {% capture url %}/{{ page.locale }}/{{ item }}.html{% endcapture %}
+<div class="row"> {% for p in site.pages %} {% if p.url == url %}
+   <div class="span3">
+      <a href="http://{{ p.website }}" class="thumbnail" target="_blank"><img src="/img/partners/{{ p.img }}.png" alt="{{ p.title }}" /></a>
+   </div>
+   <div class="span9">
+      <h2>{{ p.title }}</h2>
+      <p class="intro">
+         {{ p.intro }}
+      </p>
+      {{ p.content | markdownify }}
+   </div> {% endif %} {% endfor %}
+</div> {% endfor %}
+</div>

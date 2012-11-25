@@ -1,0 +1,15 @@
+---
+layout: main
+---
+<div class="sub-navbar">
+   <div class="container">
+      <div class="navbar">
+         <ul class="nav"> {% for link in page.nav %}
+            {% include nav.html %} {% endfor %}
+         </ul>
+      </div>
+   </div>
+</div>
+<div class="container page">
+   {{ content }}
+</div>

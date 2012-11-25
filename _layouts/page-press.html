@@ -1,0 +1,30 @@
+---
+layout: main
+---
+<div class="sub-navbar">
+   <div class="container">
+      <div class="navbar">
+         <ul class="nav"> {% for link in page.nav %}
+            {% include nav.html %} {% endfor %}
+         </ul>
+      </div>
+   </div>
+</div>
+{{ content }}
+<div class="container"> {% for release in site.categories.about %} {% if release.categories contains page.locale %}
+	<div class="row press-release">
+		<div class="span9">
+      <h2>"{{ release.title }}"</h2>
+      <blockquote>{{ release.content }}</blockquote>
+      <p>
+        <a href="{{ release.link }}" target="_blank">{{ page.read_more }}</a>
+      </p>
+      <p>
+        <em>{{ release.author }} - {{ release.date | date: '%d %m %Y' }}</em>
+      </p>
+    </div>
+		<div class="span3">
+			<img src="{{ release.icon }}" alt="{{ release.author }}"/>
+		</div>
+	</div>{% endif %} {% endfor %}
+</div>

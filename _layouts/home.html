@@ -1,0 +1,106 @@
+---
+layout: main
+
+# home navigation
+
+advantages:
+- [cost-control, zen-integration]
+- [scalability, availability]
+
+technologies: [php, scala, ruby, java]
+---
+<!--[if lte IE 8]>
+ <script type="text/javascript" src="/js/home-ie.js"></script>
+ <link rel="stylesheet" type="text/css" href="/css/ie.css" media="all"/>
+<![endif]-->
+<div id="home-wrap">
+<div class="cc-hero-unit">
+   <div class="container">
+      
+      <div class="row">
+         <div class="span7"><img src="/img/dropgun.png" alt="fuel server" /></div>
+         <div class="span5">
+            {{ content }}
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="home-page">
+   <div class="container">
+      
+      <div id="home-advantages" class="row">
+         <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/index.html{% endcapture %}
+            {% include home-headline.html %}
+         </div>
+         <div class="span8"> {% for row in page.advantages %}
+            <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+               <div class="span4">
+                  <h3><i class="cc-icon-{{ p.icon }}-circle"></i> {{ p.title }}</h3>
+                  {{ p.content | markdownify }}
+               </div> {% endif %} {% endfor %} {% endfor %}
+            </div> {% endfor %}
+         </div>
+      </div>
+   </div>
+</div>
+
+<div id="home-tech-wrap">
+<canvas id="canvas-1" width="1200" height="200"  ></canvas>
+<div class="container">
+   <div id="home-tech" class="page-header"> {% capture purl %}/{{ page.locale }}/the-cloud/technologies/index.html{% endcapture %}
+      {% include home-headline.html %}
+   </div>
+   <div class="row"> {% for tech in page.technologies %} {% capture purl %}/{{ page.locale }}/the-cloud/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+      <div class="span1">
+         <a href="{{ p.website }}" class="thumbnail" target="_blank">
+            <img src="/img/technos/{{ p.icon }}" alt="{{ p.title }}"/>
+         </a>
+      </div>
+      <div class="span2">
+         <h3>{{ p.title }}</h3>
+         <p>{{ p.content }}</p>
+      </div> {% endif %} {% endfor %} {% endfor %}
+   </div>
+</div>
+</div>
+<div id="home-fuel-wrap">
+<div class="container">
+   
+   <div id="home-fuel" class="row"> {% capture purl %}/{{ page.locale }}/the-cloud/features/fuel-your-apps.html{% endcapture %}
+      <div class="span5">
+         {% include home-headline.html %}
+      </div>
+   </div>
+</div>
+</div>
+<div id="home-bottom">
+   <div class="container">
+      <div class="row">
+         <div class="span5">
+            {% include home-biglist.html %}
+         </div>
+         <div class="span7">
+            <div class="thumbnail">
+               <img src="/img/dashboard.png" alt="dashboard"/>
+            </div>
+         </div>
+      </div>
+      
+      <div id="home-partners" class="page-header"> {% capture purl %}/{{ page.locale }}/about/partners/index.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+         <h2>{{ p.title }}</h2>
+      </div>
+      <ul class="thumbnails"> {% for link in p.important %} {% capture url %}/{{ page.locale }}/{{ link }}.html{% endcapture %} {% for s in site.pages %} {% if s.url == url %}
+         <li>
+            <a href="http://{{ s.website }}" class="thumbnail" target="_blank">
+               <img src="/img/partners/{{ s.img }}-small.png" alt="{{ s.title }}"/>
+            </a>
+         </li>{% endif %} {% endfor %} {% endfor %}
+      </ul> {% endif %} {% endfor %}
+   </div>
+</div>
+</div>
+<script type="text/javascript" src="/js/easeljs-0.5.0.min.js"></script>
+<script type="text/javascript" src="/js/tweenjs-0.3.0.min.js"></script>
+<script type="text/javascript" src="/js/home-animation.js"></script>
+

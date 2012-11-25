@@ -1,26 +1,6 @@
 ---
-scripts: [bootstrap-scrollspy.js]
-layout: document
+layout: main
 ---
-{%assign lg = page.lang%}
-		<div id="page-wrap">
-			<section id="page">
-				<aside>
-					<div class="sidebar">
-						<ul>
-							{%for section in page.sections%}
-							<li><a href="#{{section.id}}" class="smooth">{{section.title}}</a></li>
-							{%endfor%}
-						</ul>
-					</div>
-				</aside>
-				<article>
-					<header>
-						<h1>{{page.title}}</h1>
-					</header>
-					<div class="content">
-						{{content}}
-					</div>
-				</article>
-			</section>
-		</div>
+<div class="container page">
+   {{ content }}
+</div>
