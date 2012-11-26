@@ -768,6 +768,12 @@ body{
     margin: 5px;
 }
 /* compatibility pages */
+.external-link{
+	height:18px;
+}
+.compatibility-lang-desc{
+	padding-bottom: 40px;
+}
 .compatibility {
   margin-bottom: 40px;
   }
@@ -946,9 +952,14 @@ body{
     margin:        10px 15px;
     padding:       5px;
 }
-#negociate-row, #negociate-cell{
+
+#packages #negociate-row, #negociate-cell{
 	background-color: #F6F6F6;
 	border: 0px;
+	box-shadow: none;
+	border-radius: 0;
+	box-shadow: none;
+	border-radius: 0;
 }
 #table-compare {
   position:   relative;
