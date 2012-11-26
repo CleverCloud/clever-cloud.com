@@ -110,6 +110,10 @@ compare:
     - title: Play 2.0
       count: 2
       soon:  Yes
+moredropcount :
+  fr: La documentation fournit une liste exhaustive des couts en drops <a href="http://doc.clever-cloud.com/clever-cloud-usage/pricing.html">sur une page dédiée</a>. 
+  en: All the services and languages drops charge are documented in <a href="http://doc.clever-cloud.com/clever-cloud-usage/pricing.html">this dedicated page on the documentation of Clever Cloud</a>. 
+
 ---
 <div class="sub-navbar">
    <div class="container {{ page.part }}">
@@ -169,5 +173,10 @@ compare:
         </div>{% endfor %}
       </div>{% endfor %}
     </div>
+	 <div id="negociate-row" class="row-fluid" style="border:0px">
+		 <div id="negociate-cell" class="span12">
+	       {{ page.moredropcount[page.locale] }}
+       </div>
+	</div>
   </div>
 </div>
