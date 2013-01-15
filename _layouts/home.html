@@ -15,11 +15,11 @@ technologies: [php, scala, ruby, java]
  <link rel="stylesheet" type="text/css" href="/css/ie.css" media="all"/>
 <![endif]-->
 <div id="home-wrap">
-<div class="cc-hero-unit">
-   <div class="container">
+<div class="cc-hero-unit cc-home__jumbo">
+   <div class="cc-home__jumbo__inner container">
       <div class="row">
          <div class="span5"><img src="/img/dropgun.png" alt="fuel server"/></div>
-         <div class="span7">
+         <div class="span6 offset1 cc-home__jumbo__text">
             {{ content }}
          </div>
       </div>
@@ -38,7 +38,7 @@ technologies: [php, scala, ruby, java]
          <div class="span6"> {% for row in page.advantages %}
             <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
                <div class="span3">
-                  <h3><i class="cc-icon-{{ p.icon }}-circle"> </i> {{ p.title }}</h3>
+                  <h3>{{ p.title }}</h3>
                   {{ p.content | markdownify }}
                </div> {% endif %} {% endfor %} {% endfor %}
             </div> {% endfor %}

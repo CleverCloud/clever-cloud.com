@@ -14,7 +14,7 @@ baseline:
 video: http://www.youtube.com/embed/klRE-cgNosE
 
 ---
-#Good resolutions? All you can eat on clever for free until february.
+<h1 class="cc-home__jumbo__title">Good resolutions? <span class="cc-home__jumbo__sub">All you can eat on clever for free until february.</span></h1>
 <div class="call-for-action">
    <a class="btn btn-primary btn-large" href="https://console.clever-cloud.com/auth/signup">Sign up for free</a>
 </div>

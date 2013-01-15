@@ -79,7 +79,7 @@ function init() {
     var size3 = canvas.width / 340 + 1;
     // original image size / scaleX = size
     var img = new Image();
-    img.src = "../img/vague3.png";
+    img.src = "../img/vague.png";
     img.onload = function(e){
       for (var i = -size; i < size; i++) {
         store["wave" + i]	= new createjs.Bitmap(e.target);
