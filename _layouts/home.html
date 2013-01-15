@@ -8,6 +8,7 @@ advantages:
 - [scalability, availability]
 
 technologies: [php, scala, ruby, java]
+
 ---
 <!--[if lte IE 8]>
  <script type="text/javascript" src="/js/home-ie.js"></script>
@@ -16,30 +17,34 @@ technologies: [php, scala, ruby, java]
 <div id="home-wrap">
 <div class="cc-hero-unit">
    <div class="container">
-      
       <div class="row">
-         <div class="span7"><img src="/img/dropgun.png" alt="fuel server" /></div>
-         <div class="span5">
+         <div class="span5"><img src="/img/dropgun.png" alt="fuel server"/></div>
+         <div class="span7">
             {{ content }}
          </div>
       </div>
    </div>
 </div>
-
+<div class="cc-home__baseline">
+  <div class="container">
+    <h2 class="cc-home__baseline__top">{{ page.baseline.top }}</h2>
+    <p class="cc-home__baseline__bottom">{{ page.baseline.bottom }}</p>
+  </div>
+</div>
 <div id="home-page">
    <div class="container">
       
       <div id="home-advantages" class="row">
-         <div class="span4"> {% capture purl %}/{{ page.locale }}/the-cloud/advantages/index.html{% endcapture %}
-            {% include home-headline.html %}
-         </div>
-         <div class="span8"> {% for row in page.advantages %}
+         <div class="span6"> {% for row in page.advantages %}
             <div class="row"> {% for advantage in row %} {% capture purl %}/{{ page.locale }}/the-cloud/advantages/{{ advantage }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
-               <div class="span4">
-                  <h3><i class="cc-icon-{{ p.icon }}-circle"></i> {{ p.title }}</h3>
+               <div class="span3">
+                  <h3><i class="cc-icon-{{ p.icon }}-circle"> </i> {{ p.title }}</h3>
                   {{ p.content | markdownify }}
                </div> {% endif %} {% endfor %} {% endfor %}
             </div> {% endfor %}
+         </div>
+         <div class="span6">
+            <iframe width="560" height="315" src="{{ page.video }}" frameborder="0" allowfullscreen> </iframe>
          </div>
       </div>
    </div>
@@ -66,9 +71,8 @@ technologies: [php, scala, ruby, java]
 </div>
 <div id="home-fuel-wrap">
 <div class="container">
-   
-   <div id="home-fuel" class="row"> {% capture purl %}/{{ page.locale }}/the-cloud/features/fuel-your-apps.html{% endcapture %}
-      <div class="span5">
+   <div id="home-fuel" class=""> {% capture purl %}/{{ page.locale }}/the-cloud/features/fuel-your-apps.html{% endcapture %}
+      <div class="">
          {% include home-headline.html %}
       </div>
    </div>
@@ -76,16 +80,6 @@ technologies: [php, scala, ruby, java]
 </div>
 <div id="home-bottom">
    <div class="container">
-      <div class="row">
-         <div class="span5">
-            {% include home-biglist.html %}
-         </div>
-         <div class="span7">
-            <div class="thumbnail">
-               <img src="/img/dashboard.png" alt="dashboard"/>
-            </div>
-         </div>
-      </div>
       
       <div id="home-partners" class="page-header"> {% capture purl %}/{{ page.locale }}/about/partners/index.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
          <h2>{{ p.title }}</h2>

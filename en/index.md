@@ -6,9 +6,15 @@ locale: en
 # data
 title: Home
 desc: Clever Cloud is a next-gen Cloud computing platform able to scale websites and apps automatically.
+
+baseline:
+  top:    Next generation hosting.
+  bottom: Control your costs and make your web applications more scalable.
+
+video: http://www.youtube.com/embed/klRE-cgNosE
+
 ---
-#Next-gen Cloud computing&nbsp;: Scale up or scale down your apps automatically and get a better control over your hosting costs.
+#Good resolutions? All you can eat on clever for free until february.
 <div class="call-for-action">
-   <a class="btn btn-inverse btn-large" href="/en/the-cloud/solution">Discover</a>
-   <a class="btn btn-primary btn-large" href="https://console.clever-cloud.com/auth/signup">Free trial</a>
+   <a class="btn btn-primary btn-large" href="https://console.clever-cloud.com/auth/signup">Sign up for free</a>
 </div>

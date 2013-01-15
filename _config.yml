@@ -57,7 +57,10 @@ about:
 
 the-cloud:
 
-- ref: the-cloud/solution/index
+- ref: discover
+  url: the-cloud/solution/innovating-platform.html
+  fr:  Découvrir
+  en:  Discover
 
 - ref: the-cloud/solution/controlled-consumption
   fr:  Tarifs
@@ -85,8 +88,6 @@ the-cloud:
   en:  Login
 
 product:
-
-- ref: the-cloud/solution/index
 
 - ref: the-cloud/solution/innovating-platform
 

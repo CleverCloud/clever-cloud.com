@@ -298,26 +298,25 @@ body{
   #home-advantages > .span4{
     padding-bottom:20px;
   }
-#home-advantages > .span8 .span4 h3{
+#home-advantages > .span6 .span3 h3{
    margin-top:-5px;
    padding-left:31px;
    position:relative;
 }
-#home-advantages > .span8 .span4 p{
-   border-left:1px solid #3f3f3f;
+#home-advantages > .span6 .span3 p{
    margin-bottom:0;
    padding-left:31px;
 }
-#home-advantages > .span8 .row p{
+#home-advantages > .span6 .row p{
    margin-top:-25px;
    min-height:110px;
    padding-top:25px;
 }
-#home-advantages > .span8 .row:last-child p{
+#home-advantages > .span6 .row:last-child p{
    min-height:0;
    padding-bottom:40px;
 }
-#home-advantages > .span8 p{
+#home-advantages > .span6 p{
    padding-bottom:20px;
 }
 #home-tech{
@@ -1014,6 +1013,20 @@ body{
       position: absolute;
       width:    25%;
 }
+
+#home-fuel .btn-large {
+  display: block;
+  margin:  20px 0;
+}
+
+.cc-home__baseline {
+  border-top:    1px solid #d0d0d0;
+  border-bottom: 1px solid #d0d0d0;
+  background:    #f6f6f6;
+  padding:       20px 0;
+  text-align:    center;
+}
+
 @media(max-width:767px){
 	#home-page{
 	   background-image:url('../img/wave-top.png');
@@ -1042,10 +1055,10 @@ body{
       padding-left:20px;
       padding-right:20px;
    }
-  #home-advantages > .span8 .row p{
+  #home-advantages > .span6 .row p{
     min-height:0;
   }
-#home-advantages > .span8 .row:last-child .span4:last-child:after{
+#home-advantages > .span6 .row:last-child .span4:last-child:after{
       border:2px solid #3f3f3f;
       border-radius:7px;
       content:" ";
@@ -1109,7 +1122,7 @@ body{
    #home-bottom .span7{
       margin-top:-200px;
    }
-   #home-advantages > .span8 .row:last-child .span4:after{
+   #home-advantages > .span6 .row:last-child .span4:after{
       border:2px solid #3f3f3f;
       border-radius:7px;
       content:" ";
