@@ -1,7 +1,7 @@
 ---
 # data
 title:   Scala
-icon:    scala-logo.png
+icon:    scalalogo.png
 website: http://www.scala-lang.org
 ---
 Scala est un langage conçu pour développer de
