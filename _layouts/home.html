@@ -14,7 +14,7 @@ technologies: [php, scala, ruby, java]
  <script type="text/javascript" src="/js/home-ie.js"></script>
  <link rel="stylesheet" type="text/css" href="/css/ie.css" media="all"/>
 <![endif]-->
-<div id="home-wrap">
+<div id="home-wrap" class="full-bg">
 <div class="cc-hero-unit cc-home__jumbo">
    <div class="cc-home__jumbo__inner container">
       <div class="row">
@@ -25,13 +25,13 @@ technologies: [php, scala, ruby, java]
       </div>
    </div>
 </div>
-<div class="cc-home__baseline">
+<div class="cc-home__baseline full-bg">
   <div class="container">
     <h2 class="cc-home__baseline__top">{{ page.baseline.top }}</h2>
     <p class="cc-home__baseline__bottom">{{ page.baseline.bottom }}</p>
   </div>
 </div>
-<div id="home-page">
+<div id="home-page" class="full-bg">
    <div class="container">
       
       <div id="home-advantages" class="row">
@@ -57,14 +57,11 @@ technologies: [php, scala, ruby, java]
       {% include home-headline.html %}
    </div>
    <div class="row"> {% for tech in page.technologies %} {% capture purl %}/{{ page.locale }}/the-cloud/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
-      <div class="span1">
+      <div class="span2">
          <a href="{{ p.website }}" class="thumbnail" target="_blank">
             <img src="/img/technos/{{ p.icon }}" alt="{{ p.title }}"/>
+           <h3>{{ p.title }}</h3>
          </a>
-      </div>
-      <div class="span2">
-         <h3>{{ p.title }}</h3>
-         <p>{{ p.content }}</p>
       </div> {% endif %} {% endfor %} {% endfor %}
    </div>
 </div>
