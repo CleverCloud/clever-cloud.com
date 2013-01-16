@@ -7,7 +7,7 @@ advantages:
 - [cost-control, zen-integration]
 - [scalability, availability]
 
-technologies: [php, scala, ruby, java]
+technologies: [php, scala, ruby, java, nodejs]
 
 ---
 <!--[if lte IE 8]>
@@ -44,7 +44,7 @@ technologies: [php, scala, ruby, java]
             </div> {% endfor %}
          </div>
          <div class="span6">
-            <iframe width="560" height="315" src="{{ page.video }}" frameborder="0" allowfullscreen> </iframe>
+            <iframe class="cc-home__overview__video" width="560" height="315" src="{{ page.video }}" frameborder="0" allowfullscreen> </iframe>
          </div>
       </div>
    </div>
@@ -56,13 +56,11 @@ technologies: [php, scala, ruby, java]
    <div id="home-tech" class="page-header"> {% capture purl %}/{{ page.locale }}/the-cloud/technologies/index.html{% endcapture %}
       {% include home-headline.html %}
    </div>
-   <div class="row"> {% for tech in page.technologies %} {% capture purl %}/{{ page.locale }}/the-cloud/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
-      <div class="span2">
-         <a href="{{ p.website }}" class="thumbnail" target="_blank">
-            <img src="/img/technos/{{ p.icon }}" alt="{{ p.title }}"/>
-           <h3>{{ p.title }}</h3>
-         </a>
-      </div> {% endif %} {% endfor %} {% endfor %}
+   <div class="cc-home__tech__list"> {% for tech in page.technologies %} {% capture purl %}/{{ page.locale }}/the-cloud/technologies/{{ tech }}.html{% endcapture %} {% for p in site.pages %} {% if p.url == purl %}
+     <a class="cc-home__tech__item" href="{{ p.website }}" target="_blank">
+       <img class="cc-home__tech__icon" src="/img/technos/{{ p.icon }}" alt="{{ p.title }}"/>
+       <h3 class="cc-home__tech__title">{{ p.title }}</h3>
+     </a> {% endif %} {% endfor %} {% endfor %}
    </div>
 </div>
 </div>

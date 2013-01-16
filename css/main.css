@@ -1099,7 +1099,32 @@ body{
     text-shadow: none;
 }
 
-iframe {
+.cc-home__tech__icon {
+  opacity: .8;
+}
+.cc-home__tech__item {
+  display: inline-block;
+  margin:  0 30px;
+  }
+  .cc-home__tech__item:hover,
+  .cc-home__tech__item:focus {
+    text-decoration: none;
+  }
+  .cc-home__tech__item:hover .cc-home__tech__icon,
+  .cc-home__tech__item:focus .cc-home__tech__icon {
+    opacity: 1;
+}
+.cc-home__tech__list {
+  text-align: center;
+}
+.cc-home__tech__title {
+  color:       #a2a2a2;
+  font:        bold 16px Arial,Verdana,sans-serif;
+  padding-top: 10px;
+}
+
+.cc-home__overview__video {
+  border:    1px solid #d0d0d0;
   max-width: 100%;
 }
 
