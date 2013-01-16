@@ -33,16 +33,19 @@ part:   part-innovation
             </p>
             <div id="lang-display" class="row">
                <div class="span1">
-                  <img src="/img/technos/scala-logo.png" alt="scala" />
+                  <img src="/img/technos/phplogo.png" alt="php" />
                </div>
                <div class="span1">
-                  <img src="/img/technos/php-logo.png" alt="php" />
+                  <img src="/img/technos/scalalogo.png" alt="scala" />
                </div>
                <div class="span1">
-                  <img src="/img/technos/ruby-logo.png" alt="ruby" />
+                  <img src="/img/technos/rubylogo.png" alt="ruby" />
                </div>
                <div class="span1">
-                  <img src="/img/technos/java-logo.png" alt="java" />
+                  <img src="/img/technos/javalogo.png" alt="java" />
+               </div>
+               <div class="span1">
+                  <img src="/img/technos/nodejslogo.png" alt="node" />
                </div>
             </div>
          </div>
