@@ -9,7 +9,7 @@ desc: Clever Cloud is a next-gen Cloud computing platform able to scale websites
 
 baseline:
   top:    Next generation hosting.
-  bottom: Control your costs and make your web applications more scalable.
+  bottom: 'ELASTIC WEB HOSTING: High Scalability and pay as you'
 
 video: http://www.youtube.com/embed/klRE-cgNosE
 
