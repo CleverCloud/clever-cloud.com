@@ -24,10 +24,13 @@ html{
 	padding-left: 25px;
 }
 #home-tech-wrap{
-   background: #f5f5f5;
+   background: #F3F3F3;
 }
 #home-wrap, #canvas-1{
    background: #fff;
+}
+#home-wrap h2 {
+  text-align: center;
 }
 .navbar-fixed-top {
   background: none;
@@ -285,12 +288,10 @@ body{
   }
 #home-advantages > .span6 .span3 h3{
    margin-top:-5px;
-   padding-left:31px;
    position:relative;
 }
 #home-advantages > .span6 .span3 p{
    margin-bottom:0;
-   padding-left:31px;
 }
 #home-advantages > .span6 .row p{
    margin-top:-25px;
@@ -305,7 +306,7 @@ body{
    padding-bottom:20px;
 }
 #home-tech{
-   border-bottom:1px solid #c5c5c5;
+   border-bottom:1px solid #E3E3E3;
 }
 #home-advantages > .span4 p,
 #home-tech p,
@@ -1066,7 +1067,7 @@ body{
   padding: 0;
 }
 .cc-home__sellpoint__detail {
-  color:          #6d2624;
+  color:          #3F3F3F;
   line-height:    30px;
   text-transform: uppercase;
   font-size: 14px;
@@ -1101,7 +1102,7 @@ body{
 }
 
 .cc-home__tech__icon {
-  opacity: .8;
+  opacity: 1;
 }
 .cc-home__tech__item {
   display: inline-block;
