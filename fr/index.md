@@ -9,7 +9,7 @@ desc: Clever Cloud est une plateforme Cloud qui permet d'assurer hautes performa
 
 baseline:
   top:    Hébergement nouvelle génération.
-  bottom: 'ELASTIC WEB HOSTING : Haute Scalabilité et Paiement à la consommation'
+  bottom: 'Elastic Web Hosting : Haute Scalabilité et Paiement à la consommation'
 
 video: http://www.youtube.com/embed/IV4Bnwluvf4
 

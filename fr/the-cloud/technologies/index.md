@@ -1,3 +1,3 @@
 ---
-title: Langages supportés
+title: Technologies supportées
 ---
