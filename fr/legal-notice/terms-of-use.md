@@ -31,7 +31,7 @@ Les présentes CGU peuvent être modifiées à tout moment sans que les utilisat
 ## Article 1 : Définitions
 
 ### Energie informatique
-L’énergie informatique est l’ensemble des ressources consommées lors de l'exécution d’une application. voir marco
+L’énergie informatique est l’ensemble des ressources consommées lors de l'exécution d’une application.
 
 ### Drop
 La drop est l’unité de mesure de l’énergie informatique chez Clever Cloud.
