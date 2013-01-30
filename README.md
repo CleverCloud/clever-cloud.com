@@ -7,12 +7,12 @@ This works is open for contribution, from UI/UX suggestions to content.
 Bests pull requests will be updated, and new contributors will be added to the author's section.
 
 ### How it works
-* Download Jekyll
+* Download [https://github.com/mojombo/jekyll](Jekyll)
 * Run 
 	$ jekyll --server --auto
-
+	
 ### Authors
-* @crmfrsh
-* @waxzce
-* @mon_ke
-* @cnivolle
+* [http://twitter.com/crmfrsh](@crmfrsh)
+* [http://twitter.com/waxzce](@waxzce)
+* [http://twitter.com/mon_ke](@mon_ke)
+* [http://twitter.com/cnivolle](@cnivolle)
