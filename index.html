@@ -3,14 +3,28 @@
 <head>
 	<meta charset="UTF-8"/>
 	<title>Clever Cloud</title>
-  <link media="all" rel="stylesheet/less" href="/less/bootstrap/bootstrap.less" type="text/css"/>
-  <link media="all" rel="stylesheet/less" href="/less/bootstrap/responsive.less" type="text/css"/>
-  <link media="all" rel="stylesheet/less" href="/less/fontawesome/fontawesome.less" type="text/css"/>
-  <link media="all" rel="stylesheet/less" href="/less/layout.less" type="text/css"/>
-  <link media="all" rel="stylesheet/less" href="/less/theme.less" type="text/css"/>
+  <link media="all" rel="stylesheet/less" href="/less/all.less" type="text/css"/>
+  <link media="all and (min-width: 1200px)" rel="stylesheet/less" href="/less/all-1200px-min.less" type="text/css"/>
+  <link media="all and (max-width: 767px)" rel="stylesheet/less" href="/less/all-767px-max.less" type="text/css"/>
+  <link media="all and (min-width: 768px) and (max-width: 979px)" rel="stylesheet/less" href="/less/all-768px-979px.less" type="text/css"/>
   <script type="text/javascript" src="/js/less-1.3.3.min.js"></script>
 </head>
 <body>
-	<p>hello world.</p>
+	<nav class="cc_headbar">
+		<div class="container">
+			<div class="row-fluid">
+				<div class="span7">
+          <a href="/"><span class="cc_icon">cOb</span> Clever Cloud</a>
+        </div>
+				<div class="span5">
+					<a class="cc_btn" href="/discover">Discover</a>
+					<a class="cc_btn" href="/pricing">Pricing</a>
+					<a class="cc_btn" href="/compatibility">Compatibilité</a>
+					<a class="cc_btn" href="/support">Support</a>
+					<a class="cc_btn--darken" href="/login">Login</a>
+				</div>
+			</div>
+		</div>
+	</nav>
 </body>
 </html>
