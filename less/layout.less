@@ -11,14 +11,22 @@
  * more about this: engineering.appfolio.com/2012/11/16/css-architecture
  */
 
-// reset
+// atoms
 
-body {
+.cc_hidden-bg(@height) {
+  height:        @height;
+  margin-bottom: -(@height);
+}
+
+.cc_leveled(@index) {
+  position: relative;
+  z-index:  @index;
+}
+
+.cc_no-space {
   margin:  0;
   padding: 0;
 }
-
-// atoms
 
 .cc_padded {
   padding: 3px 10px;

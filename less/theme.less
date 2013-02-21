@@ -15,15 +15,16 @@
 
 @red:       #6e2627;
 @darkred:   #371513;
-@grey:      #cdcdcd;
+@lightgrey: #cdcdcd;
+@grey:      #ababab;
 @darkgrey:  #3f3f3f;
-@darkgrey2: #222;
 @black:     #000;
 @white:     #fff;
 
 // fonts
 
 @iconic-font: "Clever Icons", monospace;
+@main-font:   sans-serif;
 
 // font sizes
 
@@ -32,24 +33,16 @@
 
 // atoms
 
-.cc_bleed--red {
-  box-shadow: 0 0 0 5px fade(@red, 50%);
+.cc_bleed(@color, @depth) {
+  box-shadow: 0 0 0 @depth @color;
 }
 
-.cc_box--darken {
-  background: fade(@black, 20%);
-}
-
-.cc_box--red {
-  background: @red;
-  color:      @white;
+.cc_box(@bg, @fg) {
+  background: @bg;
+  color:      @fg;
   a {
-    color: @white;
+    color: @fg;
   }
-}
-
-.cc_icon {
-  font-family: @iconic-font;
 }
 
 .cc_rounded {
