@@ -13,7 +13,7 @@
 
 // sizes
 
-@panoramaHeight: 300px;
+@cc_panorama__height: 380px;
 
 // atoms
 
@@ -32,14 +32,6 @@
   padding: 0;
 }
 
-.cc_padded {
-  padding: 3px 10px;
-}
-
-.cc_spaced {
-  margin: 5px;
-}
-
 // components
 
 .cc {
@@ -47,8 +39,8 @@
 }
 
 .cc_btn {
-  .cc_padded;
-  .cc_spaced;
+  margin: 5px;
+  padding: 5px 15px;
 }
 
 .cc_btn--darken {
@@ -61,16 +53,20 @@
   padding:     25px 0 15px;
 }
 
-.cc_hero__headline {
-  height: @panoramaHeight;
-  h1 {
-    .cc_no-space;
-  }
+.cc_hero {
+  margin-top: 70px;
 }
-.cc_hero__video {
-  margin-top: 40px;
+.cc_hero__desc {
+  margin: 0 0 10px;
+}
+.cc_hero__headline {
+  height:      (@cc_panorama__height - 70px - 75px);
+  padding-top: 75px;
+}
+.cc_hero__title {
+  .cc_no-space;
 }
 
 .cc_panorama {
-  .cc_hidden-bg(@panoramaHeight);
+  .cc_hidden-bg(@cc_panorama__height);
 }
