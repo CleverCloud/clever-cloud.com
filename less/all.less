@@ -22,72 +22,12 @@
 
 // atoms
 
-@import "layout.less";
-@import "theme.less";
+@import "cc/layout.less";
+@import "cc/theme.less";
 
-// components
+// components (third-party frameworks variables involved)
 
-.cc {
-  .cc_no-space;
-  .cc_box(@darkgrey, @grey);
-  font-size:   @text;
-  font-family: @main-font;
-}
-
-.cc_btn {
-  .cc_padded;
-  .cc_spaced;
-  .cc_rounded;
-}
-
-.cc_btn--darken {
-  .cc_box(fade(@black, 20%), @white);
-  .cc_btn;
-}
-
-.cc_headbar {
-  .cc_box(@red, @white);
-  .cc_bleed(fade(@red, 50%), 5px);
-  .cc_leveled(5);
-  font-size:   @textL;
-  line-height: 20px;
-  padding:     25px 0 15px;
-  a {
-    text-decoration: none;
-  }
-}
-
-.cc_hero {
-  .cc_box(none, @darkgrey);
-}
-.cc_hero__headline {
-  color:  @white;
-  height: @panoramaHeight;
-  h1 {
-    .cc_no-space;
-  }
-}
 .cc_hero__iframe {
   height: (((7 * @gridColumnWidth + @gridGutterWidth * 6) * 9) / 16); // 16/9 display on a span7 width
   margin-bottom: -4px; // strange bug
-}
-.cc_hero__video {
-  .cc_box(@black, @darkgrey);
-  .cc_bleed(fade(@white, 20%), 5px);
-  .cc_rounded;
-  margin-top: 40px;
-}
-
-.cc_icon {
-  font-family: @iconic-font;
-}
-
-.cc_main {
-  .cc_box(@lightgrey, @darkgrey);
-}
-
-.cc_panorama {
-  .cc_hidden-bg(@panoramaHeight);
-  background:      @darkgrey url(/img/cc_panorama.png) center;
-  background-size: cover;
 }

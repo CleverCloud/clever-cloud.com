@@ -39,3 +39,38 @@
 .cc_spaced {
   margin: 5px;
 }
+
+// components
+
+.cc {
+  .cc_no-space;
+}
+
+.cc_btn {
+  .cc_padded;
+  .cc_spaced;
+}
+
+.cc_btn--darken {
+  .cc_btn;
+}
+
+.cc_headbar {
+  .cc_leveled(5);
+  line-height: 20px;
+  padding:     25px 0 15px;
+}
+
+.cc_hero__headline {
+  height: @panoramaHeight;
+  h1 {
+    .cc_no-space;
+  }
+}
+.cc_hero__video {
+  margin-top: 40px;
+}
+
+.cc_panorama {
+  .cc_hidden-bg(@panoramaHeight);
+}
