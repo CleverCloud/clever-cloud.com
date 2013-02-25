@@ -52,16 +52,27 @@
   font-size:   @textL;
   line-height: 20px;
   padding:     25px 0 15px;
+  a {
+    text-decoration: none;
+  }
 }
 
 .cc_hero {
-  .cc_box(none, @white);
+  .cc_box(none, @darkgrey);
+}
+.cc_hero__headline {
+  color:  @white;
+  height: @panoramaHeight;
+  h1 {
+    .cc_no-space;
+  }
 }
 .cc_hero__iframe {
   height: (((7 * @gridColumnWidth + @gridGutterWidth * 6) * 9) / 16); // 16/9 display on a span7 width
+  margin-bottom: -4px; // strange bug
 }
 .cc_hero__video {
-  .cc_box(fade(@white, 20%), @darkgrey);
+  .cc_box(@black, @darkgrey);
   .cc_bleed(fade(@white, 20%), 5px);
   .cc_rounded;
   margin-top: 40px;
@@ -76,7 +87,7 @@
 }
 
 .cc_panorama {
-  .cc_hidden-bg(300px);
+  .cc_hidden-bg(@panoramaHeight);
   background:      @darkgrey url(/img/cc_panorama.png) center;
   background-size: cover;
 }
