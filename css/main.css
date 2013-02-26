@@ -1052,6 +1052,7 @@ body{
     font-weight:    normal;
     line-height:    25px;
     text-transform: uppercase;
+    padding-top:    10px;
   }
   .cc-home__jumbo__text {
     bottom:   10%;
