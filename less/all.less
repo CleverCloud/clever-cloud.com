@@ -20,14 +20,16 @@
 
 @import "fontawesome/font-awesome.less";
 
-// atoms
+// cc
 
 @import "cc/layout.less";
 @import "cc/theme.less";
 
 // components (third-party frameworks variables involved)
 
+@cc_hero__iframe__cols: 9;
+
 .cc_hero__iframe {
-  height: (((7 * @gridColumnWidth + @gridGutterWidth * 6) * 9) / 16); // 16/9 display on a span7 width
+  height: (((@cc_hero__iframe__cols * @gridColumnWidth + @gridGutterWidth * (@cc_hero__iframe__cols - 1)) * 9) / 16); // 16/9 display
   margin-bottom: -4px; // strange bug
 }
