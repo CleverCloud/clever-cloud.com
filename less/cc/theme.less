@@ -37,10 +37,6 @@
 .cc_bleed(@color, @depth) {
   box-shadow: 0 0 0 @depth @color;
 }
-.cc_bleed--shadow(@color, @depth, @shadow) {
-  box-shadow: 0 0 0 @depth @color,
-              0 4px 4px 5px @shadow;
-}
 
 .cc_box(@bg, @fg) {
   background: @bg;
@@ -50,8 +46,21 @@
   }
 }
 
+.cc_linear-gradient--hard(@dir, @start-color, @end-color, @cut) {
+  background: @start-color;
+  background: -webkit-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
+  background:    -moz-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
+  background:     -ms-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
+  background:      -o-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
+  background:         linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
+}
+
 .cc_rounded {
   border-radius: 4px;
+}
+
+.cc_shadow(@shadow) {
+  box-shadow: 0 4px 4px @shadow;
 }
 
 // components
@@ -90,13 +99,16 @@
 .cc_hero__headline {
   color:  @white;
 }
+.cc_hero__iframe {
+  .cc_box(@black, @darkgrey);
+}
 .cc_hero__title {
   font-size: 48px;
 }
 .cc_hero__video {
-  .cc_box(@black, @darkgrey);
   .cc_rounded;
-  .cc_bleed(fade(@white, 20%), 5px);
+  .cc_shadow(fade(@black, 20%));
+  background: fade(@white, 5%);
 }
 
 .cc_icon {
