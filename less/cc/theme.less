@@ -13,14 +13,18 @@
 
 // colors
 
-@red:       #6e2627;
-@darkred:   #371513;
-@whitey:    #f6f6f6;
-@lightgrey: #cdcdcd;
-@grey:      #ababab;
-@darkgrey:  #3f3f3f;
-@black:     #000;
-@white:     #fff;
+@red:        #6e2627;
+@darkred:    #371513;
+@lightgreen: #c0f08d;
+@green:      #97d55a;
+@deepgreen:  #57b828;
+@darkgreen:  #264211;
+@whitey:     #f6f6f6;
+@lightgrey:  #cdcdcd;
+@grey:       #ababab;
+@darkgrey:   #3f3f3f;
+@black:      #000;
+@white:      #fff;
 
 // fonts
 
@@ -29,8 +33,10 @@
 
 // font sizes
 
-@text:  14px;
-@textL: (@text * 1.1);
+@text:      14px;
+@text--L:   (@text * 1.6);
+@text--XL:  (@text * 2.1);
+@text--2XL: (@text * 3.4);
 
 // atoms
 
@@ -46,13 +52,13 @@
   }
 }
 
-.cc_linear-gradient--hard(@dir, @start-color, @end-color, @cut) {
+.cc_linear-gradient(@dir, @start-color, @end-color) {
   background: @start-color;
-  background: -webkit-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
-  background:    -moz-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
-  background:     -ms-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
-  background:      -o-linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
-  background:         linear-gradient(@dir, @start-color 0, @start-color @cut, @end-color @cut);
+  background: -webkit-linear-gradient(@dir, @start-color, @end-color);
+  background:    -moz-linear-gradient(@dir, @start-color, @end-color);
+  background:     -ms-linear-gradient(@dir, @start-color, @end-color);
+  background:      -o-linear-gradient(@dir, @start-color, @end-color);
+  background:         linear-gradient(@dir, @start-color, @end-color);
 }
 
 .cc_rounded {
@@ -71,9 +77,26 @@
   font-family: @main-font;
 }
 
+.cc_btn {
+  .cc_rounded;
+}
+
 .cc_btn--darken {
   .cc_box(fade(@black, 15%), @white);
+}
+
+.cc_btn--success {
+  .cc_linear-gradient(bottom, @deepgreen, @green);
+  box-shadow:  0 1px 0 @lightgreen inset,
+               0 0 0 5px fade(@black, 25%),
+               0 1px 0 5px fade(@grey, 15%);
+  color:       @white;
+  text-shadow: 0 -1px 0 fade(@darkgreen, 50%);
   .cc_rounded;
+}
+
+.cc_btn--L {
+  font-size: @text--L;
 }
 
 .cc_headbar {
@@ -92,7 +115,7 @@
   .cc_box(none, @darkgrey);
 }
 .cc_hero__desc {
-  font-size:      30px;
+  font-size:      @text--XL;
   font-weight:    normal;
   text-transform: uppercase;
 }
@@ -103,7 +126,7 @@
   .cc_box(@black, @darkgrey);
 }
 .cc_hero__title {
-  font-size: 48px;
+  font-size: @text--2XL;
 }
 .cc_hero__video {
   .cc_rounded;
