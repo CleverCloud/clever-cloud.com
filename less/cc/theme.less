@@ -21,6 +21,7 @@
 @deepgreen:  #57b828;
 @darkgreen:  #264211;
 @whitey:     #f6f6f6;
+@darkwhitey: #dfdfdf;
 @lightgrey:  #cdcdcd;
 @grey:       #ababab;
 @darkgrey:   #3f3f3f;
@@ -113,9 +114,6 @@
     text-decoration: none;
   }
 }
-.cc_headbar__menu {
-  text-align: right;
-}
 
 .cc_hero {
   .cc_box(none, @darkgrey);
@@ -151,4 +149,16 @@
 .cc_panorama {
   background:      @darkgrey url(/img/cc_panorama.png) center;
   background-size: cover;
+}
+
+.cc_title--striked {
+  box-shadow: 0 1px 0 @darkwhitey,
+              0 2px 0 @white;
+  color:      @grey;
+  text-align: center;
+}
+.cc_title--striked__text {
+  background:     @whitey;
+  font-weight:    normal;
+  text-transform: uppercase;
 }
