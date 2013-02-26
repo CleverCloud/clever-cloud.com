@@ -10,9 +10,9 @@ Bests pull requests will be updated, and new contributors will be added to the a
 * Download [https://github.com/mojombo/jekyll](Jekyll)
 * Run 
 	$ jekyll --server --auto
-	
+
 ### Authors
-* [http://twitter.com/crmfrsh](@crmfrsh)
-* [http://twitter.com/waxzce](@waxzce)
-* [http://twitter.com/mon_ke](@mon_ke)
-* [http://twitter.com/cnivolle](@cnivolle)
+* [@crmfrsh](http://twitter.com/crmfrsh)
+* [@waxzce](http://twitter.com/waxzce)
+* [@mon_ke](http://twitter.com/mon_ke)
+* [@cnivolle](http://twitter.com/cnivolle)
