@@ -11,13 +11,6 @@
  * more about this: engineering.appfolio.com/2012/11/16/css-architecture
  */
 
-// frameworks
-
-@import "bootstrap/variables.less";
-@import "bootstrap/mixins.less";
-@import "bootstrap/responsive-1200px-min.less";
-
-// cc
-
-@import "cc/conf.less";
-@import "cc/layout-1200px-min.less";
+.cc_hero__iframe {
+  height: ((@cc_hero__iframe__cols * @gridColumnWidth1200 + @gridGutterWidth1200 * (@cc_hero__iframe__cols - 1)) * 9) / 16; // 16/9 display
+}

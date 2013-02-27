@@ -11,72 +11,14 @@
  * more about this: engineering.appfolio.com/2012/11/16/css-architecture
  */
 
-// colors
-
-@lightred:   #bb3e46;
-@red:        #6e2627;
-@darkred:    #371513;
-@lightgreen: #c0f08d;
-@green:      #97d55a;
-@deepgreen:  #57b828;
-@darkgreen:  #264211;
-@whitey:     #f6f6f6;
-@darkwhitey: #dfdfdf;
-@lightgrey:  #cdcdcd;
-@grey:       #ababab;
-@darkgrey:   #3f3f3f;
-@black:      #000;
-@white:      #fff;
-
-// fonts
-
-@iconic-font: "Clever Icons", monospace;
-@main-font:   "Helvetica", "DejaVu Sans", "Arial", sans-serif;
-
-// font sizes
-
-@text:      14px;
-@text--L:   (@text * 1.6);
-@text--XL:  (@text * 2.1);
-@text--2XL: (@text * 3.4);
-
-// atoms
-
-.cc_bleed(@color, @depth) {
-  box-shadow: 0 0 0 @depth @color;
-}
-
-.cc_box(@bg, @fg) {
-  background: @bg;
-  color:      @fg;
-  a {
-    color: @fg;
-  }
-}
-
-.cc_linear-gradient(@dir, @start-color, @end-color) {
-  background: @start-color;
-  background: -webkit-linear-gradient(@dir, @start-color, @end-color);
-  background:    -moz-linear-gradient(@dir, @start-color, @end-color);
-  background:     -ms-linear-gradient(@dir, @start-color, @end-color);
-  background:      -o-linear-gradient(@dir, @start-color, @end-color);
-  background:         linear-gradient(@dir, @start-color, @end-color);
-}
-
-.cc_rounded {
-  border-radius: 4px;
-}
-
-.cc_shadow(@shadow) {
-  box-shadow: 0 4px 4px @shadow;
-}
-
-// components
-
 .cc {
-  .cc_box(@darkgrey, @grey);
+  background:  @darkgrey;
+  color:       @grey;
   font-size:   @text;
   font-family: @main-font;
+  a {
+    color: @grey;
+  }
 }
 
 .cc_btn {
@@ -84,17 +26,18 @@
 }
 
 .cc_btn--darken {
-  .cc_box(fade(@black, 15%), @white);
+  background: fade(@black, 15%);
+  color:      @white;
 }
 
 .cc_btn--success {
   .cc_linear-gradient(bottom, @deepgreen, @green);
+  .cc_rounded;
   box-shadow:  0 1px 0 @lightgreen inset,
                0 0 0 5px fade(@black, 25%),
                0 1px 0 5px fade(@grey, 15%);
   color:       @white;
   text-shadow: 0 -1px 0 fade(@darkgreen, 50%);
-  .cc_rounded;
 }
 
 .cc_btn--L {
@@ -107,16 +50,21 @@
 }
 
 .cc_headbar {
-  .cc_box(@red, @white);
-  .cc_bleed(fade(@red, 50%), 5px);
-  font-size:   @text;
+  background: @red;
+  box-shadow: 0 0 0 5px fade(@red, 50%);
+  color:      @white;
+  font-size:  @text;
   a {
+    color:           @white;
     text-decoration: none;
   }
 }
 
 .cc_hero {
-  .cc_box(none, @darkgrey);
+  color: @darkgrey;
+  a {
+    color: @darkgrey;
+  }
 }
 .cc_hero__desc {
   font-size:      @text--XL;
@@ -127,14 +75,14 @@
   color:  @white;
 }
 .cc_hero__iframe {
-  .cc_box(@black, @darkgrey);
+  background: @black;
 }
 .cc_hero__title {
   font-size: @text--2XL;
 }
 .cc_hero__video {
   .cc_rounded;
-  .cc_shadow(fade(@black, 20%));
+  box-shadow: 0 4px 4px fade(@black, 20%);
   background: fade(@white, 5%);
 }
 
@@ -150,7 +98,11 @@
 }
 
 .cc_main {
-  .cc_box(@whitey, @darkgrey);
+  background: @whitey;
+  color:      @darkgrey;
+  a {
+    color: @darkgrey;
+  }
 }
 
 .cc_panorama {

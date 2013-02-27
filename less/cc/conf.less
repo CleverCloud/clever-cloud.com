@@ -1,0 +1,64 @@
+/* coding rules:
+ * tab width = 2
+ * all spaces
+ * 
+ * naming convention:
+ * cc_ prefix
+ * __  component part
+ * --  variant
+ * example: cc_alert--info__close = style that is specific to the close button
+ *                                  of the info alert box only.
+ * more about this: engineering.appfolio.com/2012/11/16/css-architecture
+ */
+
+// sizes
+
+@cc_panorama__height: 380px;
+
+// colors
+
+@lightred:   #bb3e46;
+@red:        #6e2627;
+@darkred:    #371513;
+@lightgreen: #c0f08d;
+@green:      #97d55a;
+@deepgreen:  #57b828;
+@darkgreen:  #264211;
+@whitey:     #f6f6f6;
+@darkwhitey: #dfdfdf;
+@lightgrey:  #cdcdcd;
+@grey:       #ababab;
+@darkgrey:   #3f3f3f;
+@black:      #000;
+@white:      #fff;
+
+// fonts
+
+@iconic-font: "Clever Icons", monospace;
+@main-font:   "Helvetica", "DejaVu Sans", "Arial", sans-serif;
+
+// font sizes
+
+@text:      14px;
+@text--L:   (@text * 1.6);
+@text--XL:  (@text * 2.1);
+@text--2XL: (@text * 3.4);
+
+// misc
+
+@cc_hero__iframe__cols: 9;
+
+// mixins
+
+.cc_linear-gradient(@dir, @start-color, @end-color) {
+  background: @start-color;
+  background: -webkit-linear-gradient(@dir, @start-color, @end-color);
+  background:    -moz-linear-gradient(@dir, @start-color, @end-color);
+  background:     -ms-linear-gradient(@dir, @start-color, @end-color);
+  background:      -o-linear-gradient(@dir, @start-color, @end-color);
+  background:         linear-gradient(@dir, @start-color, @end-color);
+}
+
+.cc_rounded {
+  border-radius: 4px;
+}

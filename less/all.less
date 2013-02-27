@@ -22,14 +22,6 @@
 
 // cc
 
+@import "cc/conf.less";
 @import "cc/layout.less";
 @import "cc/theme.less";
-
-// components (third-party frameworks variables involved)
-
-@cc_hero__iframe__cols: 9;
-
-.cc_hero__iframe {
-  height: (((@cc_hero__iframe__cols * @gridColumnWidth + @gridGutterWidth * (@cc_hero__iframe__cols - 1)) * 9) / 16); // 16/9 display
-  margin-bottom: -4px; // strange bug
-}

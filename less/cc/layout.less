@@ -11,31 +11,9 @@
  * more about this: engineering.appfolio.com/2012/11/16/css-architecture
  */
 
-// sizes
-
-@cc_panorama__height: 380px;
-
-// atoms
-
-.cc_hidden-bg(@height) {
-  height:        @height;
-  margin-bottom: -(@height);
-}
-
-.cc_leveled(@index) {
-  position: relative;
-  z-index:  @index;
-}
-
-.cc_no-space {
+.cc {
   margin:  0;
   padding: 0;
-}
-
-// components
-
-.cc {
-  .cc_no-space;
 }
 
 .cc_btn {
@@ -56,14 +34,15 @@
   margin-top:    70px;
 }
 .cc_feature__title {
-  .cc_no-space;
+  margin:       0;
   line-height: 14px;
 }
 
 .cc_headbar {
-  .cc_leveled(5);
   line-height: 20px;
   padding:     15px 0;
+  position:    relative;
+  z-index:     5;
 }
 .cc_headbar__logo {
   display: inline-block;
@@ -80,8 +59,12 @@
   height:      (@cc_panorama__height - 70px - 75px);
   padding-top: 75px;
 }
+.cc_hero__iframe {
+  height:        ((@cc_hero__iframe__cols * @gridColumnWidth + @gridGutterWidth * (@cc_hero__iframe__cols - 1)) * 9) / 16; // 16/9 display
+  margin-bottom: -4px;
+}
 .cc_hero__title {
-  .cc_no-space;
+  margin:  0;
 }
 .cc_hero__video {
   margin:  -5px;
@@ -94,7 +77,8 @@
 }
 
 .cc_panorama {
-  .cc_hidden-bg(@cc_panorama__height);
+  height:        @cc_panorama__height;
+  margin-bottom: -(@cc_panorama__height);
 }
 
 .cc_title--striked {

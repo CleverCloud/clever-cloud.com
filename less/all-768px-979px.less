@@ -17,11 +17,7 @@
 @import "bootstrap/mixins.less";
 @import "bootstrap/responsive-768px-979px.less";
 
-// components (third-party frameworks variables involved)
+// cc
 
-@cc_hero__iframe__cols: 9;
-
-.cc_hero__iframe {
-  height: (((@cc_hero__iframe__cols * @gridColumnWidth768 + @gridGutterWidth768 * (@cc_hero__iframe__cols - 1)) * 9) / 16); // 16/9 display
-  margin-bottom: -4px; // strange bug
-}
+@import "cc/conf.less";
+@import "cc/layout-768px-979px.less";
