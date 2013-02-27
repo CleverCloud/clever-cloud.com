@@ -90,11 +90,17 @@
   font-family: @iconic-font;
 }
 
-.cc_instance__list {
+.cc_instance__list,
+.cc_service__list {
   text-align: center;
 }
+.cc_instance__title,
+.cc_service__title {
+  color:       @grey;
+  text-shadow: 0 1px 0 @white;
+}
 .cc_instance__title {
-  color: @grey;
+  font-size: @text--M;
 }
 
 .cc_main {
@@ -110,6 +116,11 @@
   background-size: cover;
 }
 
+.cc_service__title {
+  font-size:   @text;
+  font-weight: normal;
+}
+
 .cc_title--striked {
   box-shadow: 0 1px 0 @darkwhitey,
               0 2px 0 @white;
@@ -119,5 +130,6 @@
 .cc_title--striked__text {
   background:     @whitey;
   font-weight:    normal;
+  text-shadow:    0 1px 1px @white;
   text-transform: uppercase;
 }
