@@ -115,6 +115,14 @@
   background-size: cover;
 }
 
+.cc_partner {
+  background:    @whitey;
+  border-radius: 4px;
+  box-shadow:    0 0 0 5px fade(@black, 20%);
+  color:         @grey;
+  text-shadow:   none;
+}
+
 .cc_people {
   background:  @lighterred;
   color:       @darkred;
@@ -128,23 +136,30 @@
   font-weight: bold;
   text-shadow: none;
 }
-.cc_people__header {
-  background: url(/img/cc_people__header.png) right center no-repeat;
+
+.cc_service__title {
+  font-size:   @text;
+  font-weight: normal;
+
 }
-.cc_people__title,
+
+.cc_side-header {
+  background: url(/img/cc_side-header.png) right center repeat-y;
+}
+.cc_side-header__title,
 .cc_slider__title {
   font-size:      @text--XL;
   font-weight:    normal;
   text-transform: uppercase;
 }
 
-.cc_service__title {
-  font-size:   @text;
-  font-weight: normal;
-}
-
 .cc_slider__title {
   text-align:  center;
+}
+
+.cc_suscribe__title {
+  color:        @lightgrey;
+  text-shadow: 0 1px 0 @white;
 }
 
 .cc_title--striked {
@@ -219,4 +234,15 @@
   font-size:   @text--XL;
   text-align:  center;
   text-shadow: 0 1px 0 fade(@black, 20%);
+}
+
+// from here its not alphabetical but override order. if it does not need to
+// override stuff, it does not belong here.
+
+.cc_partner__btn {
+  background: fade(@black, 5%);
+  color:      @grey;
+}
+.cc_people__header {
+  background-image: url(/img/cc_people__header.png);
 }
