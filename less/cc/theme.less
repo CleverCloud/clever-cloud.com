@@ -121,6 +121,13 @@
   font-weight: normal;
 }
 
+.cc_slider__title {
+  font-size:      @text--XL;
+  font-weight:    normal;
+  text-align:     center;
+  text-transform: uppercase;
+}
+
 .cc_title--striked {
   box-shadow: 0 1px 0 @darkwhitey,
               0 2px 0 @white;
@@ -140,10 +147,26 @@
   box-shadow:      0 5px 3px -3px fade(@black, 20%) inset,
                    0 -5px 3px -3px fade(@black, 20%) inset;
 }
-.cc_workflow__block {
-  background:    fade(@white, 10%);
+.cc_workflow__block,
+.cc_workflow__block--dark {
   border-radius: 8px;
-  box-shadow:    0 0 4px fade(@black, 20%);
+}
+.cc_workflow__block {
+  background:  fade(@white, 10%);
+  box-shadow:  0 0 4px fade(@black, 20%);
+}
+.cc_workflow__block--dark {
+  background:  fade(@black, 30%);
+  box-shadow:  0 1px 0 fade(@white, 20%);
+}
+.cc_workflow__btn {
+  .cc_linear-gradient(bottom, @darkgrey, mix(@darkgrey, @grey, 50%));
+  border-radius: 4px;
+  box-shadow:    0 0 0 1px @darkgrey,
+                 0 0 1px @grey inset;
+  color:         @white;
+  font-size:     @text--L;
+  text-shadow:   0 -1px 1px @black;
 }
 .cc_workflow__feature__item {
   .cc_linear-gradient(bottom, fade(@whitey, 0), fade(@whitey, 70%));
