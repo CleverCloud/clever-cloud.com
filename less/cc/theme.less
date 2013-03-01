@@ -16,13 +16,11 @@
   color:       @grey;
   font-size:   @text;
   font-family: @main-font;
-  a {
-    color: @grey;
-  }
 }
 
 .cc_btn {
   .cc_rounded;
+  text-decoration: none;
 }
 
 .cc_btn--darken {
@@ -44,6 +42,9 @@
   font-size: @text--L;
 }
 
+.cc_feature__list a {
+    color: @darkgrey;
+}
 .cc_feature__title {
   box-shadow: -8px 0 0 @whitey,
               -9px 0 0 @lightred;
@@ -106,14 +107,32 @@
 .cc_main {
   background: @whitey;
   color:      @darkgrey;
-  a {
-    color: @darkgrey;
-  }
 }
 
 .cc_panorama {
   background:      @darkgrey url(/img/cc_panorama.png) center;
   background-size: cover;
+}
+
+.cc_people {
+  background:  @red;
+  color:       @darkred;
+  box-shadow:  0 5px 3px -3px fade(@black, 20%) inset,
+               0 -5px 3px -3px fade(@black, 20%) inset;
+  text-shadow: 0 1px 0 @lightred;
+}
+.cc_people__btn {
+  background:  @middlered;
+  color:       @lightred;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.cc_people__title,
+.cc_slider__title {
+  font-size:      @text--XL;
+  font-weight:    normal;
+  text-transform: uppercase;
 }
 
 .cc_service__title {
@@ -122,10 +141,7 @@
 }
 
 .cc_slider__title {
-  font-size:      @text--XL;
-  font-weight:    normal;
-  text-align:     center;
-  text-transform: uppercase;
+  text-align:  center;
 }
 
 .cc_title--striked {
