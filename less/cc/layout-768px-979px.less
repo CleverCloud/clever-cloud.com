@@ -15,7 +15,11 @@
 
 .span1of3 {
   margin-left: @gridGutterWidth768;
-  width:       ((@gridColumnWidth768 + @gridGutterWidth768) * 16 - 3 * @gridGutterWidth768) / 3;
+  width:       (@gridColumnWidth768 + @gridGutterWidth768) * 16 / 3 - @gridGutterWidth768;
+}
+.span2of3 {
+  margin-left: @gridGutterWidth768;
+  width:       (@gridColumnWidth768 + @gridGutterWidth768) * 32 / 3 - @gridGutterWidth768;
 }
 
 //
