@@ -34,6 +34,8 @@
 @black:      #000;
 @white:      #fff;
 
+@error: #c44;
+
 // fonts
 
 @iconic-font: "Clever Icons", monospace;
@@ -62,6 +64,34 @@
   background:         linear-gradient(@dir, @start-color, @end-color);
 }
 
-.cc_rounded {
+.cc_rounded () {
   border-radius: 4px;
+}
+
+.cc_input--error () {
+  &:-moz-ui-invalid {
+    border-color: @error;
+    box-shadow:   0 0 5px @error;
+    color:        @error;
+  }
+  &:invalid {
+    border-color: @error;
+    box-shadow:   0 0 5px @error;
+    color:        @error;
+  }
+}
+
+.cc_placeholder () {
+  &:-ms-input-placeholder {
+    font-style: italic;
+  }
+  &:-moz-placeholder {
+    font-style: italic;
+  }
+  &::-moz-placeholder {
+    font-style: italic;
+  }
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
 }

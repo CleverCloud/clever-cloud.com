@@ -168,6 +168,37 @@
   text-align:  center;
 }
 
+.cc_suscribe__field,
+.cc_suscribe__input {
+  font-size: @text--L;
+}
+.cc_suscribe__input {
+  .cc_input--error;
+  .cc_placeholder;
+  background:    fade(@black, 2%);
+  border-color:  @grey;
+  border-radius: 4px;
+  box-shadow:    0 1px 2px @lightgrey inset;
+  &:focus {
+    background:   @whitey;
+    border-color: @grey;
+    box-shadow:   none;
+    color:        @darkgrey;
+    outline:      none;
+  }
+}
+.cc_suscribe__label {
+  color:      @lightgrey;
+  text-align: right;
+}
+.cc_suscribe__terms {
+  font-size: @text--M;
+  color:     @grey;
+  a {
+    color:      @grey;
+    font-style: italic;
+  }
+}
 .cc_suscribe__title {
   color:        @lightgrey;
   text-shadow: 0 1px 0 @white;
