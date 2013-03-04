@@ -55,6 +55,15 @@
 
 // mixins
 
+.cc_btn () {
+  cursor:          pointer;
+  display:         inline-block;
+  text-decoration: none;
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
 .cc_linear-gradient(@dir, @start-color, @end-color) {
   background: @start-color;
   background: -webkit-linear-gradient(@dir, @start-color, @end-color);
