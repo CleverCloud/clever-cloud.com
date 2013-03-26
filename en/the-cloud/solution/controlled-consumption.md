@@ -15,7 +15,7 @@ discount: "off"
    <div class="container">
       <div class="row">
          <div class="span5">
-            <h2>Pays as you go</h2>
+            <h2>Pay as you go</h2>
             <p>
                Scaling your app up and down automatically is a great feature, but you should not lose sight of cost control in the case of very high traffic. In order to allow for a simple monitoring process, Clever Cloud chose a straightforward image: the gas tank of a car.
             </p>
@@ -27,7 +27,7 @@ discount: "off"
 			   The Drop is the unit representing Clever Cloud's "computing energy". You fuel your app with Drops, in case of need.
             </p>
 			   <p>
-				   The Clever Cloud dashboard shows you in real time what’s left in the tank in terms of drops, time and consumed computing energy&nbsp;: 
+				   The Clever Cloud dashboard shows you in real time what’s left in the tank in terms of drops, time and consumed computing energy: 
 			   </p>
 			   <ul>
 				   <li>Your remaining Drops</li>
