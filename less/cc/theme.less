@@ -81,6 +81,7 @@
   }
 }
 .cc_hero__desc {
+  font-family:    LatoLight;
   font-size:      @text--XL;
   font-weight:    normal;
   text-transform: uppercase;
@@ -125,19 +126,19 @@
 }
 
 .cc_partner {
-  background:    @whitey;
+  background:    @white;
   border-radius: 4px;
   box-shadow:    0 0 0 5px fade(@black, 20%);
-  color:         @grey;
+  color:         @lightgrey;
   text-shadow:   none;
 }
 .cc_partner__span .cc_partner__item,
 .cc_partner__row {
-  border-color: @lightgrey;
+  border-color: @whitey;
 }
 .cc_partner__span:first-child .cc_partner__item,
 .cc_partner__row:first-child {
-  border-color: @whitey;
+  border-color: @white;
 }
 
 .cc_people {
@@ -167,9 +168,14 @@
 }
 .cc_side-header__title,
 .cc_slider__title {
+  font-family:    LatoLight;
   font-size:      @text--XL;
   font-weight:    normal;
   text-transform: uppercase;
+  strong {
+    font-family: LatoBold;
+    font-weight: normal;
+  }
 }
 
 .cc_slider__controls {
@@ -177,6 +183,7 @@
   li {
     background: @white;
     box-shadow: 0 1px 1px @grey inset;
+    cursor:     pointer;
     &.active {
       background: @darkgrey;
       box-shadow: none;
@@ -208,7 +215,7 @@
   .cc_input--error;
   .cc_placeholder;
   background:    fade(@black, 2%);
-  border-color:  @grey;
+  border-color:  @lightgrey;
   border-radius: 4px;
   box-shadow:    0 1px 2px @lightgrey inset;
   &:focus {
@@ -237,6 +244,7 @@
 }
 
 .cc_title--striked {
+  font-family: LatoLight;
   box-shadow: 0 1px 0 @darkwhitey,
               0 2px 0 @white;
   color:      @grey;
@@ -309,6 +317,9 @@
 }
 .cc_workflow__item__title {
   text-align: center;
+}
+.cc_workflow__list {
+  background: url(/img/chalk.png) center top no-repeat;
 }
 .cc_workflow__title {
   color:       @white;
