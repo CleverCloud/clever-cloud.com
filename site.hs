@@ -27,7 +27,10 @@ main = hakyll $ do
     match "assets/fonts/**" $ do
         route   idRoute
         compile copyFileCompiler
-
+    
+    match "assets/js/**" $ do
+        route   idRoute
+        compile copyFileCompiler
 
     d <- makePatternDependency "assets/css/**"
     rulesExtraDependencies [d] . match "assets/css/all.less" $ do
@@ -35,14 +38,6 @@ main = hakyll $ do
        compile $ getResourceString >>=
           withItemBody (unixFilter "lessc" ["-","--yui-compress","-O2"])
            
-
-
---------------------------------------------------------------------------------
--- JS
---
-    match "/assets/js/*" $ do
-        route   idRoute
-        compile copyFileCompiler
 
 --------------------------------------------------------------------------------
 -- Reusable blocks
