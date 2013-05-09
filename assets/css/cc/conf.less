@@ -1,0 +1,107 @@
+/* coding rules:
+ * tab width = 2
+ * all spaces
+ * 
+ * naming convention:
+ * cc_ prefix
+ * __  component part
+ * --  variant
+ * example: cc_alert--info__close = style that is specific to the close button
+ *                                  of the info alert box only.
+ * more about this: engineering.appfolio.com/2012/11/16/css-architecture
+ */
+
+// sizes
+@cc_path_img:"/assets/img/";
+
+@cc_panorama__height:    380px;
+@cc_panorama__height768: 360px;
+
+// colors
+
+@lightred:   #903d41;
+@lighterred: #73292a;
+@red:        #6e2627;
+@darkerred:  #5f2222;
+@darkred:    #371513;
+@lightgreen: #c0f08d;
+@green:      #97d55a;
+@deepgreen:  #57b828;
+@darkgreen:  #264211;
+@whitey:     #f6f6f6;
+@darkwhitey: #dfdfdf;
+@lightgrey:  #cdcdcd;
+@grey:       #ababab;
+@darkgrey:   #3f3f3f;
+@black:      #000;
+@white:      #fff;
+
+@error: #c44;
+
+// fonts
+
+@main-font:   "Helvetica", "DejaVu Sans", "Arial", sans-serif;
+
+// font sizes
+
+@text:      14px;
+@text--M:   (@text * 1.2);
+@text--L:   (@text * 1.5);
+@text--XL:  (@text * 2.3);
+@text--2XL: (@text * 3.4);
+
+// misc
+
+@cc_hero__iframe__cols: 9;
+
+// mixins
+
+.cc_btn () {
+  cursor:          pointer;
+  display:         inline-block;
+  text-decoration: none;
+  &::-moz-focus-inner {
+    border: none;
+  }
+}
+
+.cc_linear-gradient(@dir, @start-color, @end-color) {
+  background: @start-color;
+  background: -webkit-linear-gradient(@dir, @start-color, @end-color);
+  background:    -moz-linear-gradient(@dir, @start-color, @end-color);
+  background:     -ms-linear-gradient(@dir, @start-color, @end-color);
+  background:      -o-linear-gradient(@dir, @start-color, @end-color);
+  background:         linear-gradient(@dir, @start-color, @end-color);
+}
+
+.cc_rounded () {
+  border-radius: 4px;
+}
+
+.cc_input--error () {
+  &:-moz-ui-invalid {
+    border-color: @error;
+    box-shadow:   0 0 5px @error;
+    color:        @error;
+  }
+  &:invalid {
+    border-color: @error;
+    box-shadow:   0 0 5px @error;
+    color:        @error;
+  }
+}
+
+.cc_placeholder () {
+  &:-ms-input-placeholder {
+    font-style: italic;
+  }
+  &:-moz-placeholder {
+    font-style: italic;
+  }
+  &::-moz-placeholder {
+    font-style: italic;
+  }
+  &::-webkit-input-placeholder {
+    font-style: italic;
+  }
+}

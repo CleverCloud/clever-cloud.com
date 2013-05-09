@@ -1,0 +1,340 @@
+/* coding rules:
+ * tab width = 2
+ * all spaces
+ * 
+ * naming convention:
+ * cc_ prefix
+ * __  component part
+ * --  variant
+ * example: cc_alert--info__close = style that is specific to the close button
+ *                                  of the info alert box only.
+ * more about this: engineering.appfolio.com/2012/11/16/css-architecture
+ */
+
+.cc {
+  background:  @darkgrey;
+  color:       @grey;
+  font-size:   @text;
+  font-family: @main-font;
+}
+
+.cc_btn--success {
+  .cc_btn;
+  .cc_linear-gradient(bottom, @deepgreen, @green);
+  .cc_rounded;
+  box-shadow:  0 1px 0 @lightgreen inset,
+               0 0 0 5px fade(@black, 25%),
+               0 1px 0 5px fade(@grey, 15%);
+  color:       @white;
+  font-size:   @text--L;
+  text-shadow: 0 -1px 0 fade(@darkgreen, 50%);
+  &:active {
+    .cc_linear-gradient(bottom, mix(@darkgreen, @deepgreen, 20%), @deepgreen);
+    box-shadow: 0 0 2px 1px fade(@black, 40%) inset,
+                0 0 0 5px fade(@black, 25%),
+                0 1px 0 5px fade(@grey, 15%);
+    color:      @lightgrey;
+  }
+}
+
+.cc_feature__list a {
+    color: @darkgrey;
+}
+.cc_feature__title {
+  box-shadow: -8px 0 0 @whitey,
+              -9px 0 0 @lightred;
+}
+
+.cc_footer__link__list {
+  list-style: none;
+}
+.cc_footer__link__title {
+  text-transform: uppercase;
+}
+
+.cc_headbar {
+  background: @red;
+  box-shadow: 0 0 0 5px fade(@red, 50%);
+  color:      @white;
+  font-size:  @text;
+  a {
+    color:           @white;
+    text-decoration: none;
+  }
+}
+.cc_headbar__btn {
+  .cc_btn;
+}
+.cc_headbar__logo {
+  font-size: 18px;
+}
+.cc_login__btn {
+  .cc_rounded;
+  background: fade(@black, 15%);
+  color:      @white;
+}
+
+.cc_hero {
+  color: @darkgrey;
+  a {
+    color: @darkgrey;
+  }
+}
+.cc_hero__desc {
+  font-family:    LatoLight;
+  font-size:      @text--XL;
+  font-weight:    normal;
+  text-transform: uppercase;
+}
+.cc_hero__headline {
+  color:  @white;
+}
+.cc_hero__iframe {
+  background: @black;
+}
+.cc_hero__title {
+  font-size: @text--2XL;
+}
+.cc_hero__video {
+  .cc_rounded;
+  box-shadow: 0 4px 4px fade(@black, 20%);
+  background: fade(@white, 5%);
+}
+
+.cc_instance__list,
+.cc_reference__list,
+.cc_service__list {
+  text-align: center;
+}
+.cc_instance__title,
+.cc_service__title {
+  color:       @grey;
+  text-shadow: 0 1px 0 @white;
+}
+.cc_instance__title {
+  font-size: @text--M;
+}
+
+.cc_main {
+  background: @whitey;
+  color:      @darkgrey;
+}
+
+.cc_panorama {
+  background:      @darkgrey url('@{cc_path_img}cc_panorama.png') center;
+  background-size: cover;
+}
+
+.cc_partner {
+  background:    @white;
+  border-radius: 4px;
+  box-shadow:    0 0 0 5px fade(@black, 20%);
+  color:         @lightgrey;
+  text-shadow:   none;
+}
+.cc_partner__span .cc_partner__item,
+.cc_partner__row {
+  border-color: @whitey;
+}
+.cc_partner__span:first-child .cc_partner__item,
+.cc_partner__row:first-child {
+  border-color: @white;
+}
+
+.cc_people {
+  background:  @lighterred;
+  color:       @darkred;
+  box-shadow:  0 5px 3px -3px fade(@black, 20%) inset,
+               0 -5px 3px -3px fade(@black, 20%) inset;
+  text-shadow: 0 1px 0 @lightred;
+}
+.cc_people__btn {
+  .cc_btn;
+  .cc_rounded;
+  background:  @darkerred;
+  color:       @lightred;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.cc_service__title {
+  font-size:   @text;
+  font-weight: normal;
+
+}
+
+.cc_side-header {
+  background: url('@{cc_path_img}cc_side-header.png') right center repeat-y;
+}
+.cc_side-header__title,
+.cc_slider__title {
+  font-family:    LatoLight;
+  font-size:      @text--XL;
+  font-weight:    normal;
+  text-transform: uppercase;
+  strong {
+    font-family: LatoBold;
+    font-weight: normal;
+  }
+}
+
+.cc_slider__controls {
+  text-align: center;
+  li {
+    background: @white;
+    box-shadow: 0 1px 1px @grey inset;
+    cursor:     pointer;
+    &.active {
+      background: @darkgrey;
+      box-shadow: none;
+    }
+  }
+}
+.cc_slider__title {
+  text-align:  center;
+}
+
+.cc_suscribe__btn {
+  .cc_btn;
+  .cc_rounded;
+  box-shadow:  0 0 0 1px mix(@green, darkgreen, 70%) inset,
+               0 2px 0 @lightgreen inset,
+               0 0 0 5px fade(@black, 10%);
+  text-shadow: 0 1px 0 fade(@darkgreen, 50%);
+  &:active {
+    .cc_linear-gradient(bottom, mix(@darkgreen, @deepgreen, 20%), @deepgreen);
+    box-shadow: 0 0 2px 1px fade(@black, 40%) inset,
+                0 0 0 5px fade(@black, 10%);
+  }
+}
+.cc_suscribe__field,
+.cc_suscribe__input {
+  font-size: @text--L;
+}
+.cc_suscribe__input {
+  .cc_input--error;
+  .cc_placeholder;
+  background:    fade(@black, 2%);
+  border-color:  @lightgrey;
+  border-radius: 4px;
+  box-shadow:    0 1px 2px @lightgrey inset;
+  &:focus {
+    background:   @whitey;
+    border-color: @grey;
+    box-shadow:   none;
+    color:        @darkgrey;
+    outline:      none;
+  }
+}
+.cc_suscribe__label {
+  color:      @lightgrey;
+  text-align: right;
+}
+.cc_suscribe__terms {
+  font-size: @text--M;
+  color:     @grey;
+  a {
+    color:      @grey;
+    font-style: italic;
+  }
+}
+.cc_suscribe__title {
+  color:        @lightgrey;
+  text-shadow: 0 1px 0 @white;
+}
+
+.cc_title--striked {
+  font-family: LatoLight;
+  box-shadow: 0 1px 0 @darkwhitey,
+              0 2px 0 @white;
+  color:      @grey;
+  text-align: center;
+}
+.cc_title--striked__text {
+  background:     @whitey;
+  font-weight:    normal;
+  text-shadow:    0 1px 1px @white;
+  text-transform: uppercase;
+}
+
+.cc_workflow {
+  background:      @grey url('@{cc_path_img}cc_workflow.png') top center no-repeat;
+  background-size: cover;
+  box-shadow:      0 5px 3px -3px fade(@black, 20%) inset,
+                   0 -5px 3px -3px fade(@black, 20%) inset;
+}
+.cc_workflow__block,
+.cc_workflow__block--dark {
+  border-radius: 8px;
+}
+.cc_workflow__block {
+  background:  fade(@white, 10%);
+  box-shadow:  0 0 4px fade(@black, 20%);
+}
+.cc_workflow__block--dark {
+  background:  fade(@black, 30%);
+  box-shadow:  0 1px 0 fade(@white, 20%);
+}
+.cc_workflow__btn {
+  .cc_btn;
+  .cc_linear-gradient(bottom, @darkgrey, mix(@darkgrey, @grey, 50%));
+  .cc_rounded;
+  box-shadow:    0 0 0 1px @darkgrey,
+                 0 0 1px @grey inset;
+  color:         @white;
+  font-size:     @text--L;
+  text-shadow:   0 -1px 1px @black;
+  &:active {
+    .cc_linear-gradient(bottom, @darkgrey, mix(@darkgrey, @grey, 80%));
+    box-shadow: 0 0 1px @darkgrey inset,
+                0 0 2px 1px fade(@black, 40%) inset;
+    color:      @grey;
+  }
+}
+.cc_workflow__feature__item {
+  .cc_linear-gradient(bottom, fade(@whitey, 0), fade(@whitey, 70%));
+  box-shadow:     0 -1px 0 @lightgrey inset,
+                  0 1px 0 @whitey inset;
+  font-weight:    bold;
+  text-shadow:    @whitey;
+  text-transform: uppercase;
+  &:last-child {
+    border-radius: 0 0 4px 4px;
+  }
+}
+.cc_workflow__feature__list {
+  list-style: none;
+}
+.cc_workflow__item {
+  background:    fade(@whitey, 70%);
+  box-shadow:    0 0 4px fade(@black, 20%);
+  border-radius: 4px;
+}
+.cc_workflow__item__desc {
+  border-radius: 4px 4px 0 0;
+  box-shadow:    0 -1px 0 @lightgrey inset,
+                 0 0 0 1px @whitey inset;
+}
+.cc_workflow__item__title {
+  text-align: center;
+}
+.cc_workflow__list {
+  background: url('@{cc_path_img}chalk.png') center top no-repeat;
+}
+.cc_workflow__title {
+  color:       @white;
+  font-size:   @text--XL;
+  text-align:  center;
+  text-shadow: 0 1px 0 fade(@black, 20%);
+}
+
+// from here its not alphabetical but override order. if it does not need to
+// override stuff, it does not belong here.
+
+.cc_partner__btn {
+  background: fade(@black, 5%);
+  color:      @grey;
+}
+.cc_people__header {
+  background-image: url('@{cc_path_img}cc_people__header.png');
+}
