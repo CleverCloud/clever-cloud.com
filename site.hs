@@ -56,6 +56,14 @@ main = hakyll $ do
 --
     forM_ langs makeSinglePages
 
+--------------------------------------------------------------------------------
+-- Runtimes
+--
+    forM_ langs makeRuntimePages
+
+    forM_ langs $ \lang ->
+        match (fromGlob $ lang ++ "/techs/*.md") $ do
+        compile $ pandocCompiler
 
 --------------------------------------------------------------------------------
 -- Index
