@@ -12,6 +12,7 @@ import           System.FilePath         (joinPath, replaceExtension, splitDirec
 import           System.Locale           (TimeLocale, defaultTimeLocale)
 
 import Hakyll
+import CustomTags
 import Utils
 
 langs = ["fr", "en"]
@@ -59,4 +60,21 @@ makeSinglePages lang =
         compile $ pandocCompiler
             >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
             >>= relativizeUrls
+
+makeRuntimePages :: String -> Rules ()
+makeRuntimePages lang =
+    match (fromGlob $ lang ++ "/runtimes/*.md") $ do
+    route $ (setExtension "html") `composeRoutes` langRoute
+    compile $ pandocCompiler
+        >>= loadAndApplyTemplate "templates/runtime.html" ctx
+        >>= loadAndApplyTemplate "templates/default.html" ctx
+        >>= relativizeUrls
+  where
+    ctx = globalContext lang `mappend`
+          field "techs" makeTechsField
+    makeTechsField runtimeItem = do
+        ids <- loadAll (fromGlob $ lang ++ "/techs/*.md")
+        techs <- getWithTag "runtimes" (itemIdFromItem runtimeItem) ids
+        techTemplate <- loadBody "templates/tech.html"
+        applyTemplateList techTemplate (globalContext lang) techs
 

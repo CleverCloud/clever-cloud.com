@@ -3,7 +3,7 @@ all: build
 build: site
 	./site build
 
-site: site.hs RouteFactories.hs Utils.hs
+site: site.hs RouteFactories.hs CustomTags.hs Utils.hs
 	ghc --make site.hs
 	./site clean
 
