@@ -2,4 +2,4 @@ hakyll 4.2.2
 
 lessc is required
 
-if you are working on less/css stuff, handle auto recompilation with watchlss.sh script (i'm working on a fix more hakyll way...)
+Auto-recompilation of less files is now handled by Hakyll. No need for watchlss.sh
