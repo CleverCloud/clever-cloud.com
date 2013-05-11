@@ -11,9 +11,6 @@ import           RouteFactories
 
 import           Hakyll
 
-import           Hakyll.Core.Metadata
-
-
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
