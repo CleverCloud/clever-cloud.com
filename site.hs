@@ -11,9 +11,6 @@ import           RouteFactories
 
 import           Hakyll
 
-import           Hakyll.Core.Metadata
-
-
 --------------------------------------------------------------------------------
 main :: IO ()
 main = hakyll $ do
@@ -32,11 +29,16 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    d <- makePatternDependency "assets/css/**"
-    rulesExtraDependencies [d] . match "assets/css/all.less" $ do
-       route   $ setExtension "css"
-       compile $ getResourceString >>=
-          withItemBody (unixFilter "lessc" ["-","--yui-compress","-O2"])
+    match "assets/css/*.less" $ do
+        compile $ getResourceBody 
+
+    d <- makePatternDependency $ "assets/css/*.less"
+    rulesExtraDependencies [d] $ create ["assets/css/main.css"] $ do
+       route idRoute
+       compile $ 
+        loadBody "assets/css/all.less"
+        >>= makeItem
+        >>= withItemBody (unixFilter "lessc" ["-","--yui-compress","-O2"])
            
 
 --------------------------------------------------------------------------------
