@@ -29,10 +29,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
-    match "assets/css/*.less" $ do
+    match "assets/css/**.less" $ do
         compile $ getResourceBody 
 
-    d <- makePatternDependency $ "assets/css/*.less"
+    d <- makePatternDependency $ "assets/css/**.less"
     rulesExtraDependencies [d] $ create ["assets/css/main.css"] $ do
        route idRoute
        compile $ 
