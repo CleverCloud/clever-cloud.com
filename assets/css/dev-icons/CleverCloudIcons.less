@@ -1,0 +1,162 @@
+/* WARNING:	Your are using ligatures for your icon font.
+			Ligatures are not supported in IE 9 (and older).
+			Use the Private Use Area encoding for best browser support.
+==================================================================== */
+@fonts_cc_path_dev:   "/assets/fonts/dev/";
+
+@font-face {
+	font-family: 'CleverCloudIcons';
+	src:url('@{fonts_cc_path_dev}CleverCloudIcons.eot');
+	src:url('@{fonts_cc_path_dev}CleverCloudIcons.eot?#iefix') format('embedded-opentype'),
+		url('@{fonts_cc_path_dev}CleverCloudIcons.woff') format('woff'),
+		url('@{fonts_cc_path_dev}CleverCloudIcons.ttf') format('truetype'),
+		url('@{fonts_cc_path_dev}CleverCloudIcons.svg#CleverCloudIcons') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* for use in content */
+
+[data-icon]:before,
+[data-glyph][data-icon] {
+  font-family:    'CleverCloudIcons';
+  vertical-align: -.12em;
+}
+
+[data-glyph][data-icon]:before {
+  content: none;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	content: attr(data-icon);
+		speak: none;
+	/* Enable Ligatures */
+	-webkit-font-feature-settings:"liga","dlig";-moz-font-feature-settings:"liga=1, dlig=1";-moz-font-feature-settings:"liga","dlig";-ms-font-feature-settings:"liga","dlig";-o-font-feature-settings:"liga","dlig";
+	font-feature-settings:"liga","dlig";
+	text-rendering:optimizeLegibility;
+		font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* colors */
+
+[data-icon]:hover:before,
+[data-glyph][data-icon]:hover {
+  border-radius: 50%;
+  line-height:   1em;
+  margin:        0.25em auto;
+  width:         1em;
+}
+[data-icon="Couchbase"]:hover:before,
+[data-glyph][data-icon="Couchbase"]:hover {
+  background: #fff;
+  color:      #a30a0a;
+}
+[data-icon="Dropbox"]:hover:before,
+[data-glyph][data-icon="Dropbox"]:hover {
+  background: #fff;
+  color:      #008bd3;
+}
+[data-icon="Git"]:hover:before,
+[data-glyph][data-icon="Git"]:hover {
+  background: #fff;
+  color:      #f05033;
+}
+[data-icon="Glassfish"]:hover:before,
+[data-glyph][data-icon="Glassfish"]:hover {
+  background:       center no-repeat;
+  background-image: -moz-linear-gradient(top, #000, #000);
+  background-size:  80% 50%;
+  color:            #ffc78d;
+}
+[data-icon="Java"]:hover:before,
+[data-glyph][data-icon="Java"]:hover {
+  background: #fff;
+  color:      #3088ba;
+}
+[data-icon="JRuby"]:hover:before,
+[data-glyph][data-icon="JRuby"]:hover {
+  background: #fff;
+  color:      #8a2b29;
+}
+[data-icon="Magento"]:hover:before,
+[data-glyph][data-icon="Magento"]:hover {
+  background:          #ea8c83 no-repeat;
+  background-image:    -moz-linear-gradient(55deg, #ea8c83, #ea8c83 59%, #fdebe9 60%),
+                       -moz-linear-gradient(-55deg, #fdebe9, #fdebe9 39%, #ecb3ad 40%);
+  background-position: left, right;
+  background-size:     50% 100%, 50% 100%;
+  color:               #e52714;
+}
+[data-icon="Maven"]:hover:before,
+[data-glyph][data-icon="Maven"]:hover {
+  background:       center no-repeat;
+  background-image: -moz-linear-gradient(top, #000, #000);
+  background-size:  60% 60%;
+  color:            #fb6918;
+}
+[data-icon="MongoDB"]:hover:before,
+[data-glyph][data-icon="MongoDB"]:hover {
+  background:          #5eb760 no-repeat;
+  background-image:    -moz-linear-gradient(bottom, #e3e2cc, #a2a07b),
+                       -moz-linear-gradient(45deg, #109b37, #67bd68),
+                       -moz-linear-gradient(-45deg, #23933b, #198332);
+  background-position: bottom, left, right;
+  background-size:     100% 20%, 50% 100%, 50% 100%;
+  color:               #3b2819;
+}
+[data-icon="MySQL"]:hover:before,
+[data-glyph][data-icon="MySQL"]:hover {
+  background: #fff;
+  color:      #e48e00;
+}
+[data-icon="Node.js"]:hover:before,
+[data-glyph][data-icon="Node.js"]:hover {
+  background: #83cd29;
+  color:      #46483e;
+}
+[data-icon="PHP"]:hover:before,
+[data-glyph][data-icon="PHP"]:hover {
+  background: #fff;
+  color:      #6682ba;
+}
+[data-icon="Play"]:hover:before,
+[data-glyph][data-icon="Play"]:hover {
+  background:       #88c558 center no-repeat;
+  background-image: -moz-linear-gradient(top, #88c558, #59b0a9 80%);
+  background-size:  60% 60%;
+  color:            #fff;
+}
+[data-icon="PostgreSQL"]:hover:before,
+[data-glyph][data-icon="PostgreSQL"]:hover {
+  background: #fff;
+  color:      #336791;
+}
+[data-icon="Python"]:hover:before,
+[data-glyph][data-icon="Python"]:hover {
+  background:          #dfdfdf no-repeat;
+  background-image:    -moz-linear-gradient(bottom, #ffd646, #ffd646),
+                       -moz-linear-gradient(bottom, #ffd646, #ffd646);
+  background-position: right bottom;
+  background-size:     68% 51%, 31% 100%;
+  color:               #3075ae;
+}
+[data-icon="Ruby"]:hover:before,
+[data-glyph][data-icon="Ruby"]:hover {
+  background: #fff;
+  color:      #8a2b29;
+}
+[data-icon="Scala"]:hover:before,
+[data-glyph][data-icon="Scala"]:hover {
+  background: #8a2b29;
+  color:      #2c2c2c;
+}
+[data-icon="Wordpress"]:hover:before,
+[data-glyph][data-icon="Wordpress"]:hover {
+  background: #fff;
+  color:      #51a8cc;
+}
