@@ -1,6 +1,6 @@
 ---
 name: Node JS
-doc: http://doc.clever-cloud.com/java
+doc: http://doc.clever-cloud.com/node
 ---
 
-Node JS runtime
+Node.js est un framework événementiel pour écrire des applications réseau en JavaScript.

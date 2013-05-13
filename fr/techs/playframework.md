@@ -4,4 +4,4 @@ runtimes: java, scala
 icon: play.png
 ---
 
-Description play
+Play est un framework open source écrit en Java et en Scala permettant la réalisation d'applications web.

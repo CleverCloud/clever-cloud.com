@@ -4,4 +4,4 @@ runtimes: java
 icon: glassfish.png
 ---
 
-La plateforme Java tient aujourd'hui une place prépondérante dans toutes sortes de développements web. Une liste des CMS compatibles est présente dans la documentation.
+Les fichiers war et ear permettent de déployer des applications java sous forme de fichiers, avec la possibilité d'embarquer directement des modules. Différents conteneurs existent comme Apache, Glassfish, JBoss, Resin ou Jetty.

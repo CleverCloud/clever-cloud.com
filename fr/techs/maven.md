@@ -4,4 +4,4 @@ runtimes: java
 icon: maven.png
 ---
 
-Description Maven
+Apache Maven est un outil Open-source de gestion et d'automatisation de production de projets logiciels Java.
