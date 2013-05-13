@@ -4,3 +4,7 @@ _cache
 site
 *.hi
 *.o
+/lib/
+_site/
+old.yml
+*.swp

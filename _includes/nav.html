@@ -1,0 +1,22 @@
+{% if link.switch %} {% capture from %}/{{ page.locale }}/{% endcapture %} {% capture to %}/{{ link.switch }}/{% endcapture %}
+<li>
+   <a href="{% if page.url == '/en/auth/login.html' and to != '/en/' %}{{ to }}{% else %}{{ page.url | replace: from, to }}{% endif %}">{{ link[page.locale] }}</a>
+</li> {% elsif link.url %}
+<li{% if page.url contains link.url %} class="active"{% endif %}>
+   {% if link.btn %}<div class="btn-group">{% endif %}
+      <a{% if link.btn %} class="btn"{% endif %} {% if link.url contains '://' %}href="{{ link.url }}" target="_blank"{% else %}href="/{{ page.locale }}/{{ link.url }}"{% endif %}>
+         {{ link[page.locale] }}
+      </a>
+   {% if link.btn %}</div>{% endif %}
+</li> {% elsif link.sub %}
+<li class="dropdown">
+   <a id="dropdown-{{ link.sub }}" class="dropdown-toggle" data-toggle="dropdown" href="/{{ page.locale }}/{{ link.ref }}.html">
+      {{ link[page.locale] }} <span class="caret"></span>
+   </a>
+   <ul class="dropdown-menu"> {% for link in site[link.sub] %}
+      {% include nav.html %} {% endfor %}
+   </ul>
+</li> {% else %} {% for p in site.pages %} {% if p.locale == page.locale and p.url contains link.ref %}
+<li{% if page.url contains link.ref %} class="active"{% endif %}>
+   <a href="{{ p.url }}">{{ p.title }}</a>
+</li> {% endif %} {% endfor %} {% endif %}

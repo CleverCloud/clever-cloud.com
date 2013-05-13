@@ -1,0 +1,179 @@
+---
+layout: main
+
+nav:
+- ref: the-cloud/solution/innovating-platform
+- ref: the-cloud/solution/simple-management
+- ref: the-cloud/solution/controlled-consumption
+
+compatibility:
+  en: Compatibility
+  fr: Compatibilité
+
+packages:
+- title: New bird
+  count: 2 000
+  free:
+    en: Free
+    fr: Offert
+  desc:
+    en: |
+      Not suscribed yet? <br/> You get 2,000 Drops for every new account created — to try out Clever Cloud.
+    fr: |
+      Pas encore inscrit ? <br/> 2 000 Drops vous sont offertes dès la création de votre compte pour un essai gratuit.
+  url: http://console.clever-cloud.com/auth/signup
+- title: First Steps
+  count: 2 500
+  price: 24.25€
+  desc:
+    en: |
+      A small refill — if this is what you need!
+    fr: |
+      Une recharge minimale pour s'adapter à vos besoins !
+  url: https://console.clever-cloud.com/users/me/billing/buy-drops
+- title: Highway Driver
+  count: 10 000
+  price: 94.58€
+  desc:
+    en: |
+      Getting more traffic? A package to foresee a bit more.
+    fr: |
+      Plus de trafic ? Voici une recharge qui vous permettra
+      de voir un peu plus loin.
+  url: https://console.clever-cloud.com/users/me/billing/buy-drops
+- title:    Aviator
+  count:    25 000
+  price:    230.38€
+  discount: 5
+  best_offer: yes
+  desc:
+    en: |
+      A good balance between costs and durability: our best
+      offer yet!
+    fr: |
+      Un bon compromis entre coût et
+      durée.
+  url: https://console.clever-cloud.com/users/me/billing/buy-drops
+- title:    Astronaut
+  count:    50 000
+  price:    436.5€
+  discount: 10
+  desc:
+    en: |
+      You choose the refill that will let you
+      manage your applications with your mind at peace.
+    fr: |
+      Vous optez pour la recharge qui vous
+      permettra de gérer vos applications en toute tranquillité.
+  url: https://console.clever-cloud.com/users/me/billing/buy-drops
+negociate :
+  fr: Si vous souhaitez établir un forfait mensuel pour votre application, nous pouvons vous proposer une offre à prix stable, contactez <a href="mailto:deals@clever-cloud.com">deals@clever-cloud.com</a> 
+  en: If you need more stable price, we can offer you a plan with fixed price. Be in touch with our team by email <a href="mailto:deals@clever-cloud.com">deals@clever-cloud.com</a> 
+boards:
+  plan:
+    en: Plans and Pricing
+    fr: Offres et tarifs
+  aboutdrops:
+    en: What is a Drop's value?
+    fr: Que vaut une Drop ?
+compare:
+  title:
+    en: Drops consumption for running applications
+    fr: Drops consommées par votre application
+  desc:
+    en: |
+      This board show you how many Drops are consumed by slices of <br/><i>10 minutes</i> for every type of instances.
+    fr: |
+      Ce tableau indique combien de Drops sont consommées par tranches<br/> de <i>10 minutes</i> pour chaque type d'instances.
+  row_max: 3
+  list:
+  - title: Java
+    instances:
+    - title: Java + Maven
+      count: 2
+    - title: Play 1.x
+      count: 2
+    - title: JEE (Glassfish / Jetty)
+      count: 2
+      soon:  Yes
+  - title: PHP
+    instances:
+    - title: PHP
+      count: 1
+  - title: Scala
+    instances:
+    - title: Play 2.0
+      count: 2
+    - title: Scala 
+      count: 2
+      soon:  Yes
+moredropcount :
+  fr: La documentation fournit une liste exhaustive des couts en drops <a href="http://doc.clever-cloud.com/pricing" TARGET="_blank">sur une page dédiée</a>. 
+  en: All the services and languages drops charge are documented in <a href="http://doc.clever-cloud.com/pricing" TARGET="_blank">this dedicated page on the documentation of Clever Cloud</a>. 
+
+---
+<div class="sub-navbar">
+   <div class="container {{ page.part }}">
+      <div class="navbar">
+         <ul class="nav"> {% for link in page.nav %}
+            {% include nav.html %} {% endfor %}
+         </ul>
+      </div>
+   </div>
+</div>
+<div class="solution-page">{{ content }}</div>
+<div id="packages">
+  <div class="container">
+    <h2>{{ page.boards.plan[page.locale] }}</h2>
+    <div class="row-fluid">{% for package in page.packages %}
+      <div class="package span2">
+        <header>
+          <h3>{{ package.title }}</h3>
+          {{ package.desc[page.locale] | markdownify }}
+        </header>
+        <div class="big-num">
+          {{ package.count }}
+          <img src="/img/icons/drop{% if forloop.first %}-white{% endif %}.png" alt="=D="/>
+        </div>
+        <a href="{{ package.url }}" class="btn">{% if package.price %}
+          {{ package.price }}{% else %}
+          {{ package.free[page.locale] }}{% endif %}
+        </a>
+      </div>{% endfor %}
+    </div>
+	 <div id="negociate-row" class="row-fluid" style="border:0px">
+		 <div id="negociate-cell" class="span12">
+	       {{ page.negociate[page.locale] }}
+       </div>
+	</div>
+    <h2>{{ page.boards.aboutdrops[page.locale] }}</h2>
+    <div id="table-compare" class="row-fluid">
+    	<div class="span2 pres">
+        <header><h3>{{ page.compare.title[page.locale] }}</h3></header>
+        {{ page.compare.desc[page.locale] | markdownify }}
+        <div class="bottom-options">
+          <a href="/{{ page.locale }}/compatibility" class="btn">
+            {{ page.compatibility[page.locale] }}
+          </a>
+        </div>
+      </div>{% for tech in page.compare.list %}
+    	<div class="span2">
+        <div class="cell head">
+          <h3>{{ tech.title }}</h3>
+        </div>{% for i in (0..page.compare.row_max) %}
+        <div class="cell{% if tech.instances[i].soon %} soon{% endif %}">{% if tech.instances[i] %}
+          <strong>{{ tech.instances[i].title }}</strong>
+          <h4>{{ tech.instances[i].count }}<img src="/img/icons/drop.png" alt="=D=" style="
+    max-height: 15px;
+    padding-left: 4px;
+"></h4>{% endif %}
+        </div>{% endfor %}
+      </div>{% endfor %}
+    </div>
+	 <div id="negociate-row" class="row-fluid" style="border:0px">
+		 <div id="negociate-cell" class="span12">
+	       {{ page.moredropcount[page.locale] }}
+       </div>
+	</div>
+  </div>
+</div>

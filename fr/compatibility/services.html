@@ -1,0 +1,38 @@
+---
+layout: compatibility
+locale: fr
+
+title:  Services
+
+groups:
+  db: &db
+    title: Base de donnée
+    id: db
+    desc: |
+      Personnalisez l'architecture de vos applications avec des bases de données SQL et NoSQL.
+    doclink: /services
+    items:
+    - title: MySQL
+      icon: mysql.png
+      desc: |
+        MySQL est un système de gestion de base de données, distribué sous une double licence GPL et propriétaire.
+      doclink: /
+      released: Yes
+    - title: PostgreSQL
+      icon: postgreSQL.png
+      desc: |
+        PostgreSQL est un système de gestion de base de données relationnelle et objet.
+      doclink: /
+      released: Yes
+#    - title: Couchbase
+#      icon: couchbase.png
+#      desc: |
+#        Couchbase est une base de donnée NoSQL orientée documents ou clé-valeur.
+#    - title: MongoDB
+#      icon: mongoDB.png
+#      desc: |
+#        MongoDB est un système de gestion de base de données orientée documents.
+  indexation: &indexation
+  cache: &cache
+  list: [*db]
+---

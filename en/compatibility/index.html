@@ -1,0 +1,89 @@
+---
+layout: compatibility
+locale: en
+
+title:  Instances
+
+groups:
+  java: &java
+    title: Java Engine
+    id: java
+    desc: |
+      Strong enterprise technology, widely used to develop a large number of critical and business-specific software.<br/>  
+      Read the documentation for CMS compatibility-list.  
+    doclink: /java
+    items:
+#    - title: Java + Glassfish
+#      icon: glassfish.png
+#      desc: |
+#        Open-source application server and official reference implementation for Servlets 3.0.
+#      released: Yes
+#    - title: Java + Ant
+#      icon: ant.png
+#      desc: |
+#        Apache Ant is a software tool for automating software build processes using the Java language.
+    - title: Play!Framework
+      icon: play2.png
+      desc: |
+        Play is an open source web application framework, written in Java, which follows the MVC architectural pattern.
+      released: Yes
+    - title: Java + Maven
+      icon: maven.png
+      desc: |
+        Maven is a tool making the build process easy and providing a uniform build system.
+      doclink: /
+      released: Yes
+  php: &php
+    title: PHP Engine
+    id: php
+    desc: |
+      PHP is an Open-source server-side scripting language  designed for Web development to produce dynamic Web pages.  
+    doclink: /php
+    items:
+    - title: PHP
+      icon: php.png
+      desc: |
+        Instance for pure and simple PHP applications.
+      released: Yes
+    - title: Wordpress
+      icon: wp.png
+      desc: |
+        WordPress is a free and Open-source blogging tool and a CMS based on PHP and MySQL.
+      released: Yes
+    - title: Magento
+      icon: magento.png
+      desc: |
+        Magento is an open source ecommerce web application.
+      released: Yes
+  ruby: &ruby
+    title: Ruby Engine
+    id: ruby
+    desc: |
+      Ruby is a open-source dynamic language designed for code-simplicity and productivity.<br/>Read the documentation for CMS compatibility-list.
+    doclink: /
+    items:
+    - title: Ruby
+      icon: ruby.png
+      desc: |
+        Ruby is a dynamic, reflective, general-purpose object-oriented programming language.
+#      released: Yes
+    - title: JRuby
+      icon: jruby.png
+      desc: |
+        JRuby is a Java implementation of the Ruby programming language.
+#      released: Yes
+  nodejs: &nodejs
+    title: JS Server-side
+    id: nodejs
+    desc: |
+      JavaScript is a prototype-based scripting language that is dynamic, weakly typed and has first-class functions. 
+    doclink: /
+    items:
+    - title: Node.JS
+      icon: nodejs.png
+      desc: |
+        Node.js is a server side software system designed for writing scalable Internet applications, notably web servers.
+      released: Yes
+  scala: &scala
+  list: [*java, *php, *ruby, *nodejs]
+---

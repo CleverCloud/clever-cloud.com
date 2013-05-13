@@ -1,0 +1,245 @@
+# about clever cloud
+brand: Clever Cloud
+since: 2010
+
+# navigation
+sitemap:
+
+- ref: about
+  fr:  Clever Cloud
+  en:  Clever Cloud
+  span: 2
+
+- ref: product
+  fr:  Le produit
+  en:  Our solution
+  span: 3
+
+- ref: support
+  fr:  Support
+  en:  Support
+  span: 2
+
+- ref: legal-notice
+  fr:  Nos engagements
+  en:  Commitment
+  span: 3
+
+- ref: follow-us
+  fr:  Nous suivre
+  en:  Follow us
+  span: 2
+
+about:
+
+- ref: about/index
+
+- ref: about/press
+
+- ref: about/team
+
+#- ref: lab
+#  url: http://lab.clever-cloud.com
+#  fr:  Clever Lab
+#  en:  Clever Lab
+  
+- ref: blog
+  url: http://blog.clever-cloud.com
+  fr:  Blog 
+  en:  Blog
+  
+- ref: engineer
+  url: http://engineering.clever-cloud.com
+  fr:  Engineer Blog
+  en:  Engineer Blog
+  
+- ref: about/partners/index
+
+the-cloud:
+
+- ref: discover
+  url: the-cloud/solution/innovating-platform.html
+  fr:  Découvrir
+  en:  Discover
+
+- ref: the-cloud/solution/controlled-consumption
+  fr:  Tarifs
+  en:  Pricing
+
+- ref: instances
+  url: compatibility/index.html
+  fr:  Compatibilité
+  en:  Compatibility
+
+- ref: the-cloud/support
+  sub: support
+  fr:  Support
+  en:  Support
+
+- ref: lang
+  sub: lang
+  fr:  Fr
+  en:  En
+
+- ref: account
+  url: https://console.clever-cloud.com/
+  btn: Yes
+  fr:  Login
+  en:  Login
+
+product:
+
+- ref: the-cloud/solution/innovating-platform
+
+- ref: the-cloud/solution/controlled-consumption
+  fr:  Tarifs
+  en:  Pricing
+
+- ref: the-cloud/solution/simple-management
+
+- ref: account
+  url: https://console.clever-cloud.com
+  fr:  Login
+  en:  Login
+
+support:
+
+- ref: docs
+  url: http://doc.clever-cloud.com
+  fr:  Documentation
+  en:  Documentation
+
+#- ref: tutorials
+#  url: http://doc.clever-cloud.com/tutorials
+#  fr:  Tutoriels
+#  en:  Tutorials
+
+#- ref: status
+#  url: http://status.clever-cloud.com
+#  fr:  État du service
+#  en:  Service status
+
+lang:
+
+- ref:  fr/index
+  switch: fr
+  fr:   Français
+  en:   Français
+
+- ref:  en/index
+  switch: en
+  fr:   English
+  en:   English
+
+legal-notice:
+
+- ref: legal-notice/index
+
+- ref: legal-notice/terms-of-sale
+
+- ref: legal-notice/terms-of-use
+
+follow-us:
+- ref: newsletter
+  url: http://eepurl.com/lobZH
+  fr:  Newsletter
+  en:  Newsletter
+  
+- ref: twitter
+  url: http://twitter.com/clever_cloud
+  fr:  Twitter
+  en:  Twitter
+
+- ref: facebook
+  url: http://facebook.com/clevercloudsas
+  fr:  Facebook
+  en:  Facebook
+
+- ref: github
+  url: http://github.com/clevercloud
+  fr:  Github
+  en:  Github
+
+- ref: linkedin
+  url: http://linkedin.com/company/clever-cloud
+  fr:  LinkedIn
+  en:  LinkedIn
+
+# locale
+
+locale:
+  doclink:
+    fr: Documentation
+    en: Documentation
+  soon:
+    fr: Bientôt
+    en: Soon
+
+# la team
+
+team:
+  
+  adam:
+    name:     Quentin Adam
+    job:
+      en:     Clever Cloud C.E.O
+      fr:     Clever Cloud C.E.O
+    twitter:  waxzce
+  
+  decherf:
+    name:     Kévin Decherf
+    job:
+      en:     Office & Production Manager
+      fr:     Office & Production Manager
+    twitter:  kdecherf
+  
+  tayrac:
+    name:     Arthur Tayrac
+    job:
+      en:     Interaction Designer
+      fr:     Interaction Designer
+    twitter:  crmfrsh
+  
+  durillon:
+    name:     Julien Durillon
+    job:
+      en:     Sytem Administrator and Developer
+      fr:     Sytem Administrator and Developer
+    twitter:  juuduu
+  
+  perennou:
+    name:     Marc-Antoine Perennou
+    job:
+      en:     Java and GNU/Linux Hacker
+      fr:     Java and GNU/Linux Hacker
+    twitter:  keruspe
+  
+  nivolle:
+    name:     Clément Nivolle
+    job:
+      en:     Project Manager
+      fr:     Project Manager
+    twitter:  cnivolle
+  
+  belouin:
+    name:     Rodolphe Belouin
+    job:
+      en:     Javascript & Scala Enthousiast
+      fr:     Javascript & Scala Enthousiast
+    twitter:  rbelouin
+  
+  thommy:
+    name:     Kevin Thommy
+    job:
+      en:     '"Integraphic" Designer'
+      fr:     '"Integraphic" Designer'
+    twitter:  mon_ke
+  
+  louerat:
+    name:     Bastien Louerat
+    job:
+      en:     Scala, Akka & Netty Software Developer
+      fr:     Scala, Akka & Netty Software Developer
+    twitter:  blouerat
+  
+  all: [adam, belouin, decherf, durillon, louerat, nivolle, perennou, tayrac, thommy]
