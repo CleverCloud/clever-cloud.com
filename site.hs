@@ -77,6 +77,18 @@ main = hakyll $ do
                 >>= loadAndApplyTemplate "templates/index.html" (globalContext lang)
                 >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
                 >>= relativizeUrls
+                
+
+--------------------------------------------------------------------------------
+-- pricing
+--
+    forM_ langs $ \lang ->
+        match (fromGlob $ lang ++ "/pricing.html") $ do
+            route langRoute
+            compile $ getResourceBody
+                >>= loadAndApplyTemplate "templates/pricing.html" (globalContext lang)
+                >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
+                >>= relativizeUrls
 
 --------------------------------------------------------------------------------
 -- Compile all templates
