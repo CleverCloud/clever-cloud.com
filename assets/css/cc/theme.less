@@ -121,7 +121,7 @@
 }
 
 .cc_panorama {
-  background:      @darkgrey url('@{cc_path_img}cc_panorama.png') center;
+  background:      @darkgrey url('@{cc_path_img}cc_panorama.jpg') center;
   background-size: cover;
 }
 
@@ -337,4 +337,85 @@
 }
 .cc_people__header {
   background-image: url('@{cc_path_img}cc_people__header.png');
+}
+
+//Page Compatibility
+
+.cc_compatibility {
+  background:      @grey url('@{cc_path_img}cc_compat.jpg') top center no-repeat;
+  background-size: cover;
+  box-shadow:      0 5px 3px -3px fade(@black, 20%) inset,
+                   0 -5px 3px -3px fade(@black, 20%) inset;
+}
+.cc-runtime{
+  border-radius: 2px;
+  background: #FFFFFF;
+  border: 1px solid @darkwhitey;
+  border-bottom:none;
+  margin-top: 40px;
+  margin-bottom: 100px;
+  border-radius: 2px;
+  -moz-box-shadow:    0px 0px 4px 0px rgba(0,0,0,0.10);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.10);
+  box-shadow:         0px 0px 4px 0px rgba(0,0,0,0.10);
+}
+.cc-runtime_head{
+  border-bottom: 1px solid @darkwhitey;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+  background-color: @whitey;
+  padding: 10px;
+  h3{
+    font-weight: bold;
+    padding-left: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  p {
+    padding-left: 35px;
+  }
+}
+
+.cc-runtime_title {
+  font-size: @text--XL;
+}
+
+.cc-runtime_head_doclink{
+  border-radius: 4px;
+  border: 1px solid @darkwhitey;
+  font-size: @text--S;
+  font-weight: bold;
+  color: #9B9B9B;
+  text-decoration: none;
+  padding: 7px 16px 7px 16px;
+  margin: 10px 10px 0 0;
+  float: right;
+}
+.cc-runtime_head_doclink:hover, .cc-runtime_head_doclink:focus{
+  background-color: @grey;
+  color: white;
+}
+
+.cc-runtime_tech{
+  border-bottom: 1px solid @darkwhitey;
+  padding-left: 35px;
+}
+
+.cc-runtime_tech h4{
+  font-size: @text--M;
+  margin-bottom: 10px;
+}
+.cc-compatibility_nav>ul{
+  list-style: none;
+}
+.cc-compatibility_nav_li{
+  color: @darkgrey;
+  text-decoration: none;
+  margin-top: 3px;
+}
+.cc-compatibility_nav_li:hover{
+  text-decoration: underline;
+}
+.cc-compatibility_nav_li:before{
+  content:"• ";
 }
