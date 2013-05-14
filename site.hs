@@ -91,6 +91,17 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 --------------------------------------------------------------------------------
+-- tour
+--
+    forM_ langs $ \lang ->
+        match (fromGlob $ lang ++ "/tour.html") $ do
+            route langRoute
+            compile $ getResourceBody
+                >>= loadAndApplyTemplate "templates/tour.html" (globalContext lang)
+                >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
+                >>= relativizeUrls
+
+--------------------------------------------------------------------------------
 -- Compile all templates
 --
     match "templates/**" $ compile templateCompiler
