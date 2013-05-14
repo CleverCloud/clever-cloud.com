@@ -134,20 +134,30 @@
   background-size: cover;
 }
 
-.cc_partner {
+.cc_partner, .cc_press {
   background:    @white;
   border-radius: 4px;
   box-shadow:    0 0 0 5px fade(@black, 20%);
   color:         @lightgrey;
   text-shadow:   none;
+  margin-top: 25px;
 }
 .cc_partner__span .cc_partner__item,
-.cc_partner__row {
+.cc_partner__row, 
+.cc_press__span .cc_press__item,
+.cc_press__row {
   border-color: @whitey;
 }
 .cc_partner__span:first-child .cc_partner__item,
-.cc_partner__row:first-child {
+.cc_partner__row:first-child,
+.cc_press__span:first-child .cc_press__item,
+.cc_press__row:first-child {
   border-color: @white;
+}
+
+.cc_press {
+  margin-top: 35px;
+  margin-bottom: 35px;
 }
 
 .cc_people {
