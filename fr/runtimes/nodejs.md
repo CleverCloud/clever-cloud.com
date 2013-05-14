@@ -3,4 +3,4 @@ name: Node JS
 doc: http://doc.clever-cloud.com/node
 ---
 
-Node.js est un framework événementiel pour écrire des applications réseau en JavaScript.
+JavaScript est un langage de programmation de scripts orienté objet à prototype.
