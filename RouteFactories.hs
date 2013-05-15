@@ -58,6 +58,7 @@ makeSinglePages lang =
         match (fromGlob $ lang ++ "/pages/*.md") $ do
         route $ r `composeRoutes` (setExtension "html") `composeRoutes` langRoute
         compile $ pandocCompiler
+            >>= loadAndApplyTemplate "templates/page.html" (globalContext lang)
             >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
             >>= relativizeUrls
 
