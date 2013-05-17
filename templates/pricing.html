@@ -10,21 +10,18 @@
                   </div>
                   <div class="row-fluid">
                      <div class="span16 simulation_princing_place">
-                        <div class="row-fluid">
+                        <div class="row-fluid result">
                            <div class="span3">
-                              <h6>
-                                 $technology$
-                              </h6>
+                              <h6>$technology$</h6>
+                              <h5 class="instance-type"></h5>
                            </div>
                            <div class="span3">
-                              <h6>
-                                 $instNumber$
-                              </h6>
+                              <h6>$instNumber$</h6>
+                              <h5 class="instance-count"></h5>
                            </div>
                            <div class="span3">
-                              <h6>
-                                 $instSize$
-                              </h6>
+                              <h6>$instSize$</h6>
+                              <h5 class="instance-flavor"></h5>
                            </div>
                            <div class="span7">
                               ppp
@@ -39,16 +36,16 @@
                   </div>
                   <div class="row-fluid">
                      <div class="span16">
-                        <input type="checkbox" id="autoscaleout_activation" checked><label for="autoscaleout_activation">$autoscaleoutActivation$</label>
+                        <input type="checkbox" name="autoscalout" id="autoscaleout_activation" checked><label for="autoscaleout_activation">$autoscaleoutActivation$</label>
                      </div>
                   </div>
                   <div class="row-fluid">
                      <div class="span16 inst_size_princing_place">
                         $chooseInstSize$
-                        <div class="btn-group" data-toggle="buttons-radio">
-                        <button type="button" class="btn btn-primary">Left</button>
-                        <button type="button" class="btn btn">Middle</button>
-                        <button type="button" class="btn btn">Right</button>
+                        <div class="btn-group flavors" data-toggle="buttons-radio">
+                          <button type="button" class="btn btn-primary">Left</button>
+                          <button type="button" class="btn btn">Middle</button>
+                          <button type="button" class="btn btn">Right</button>
                         </div>
                      </div>
                   </div>

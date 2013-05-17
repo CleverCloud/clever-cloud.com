@@ -24,6 +24,16 @@ var Pricer = (function() {
          }
       });
       this.addEventListener('pricelist_loaded', _.bind(this.publishTech, this));
+      this.addEventListener('instance.type.onselect', _.bind(function(i) {
+         this.options.elem.find('.result .instance-type').text(i.name);
+         this.displayFlavors(i.flavors);
+      }, this));
+      this.addEventListener('instance.count.onselect', _.bind(function(data) {
+         this.options.elem.find('.result .instance-count').text(Math.round(data.min) + ' to ' + Math.round(data.max));
+      }, this));
+      this.addEventListener('instance.flavor.onselect', _.bind(function(f) {
+         this.options.elem.find('.result .instance-flavor').text(f.name);
+      }, this));
       
       $.ajax({
          url: 'https://console.clever-cloud.com/ccapi/dev/instances',
@@ -47,24 +57,47 @@ var Pricer = (function() {
 
       this.options.elem.find(".range_slider")
          .editRangeSlider({
-         arrows: false,
-         bounds: {
-            min: 1,
-            max: 40
-         },
-         defaultValues: {
-            min: this.current.range_min,
-            max: this.current.range_max
-         }
-      });
+            arrows: false,
+            bounds: {
+               min: 1,
+               max: 40
+            },
+            defaultValues: {
+               min: this.current.range_min,
+               max: this.current.range_max
+            }
+         })
+         .bind("valuesChanged", _.bind(function(e, data) {
+            this.fireEvent('instance.count.onselect', data.values);
+         }, this));
    };
    
    // 
    p.publishTech = function() {
-      this.options.elem.find(".choose_tech_group").append(_.map(this.pricelist, function(i){
-         return '<button type="button" class="btn">'+i.name+'</button>'
-      }).join());
+      _.foldl(this.pricelist, function($ii, i, n) {
+         var $i = $(this.options.$instance(i));
+         $i.click(_.bind(function() {
+            this.fireEvent('instance.type.onselect', i);
+         }, this));
+
+         if(n === 0) {
+            $i.addClass('active');
+            this.fireEvent('instance.type.onselect', i);
+         }
+
+         return $ii.append($i);
+      }, this.options.elem.find(".choose_tech_group"), this);
+
       this.fireEvent('tech_published');
+   };
+   p.displayFlavors = function(ff) {
+      _.foldl(ff, function($ff, f) {
+         var $f = $(this.options.$flavor(f));
+         $f.click(_.bind(function() {
+            this.fireEvent('instance.flavor.onselect', f);
+         }, this));
+         return $ff.append($f);
+      }, this.options.elem.find('.flavors').empty(), this);
    };
    p.recPricelist = function(c) {
       this.pricelist = c;
@@ -80,7 +113,10 @@ var Pricer = (function() {
 // 
 
 $(function() {
-   new Pricer({
-      elem: $('.pricing_evaluation')
+   var p = new Pricer({
+      elem: $('.pricing_evaluation'),
+
+      $flavor:    _.template('<button type="button" class="btn"><h4><%= name %></h4><%= mem %> MB, <%= cpus %> CPUs</button>'),
+      $instance:  _.template('<button type="button" class="btn"><%= name %></button>')
    });
 });
