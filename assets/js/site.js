@@ -48,8 +48,8 @@ var Pricer = (function() {
       this.current = {
          tech: '',
          autoscaleout: true,
-         range_min: 1,
-         range_max: 4,
+         min: 1,
+         max: 4,
          autoscaleup: true,
          instance_name: []
       };
@@ -63,13 +63,14 @@ var Pricer = (function() {
                max: 40
             },
             defaultValues: {
-               min: this.current.range_min,
-               max: this.current.range_max
+               min: this.current.min,
+               max: this.current.max
             }
          })
          .bind("valuesChanged", _.bind(function(e, data) {
             this.fireEvent('instance.count.onselect', data.values);
          }, this));
+      this.fireEvent('instance.count.onselect', this.current);
    };
    
    // 
@@ -91,13 +92,38 @@ var Pricer = (function() {
       this.fireEvent('tech_published');
    };
    p.displayFlavors = function(ff) {
-      _.foldl(ff, function($ff, f) {
-         var $f = $(this.options.$flavor(f));
-         $f.click(_.bind(function() {
-            this.fireEvent('instance.flavor.onselect', f);
-         }, this));
-         return $ff.append($f);
-      }, this.options.elem.find('.flavors').empty(), this);
+      _.chain(ff)
+         .map(function(f) {
+            // Let's consider a flavor is a range of flavor containing itself only
+            return _.extend(f, {
+               minFlavor: f,
+               maxFlavor: f
+            });
+         })
+         .union([{
+            name:       'Autoscalability',
+            minFlavor:  _.min(ff, function(f) { return f.price; }),
+            maxFlavor:  _.max(ff, function(f) { return f.price; })
+         }])
+         .sortBy(function(f) {
+            return f.price || 0;
+         })
+         .foldl(function($ff, f, n) {
+            var $f = $(this.options.$flavor(_.extend(f, {
+               description: (f.mem && f.cpus) ? f.mem + ' MB, ' + f.cpus + ' CPUs' : ' '
+            })));
+            $f.click(_.bind(function() {
+               this.fireEvent('instance.flavor.onselect', f);
+            }, this));
+
+            if(n === 0) {
+               $f.addClass('active');
+               this.fireEvent('instance.flavor.onselect', f);
+            }
+
+            return $ff.append($f);
+         }, this.options.elem.find('.flavors').empty(), this)
+         .value();
    };
    p.recPricelist = function(c) {
       this.pricelist = c;
@@ -116,7 +142,7 @@ $(function() {
    var p = new Pricer({
       elem: $('.pricing_evaluation'),
 
-      $flavor:    _.template('<button type="button" class="btn"><h4><%= name %></h4><%= mem %> MB, <%= cpus %> CPUs</button>'),
-      $instance:  _.template('<button type="button" class="btn"><%= name %></button>')
+      $flavor:    _.template('<button type="button" class="btn flavor"><h4><%= name %></h4><%= description %></button>'),
+      $instance:  _.template('<button type="button" class="btn instance"><%= name %></button>')
    });
 });
