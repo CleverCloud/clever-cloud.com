@@ -3,10 +3,6 @@ $(function() {
       .carousel();
 });
 
-$(function() {;
-});
-
-
 var Pricer = (function() {
 
    var W = function(o) {
@@ -72,7 +68,7 @@ var Pricer = (function() {
          }, this));
       this.fireEvent('instance.count.onselect', this.current);
    };
-   
+
    // 
    p.publishTech = function() {
       _.foldl(this.pricelist, function($ii, i, n) {
