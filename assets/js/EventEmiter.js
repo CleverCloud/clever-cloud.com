@@ -202,35 +202,17 @@ var EventProducer = (function () {
         this._e4js.eventsfollow = [];
         if (this._e4js.onces[eventName] !== undefined) {
             for (var ee in this._e4js.onces[eventName]) {
-                try {
-                    this._e4js.onces[eventName][ee](params);
-                }
-                catch (e) {
-                    var log = require('logger4js');
-                    log.error('error when once ' + eventName + ' fire ', e);
-                }
-                this._e4js.onces[eventName].splice(ee, 1);
+               this._e4js.onces[eventName][ee](params);
+               this._e4js.onces[eventName].splice(ee, 1);
             }
         }
         if (this._e4js.events[eventName] !== undefined) {
             for (var ee in this._e4js.events[eventName]) {
-                try {
-                    this._e4js.events[eventName][ee](params);
-                }
-                catch (e) {
-                    var log = require('logger4js');
-                    log.error('error when event ' + eventName + ' fire ', e);
-                }
+               this._e4js.events[eventName][ee](params);
             }
         }
         for (var ee in this._e4js.allevents) {
-            try {
-                this._e4js.allevents[ee](eventName, params);
-            }
-            catch (e) {
-                var log = require('logger4js');
-                log.error('error when allevents ' + eventName + ' fire ', e);
-            }
+            this._e4js.allevents[ee](eventName, params);
         }
         for (var ee in this._e4js.eventsfollow) {
             this.fireEvent(this._e4js.eventsfollow[ee], params);
