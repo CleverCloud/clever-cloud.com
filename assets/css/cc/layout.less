@@ -29,14 +29,28 @@
   padding: 0;
 }
 
-.cc-instances {
+.cc-btn-group-big {
   display:        block;
   margin-bottom:  70px;
 
-  .cc-btn-instance {
+  .cc-btn-big {
     font-size:    14px;
     line-height:  18px;
     padding:      25px 0;
+
+    .cc-btn-big__title {
+      font-size:    14px;
+      line-height:  23px;
+      margin:       0;
+    }
+    .cc-btn-big__details {
+      font-size:    12px;
+      line-height:  15px;
+      margin-top:   2px;
+    }
+  }
+  .cc-btn-big.cc-btn-big-with-title {
+    padding:  14px 0;
   }
 }
 
@@ -186,6 +200,22 @@
 
 .cc-pricing__content {
   padding:  10px;
+
+  .cc-pricing__autoscale {
+    font-size:    14px;
+    line-height:  18px;
+  }
+
+  .cc-pricing__flavor-label {
+    display:  inline-block;
+    float:    left;
+    width:    20%;
+  }
+
+  .cc-pricing__flavors {
+    display:  inline-block;
+    width:    80%;
+  }
 }
 
 .cc_reference__item {

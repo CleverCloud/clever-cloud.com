@@ -18,8 +18,8 @@
   font-family: @main-font;
 }
 
-.cc-instances {
-  .cc-btn-instance {
+.cc-btn-group-big {
+  .cc-btn-big {
     background-color: #f8f8f8;
     border:           1px solid #dcdcdc;
     color:            #9b9b9b;
@@ -35,9 +35,13 @@
     -webkit-box-shadow: 0px 1px 0px 0px #ffffff, inset 0px 2px 0px 0px #ffffff, inset 0px -2px 0px 0px #ededed;
        -moz-box-shadow: 0px 1px 0px 0px #ffffff, inset 0px 2px 0px 0px #ffffff, inset 0px -2px 0px 0px #ededed;
             box-shadow: 0px 1px 0px 0px #ffffff, inset 0px 2px 0px 0px #ffffff, inset 0px -2px 0px 0px #ededed;
+
+    .cc-btn-big__details {
+      font-weight:  normal;
+    }
   }
 
-  .cc-btn-instance.active {
+  .cc-btn-big.active {
     color:  #4a4a4a;
 
     background-image: -o-linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #EAEAEA 100%);
@@ -229,6 +233,10 @@
 .cc-pricing__content {
   border:     1px solid #dcdcdc;
   border-top: none;
+  color:      #707070;
+
+  .cc-pricing__autoscale {
+  }
 }
 
 .cc_service__title {

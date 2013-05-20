@@ -21,19 +21,15 @@
                      </div>
                   </div>
                   <div class="cc-pricing__content">
-                    <div class="btn-group instances cc-instances" data-toggle="buttons-radio"> </div>
+                    <div class="btn-group instances cc-btn-group-big" data-toggle="buttons-radio"> </div>
                     <div class="cc-sliders">
                        <div class="simple_slider" style="display:none"></div>
                        <div class="range_slider"></div>
                     </div>
-                    <div><input type="checkbox" name="autoscalout" class="autoscaleout" id="autoscaleout_activation" checked><label for="autoscaleout_activation">$autoscaleoutActivation$</label></div>
+                    <label><input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked> $autoscaleoutActivation$</label>
                     <div>
-                      $chooseInstSize$
-                      <div class="btn-group flavors" data-toggle="buttons-radio">
-                        <button type="button" class="btn btn-primary">Left</button>
-                        <button type="button" class="btn btn">Middle</button>
-                        <button type="button" class="btn btn">Right</button>
-                      </div>
+                      <div class="cc-pricing__flavor-label">$chooseInstSize$ :</div>
+                      <div class="cc-pricing__flavors btn-group flavors cc-btn-group-big" data-toggle="buttons-radio"></div>
                     </div>
                   </div>
                </div>

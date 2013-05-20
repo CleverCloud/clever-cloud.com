@@ -143,10 +143,11 @@ var Pricer = (function() {
          .sortBy(function(f) {
             return f.price || 0;
          })
-         .foldl(function($ff, f, n) {
+         .foldl(function($ff, f, n, ff) {
             var $f = $(this.options.$flavor(_.extend(f, {
                description: (f.mem && f.cpus) ? f.mem + ' MB, ' + f.cpus + ' CPUs' : ' '
             })));
+            $f.css('width', (100 / ff.length) + '%');
             $f.click(_.bind(function() {
                this.fireEvent('instance.flavor.onselect', f);
             }, this));
@@ -211,7 +212,7 @@ $(function() {
    var p = new Pricer({
       elem: $('.cc-pricing'),
 
-      $flavor:    _.template('<button type="button" class="btn flavor"><h4><%= name %></h4><%= description %></button>'),
-      $instance:  _.template('<button type="button" class="btn instance cc-btn-instance"><%= name %></button>')
+      $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title"><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= description %></div></button>'),
+      $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= name %></button>')
    });
 });
