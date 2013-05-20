@@ -159,8 +159,8 @@ var Pricer = (function() {
    };
 
    p.oncount = function(c) {
-      this.minInstances = c.min;
-      this.maxInstances = c.max;
+      this.minInstances = Math.round(c.min);
+      this.maxInstances = Math.round(c.max);
 
       this.options.elem.find('.result .instance-count').text(Math.round(c.min) + ' to ' + Math.round(c.max));
       this.estimate();
@@ -169,8 +169,8 @@ var Pricer = (function() {
    /* Price estimation */
    p.estimate = function() {
       if(this.price && this.flavor && this.minInstances && this.maxInstances) {
-         var min = Math.round(750 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
-         var max = Math.round(750 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
+         var min = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
+         var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
 
          this.options.elem.find('.result .price').text(
             (min == max) ? min + '€' : min + '€/' + max + '€'
