@@ -112,6 +112,7 @@ var Pricer = (function() {
    p.oninstances = function(ii) {
       _.foldl(ii, function($ii, i, n) {
          var $i = $(this.options.$instance(i));
+         $i.css('width', (100 / ii.length) + '%');
          $i.click(_.bind(function() {
             this.fireEvent('instance.type.onselect', i);
          }, this));
@@ -211,6 +212,6 @@ $(function() {
       elem: $('.pricing_evaluation'),
 
       $flavor:    _.template('<button type="button" class="btn flavor"><h4><%= name %></h4><%= description %></button>'),
-      $instance:  _.template('<button type="button" class="btn instance"><%= name %></button>')
+      $instance:  _.template('<button type="button" class="btn instance cc-btn-instance"><%= name %></button>')
    });
 });
