@@ -1,6 +1,6 @@
 ---
 name: SBT
-runtimes: scala, java
+runtimes: scala
 icon: sbt.png
 ---
 
