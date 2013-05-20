@@ -175,7 +175,7 @@ var Pricer = (function() {
    p.onflavor = function(f) {
       this.flavor = f;
 
-      this.options.elem.find('.result .instance-flavor').text(f.name);
+      this.options.elem.find('.result .instance-flavor').text(f.price ? f.name : f.name + ' (' + f.minFlavor.name + ' to ' + f.maxFlavor.name + ')');
       this.estimate();
    };
 
@@ -183,7 +183,7 @@ var Pricer = (function() {
       this.minInstances = Math.round(c.min);
       this.maxInstances = Math.round(c.max);
 
-      this.options.elem.find('.result .instance-count').text(this.minInstances == this.maxInstances ? this.minInstances : this.minInstances + ' to ' + this.maxInstances);
+      this.options.elem.find('.result .instance-count').text(this.minInstances == this.maxInstances ? this.minInstances : 'Autoscalability (' + this.minInstances + ' to ' + this.maxInstances + ')');
       this.estimate();
    };
 
@@ -193,8 +193,12 @@ var Pricer = (function() {
          var min = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
          var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
 
+         var f = function(n) {
+            return (n*100).toString().replace(/(..)$/, '.$1');
+         };
+
          this.options.elem.find('.result .price').text(
-            (min == max) ? min + '€' : min + '€/' + max + '€'
+            (min == max) ? f(min) + '€' : f(min) + '€ to ' + f(max) + '€'
          );
       }
    };
