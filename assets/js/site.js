@@ -62,6 +62,7 @@ var Pricer = (function() {
       this.options.elem.find(".range_slider")
          .editRangeSlider({
             arrows: false,
+            step:   1,
             bounds: {
                min: 1,
                max: 40
@@ -74,6 +75,26 @@ var Pricer = (function() {
          .bind("valuesChanged", _.bind(function(e, data) {
             this.fireEvent('instance.count.onselect', data.values);
          }, this));
+
+      /* Configure the simple slider */
+      this.options.elem.find('.simple_slider')
+         .slider({
+            step: 1,
+            min:  1,
+            max:  40,
+            stop: _.bind(function(e, data) {
+               this.fireEvent('instance.count.onselect', {
+                  min: data.value,
+                  max: data.value
+               });
+            }, this)
+         });
+
+      /* Change slider, depending on checkbox value */
+      this.options.elem.find('.autoscaleout').change(_.bind(function() {
+         this.options.elem.find('.simple_slider').toggle().slider('option', 'value', this.minInstances);
+         this.options.elem.find('.range_slider').toggle().editRangeSlider('values', this.minInstances, this.minInstances);
+      }, this));
 
       this.fireEvent('instance.count.onselect', {
          min: this.minInstances,
@@ -91,6 +112,7 @@ var Pricer = (function() {
    p.oninstances = function(ii) {
       _.foldl(ii, function($ii, i, n) {
          var $i = $(this.options.$instance(i));
+         $i.css('width', (100 / ii.length) + '%');
          $i.click(_.bind(function() {
             this.fireEvent('instance.type.onselect', i);
          }, this));
@@ -101,7 +123,7 @@ var Pricer = (function() {
          }
 
          return $ii.append($i);
-      }, this.options.elem.find(".choose_tech_group").empty(), this);
+      }, this.options.elem.find(".instances").empty(), this);
    };
 
    p.onflavors = function(ff) {
@@ -154,7 +176,7 @@ var Pricer = (function() {
    p.onflavor = function(f) {
       this.flavor = f;
 
-      this.options.elem.find('.result .instance-flavor').text(f.name);
+      this.options.elem.find('.result .instance-flavor').text(f.price ? f.name : f.name + ' (' + f.minFlavor.name + ' to ' + f.maxFlavor.name + ')');
       this.estimate();
    };
 
@@ -162,7 +184,7 @@ var Pricer = (function() {
       this.minInstances = Math.round(c.min);
       this.maxInstances = Math.round(c.max);
 
-      this.options.elem.find('.result .instance-count').text(Math.round(c.min) + ' to ' + Math.round(c.max));
+      this.options.elem.find('.result .instance-count').text(this.minInstances == this.maxInstances ? this.minInstances : 'Autoscalability (' + this.minInstances + ' to ' + this.maxInstances + ')');
       this.estimate();
    };
 
@@ -172,8 +194,12 @@ var Pricer = (function() {
          var min = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
          var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
 
+         var f = function(n) {
+            return (n*100).toString().replace(/(..)$/, '.$1');
+         };
+
          this.options.elem.find('.result .price').text(
-            (min == max) ? min + '€' : min + '€/' + max + '€'
+            (min == max) ? f(min) + '€' : f(min) + '€ to ' + f(max) + '€'
          );
       }
    };
@@ -183,9 +209,9 @@ var Pricer = (function() {
 
 $(function() {
    var p = new Pricer({
-      elem: $('.pricing_evaluation'),
+      elem: $('.cc-pricing'),
 
       $flavor:    _.template('<button type="button" class="btn flavor"><h4><%= name %></h4><%= description %></button>'),
-      $instance:  _.template('<button type="button" class="btn instance"><%= name %></button>')
+      $instance:  _.template('<button type="button" class="btn instance cc-btn-instance"><%= name %></button>')
    });
 });
