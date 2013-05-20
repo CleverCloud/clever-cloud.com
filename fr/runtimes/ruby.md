@@ -1,5 +1,5 @@
 ---
-name: Ruby
+name: Ruby (bientôt)
 doc: http://doc.clever-cloud.com/
 ---
 
