@@ -62,10 +62,20 @@ main = hakyll $ do
 -- Runtimes
 --
     forM_ langs makeRuntimePages
+    forM_ langs makeServicePages
 
     forM_ langs $ \lang ->
         match (fromGlob $ lang ++ "/techs/*.md") $ do
         compile $ pandocCompiler
+
+--------------------------------------------------------------------------------
+-- Services
+--
+    --forM_ langs makeServicePages
+
+    --forM_ langs $ \lang ->
+      --  match (fromGlob $ lang ++ "/techs/*.md") $ do
+        --compile $ pandocCompiler
 
 --------------------------------------------------------------------------------
 -- Index
@@ -98,6 +108,17 @@ main = hakyll $ do
             route langRoute
             compile $ getResourceBody
                 >>= loadAndApplyTemplate "templates/tour.html" (globalContext lang)
+                >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
+                >>= relativizeUrls
+
+--------------------------------------------------------------------------------
+-- compatibility
+--
+    forM_ langs $ \lang ->
+        match (fromGlob $ lang ++ "/compatibility.html") $ do
+            route langRoute
+            compile $ getResourceBody
+                >>= loadAndApplyTemplate "templates/compatibility.html" (globalContext lang)
                 >>= loadAndApplyTemplate "templates/default.html" (globalContext lang)
                 >>= relativizeUrls
 
