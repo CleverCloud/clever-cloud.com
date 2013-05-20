@@ -374,12 +374,12 @@
   }
 }
 .cc_workflow__feature__item {
-  .cc_linear-gradient(bottom, fade(@whitey, 0), fade(@whitey, 70%));
+  /*.cc_linear-gradient(bottom, fade(@whitey, 0), fade(@whitey, 70%));*/
   box-shadow:     0 -1px 0 @lightgrey inset,
-                  0 1px 0 @whitey inset;
+                  0 1px 0 fade(@black, 0.4) inset;
   font-weight:    bold;
   text-shadow:    @whitey;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   &:last-child {
     border-radius: 0 0 4px 4px;
   }
@@ -395,7 +395,7 @@
 .cc_workflow__item__desc {
   border-radius: 4px 4px 0 0;
   box-shadow:    0 -1px 0 @lightgrey inset,
-                 0 0 0 1px @whitey inset;
+                 0 1px 0 fade(@black, 0.4) inset;
 }
 .cc_workflow__item__title {
   text-align: center;
@@ -536,7 +536,6 @@
 }
 
 .cc_tour__block3 {
-  height: 743px;
   background-image: url("/assets/img/tour/block3-bg.jpg");
   background-repeat: none;
   background-size: 100% 100%;
