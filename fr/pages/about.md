@@ -1,4 +1,4 @@
-## Simplifier et rationaliser l'hébergement web
+### La société
 
 Clever Cloud est une startup basée à Nantes, créée en
 2010\. La plateforme d'hébergement créée par Clever Cloud est issue de trois années de recherches et développements, et supporte les langages Java, Scala, Ruby et PHP.
@@ -11,7 +11,8 @@ entreprises de l'industrie du jeu vidéo.
 
 
 
-## Contactez-nous
+
+### Contactez-nous
 <div class="row">
   <div class="span4">
     <h4>Email</h4>
