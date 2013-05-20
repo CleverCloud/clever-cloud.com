@@ -76,6 +76,26 @@ var Pricer = (function() {
             this.fireEvent('instance.count.onselect', data.values);
          }, this));
 
+      /* Configure the simple slider */
+      this.options.elem.find('.simple_slider')
+         .slider({
+            step: 1,
+            min:  1,
+            max:  40,
+            stop: _.bind(function(e, data) {
+               this.fireEvent('instance.count.onselect', {
+                  min: data.value,
+                  max: data.value
+               });
+            }, this)
+         });
+
+      /* Change slider, depending on checkbox value */
+      this.options.elem.find('.autoscaleout').change(_.bind(function() {
+         this.options.elem.find('.simple_slider').toggle().slider('option', 'value', this.minInstances);
+         this.options.elem.find('.range_slider').toggle().editRangeSlider('values', this.minInstances, this.minInstances);
+      }, this));
+
       this.fireEvent('instance.count.onselect', {
          min: this.minInstances,
          max: this.maxInstances
@@ -163,7 +183,7 @@ var Pricer = (function() {
       this.minInstances = Math.round(c.min);
       this.maxInstances = Math.round(c.max);
 
-      this.options.elem.find('.result .instance-count').text(Math.round(c.min) + ' to ' + Math.round(c.max));
+      this.options.elem.find('.result .instance-count').text(this.minInstances == this.maxInstances ? this.minInstances : this.minInstances + ' to ' + this.maxInstances);
       this.estimate();
    };
 
