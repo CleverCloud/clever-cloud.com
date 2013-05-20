@@ -62,6 +62,7 @@ var Pricer = (function() {
       this.options.elem.find(".range_slider")
          .editRangeSlider({
             arrows: false,
+            step:   1,
             bounds: {
                min: 1,
                max: 40
