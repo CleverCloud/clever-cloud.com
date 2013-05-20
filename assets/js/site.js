@@ -123,7 +123,7 @@ var Pricer = (function() {
          }
 
          return $ii.append($i);
-      }, this.options.elem.find(".choose_tech_group").empty(), this);
+      }, this.options.elem.find(".instances").empty(), this);
    };
 
    p.onflavors = function(ff) {
@@ -209,7 +209,7 @@ var Pricer = (function() {
 
 $(function() {
    var p = new Pricer({
-      elem: $('.pricing_evaluation'),
+      elem: $('.cc-pricing'),
 
       $flavor:    _.template('<button type="button" class="btn flavor"><h4><%= name %></h4><%= description %></button>'),
       $instance:  _.template('<button type="button" class="btn instance cc-btn-instance"><%= name %></button>')

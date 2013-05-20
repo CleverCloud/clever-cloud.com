@@ -1,55 +1,40 @@
       <div class="container cc-container">
-         <div class="pricing_evaluation">
+         <div class="cc-pricing">
             <div class="row-fluid">
                <div class="span12 main_pricing_place">
-                  <div class="row-fluid">
-                     <div class="span16 tech_choice_princing_place">
-                        <div class="btn-group choose_tech_group cc-instances" data-toggle="buttons-radio">
-                        </div>
+                  <div class="result cc-pricing-bar">
+                     <div class="cc-pricing-bar__item cc-pricing-bar__item-little">
+                        <div class="cc-pricing-bar__label">$technology$ :</div>
+                        <h5 class="cc-pricing-bar__value instance-type"></h5>
+                     </div>
+                     <div class="cc-pricing-bar__item cc-pricing-bar__item-little">
+                        <div class="cc-pricing-bar__label">$instNumber$ :</div>
+                        <h5 class="cc-pricing-bar__value instance-count"></h5>
+                     </div>
+                     <div class="cc-pricing-bar__item cc-pricing-bar__item-little">
+                        <div class="cc-pricing-bar__label">$instSize$ :</div>
+                        <h5 class="cc-pricing-bar__value instance-flavor"></h5>
+                     </div>
+                     <div class="cc-pricing-bar__item cc-pricing-bar__item-big">
+                        <div class="cc-pricing-bar__label">$estimatedPrice$ :</div>
+                        <h5 class="cc-pricing-bar__value price"></h5>
                      </div>
                   </div>
-                  <div class="row-fluid">
-                     <div class="span16 simulation_princing_place">
-                        <div class="row-fluid result">
-                           <div class="span3">
-                              <h6>$technology$</h6>
-                              <h5 class="instance-type"></h5>
-                           </div>
-                           <div class="span3">
-                              <h6>$instNumber$</h6>
-                              <h5 class="instance-count"></h5>
-                           </div>
-                           <div class="span3">
-                              <h6>$instSize$</h6>
-                              <h5 class="instance-flavor"></h5>
-                           </div>
-                           <div class="span7">
-                              <h6>$estimatedPrice$</h6>
-                              <h5 class="price"></h5>
-                           </div>
-                        </div>
-                     </div>
-                  </div>
-                  <div class="row-fluid inst_number_princing_place">
-                     <div class="span16">
-                        <div class="simple_slider" style="display:none"></div>
-                        <div class="range_slider"></div>
-                     </div>
-                  </div>
-                  <div class="row-fluid">
-                     <div class="span16">
-                        <input type="checkbox" name="autoscalout" class="autoscaleout" id="autoscaleout_activation" checked><label for="autoscaleout_activation">$autoscaleoutActivation$</label>
-                     </div>
-                  </div>
-                  <div class="row-fluid">
-                     <div class="span16 inst_size_princing_place">
-                        $chooseInstSize$
-                        <div class="btn-group flavors" data-toggle="buttons-radio">
-                          <button type="button" class="btn btn-primary">Left</button>
-                          <button type="button" class="btn btn">Middle</button>
-                          <button type="button" class="btn btn">Right</button>
-                        </div>
-                     </div>
+                  <div class="cc-pricing__content">
+                    <div class="btn-group instances cc-instances" data-toggle="buttons-radio"> </div>
+                    <div class="cc-sliders">
+                       <div class="simple_slider" style="display:none"></div>
+                       <div class="range_slider"></div>
+                    </div>
+                    <div><input type="checkbox" name="autoscalout" class="autoscaleout" id="autoscaleout_activation" checked><label for="autoscaleout_activation">$autoscaleoutActivation$</label></div>
+                    <div>
+                      $chooseInstSize$
+                      <div class="btn-group flavors" data-toggle="buttons-radio">
+                        <button type="button" class="btn btn-primary">Left</button>
+                        <button type="button" class="btn btn">Middle</button>
+                        <button type="button" class="btn btn">Right</button>
+                      </div>
+                    </div>
                   </div>
                </div>
                <div class="span4 help_pricing_place">
