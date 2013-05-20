@@ -216,3 +216,13 @@ $(function() {
       $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= name %></button>')
    });
 });
+
+// Helper
+$('.cc-pricing__flavor-label').hover(
+  function () {
+    $('#cc-pricing__flavor-label__help').fadeIn();
+  }, 
+  function () {
+    $('#cc-pricing__flavor-label__help').fadeOut();
+  }
+);
