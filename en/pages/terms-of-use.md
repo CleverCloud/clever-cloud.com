@@ -1,102 +1,101 @@
-### Généralités
+### General
 
-Clever Cloud SAS (ci-après désigné par “Clever Cloud”), éditeur du site internet clever-cloud.com, propose des offres de service PaaS pour héberger, déployer, tester et exécuter les applications et sites web de toute personne physique ou morale (ci-après désignée par “Client”) souhaitant en bénéficier.
+Clever Cloud SAS (hereinafter referred to as "CleverCloud"), publisher of the website clever-cloud.com, offers PaaS service to host, deploy, test and implement applications and websites of any person or entity (hereinafter referred to as "Client") wish to use. 
 
-Pour bénéficier de ces offres de service, le client doit au préalable prendre connaissance des présentes Conditions Générales d’Utilisation (ci-après désignées “CGU”) ainsi que des Conditions Générales de Vente (ci-après désignées “CGV”) accessibles sur le site de Clever Cloud et déclarer qu’il les a expressément acceptées.
+To take advantage of these offers of service, the customer must first be aware of these Terms & Conditions (hereinafter referred to as "Terms") and the Terms and Conditions (hereinafter referred to as "GTC") available on the website Clever Cloud and declare that it has expressly accepted. 
 
-Les présentes CGU peuvent être modifiées à tout moment sans que les utilisateurs en soient notifiés au préalable / avec notification aux utilisateurs au préalable. (si notif) Il convient dans ces conditions de consulter régulièrement les CGU.
+These Terms may be changed at any time without that users are notified in advance. Under these conditions should regularly check the Terms of Use.
 
 ---
 
 ## Article 1 : Définitions
 
-### Energie informatique
-L’énergie informatique est l’ensemble des ressources consommées lors de l'exécution d’une application.
+### Computer Energy
+Computer Energy&nbsp;: The computer is all energy resources consumed during the execution of an application.
 
 ### Drop
-La drop est l’unité de mesure de l’énergie informatique chez Clever Cloud.
+Drop:The drop is the unit of measurement computing power at Clever Cloud.
 
-### Cloud Computing (fr: “nuage”)
-Concept de dématérialisation des serveurs informatiques pour un stockage des données en ligne. Ces données sont stockées sur des serveurs distants et l’ensemble des ressources informatiques est ainsi virtualisé.
+### Cloud Computing
+Concept of dematerialization of servers for data storage online. These data are stored on remote servers and all resources are virtualized as well.
 
-### Scalabilité
-La scalabilité est la capacité à absorber les pics d’activités comme les creux en maintenant toujours le même niveau de service et de performance.
+### Scalability
+Scalability is the ability to absorb quick expand of resources consumption still maintaining the same level of service and performance.
 
-### Serveur
-Un serveur est un “super-ordinateur” qui exécute des opérations commandés par d’autres ordinateurs et qui est donc capable de recevoir les données de ces mêmes ordinateurs et de les stocker.
+### Server
+A server is a "super-computer" that performs operations controlled by other computers and is therefore capable of receiving data from these same computers and store them.
 
 ### Application
-Une application permet de réaliser une ou plusieurs tâches.
+An application can perform one or more tasks.
 
 ### PaaS (Platform as a Service)
-La PaaS est un modèle de cloud computing dans lequel l’entreprise cliente ne gère que le maintien de ses applications. La plateforme est entièrement gérées par le fournisseur cloud.
+PaaS is the cloud computing model in which the client company only handles the maintenance of its applications. The platform is fully managed by the provider cloud.
 
-### Dashboard (fr: tableau de bord)
-Le dashboard de l’offre Clever Cloud est la console de pilotage en ligne permettant de gérer la consommation de drops.
+### Dashboard
+The dashboard provides Clever Cloud is the control console to manage online consumption of drops.
 
-## Article 2 : Objet
+## Article 2 : Purpose
 
-Le présent contrat a pour objet de déterminer les modalités de fourniture et d’utilisation de l’ensemble des services proposés par Clever Cloud pour son utilisation par le client.
+The goal of this contract is designed to determine the terms of supply and use of all services offered by Clever Cloud for use by the customer.
 
-## Article 3 : Description du service
+## Article 3 : Service Description
 
-Clever Cloud propose des offres PaaS pour héberger, déployer, tester et exécuter les applications et sites web du client.
+Clever Cloud offers PaaS to host, deploy, test and implement applications and customer websites.  
 
-L’ensemble des offres figure sur le site, à l’adresse suivante : http://www.clever-cloud.com/fr_FR/offre.html
+All Offers listed on the site, at the following address: http://www.clever-cloud.com/en/the-cloud/solution/controlled-consumption.html
 
-## Article 4 : Propriété intellectuelle
+## Article 4 : Intellectual Property
 
-Tous les contenus de Clever Cloud sont la propriété exclusive de la dite société et doivent être utilisés avec autorisation expresse du titulaire.
+All contents of Clever Cloud are the exclusive property of the said society and should be used with express permission of the owner. 
 
-Sont ainsi protégés de façon non limitative tout contenu éditorial, la charte graphique, le logo, le nom, la marque et le nom de domaine de Clever Cloud.
+Thus are protected without limitation all editorial content, graphics, logo, name, mark and the domain name of Clever Cloud. 
 
-Toute représentation, reproduction, redistribution d’un contenu de Clever Cloud, même partielle, à des fins commerciales, est strictement interdite sous peine de poursuites judiciaires.
+Any representation, reproduction, redistribution of content of Clever Cloud, even partial, for commercial purposes is strictly prohibited under penalty of prosecution. 
 
-## Article 5 : Obligations et responsabilités de Clever Cloud
+## Article 5 : Obligations and responsibilities of Clever Cloud
 
-Clever Cloud s’engage à assurer le bon fonctionnement des offres de services proposées à l’article 3 et est responsable de tout dysfonctionnement de son propre fait.
+Exceptionally Clever Cloud liable if the execution is interrupted service offerings or disturbed, totally or partially, by an outside independent of the will of the parties as a failure of the Internet, as Clever Cloud can not control.  
 
-Par exception, Clever Cloud décline toute responsabilité si l’exécution des offres de service est interrompue ou perturbée, totalement ou partiellement, par un élément extérieur indépendant de la volonté des parties telle une défaillance du réseau internet, que Clever Cloud ne contrôle pas.
+Exceptionally Clever Cloud liable if the execution of service offerings is interrupted or disrupted, totally or partially, by an outside independent will of the parties as a case of force majeure. If the force majeure lasts longer than one month, the contract may be terminated by either party, under the conditions of termination set out in Article 9.  
 
-Par exception, Clever Cloud décline toute responsabilité si l’exécution des offres de service est interrompue ou perturbée, totalement ou partiellement, par un élément extérieur indépendant de la volonté des parties tel un cas de force majeure. Si le cas de force majeure dure plus d’1 mois, le contrat peut être résilié par l’une des deux parties, selon les conditions de résiliation énoncées à l’article X.
+Exceptionally Clever Cloud disclaims any liability for failure from the client to the obligations set out in Article 6 of the present Terms.
 
-Par exception, Clever Cloud décline toute responsabilité en cas de manquement de la part du client aux obligations énoncées à l’article 6 de ces présentes CGU.
+## Article 6 : Obligations and responsibilities of the client
 
-## Article 6 : Obligations et responsabilités du client
+The client undertakes to provide complete and accurate personal information when registering to Clever Cloud. The customer also agrees to update their personal information whenever necessary.  
 
-Le client s’engage à communiquer des informations personnelles exactes et complètes lors de son inscription à Clever Cloud. Le client s’engage également à mettre à jour ses informations personnelles lorsque cela est nécessaire.
-Le client est responsable de la véracité et de l’exactitude des informations personnelles qu’il partage avec Clever Cloud.
+The customer is responsible for the veracity and accuracy of personal information shared with Clever Cloud.  
 
-Le client s’engage à utiliser les services de Clever Cloud de manière et à des fins strictement licites, dans le respect des textes en vigueur. Le client s’abstient ainsi de publier des contenus à caractère pédo-pornographique, incitant à la haine raciale, au suicide, à la provocation de crimes, de délits et à la négation des crimes contre l’humanité. Le client s’abstient de publier tout contenu à caractère violent ou pornographique sans interdire de façon explicite l’accès aux mineurs.
-Le client est responsable des contenus qu’il publie.
+Customer agrees to use the services Clever Cloud manner and strictly lawful purposes, in compliance with applicable laws. The customer fails to publish content and nature of child pornography, inciting racial hatred, suicide, provoking crimes, offenses and the denial of crimes against humanity. The customer shall not publish any content without violent or pornographic explicitly prohibit access to minors.  
 
-Le client s’engage et est responsable du paiement des offres de services auquel il souscrit, dans les délais impartis.
+Customers are responsible for the content they publish.
 
-Le client s’engage à prendre toutes les précautions nécessaires pour protéger le caractère personnel et strictement confidentiel de ses identifiants. Le client s’engage ainsi à choisir un mot de passe avec un niveau suffisant de sécurité et de ne pas le divulguer à un tiers.
-Le client est responsable du caractère personnel et confidentiel de ses identifiants.
+The customer agrees and is responsible for payment of service offerings which he agreed in a timely manner. 
 
-## Article 7 : Données personnelles
-Si les données transmises aux fins d’utilisation des services applicatifs comportent des données à caractère personnel, Clever Cloud garantit au client qu’il a procédé à l’ensemble des obligations qui lui incombent au terme de la loi du 6 janvier 1978 dite « Informatique & Libertés », et qu’il a informé le client concerné de l’usage qui est fait des dites données personnelles. A ce titre, Clever Cloud garantit le client contre tout recours, plainte ou réclamation émanant d’une personne dont les données personnelles seraient reproduites et hébergées via le service applicatif.
+The client undertakes to take all necessary precautions to protect personal and strictly confidential its identifiers. The customer agrees and choose a password with a sufficient level of security and not disclose it to any third parties.  
 
-Clever Cloud s’engage à informer le client de la localisation des données et plus généralement, à communiquer toutes les informations utiles et nécessaires pour réaliser les déclarations. Le client, en tant que responsable du traitement s’engage à conclure le standard contractuel établi par une décision de la Commission Européenne du 5 février 2010 et à obtenir l’autorisation adéquate auprès de la CNIL.
+Customers are responsible personal and confidential nature of its identifiers.
 
+## Article 7 : Personal data
+If the data transmitted for use application services include personal data, Clever Cloud ensures that the customer has completed all its obligations in terms of the french law of 6 January 1978 "Computers & Freedom" and he has informed the client concerned the use made of the said personal data. As such, Clever Cloud guarantees the customer against any action, claim or complaint made   by a person whose personal data are replicated and hosted via the application service.  
 
-## Article 8 : Modalités d’ouverture de compte
+Clever Cloud undertakes to inform the client of the location of data and generally, to provide all the relevant information necessary to make the statements. The client, as the controller is committed to conclude the contract standard established by a decision of the European Commission on 5 February 2010 and obtain proper authorization from the CNIL (french organization).
 
-Toute utilisation des services de Clever Cloud est soumise à l’ouverture d’un compte.
+## Article 8 : Conditions for opening account
 
-La création dudit compte est gratuite.
+Any use of Clever Cloud services is subject to the opening of an account. 
 
-Le client remplit le formulaire d’inscription et crée des identifiants, dans le respect de l’article 6 des présentes CGU. En cas d’oubli des identifiants, ces derniers sont envoyés par e-mail à l’adresse indiquée par le client lors de son inscription, après demande expresse de sa part.
+Creation of the account is free.
+The customer completes the form and creates identifiers, in compliance with Article 6 of these Terms. If you forget identifiers, they are sent by e-mail to the address indicated by the client when registering after its specific application.
 
-Le compte est activé suite à l’envoi d’un e-mail à l’adresse mail indiquée par le client lors de son inscription.
+The account is activated after sending an email to the email address specified by the customer during registration.
 
-## Article 9 : Modalités de suspension, suppression ou résiliation de compte
+## Article 9 : Method of suspension, cancellation or termination of account
 
-Clever Cloud se réserve le droit de suspendre ou supprimer un compte qui ne respecte pas les présentes CGU et CGV.
+Clever Cloud reserves the right to suspend or delete an account that does not comply with these Terms and Conditions.
 
-Le client dispose d’un droit de résiliation de son compte, après demande expresse de sa part à l’adresse suivante : commercial@clever-cloud.com
+The customer has a right to terminate their account after its specific application to the following address: commercial@clever-cloud.com
 
-## Article 10 : Acceptation des CGU
+## Article 10 : Acceptance of Terms
 
-Le client déclare avoir pris connaissance et accepté expressément les présentes CGU.
+The customer declares to have read and expressly accepted these Terms..
