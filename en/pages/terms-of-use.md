@@ -98,4 +98,4 @@ The customer has a right to terminate their account after its specific applicati
 
 ## Article 10 : Acceptance of Terms
 
-The customer declares to have read and expressly accepted these Terms..
+The customer declares to have read and expressly accepted these Terms.
