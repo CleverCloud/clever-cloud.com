@@ -217,12 +217,22 @@ $(function() {
    });
 });
 
-// Helper
+// Helper flavors
 $('.cc-pricing__flavor-label').hover(
   function () {
     $('#cc-pricing__flavor-label__help').fadeIn();
   }, 
   function () {
     $('#cc-pricing__flavor-label__help').fadeOut();
+  }
+);
+
+// Helper autoscale
+$('.cc-pricing__autoscaleout').hover(
+  function () {
+    $('#cc-pricing__autoscaleout__help').fadeIn();
+  }, 
+  function () {
+    $('#cc-pricing__autoscaleout__help').fadeOut();
   }
 );

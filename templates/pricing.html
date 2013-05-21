@@ -26,7 +26,11 @@
                        <div class="simple_slider" style="display:none"></div>
                        <div class="range_slider"></div>
                     </div>
-                    <label><input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked> $autoscaleoutActivation$</label>
+                    <label class="cc-pricing__autoscaleout"> 
+                      <i class="icon-question-sign"></i> 
+                      $autoscaleoutActivation$ 
+                      <input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked>
+                    </label>
                     <div>
                       <div class="cc-pricing__flavor-label">
                         <i class="icon-question-sign"></i>
@@ -41,7 +45,10 @@
                   <h5>Taille des instances</h5>
                   <span>Vous avez le choix entre différentes puissances d'insctances (aussi appelées Scalers). La fonction auto-scalabilité choisira le type le plus adapté en fonction de la charge.</span>
                  </div>
-                 <div id=""></div>
+                 <div id="cc-pricing__autoscaleout__help">
+                  <h5>La scalabilité horizontale</h5>
+                  <span>Si vous activez cette option, vous pourrez parametrer un minimum d'instances, ainsi qu'un maximum. Cette fonction est en général utilisé afin d'anticiper un fort trafic tout en maitrisant les coûts.</span>
+                 </div>
                  <div id=""></div>
                </div>
             </div>
