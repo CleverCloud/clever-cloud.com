@@ -117,7 +117,7 @@ var Pricer = (function() {
          .foldl(function($II, I, N) {
             return $II.append(_.foldl(I, function($ii, i, n) {
                var $i = $(this.options.$instance(i));
-               $i.css('width', (100 / I.length) + '%');
+               $i.css('width', Math.floor(100 / I.length) + '%');
                $i.click(_.bind(function() {
                   $II.find('.active').removeClass('active');
                   $i.addClass('active');
@@ -126,6 +126,7 @@ var Pricer = (function() {
 
                if(n == 0 && N == 0) {
                   $i.addClass('active');
+                  $i.css('width', (100 - (I.length - 1) * Math.floor(100 / I.length)) + '%');
                   this.fireEvent('instance.type.onselect', i);
                }
 
