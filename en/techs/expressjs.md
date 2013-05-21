@@ -4,4 +4,4 @@ runtimes: nodejs
 icon: expressjs.png
 ---
 
-Express.js est un framework web basé sur node.js. Il fournit de nombreux outils pour créer des applications dynamiques.
+Express.js is a Node.js based framework. It gives many tools to create dynamic web applications.

@@ -1,5 +1,5 @@
 ---
-name: Node JS
+name: Node.js
 doc: http://doc.clever-cloud.com/node
 ---
 

@@ -4,4 +4,4 @@ services: mysql
 icon: mysql.png
 ---
 
-Couchbase Server 2.0 est une base de donnée NoSQL orientée document, cela inclus le support de JSON, la capacité d’indexer et de requêter ces documents et également la réplication entre Data Center (XDCR). Couchbase Server 2.0 garantit également des accès à hautes performances et consistants, une gestion simple de la montée en charge « par simple click », et une maintenance de votre cluster de base de données à chaud.
+MySQL est un serveur de bases de données relationnelles SQL développé dans un souci de performances élevées en lecture, ce qui signifie qu'il est davantage orienté vers le service de données déjà en place que vers celui de mises à jour fréquentes et fortement sécurisées. Il est multi-thread et multi-utilisateur.
