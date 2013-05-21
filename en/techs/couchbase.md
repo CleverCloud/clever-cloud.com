@@ -4,4 +4,4 @@ services: couchbase
 icon: couchbase.png
 ---
 
-Couchbase Server 2.0 est une base de donnée NoSQL orientée document, cela inclut le support de JSON, la capacité d’indexer et de requêter ces documents et également la réplication entre Data Center (XDCR). Couchbase Server 2.0 garantit également des accès à hautes performances et consistants, une gestion simple de la montée en charge « par simple click », et une maintenance de votre cluster de base de données à chaud.
+Thanks to a flexible JSON model, Couchbase Server makes it easy to modify your applications without the constraints of a fixed database schema. Submillisecond, high-throughput reads and writes give you consistent high performance. Couchbase Server is easy to scale out, and supports topology changes with no downtime.

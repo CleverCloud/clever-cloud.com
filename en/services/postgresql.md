@@ -3,4 +3,4 @@ name: PostgreSQL
 doc: http://doc.clever-cloud.com/databases-and-services/postgresql/
 ---
 
-PostgreSQL est un système de bases de données relationnelles les plus utilisé au monde.
+PostgreSQL is on of the most widely used relational database system in the world.
