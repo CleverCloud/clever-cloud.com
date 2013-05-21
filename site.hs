@@ -63,6 +63,7 @@ main = hakyll $ do
 --
     forM_ langs makeRuntimePages
     forM_ langs makeServicePages
+    forM_ langs makeAddOnsPages
 
     forM_ langs $ \lang ->
         match (fromGlob $ lang ++ "/techs/*.md") $ do
