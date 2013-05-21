@@ -196,7 +196,7 @@ var Pricer = (function() {
          var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
 
          var f = function(n) {
-            return (n*100).toString().replace(/(..)$/, '.$1');
+            return Math.round(n*100).toString().replace(/(..)$/, '.$1');
          };
 
          this.options.elem.find('.result .price').text(
