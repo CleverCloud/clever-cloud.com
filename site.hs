@@ -40,7 +40,9 @@ main = hakyll $ do
         >>= makeItem
         >>= withItemBody (unixFilter "lessc" ["-","--yui-compress","-O2"])
            
-
+    match "fr/index.md" $ do
+        route   $ setExtension "html"
+        compile copyFileCompiler
 --------------------------------------------------------------------------------
 -- Reusable blocks
 --
