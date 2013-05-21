@@ -3,4 +3,4 @@ name: MySQL
 doc: http://doc.clever-cloud.com/databases-and-services/mysql/
 ---
 
-MySQL est un système de gestion de bases de données rélationnelles les plus utilisé au monde.
+MySQL is the world's most widely used open source database management system that runs as a server providing multi-user access to a number of databases.
