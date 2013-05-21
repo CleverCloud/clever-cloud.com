@@ -108,6 +108,10 @@
     color:      @lightgrey;
   }
 }
+a.cc_btn--success:hover, a.cc_btn--success:focus{
+  text-decoration: none;
+  color: white;
+}
 
 .cc_feature__list a {
     color: @darkgrey;
@@ -157,9 +161,6 @@
 
 .cc_hero {
   color: @darkgrey;
-  a {
-    color: @darkgrey;
-  }
 }
 .cc_hero__desc {
   font-family:    LatoLight;
@@ -401,6 +402,7 @@
   .cc_btn;
   .cc_linear-gradient(bottom, @darkgrey, mix(@darkgrey, @grey, 50%));
   .cc_rounded;
+  text-align: center;
   box-shadow:    0 0 0 1px @darkgrey,
                  0 0 1px @grey inset;
   color:         @white;
@@ -412,6 +414,10 @@
                 0 0 2px 1px fade(@black, 40%) inset;
     color:      @grey;
   }
+}
+a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
+  text-decoration: none;
+  color: white;
 }
 .cc_workflow__feature__item {
   /*.cc_linear-gradient(bottom, fade(@whitey, 0), fade(@whitey, 70%));*/
