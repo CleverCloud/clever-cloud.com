@@ -4,4 +4,4 @@ runtimes: java
 icon: glassfish.png
 ---
 
-Les fichiers war et ear permettent de déployer des applications java sous forme de fichiers, avec la possibilité d'embarquer directement des modules. Différents conteneurs existent comme Apache, Glassfish, JBoss, Resin ou Jetty.
+You can use War and ear files to deploy Java applications. Some containers like Apache, Glassfish, JBoss, Resin or Jetty are available.

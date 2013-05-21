@@ -4,4 +4,4 @@ runtimes: python
 icon: django.png
 ---
 
-Django est un framework open-source de développement web en Python. Basé sur le modèle MVC, il permet de prototyper rapidement des applications modulaires.
+Django is a Python open-source framework. It is based on MVC model and is usefull to quickly prototype modular applications.

@@ -4,4 +4,4 @@ runtimes: python
 icon: python.png
 ---
 
-Modèle d'instance pour applications Python simples.
+Instance model for simple Python applications.
