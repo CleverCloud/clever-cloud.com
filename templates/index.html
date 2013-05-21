@@ -147,21 +147,21 @@
           <div class="span16">
             <form class="cc_suscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/dev/users">
               <div class="cc_suscribe__field">
-                <label class="cc_suscribe__label" for="#cc_suscribe__email">E-mail</label>
-                <input class="cc_suscribe__input" name="email" type="email" placeholder="Enter your e-mail"/>
+                <label class="cc_suscribe__label" for="#cc_suscribe__email">$emailLabel$</label>
+                <input class="cc_suscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
               </div>
               <div class="cc_suscribe__field">
-                <label class="cc_suscribe__label" for="#cc_suscribe__password">Password</label>
-                <input class="cc_suscribe__input" type="password" name="pass" placeholder="Create a password"/>
+                <label class="cc_suscribe__label" for="#cc_suscribe__password">$pwdLabel$</label>
+                <input class="cc_suscribe__input" type="password" name="pass" placeholder="$pwdPlaceholder$"/>
                 <input type="hidden" name="url_next" value="http://www.clever-cloud.com"/>
               </div>
               <div class="cc_suscribe__field">
                 <label class="cc_suscribe__terms">
                   <input type="checkbox" name="terms" />
-                  I accept the <a href="#">terms and conditions</a> of Clever Cloud.
+                  $signupTermPart1$ <a href="/terms-of-sale.html">$signupTermPart2$</a>$signupTermPart3$
                 </label>
               </div>
-              <button type="submit" class="cc_btn cc_btn--success cc_btn--L cc_suscribe__btn">Create my account</button>
+              <button type="submit" class="cc_btn cc_btn--success cc_btn--L cc_suscribe__btn">$createButton$</button>
             </form>
           </div>
         </div>
