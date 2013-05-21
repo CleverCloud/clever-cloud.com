@@ -4,4 +4,6 @@ runtimes: ruby
 icon: jruby.png
 ---
 
-Ruby is a dynamic, reflective, general-purpose object-oriented programming language.
+JRuby is a java ruby interpretor implementation.
+
+
