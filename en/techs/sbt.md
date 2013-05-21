@@ -4,4 +4,4 @@ runtimes: scala
 icon: sbt.png
 ---
 
-SBT est un outil Open-source de gestion et d'automatisation de production de projets logiciels Java et Scala.
+SBT is an open source tool to manage and automate projects production in Java and Scala.

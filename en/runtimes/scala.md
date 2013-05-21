@@ -3,4 +3,4 @@ name: Scala
 doc: http://doc.clever-cloud.com/scala/
 ---
 
-Scala est un langage de programmation multi-paradigme conçu à l'École polytechnique fédérale de Lausanne pour exprimer les modèles de programmation courants dans une forme concise et élégante.
+Scala is a general purpose programming language designed to express common programming patterns in a concise, elegant, and type-safe way. It smoothly integrates features of object-oriented and functional languages, enabling Java and other programmers to be more productive
