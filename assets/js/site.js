@@ -196,7 +196,7 @@ var Pricer = (function() {
          var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
 
          var f = function(n) {
-            return (n*100).toString().replace(/(..)$/, '.$1');
+            return Math.round(n*100).toString().replace(/(..)$/, '.$1');
          };
 
          this.options.elem.find('.result .price').text(
@@ -216,3 +216,33 @@ $(function() {
       $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= name %></button>')
    });
 });
+
+// Helper flavors
+$('.cc-pricing__flavor-label').hover(
+  function () {
+    $('#cc-pricing__flavor-label__help').fadeIn();
+  }, 
+  function () {
+    $('#cc-pricing__flavor-label__help').hide();
+  }
+);
+
+// Helper autoscale
+$('.cc-pricing__autoscaleout').hover(
+  function () {
+    $('#cc-pricing__autoscaleout__help').fadeIn(100);
+  }, 
+  function () {
+    $('#cc-pricing__autoscaleout__help').hide();
+  }
+);
+
+// Helper autoscale
+$('.cc-pricing__price').hover(
+  function () {
+    $('#cc-pricing__price__help').fadeIn(100);
+  }, 
+  function () {
+    $('#cc-pricing__price__help').hide();
+  }
+);

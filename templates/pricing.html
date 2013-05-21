@@ -15,8 +15,11 @@
                         <div class="cc-pricing-bar__label">$instSize$ :</div>
                         <h5 class="cc-pricing-bar__value instance-flavor"></h5>
                      </div>
-                     <div class="cc-pricing-bar__item cc-pricing-bar__item-big">
-                        <div class="cc-pricing-bar__label">$estimatedPrice$ :</div>
+                     <div class="cc-pricing-bar__item cc-pricing-bar__item-big cc-pricing__price">
+                        <div class="cc-pricing-bar__label">
+                          <i class="icon-question-sign pull-right cc-pricing-questionmark"></i>
+                          $estimatedPrice$ :
+                        </div>
                         <h5 class="cc-pricing-bar__value price"></h5>
                      </div>
                   </div>
@@ -26,15 +29,33 @@
                        <div class="simple_slider" style="display:none"></div>
                        <div class="range_slider"></div>
                     </div>
-                    <label><input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked> $autoscaleoutActivation$</label>
+                    <label class="cc-pricing__autoscaleout"> 
+                      <i class="icon-question-sign"></i> 
+                      $autoscaleoutActivation$ 
+                      <input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked>
+                    </label>
                     <div>
-                      <div class="cc-pricing__flavor-label">$chooseInstSize$ :</div>
+                      <div class="cc-pricing__flavor-label">
+                        <i class="icon-question-sign "></i>
+                        $chooseInstSize$ :
+                      </div>
                       <div class="cc-pricing__flavors btn-group flavors cc-btn-group-big" data-toggle="buttons-radio"></div>
                     </div>
                   </div>
                </div>
                <div class="span4 help_pricing_place">
-                  help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help help
+                 <div style="display:none;" id="cc-pricing__flavor-label__help">
+                  <h5>$InstSize$</h5>
+                  <span>$InstSizeHelp$</span>
+                 </div>
+                 <div style="display:none;" id="cc-pricing__autoscaleout__help">
+                  <h5>$AutoScaleOut$</h5>
+                  <span>$AutoScaleOutHelp$</span>
+                 </div>
+                 <div style="display:none;" id="cc-pricing__price__help">
+                  <h5>$CostValue$</h5>
+                  <span>$CostValueHelp$</span>
+                 </div>
                </div>
             </div>
          </div>
