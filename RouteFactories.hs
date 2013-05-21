@@ -96,3 +96,20 @@ makeServicePages lang =
         techTemplate <- loadBody "templates/tech.html"
         applyTemplateList techTemplate (globalContext lang) techs
 
+makeAddOnsPages :: String -> Rules ()
+makeAddOnsPages lang =
+    match (fromGlob $ lang ++ "/add-ons/*.md") $ do
+    route $ (setExtension "html") `composeRoutes` langRoute
+    compile $ pandocCompiler
+        >>= loadAndApplyTemplate "templates/add-ons.html" ctx
+        >>= loadAndApplyTemplate "templates/default.html" ctx
+        >>= relativizeUrls
+  where
+    ctx = globalContext lang `mappend`
+          field "techs" makeTechsField
+    makeTechsField runtimeItem = do
+        ids <- loadAll (fromGlob $ lang ++ "/techs/*.md")
+        techs <- getWithTag "addons" (itemIdFromItem runtimeItem) ids
+        techTemplate <- loadBody "templates/tech.html"
+        applyTemplateList techTemplate (globalContext lang) techs
+
