@@ -223,16 +223,26 @@ $('.cc-pricing__flavor-label').hover(
     $('#cc-pricing__flavor-label__help').fadeIn();
   }, 
   function () {
-    $('#cc-pricing__flavor-label__help').fadeOut();
+    $('#cc-pricing__flavor-label__help').hide();
   }
 );
 
 // Helper autoscale
 $('.cc-pricing__autoscaleout').hover(
   function () {
-    $('#cc-pricing__autoscaleout__help').fadeIn();
+    $('#cc-pricing__autoscaleout__help').fadeIn(100);
   }, 
   function () {
-    $('#cc-pricing__autoscaleout__help').fadeOut();
+    $('#cc-pricing__autoscaleout__help').hide();
+  }
+);
+
+// Helper autoscale
+$('.cc-pricing__price').hover(
+  function () {
+    $('#cc-pricing__price__help').fadeIn(100);
+  }, 
+  function () {
+    $('#cc-pricing__price__help').hide();
   }
 );

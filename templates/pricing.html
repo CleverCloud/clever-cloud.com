@@ -15,8 +15,11 @@
                         <div class="cc-pricing-bar__label">$instSize$ :</div>
                         <h5 class="cc-pricing-bar__value instance-flavor"></h5>
                      </div>
-                     <div class="cc-pricing-bar__item cc-pricing-bar__item-big">
-                        <div class="cc-pricing-bar__label">$estimatedPrice$ :</div>
+                     <div class="cc-pricing-bar__item cc-pricing-bar__item-big cc-pricing__price">
+                        <div class="cc-pricing-bar__label">
+                          <i class="icon-question-sign pull-right cc-pricing-questionmark"></i>
+                          $estimatedPrice$ :
+                        </div>
                         <h5 class="cc-pricing-bar__value price"></h5>
                      </div>
                   </div>
@@ -33,7 +36,7 @@
                     </label>
                     <div>
                       <div class="cc-pricing__flavor-label">
-                        <i class="icon-question-sign"></i>
+                        <i class="icon-question-sign "></i>
                         $chooseInstSize$ :
                       </div>
                       <div class="cc-pricing__flavors btn-group flavors cc-btn-group-big" data-toggle="buttons-radio"></div>
@@ -42,14 +45,17 @@
                </div>
                <div class="span4 help_pricing_place">
                  <div style="display:none;" id="cc-pricing__flavor-label__help">
-                  <h5>Taille des instances</h5>
-                  <span>Vous avez le choix entre différentes puissances d'insctances (aussi appelées Scalers). La fonction auto-scalabilité choisira le type le plus adapté en fonction de la charge.</span>
+                  <h5>$InstSize$</h5>
+                  <span>$InstSizeHelp$</span>
                  </div>
-                 <div id="cc-pricing__autoscaleout__help">
-                  <h5>La scalabilité horizontale</h5>
-                  <span>Si vous activez cette option, vous pourrez parametrer un minimum d'instances, ainsi qu'un maximum. Cette fonction est en général utilisé afin d'anticiper un fort trafic tout en maitrisant les coûts.</span>
+                 <div style="display:none;" id="cc-pricing__autoscaleout__help">
+                  <h5>$AutoScaleOut$</h5>
+                  <span>$AutoScaleOutHelp$</span>
                  </div>
-                 <div id=""></div>
+                 <div style="display:none;" id="cc-pricing__price__help">
+                  <h5>$CostValue$</h5>
+                  <span>$CostValueHelp$</span>
+                 </div>
                </div>
             </div>
          </div>
