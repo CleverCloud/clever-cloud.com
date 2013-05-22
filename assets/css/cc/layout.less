@@ -249,11 +249,13 @@
 
 .squaredFour label {
   cursor: pointer;
-  position: absolute;
+  position: relative;
   width: 18px;
   height: 18px;
-  top: -1px;
+  right: 18px;
+  top: 10px;
   border-radius: 4px;
+  display: inline-block;
 
   -webkit-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
   -moz-box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
@@ -290,12 +292,9 @@
   transform: rotate(-45deg);
 }
 
-.squaredFour label:hover::after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
-  filter: alpha(opacity=30);
-  opacity: 0.5;
+.squaredFour input:focus{
+  outline:none;
 }
-
 .squaredFour input[type=checkbox]:checked + label:after {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
   filter: alpha(opacity=100);
