@@ -146,7 +146,7 @@ var Pricer = (function() {
             });
          })
          .union([{
-            name:       'Autoscalability',
+            name:       'Optimize',
             minFlavor:  _.min(ff, function(f) { return f.price; }),
             maxFlavor:  _.max(ff, function(f) { return f.price; })
          }])
@@ -155,7 +155,9 @@ var Pricer = (function() {
          })
          .foldl(function($ff, f, n, ff) {
             var $f = $(this.options.$flavor(_.extend(f, {
-               description: (f.mem && f.cpus) ? f.mem + ' MB, ' + f.cpus + ' CPUs' : ' '
+               //description: (f.mem && f.cpus) ? f.mem + ' MB, ' + f.cpus + ' CPUs' : ' ',
+               memDesc: (f.mem) ? f.mem + ' MB' : '',
+               cpuDesc: (f.cpus) ? f.cpus + ' CPUs' : '',
             })));
             $f.css('width', (100 / ff.length) + '%');
             $f.click(_.bind(function() {
@@ -187,7 +189,7 @@ var Pricer = (function() {
    p.onflavor = function(f) {
       this.flavor = f;
 
-      this.options.elem.find('.result .instance-flavor').text(f.price ? f.name : f.name + ' (' + f.minFlavor.name + ' to ' + f.maxFlavor.name + ')');
+      this.options.elem.find('.result .instance-flavor').text(f.price ? f.name : f.name + ' (' + f.minFlavor.name + ' to ' + f.maxFlavor.name + ')');
       this.estimate();
    };
 
@@ -195,7 +197,7 @@ var Pricer = (function() {
       this.minInstances = Math.round(c.min);
       this.maxInstances = Math.round(c.max);
 
-      this.options.elem.find('.result .instance-count').text(this.minInstances == this.maxInstances ? this.minInstances : 'Autoscalability (' + this.minInstances + ' to ' + this.maxInstances + ')');
+      this.options.elem.find('.result .instance-count').text(this.minInstances == this.maxInstances ? this.minInstances : 'Auto-Scale (' + this.minInstances + ' to ' + this.maxInstances + ')');
       this.estimate();
    };
 
@@ -222,7 +224,7 @@ $(function() {
    var p = new Pricer({
       elem: $('.cc-pricing'),
 
-      $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title"><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= description %></div></button>'),
+      $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title"><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= cpuDesc %></div><div class="cc-btn-big__details"><%= memDesc %></div></button>'),
       $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= name %></button>'),
       $instances: _.template('<div class="btn-group cc-btn-group-big"></div>')
    });

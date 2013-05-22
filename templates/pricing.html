@@ -1,3 +1,10 @@
+<div class="cc_pricing_header ">
+  <div class="container ">
+    <div class="span1of3 ">
+      <h2>$title$</h2>
+    </div>
+  </div>
+</div> 
       <div class="container cc-container">
          <div class="cc-pricing">
             <div class="row-fluid">
@@ -17,10 +24,10 @@
                      </div>
                      <div class="cc-pricing-bar__item cc-pricing-bar__item-big cc-pricing__price">
                         <div class="cc-pricing-bar__label">
-                          <i class="icon-question-sign pull-right cc-pricing-questionmark"></i>
+                          <i class="icon-question-sign cc-pricing-questionmark"></i> 
                           $estimatedPrice$ :
                         </div>
-                        <h5 class="cc-pricing-bar__value price"></h5>
+                        <h5 class="cc-pricing-bar__value cc-pricing-bar__price price"></h5>
                      </div>
                   </div>
                   <div class="cc-pricing__content">
@@ -32,7 +39,11 @@
                     <label class="cc-pricing__autoscaleout"> 
                       <i class="icon-question-sign"></i> 
                       $autoscaleoutActivation$ 
-                      <input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked>
+                      <!--<input type="checkbox" name="autoscalout" class="cc-pricing__autoscale autoscaleout" checked>-->
+                      <span class="squaredFour">
+                        <input type="checkbox" value="None" id="squaredFour" class="cc-pricing__autoscale autoscaleout" name="autoscalout" />
+                        <label for="squaredFour"></label>
+                      </span>
                     </label>
                     <div>
                       <div class="cc-pricing__flavor-label">

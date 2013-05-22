@@ -10,7 +10,9 @@
  *                                  of the info alert box only.
  * more about this: engineering.appfolio.com/2012/11/16/css-architecture
  */
-
+h1, h2, h3{
+  font-family: @header-font;
+}
 .cc {
   background:  @darkgrey;
   color:       @grey;
@@ -55,6 +57,10 @@
 .ui-rangeSlider-label-inner {
   /*border-top: 10px solid #f8f8f8;*/
 }
+.ui-rangeSlider-label{
+  font-size: 12px;
+}
+
 
 .ui-rangeSlider-noArrow .ui-rangeSlider-container, .simple_slide {
   background-image: -o-linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #EAEAEA 100%);
@@ -75,10 +81,22 @@
          box-shadow: inset 0 -1px 6px RGBA(0,0,0,0.5);
 }
 
+.ui-editRangeSlider-inputValue{
+  margin: 10px auto -5px;
+  display: block;
+  height: 35px;
+  padding: 0px 7px;
+  font-weight: bold;
+}
+
 .ui-rangeSlider-label {
   background-color: #f8f8f8;
   border:           1px solid #dcdcdc;
   color:            #9b9b9b;
+  font-size: 12px;
+  margin-left: auto;
+  margin: auto;
+  padding: 4px 10px 3px 10px;
   background-image: -o-linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #EAEAEA 100%);
     background-image: -moz-linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #EAEAEA 100%);
     background-image: -webkit-linear-gradient(90deg, rgba(255,255,255,0.00) 0%, #EAEAEA 100%);
@@ -254,6 +272,11 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   text-shadow: none;
 }
 
+.cc_pricing_header {
+  background-color: white;
+  height: 100px;
+  padding-top: 30px;
+}
 .cc-pricing-bar {
   background-color: #f3f3f3;
   border:           1px solid #dcdcdc;
@@ -272,6 +295,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 }
 .cc-pricing-questionmark{
   font-size: 14px;
+  color: #707070;
 }
 .cc-pricing__content {
   border:     1px solid #dcdcdc;
