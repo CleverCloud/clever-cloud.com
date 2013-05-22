@@ -104,12 +104,14 @@ var Pricer = (function() {
 
    /* Listeners */
    p.onprices = function(pp) {
+      pp = typeof pp == 'string' ? JSON.parse(pp) : pp;
       this.fireEvent('price.onselect', _.find(pp, function(p) {
          return p.currency.toUpperCase() == 'EUR';
       }));
    };
 
    p.oninstances = function(ii) {
+      ii = typeof ii == 'string' ? JSON.parse(ii) : ii;
       _.chain(ii)
          .groupBy(function(i, n) {
            return Math.floor(n / 6);
