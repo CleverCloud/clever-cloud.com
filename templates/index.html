@@ -3,7 +3,7 @@
     <div class="row">
     	<div class="span9">
         <div class="cc_hero__video">
-          <iframe class="cc_hero__iframe" width="100%" src="http://www.youtube.com/embed/IV4Bnwluvf4" frameborder="0" allowfullscreen></iframe>
+          <iframe class="cc_hero__iframe" width="100%" src="$videoUrl$" frameborder="0" allowfullscreen></iframe>
         </div>
       </div>
     	<div class="span7">
@@ -145,7 +145,7 @@
         <div class="row-fluid">
           <!--<div class="span7 offset5">-->
           <div class="span16">
-            <form class="cc_suscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/dev/users">
+            <form class="cc_suscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/v1/users">
               <div class="cc_suscribe__field">
                 <label class="cc_suscribe__label" for="#cc_suscribe__email">$emailLabel$</label>
                 <input class="cc_suscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
