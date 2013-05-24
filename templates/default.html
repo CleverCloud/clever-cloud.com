@@ -39,6 +39,21 @@
              ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
              var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
           })();
+
+          //From scroll
+          $('.cc_service__list .cc_service__item img').addClass('hide');
+          $(document).scroll(function() {
+            var top = $(document).scrollTop();
+            if (top > 150) {
+              $('.cc_service__list .cc_service__item img').each(function(i){
+                var t = $(this);
+                setTimeout(function(){ t.removeClass('hide').addClass('animated fadeInRight'); }, (i+1) * 50);
+              });
+            }
+            else {
+                $('.cc_instance__list .cc_instance__item img').css('opacity:0');
+            }
+          });
        </script>
 </body>
 </html>
