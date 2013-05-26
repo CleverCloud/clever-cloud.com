@@ -1,5 +1,7 @@
+This is website of http://www.clever-cloud.com company, PaaS easy to manage application manager
+
 hakyll 4.2.2
 
-lessc is required
+lessc is required : http://lesscss.org/
 
-Auto-recompilation of less files is now handled by Hakyll. No need for watchlss.sh
+feel free if you find something not cool on our website
