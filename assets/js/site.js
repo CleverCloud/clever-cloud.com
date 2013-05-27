@@ -127,27 +127,37 @@ var Pricer = (function() {
    p.oninstances = function(ii) {
       ii = typeof ii == 'string' ? JSON.parse(ii) : ii;
       _.chain(ii)
-         .groupBy(function(i, n) {
-           return Math.floor(n / 6);
+         .map(function(i) {
+            i.group = _.find(i.tags, function(t) {
+               return (/^cat-/).test(t);
+            }) || '';
+            return i;
          })
-         .foldl(function($II, I, N) {
-            return $II.append(_.foldl(I, function($ii, i, n) {
-               var $i = $(this.options.$instance(i));
-               $i.css('width', Math.floor(100 / I.length) + '%');
-               $i.click(_.bind(function() {
-                  $II.find('.active').removeClass('active');
-                  $i.addClass('active');
-                  this.fireEvent('instance.type.onselect', i);
-               }, this));
+         .filter(function(i) {
+            return i.group.length > 0;
+         })
+         .groupBy(function(i) {
+            return i.group;
+         })
+         .map(function(ii) {
+            return _.first(ii);
+         })
+         .foldl(function($ii, i, n, ii) {
+            var $i = $(this.options.$instance(i));
+            $i.css('width', Math.floor(100 / ii.length) + '%');
+            $i.click(_.bind(function() {
+               $ii.find('.active').removeClass('active');
+               $i.addClass('active');
+               this.fireEvent('instance.type.onselect', i);
+            }, this));
 
-               if(n == 0 && N == 0) {
-                  $i.addClass('active');
-                  $i.css('width', (100 - (I.length - 1) * Math.floor(100 / I.length)) + '%');
-                  this.fireEvent('instance.type.onselect', i);
-               }
+            if(n == 0) {
+               $i.addClass('active');
+               $i.css('width', (100 - (ii.length - 1) * Math.floor(100 / ii.length)) + '%');
+               this.fireEvent('instance.type.onselect', i);
+            }
 
-               return $ii.append($i);
-            }, $(this.options.$instances()), this));
+            return $ii.append($i);
          }, this.options.elem.find('.instances').empty(), this)
          .value();
    };
@@ -198,7 +208,7 @@ var Pricer = (function() {
    p.oninstance = function(i) {
       this.instance = i;
 
-      this.options.elem.find('.result .instance-type').text(i.name);
+      this.options.elem.find('.result .instance-type').text(i.group.replace(/^cat-/, ''));
       this.fireEvent('flavors.onload', i.flavors);
    };
 
@@ -241,8 +251,7 @@ $(function() {
       elem: $('.cc-pricing'),
 
       $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title"><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= cpuDesc %></div><div class="cc-btn-big__details"><%= memDesc %></div></button>'),
-      $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= name %></button>'),
-      $instances: _.template('<div class="btn-group cc-btn-group-big"></div>')
+      $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= group.replace(/^cat-/, "") %></button>')
    });
 });
 
