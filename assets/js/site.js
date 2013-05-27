@@ -2,20 +2,6 @@ $(function() {
    $('#carousel')
       .carousel();
 });
-//Animation of Service lists
-$('.cc_service__list .cc_service__item img').addClass('hide');
-$(document).scroll(function() {
-var top = $(document).scrollTop();
-if (top > 150) {
-  $('.cc_service__list .cc_service__item img').each(function(i){
-    var t = $(this);
-    setTimeout(function(){ t.removeClass('hide').addClass('animated fadeInRight'); }, (i+1) * 50);
-  });
-}
-else {
-    $('.cc_instance__list .cc_instance__item img').css('opacity:0');
-}
-});
 
 var Pricer = (function() {
 
