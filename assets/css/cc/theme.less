@@ -274,15 +274,48 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 }
 
 .cc_pricing_header {
-  background-color: white;
-  height: 100px;
+  color: @white;
+  background: url('@{cc_path_img}dropgun.png');
+  background-size: 30% 100%;
+  background-repeat: no-repeat;
+  background-color: #501b1f;
+  background-position: 80% 0;
+  height: 160px;
   padding-top: 30px;
   border-bottom: 4px #EEE solid;
+  padding-left: 150px;
 }
+
+.cc_pricing__header__text{
+  margin-top: 0px;
+  font-weight: 300;
+  h2 {
+    font-weight: 300;  
+  }
+}
+
+.cc-pricing {
+  border:           1px solid @pricingbordercolor;
+  border-radius:    4px 0px 0 0;
+}
+
+.help_pricing_place {
+  padding-left: 20px;
+  padding-right: 20px;
+  background-image: -o-linear-gradient(270deg, rgba(243,243,243,0.00) 90%, rgba(0,0,0,0.13) 100%);
+  background-image: -moz-linear-gradient(270deg, rgba(243,243,243,0.00) 90%, rgba(0,0,0,0.13) 100%);
+  background-image: -webkit-linear-gradient(270deg, rgba(243,243,243,0.00) 90%, rgba(0,0,0,0.13) 100%);
+  background-image: -ms-linear-gradient(270deg, rgba(243,243,243,0.00) 90%, rgba(0,0,0,0.13) 100%);
+  background-image: linear-gradient(270deg, rgba(243,243,243,0.00) 90%, rgba(0,0,0,0.13) 100%);
+}
+
+.main_pricing_place {
+  border-right:     1px solid @pricingbordercolor;
+}
+
 .cc-pricing-bar {
   background-color: #f3f3f3;
-  border:           1px solid #dcdcdc;
-  border-radius:    4px 4px 0 0;
+  border-bottom: 1px solid @pricingbordercolor;
 
   .cc-pricing-bar__item {
     border-left: 1px solid #dcdcdc;
@@ -300,12 +333,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   color: #707070;
 }
 .cc-pricing__content {
-  border:     1px solid #dcdcdc;
-  border-top: none;
   color:      #707070;
-  border-bottom-right-radius: 4px;
-  border-bottom-left-radius: 4px;
-
   .cc-pricing__autoscale {
   }
 }
@@ -506,7 +534,8 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 //Page Compatibility
 
 .cc_compatibility {
-  background:      @grey url('@{cc_path_img}cc_compat.jpg') top center no-repeat;
+  background-color: #501B1F;
+  height: 250px;
   background-size: cover;
   box-shadow:      0 5px 3px -3px fade(@black, 20%) inset,
                    0 -5px 3px -3px fade(@black, 20%) inset;
@@ -516,12 +545,15 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   margin-left: 31%;
 }
 
+.cc_main .cc_compatibility_head_text {
+  width: 450px;
+}
 .cc_compatibility_head_text{
-  background: rgba(255,255,255,0.6);
-  box-shadow: 0 0 4px rgba(0,0,0,0.2);
-  color: @darkgrey;
+  color: @white;
+  width: 450px;
   padding: 10px;
   border-radius: 5px;
+  font-weight: 300;
 }
 .cc-runtime{
   border-radius: 2px;
@@ -588,17 +620,21 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 }
 .cc-compatibility_nav>ul{
   list-style: none;
+  margin-left: 0px;
 }
 .cc-compatibility_nav_li{
-  color: @darkgrey;
+  color: @greymenu;
   text-decoration: none;
   margin-top: 3px;
 }
 .cc-compatibility_nav_li:hover{
   text-decoration: underline;
+  color: @pink;
 }
 .cc-compatibility_nav>h5{
-  font-family: 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: "Helvetica Neue","Helvetica", "Arial",sans-serif;
 }
 
 .cc_tour__header {
