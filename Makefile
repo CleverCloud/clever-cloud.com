@@ -27,6 +27,6 @@ publish: build
 	git add -A && git commit -m "Publish" || true
 	git push -f git+ssh://git@push.clever-cloud.com/app_2f9ac2aa-a00a-463b-acdc-28cac56bf8df.git \
 	    publish:master
-	git checkout hakyll
+	git checkout master
 	git clean -fdx
 	git stash pop || true
