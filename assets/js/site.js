@@ -267,7 +267,7 @@ var showDefaultHelp = function() {
 $('.cc-pricing__flavor-label').hover(
   function () {
     hideDefaultHelp();
-    $('#cc-pricing__flavor-label__help').fadeIn(100);
+    $('#cc-pricing__flavor-label__help').fadeIn(400);
   }, 
   function () {
     showDefaultHelp();
@@ -279,7 +279,7 @@ $('.cc-pricing__flavor-label').hover(
 $('.cc-pricing__autoscaleout').hover(
   function () {
     hideDefaultHelp();
-    $('#cc-pricing__autoscaleout__help').fadeIn(100);
+    $('#cc-pricing__autoscaleout__help').fadeIn(400);
   }, 
   function () {
     showDefaultHelp();
@@ -291,7 +291,7 @@ $('.cc-pricing__autoscaleout').hover(
 $('.cc-pricing__price').hover(
   function () {
     hideDefaultHelp();
-    $('#cc-pricing__price__help').fadeIn(100);
+    $('#cc-pricing__price__help').fadeIn(400);
   }, 
   function () {
     showDefaultHelp();
