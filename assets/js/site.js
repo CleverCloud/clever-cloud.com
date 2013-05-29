@@ -54,6 +54,7 @@ var Pricer = (function() {
             datatype: 'jsonp',
             success: _.bind(function(ii) {
                this.fireEvent('instances.onload', ii);
+               $('.cc-pricing').fadeTo(300,1).removeClass("cc-opacity__zero");
             }, this)
          });
       }
@@ -168,7 +169,7 @@ var Pricer = (function() {
          .foldl(function($ff, f, n, ff) {
             var $f = $(this.options.$flavor(_.extend(f, {
                //description: (f.mem && f.cpus) ? f.mem + ' MB, ' + f.cpus + ' CPUs' : ' ',
-               memDesc: (f.mem) ? f.mem + ' MB' : '',
+               memDesc: (f.mem) ? f.mem + ' MB' : '<img src="./assets/img/64px/auto-resize.png" style="max-height: 32px;">',
                cpuDesc: (f.cpus) ? f.cpus + ' CPUs' : '',
             })));
             $f.css('width', (100 / ff.length) + '%');
@@ -201,7 +202,7 @@ var Pricer = (function() {
    p.onflavor = function(f) {
       this.flavor = f;
 
-      this.options.elem.find('.result .instance-flavor').text(f.price ? f.name : f.name + ' (' + f.minFlavor.name + ' to ' + f.maxFlavor.name + ')');
+      this.options.elem.find('.result .instance-flavor').text(f.price ? f.name : f.name + ' (' + f.minFlavor.name + ' — ' + f.maxFlavor.name + ')');
       this.estimate();
    };
 
@@ -237,7 +238,7 @@ $(function() {
       elem: $('.cc-pricing'),
 
       $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title"><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= cpuDesc %></div><div class="cc-btn-big__details"><%= memDesc %></div></button>'),
-      $instance:  _.template('<button type="button" class="btn instance cc-btn-big"><%= group.replace(/^cat-/, "") %></button>')
+      $instance:  _.template('<button type="button" class="btn instance cc-btn-big <%= group.replace(/^cat-/, "").replace("/", "-", "g").toLowerCase() %>"><%= group.replace(/^cat-/, "") %></button>')
    });
 });
 
