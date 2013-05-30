@@ -154,29 +154,29 @@
   <div class="container">
     <div class="row">
       <div class="span1of3">
-        <div class="cc_side-header cc_suscribe__header">
-          <h2 class="cc_side-header__title cc_suscribe__title">$signupCatch$</h2>
+        <div class="cc_side-header cc_subscribe__header">
+          <h2 class="cc_side-header__title cc_subscribe__title">$signupCatch$</h2>
         </div>
       </div>
       <div class="span2of3">
         <div class="row-fluid">
           <!--<div class="span7 offset5">-->
           <div class="span16">
-            <form class="cc_suscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/v1/users">
-              <div class="cc_suscribe__field">
-                <input class="cc_suscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
+            <form class="cc_subscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/v1/users">
+              <div class="cc_subscribe__field">
+                <input class="cc_subscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
               </div>
-              <div class="cc_suscribe__field cc_suscribe__field__pwd">
-                <input class="cc_suscribe__input" type="password" name="pass" placeholder="$pwdPlaceholder$"/>
+              <div class="cc_subscribe__field cc_subscribe__field__pwd">
+                <input class="cc_subscribe__input" type="password" name="pass" placeholder="$pwdPlaceholder$"/>
                 <input type="hidden" name="url_next" value="http://www.clever-cloud.com"/>
               </div>
-              <div class="cc_suscribe__field">
-                <label class="cc_suscribe__terms">
+              <div class="cc_subscribe__field">
+                <label class="cc_subscribe__terms">
                   <input type="checkbox" name="terms" value="true" />
                   $signupTermPart1$ <a href="terms-of-sale.html">$signupTermPart2$</a>$signupTermPart3$
                 </label>
               </div>
-              <button type="submit" class="cc_suscribe__btn">$createButton$</button>
+              <button type="submit" class="cc_subscribe__btn">$createButton$</button>
             </form>
           </div>
         </div>
