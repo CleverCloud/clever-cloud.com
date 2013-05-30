@@ -376,17 +376,36 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 }
 
 .cc_suscribe__btn {
-  .cc_btn;
-  .cc_rounded;
-  box-shadow:  0 0 0 1px mix(@green, darkgreen, 70%) inset,
-               0 2px 0 @lightgreen inset,
-               0 0 0 5px fade(@black, 10%);
-  text-shadow: 0 1px 0 fade(@darkgreen, 50%);
-  &:active {
-    .cc_linear-gradient(bottom, mix(@darkgreen, @deepgreen, 20%), @deepgreen);
-    box-shadow: 0 0 2px 1px fade(@black, 40%) inset,
-                0 0 0 5px fade(@black, 10%);
-  }
+  border-radius: 4px;
+  background-image: -o-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: -moz-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: -webkit-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: -ms-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: linear-gradient(-180deg, #9FE46B 0%, #71BF35 100%);
+  border: 1px solid #71BF35;
+  font-weight: 300;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #FFFFFF;
+  line-height: 22px;
+  text-shadow: 0px 1px 0px #65AF2C;
+  box-shadow:   0 0 0 0px mix(@green, darkgreen, 70%) inset,
+                0 1px 0 @lightgreen inset,
+                0 0 0 4px fade(@black, 10%);
+  &:hover {
+    border-radius: 4px;
+    background-image: -o-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+    background-image: -moz-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+    background-image: -webkit-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+    background-image: -ms-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+    background-image: linear-gradient(-180deg, #8FD759 0%, #7DD03D 100%);
+    border: 1px solid #71BF35;
+    -moz-box-shadow:    0px 0px 4px 0px #79CF19, inset 0px 1px 0px 0px #BAE87C;
+    -webkit-box-shadow: 0px 0px 4px 0px #79CF19, inset 0px 1px 0px 0px #BAE87C;
+    box-shadow:   0 0 0 0px mix(@green, darkgreen, 70%) inset,
+                0 1px 0 @lightgreen inset,
+                0 0 0 4px fade(@black, 10%);
+  };
 }
 .cc_suscribe__form input[type="email"], .cc_suscribe__form input[type="password"] {
   .cc_suscribe__input;
