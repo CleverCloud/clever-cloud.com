@@ -164,11 +164,9 @@
           <div class="span16">
             <form class="cc_suscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/v1/users">
               <div class="cc_suscribe__field">
-                <label class="cc_suscribe__label" for="#cc_suscribe__email">$emailLabel$</label>
                 <input class="cc_suscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
               </div>
-              <div class="cc_suscribe__field">
-                <label class="cc_suscribe__label" for="#cc_suscribe__password">$pwdLabel$</label>
+              <div class="cc_suscribe__field cc_suscribe__field__pwd">
                 <input class="cc_suscribe__input" type="password" name="pass" placeholder="$pwdPlaceholder$"/>
                 <input type="hidden" name="url_next" value="http://www.clever-cloud.com"/>
               </div>
