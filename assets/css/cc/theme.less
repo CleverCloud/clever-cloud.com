@@ -177,6 +177,13 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
 }
+.cc_headbar__menu a {
+  opacity: 0.7;
+  font-weight: 300;
+  &:hover {
+    opacity: 1;
+  }
+}
 .cc_login__btn {
   .cc_rounded;
   background: fade(@black, 15%);
@@ -234,7 +241,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   background-size: cover;
 }
 
-.cc_partner, .cc_press {
+.cc_partner {
   background:    @white;
   border-radius: 4px;
   box-shadow:    0 0 0 5px fade(@black, 20%);
@@ -377,11 +384,6 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 
 .cc_subscribe__btn {
   border-radius: 4px;
-  background-image: -o-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
-  background-image: -moz-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
-  background-image: -webkit-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
-  background-image: -ms-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
-  background-image: linear-gradient(-180deg, #9FE46B 0%, #71BF35 100%);
   border: 1px solid #71BF35;
   font-weight: 300;
   font-family: Helvetica;
@@ -389,24 +391,63 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   color: #FFFFFF;
   line-height: 22px;
   text-shadow: 0px 1px 0px #65AF2C;
+  -moz-box-shadow:    0 0 0 0px mix(@green, darkgreen, 70%) inset,
+                0 1px 0 @lightgreen inset,
+                0 0 0 4px fade(@black, 10%);
+  -webkit-box-shadow: 0 0 0 0px mix(@green, darkgreen, 70%) inset,
+                0 1px 0 @lightgreen inset,
+                0 0 0 4px fade(@black, 10%);
   box-shadow:   0 0 0 0px mix(@green, darkgreen, 70%) inset,
                 0 1px 0 @lightgreen inset,
                 0 0 0 4px fade(@black, 10%);
-  &:hover {
-    border-radius: 4px;
-    background-image: -o-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
-    background-image: -moz-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
-    background-image: -webkit-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
-    background-image: -ms-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
-    background-image: linear-gradient(-180deg, #8FD759 0%, #7DD03D 100%);
-    border: 1px solid #71BF35;
-    -moz-box-shadow:    0px 0px 4px 0px #79CF19, inset 0px 1px 0px 0px #BAE87C;
-    -webkit-box-shadow: 0px 0px 4px 0px #79CF19, inset 0px 1px 0px 0px #BAE87C;
-    box-shadow:   0 0 0 0px mix(@green, darkgreen, 70%) inset,
-                0 1px 0 @lightgreen inset,
-                0 0 0 4px fade(@black, 10%);
-  };
+  position: relative;
+  height: 48px;
+  cursor: pointer;
 }
+
+.cc_subscribe__btn_child_normal {
+  background-image: -o-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: -moz-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: -webkit-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: -ms-linear-gradient(-90deg, #9FE46B 0%, #71BF35 100%);
+  background-image: linear-gradient(-180deg, #9FE46B 0%, #71BF35 100%);
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left:0;
+  width: 100%;
+  height: 100%
+}
+
+
+.cc_subscribe__btn_child_hover {
+  background-image: -o-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+  background-image: -moz-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+  background-image: -webkit-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+  background-image: -ms-linear-gradient(-90deg, #8FD759 0%, #7DD03D 100%);
+  background-image: linear-gradient(-180deg, #8FD759 0%, #7DD03D 100%);
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.cc_subscribe__btn_child_normal:hover {
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+
+.cc_btn__text {
+  text-align: center;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 10px;
+}
+
+
 .cc_subscribe__form input[type="email"], .cc_subscribe__form input[type="password"] {
   .cc_subscribe__input;
 }
