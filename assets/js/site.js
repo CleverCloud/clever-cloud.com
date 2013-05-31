@@ -170,7 +170,7 @@ var Pricer = (function() {
             var $f = $(this.options.$flavor(_.extend(f, {
                //description: (f.mem && f.cpus) ? f.mem + ' MB, ' + f.cpus + ' CPUs' : ' ',
                memDesc: (f.mem) ? f.mem + ' MB' : '<img src="/assets/img/64px/auto-resize.png" style="max-height: 32px;">',
-               cpuDesc: (f.cpus) ? f.cpus + ' CPUs' : '',
+               cpuDesc: (f.cpus) ? f.cpus + ' CPUs' : ''
             })));
             $f.css('width', (100 / ff.length) + '%');
             $f.click(_.bind(function() {
