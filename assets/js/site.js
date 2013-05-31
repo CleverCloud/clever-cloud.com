@@ -237,8 +237,8 @@ $(function() {
    var p = new Pricer({
       elem: $('.cc-pricing'),
 
-      $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title"><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= cpuDesc %></div><div class="cc-btn-big__details"><%= memDesc %></div></button>'),
-      $instance:  _.template('<button type="button" class="btn instance cc-btn-big <%= group.replace(/^cat-/, "").replace("/", "-", "g").toLowerCase() %>"><%= group.replace(/^cat-/, "") %></button>')
+      $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title" ><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= cpuDesc %></div><div class="cc-btn-big__details"><%= memDesc %></div></button>'),
+      $instance:  _.template('<button type="button" class="btn instance cc-btn-big <%= group.replace(/^cat-/, "").replace("/", "-", "g").toLowerCase() %>" onClick="_gaq.push(["_trackEvent", "Pricing-simulator", "Select Instance", "<%= group.replace(/^cat-/, "") %>"]);"><%= group.replace(/^cat-/, "") %></button>')
    });
 });
 
