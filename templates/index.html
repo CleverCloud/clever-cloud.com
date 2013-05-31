@@ -10,7 +10,7 @@
         <div class="cc_hero__headline">
           <h1 class="cc_hero__title">$bloc1Title$</h1>
           <h2 class="cc_hero__desc">$bloc1Subtitle$</h2>
-          <a class="cc_btn--success" href="https://console.clever-cloud.com/auth/signup" target="_blank">$bloc1Button$</a>
+          <a class="cc_btn--success" href="https://console.clever-cloud.com/auth/signup" onClick="_gaq.push(['_trackEvent', 'Signup', 'go-console',]);" target="_blank">$bloc1Button$</a>
           <p>
             <div class="fb-like" data-href="https://www.facebook.com/clevercloudsas" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false" data-font="lucida grande" data-action="recommend"></div>
           </p>
@@ -145,7 +145,7 @@
                   $signupTermPart1$ <a href="terms-of-sale.html">$signupTermPart2$</a>$signupTermPart3$
                 </label>
               </div>
-              <button class="cc_subscribe__btn">
+              <button class="cc_subscribe__btn" onClick="_gaq.push(['_trackEvent', 'Signup', 'go-subscribe',]);">
                 <div class="cc_subscribe__btn_child_hover"><div class="cc_btn__text">$createButton$</div></div>
                 <div class="cc_subscribe__btn_child_normal"><div class="cc_btn__text">$createButton$</div></div>
               </button>
