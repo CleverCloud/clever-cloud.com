@@ -507,7 +507,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   box-shadow:         0px 0px 6px 0px rgba(255,255,255,0.30), inset 0px 1px 0px 0px #717171;
   position: absolute;
   opacity: 0;
-  display: none;
+  visibility: hidden;
   top: 0;
   left: 0;
   width: 100%;
@@ -515,14 +515,16 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 }
 
 .cc_grey__btn:hover {
+  /*transition: all 0.2s ease-in-out;*/
   .cc_grey__btn_child_normal {
-    display: none;
-    transition: all 0.2s ease-in-out;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
   };
   .cc_grey__btn_child_hover {
-    display: block;
+    visibility: visible;
     opacity: 1;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
   }
 }
 
@@ -539,9 +541,6 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   line-height: 22px;
   text-decoration: none;
 }
-
-
-/**/
 
 /* End grey btn */
 
