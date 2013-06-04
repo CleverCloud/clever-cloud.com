@@ -435,9 +435,12 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   height: 100%;
 }
 
-.cc_subscribe__btn_child_normal:hover {
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
+.cc_subscribe__btn:hover {
+  .cc_subscribe__btn_child_normal {
+    border-color: red;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 .cc_subscribe__btn__text {
