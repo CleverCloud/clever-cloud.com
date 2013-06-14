@@ -1,6 +1,6 @@
 ### The company
 
-Clever Cloud is a startup created in 2010 and based in Nantes. The hosting platform builded by Clever Cloud required three years of R&D, in order to run languages like Java, Scala, Ruby and PHP.
+Clever Cloud is a startup created in 2010 and based in Nantes. The hosting platform built by Clever Cloud required three years of R&D, in order to run languages like Java, Scala, Ruby and PHP.
 
 Clever Cloud is an active member of the association Atlantic 2.0, the network of
 professionals in information technology and communications, a reference in the
