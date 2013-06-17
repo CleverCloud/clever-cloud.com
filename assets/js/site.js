@@ -67,7 +67,7 @@ var Pricer = (function() {
             step:   1,
             bounds: {
                min: 1,
-               max: 40
+               max: 30
             },
             defaultValues: {
                min: this.minInstances,
@@ -83,7 +83,7 @@ var Pricer = (function() {
          .slider({
             step: 1,
             min:  1,
-            max:  40,
+            max:  30,
             stop: _.bind(function(e, data) {
                this.fireEvent('instance.count.onselect', {
                   min: data.value,
@@ -230,7 +230,7 @@ var Pricer = (function() {
          };
 
          this.options.elem.find('.result .price').text(
-            (min == max) ? f(min) + '€' : f(min) + '€ to ' + f(max) + '€'
+            (min == max) ? f(min) + '€' : f(min) + '€ - ' + f(max) + '€'
          );
       }
    };
