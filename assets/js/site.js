@@ -16,6 +16,7 @@ var Pricer = (function() {
 
    p.initialize = function(oo) {
       /* Default values */
+      this.flavorName   = oo.flavorName;
       this.flavor       = oo.flavor;
       this.minInstances = oo.minInstances || 1;
       this.maxInstances = oo.maxInstances || 4;
@@ -177,7 +178,11 @@ var Pricer = (function() {
                this.fireEvent('instance.flavor.onselect', f);
             }, this));
 
-            if(n === 0) {
+            if(this.flavorName && f.name == this.flavorName) {
+               $f.addClass('active');
+               this.fireEvent('instance.flavor.onselect', f);
+            }
+            else if(!this.flavorName && n === 0) {
                $f.addClass('active');
                this.fireEvent('instance.flavor.onselect', f);
             }
@@ -236,6 +241,9 @@ var Pricer = (function() {
 $(function() {
    var p = new Pricer({
       elem: $('.cc-pricing'),
+
+      flavorName: 'S',
+      maxInstances: 3,
 
       $flavor:    _.template('<button type="button" class="btn flavor cc-btn-big cc-btn-big-with-title" ><h4 class="cc-btn-big__title"><%= name %></h4><div class="cc-btn-big__details"><%= cpuDesc %></div><div class="cc-btn-big__details"><%= memDesc %></div></button>'),
       $instance:  _.template('<button type="button" class="btn instance cc-btn-big <%= group.replace(/^cat-/, "").replace("/", "-", "g").toLowerCase() %>" onClick="_gaq.push(["_trackEvent", "Pricing-simulator", "Select Instance", "<%= group.replace(/^cat-/, "") %>"]);"><%= group.replace(/^cat-/, "") %></button>')
