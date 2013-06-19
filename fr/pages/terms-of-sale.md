@@ -25,11 +25,11 @@ Le présent contrat a pour objet de déterminer les modalités de fourniture et 
 
 Clever Cloud propose des offres PAAS pour héberger, déployer, tester et exécuter les applications et sites web du client.
 
-L’ensemble des offres figure sur le site, à l’adresse suivante : http://www.clever-cloud.com/fr_FR/offre.html
+L’ensemble des offres figure sur le site, à l’adresse suivante : <a href="/compatibility.html">http://www.clever-cloud.com/compatibility.html</a>
 
 ## Article 3 : Grille tarifaire
 
-L’ensemble des prix figure sur le site, à l’adresse suivante : http://www.clever-cloud.com/fr_FR/tarifs.html
+L’ensemble des prix figure sur le site, à l’adresse suivante : <a href="/pricing.html">http://www.clever-cloud.com/pricing.html</a>
 
 Ceux-ci sont exprimés en euros HT et TTC.
 
@@ -55,7 +55,7 @@ En cas de défaut de paiement et si le paiement est rejeté ou annulé, la comma
 
 ## Article 6 : Modalités du droit de rétractation
 
-Le client, en sa qualité de consommateur, dispose en application du Code de la Consommation, d’un droit de rétractation de 7 jours francs à compter de l’acceptation de l’offre. Ce droit peut être exercé par mail à l’adresse suivante : commercial@clever-cloud.com
+Le client, en sa qualité de consommateur, dispose en application du Code de la Consommation, d’un droit de rétractation de 7 jours francs à compter de l’acceptation de l’offre. Ce droit peut être exercé par mail à l’adresse suivante : <a href="mailto:sales@clever-cloud.com">sales@clever-cloud.com</a>
 
 Au-delà de ce délai, le client perd la faculté d’exercer son droit de rétractation.
 

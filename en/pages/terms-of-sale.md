@@ -25,13 +25,13 @@ The goal of this contract is intended to determine how supply and use of all ser
 
 Clever Cloud offers PAAS to host, deploy , test and implement applications and websites to the customer.  
 
-All Offers listed on the site, at the following address: http://next.clever-cloud.com/en/the-cloud/solution/controlled-consumption.html
+All Offers listed on the site, at the following address: <a href="/en/compatibility.html">http://www.clever-cloud.com/en/compatibility.html</a>
 
 
 
 ## Article 3 : Price list
 
-All prices shown on this website at the following address : http://next.clever-cloud.com/en/the-cloud/solution/controlled-consumption.html
+All prices shown on this website at the following address : <a href="/en/pricing.html">http://www.clever-cloud.com/en/pricing.html</a>
 
 These are expressed in euros and VAT taxes.
 
@@ -57,7 +57,7 @@ Upon default of payment and the payment is rejected or canceled, the customer's 
 
 ## Article 6 : Procedures for the right of withdrawal
 
-The customer, as a consumer, have under the Consumer Code, a right of withdrawal for 7 days from the date of acceptance of the offer. This right may be exercised by mail to the following address: commercial@clever-cloud.com
+The customer, as a consumer, have under the Consumer Code, a right of withdrawal for 7 days from the date of acceptance of the offer. This right may be exercised by mail to the following address: <a href="mailto:sales@clever-cloud.com">sales@clever-cloud.com</a>
 
 Beyond this period, the customer loses the right to exercise his right of withdrawal.
 
