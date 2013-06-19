@@ -144,7 +144,7 @@ Technical team is available during business hours at +33 805 696 312.
 
 #### 10.2.2 Email
 
-Technical team can also be contacted via support@clever-cloud.com. Every email sent to this address will be transferred to our technical assistance.
+Technical team can also be contacted via <a href="mailto:support@clever-cloud.com">support@clever-cloud.com</a>. Every email sent to this address will be transferred to our technical assistance.
 
 #### 10.3 Service Après-Vente
 

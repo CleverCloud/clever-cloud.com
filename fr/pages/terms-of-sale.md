@@ -140,7 +140,7 @@ L’équipe technique est disponible durant les heures ouvrées au +33 805 696 3
 
 #### 10.2.2 Email
 
-L’équipe technique peut aussi être contactée via support@clever-cloud.com. Chaque email envoyé à cette adresse sera transféré sur notre système d’assistance technique.
+L’équipe technique peut aussi être contactée via <a href="mailto:support@clever-cloud.com">support@clever-cloud.com</a>. Chaque email envoyé à cette adresse sera transféré sur notre système d’assistance technique.
 
 #### 10.3 Service Après-Vente
 
