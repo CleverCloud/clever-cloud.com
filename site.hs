@@ -143,6 +143,16 @@ main = hakyll $ do
                 >>= relativizeUrls
 
 --------------------------------------------------------------------------------
+-- hello page
+--
+    forM_ langs $ \lang ->
+        match (fromGlob $ lang ++ "/hello.html") $ do
+            route langRoute
+            compile $ getResourceBody
+                >>= loadAndApplyTemplate "templates/hello.html" (globalContext lang)
+                >>= relativizeUrls
+
+--------------------------------------------------------------------------------
 -- Compile all templates
 --
     match "templates/**" $ compile templateCompiler
