@@ -4,7 +4,7 @@ services: mongodb
 icon: mongodb.png
 ---
 
-MongoDB is an open-souce document-oriented database system developed and supported by 10gen.  
+<a href="http://www.mongodb.org/" target="_blank">MongoDB</a> is an open-souce document-oriented database system developed and supported by <a href="http://www.10gen.com/" target="_blank">10gen</a>.  
 It is written in C++ and has the following features:  
 
 * indexing

@@ -4,7 +4,7 @@ services: mongodb
 icon: mongodb.png
 ---
 
-MongoDB est une base de données open-source orientée documents créée par 10gen. Cette base est la plus connue de la categorie NoSQL et est écrite en C++.  
+<a href="http://www.mongodb.org/" target="_blank">MongoDB</a> est une base de données open-source orientée documents créée par <a href="http://www.10gen.com/" target="_blank">10gen</a>. Cette base est la plus connue de la categorie NoSQL et est écrite en C++.  
 
 Ses caractéristiques principales sont les suivantes :
 
