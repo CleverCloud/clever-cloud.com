@@ -178,12 +178,18 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
 }
-.cc_headbar__menu a {
-  opacity: 0.7;
-  font-weight: 300;
-  &:hover {
+.cc_headbar__menu {
+  a {
+    opacity: 0.7;
+    font-weight: 300;
+    &:hover {
+      opacity: 1;
+    }
+  };
+  .active {
     opacity: 1;
   }
+
 }
 .cc_login__btn {
   .cc_rounded;
