@@ -540,8 +540,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 
 /* End grey btn */
 
-
-.cc_subscribe__form input[type="email"], .cc_subscribe__form input[type="password"] {
+.cc_subscribe__form .cc_subscribe__input {
   .cc_subscribe__input;
 }
 .cc_subscribe__field,
@@ -560,10 +559,8 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   box-shadow:    0 1px 2px @lightgrey inset;
   font-weight: 500;
   &:focus {
-    background:   @whitey;
-    border-color: @grey;
-    box-shadow:   none;
-    color:        @darkgrey;
+    border: 1px solid @grey;
+    box-shadow:    0 1px 2px @lightgrey inset;
     outline:      none;
   }
 }
@@ -586,6 +583,28 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc_subscribe__title {
   color:        @lightgrey;
   text-shadow: 0 1px 0 @white;
+}
+
+.cc_subscribe__form {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+  };
+  h2 {
+    font-size: 15px;
+    text-align: center;
+  };
+  .formvalidated {
+    border-color: @grey;
+    box-shadow:   none;
+    color:        @darkgrey;
+    outline:      none;
+    border-radius: 4px;
+    background: @whitey;
+    -moz-box-shadow:    0px 1px 0px 0px @white, inset 0px 1px 0px 0px @white;
+    -webkit-box-shadow: 0px 1px 0px 0px @white, inset 0px 1px 0px 0px @white;
+    box-shadow:         0px 1px 0px 0px @white, inset 0px 1px 0px 0px @white;
+  }
 }
 
 .cc_title--striked {
@@ -1047,7 +1066,7 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   position: relative;
   float: right;
   top: 26px;
-  right: 32%;
+  right: 33%;
 }
 
 // Hello page
@@ -1224,4 +1243,12 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
       margin-top: 25px;
     }
   }
+}
+
+.help-signup {
+  margin-top: 12px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #cc4444;
 }
