@@ -30,3 +30,16 @@ publish: build
 	git checkout master
 	git clean -fdx
 	git stash pop || true
+
+preprodpublish: build
+	git stash save
+	git checkout publish || git checkout --orphan publish
+	find . -maxdepth 1 ! -name '.' ! -name '.git*' ! -name '_site' -exec rm -rf {} +
+	find _site -maxdepth 1 -exec mv {} . \;
+	rmdir _site
+	git add -A && git commit -m "Publish" || true
+	git push -f git+ssh://git@push.clever-cloud.com/app_c4ccfd6a-2d9e-49f2-8716-6cb81c0a269a.git \
+	    publish:master
+	git checkout master
+	git clean -fdx
+	git stash pop || true
