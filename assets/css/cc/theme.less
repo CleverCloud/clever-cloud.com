@@ -563,7 +563,15 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
     box-shadow:    0 1px 2px @lightgrey inset;
     outline:      none;
   }
+
 }
+
+input:focus:invalid:focus{
+  border-color:  @lightgrey;
+  box-shadow:    0 1px 2px @lightgrey inset;
+  color: @darkgrey;
+};
+
 .cc_subscribe__label {
   color:      @lightgrey;
   text-align: right;
