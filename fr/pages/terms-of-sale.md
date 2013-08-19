@@ -25,11 +25,11 @@ Le présent contrat a pour objet de déterminer les modalités de fourniture et 
 
 Clever Cloud propose des offres PAAS pour héberger, déployer, tester et exécuter les applications et sites web du client.
 
-L’ensemble des offres figure sur le site, à l’adresse suivante : <a href="/compatibility.html">http://www.clever-cloud.com/compatibility.html</a>
+L’ensemble des offres figure sur le site, à l’adresse suivante : <a href="/fr/compatibility.html">http://www.clever-cloud.com/fr/compatibility.html</a>
 
 ## Article 3 : Grille tarifaire
 
-L’ensemble des prix figure sur le site, à l’adresse suivante : <a href="/pricing.html">http://www.clever-cloud.com/pricing.html</a>
+L’ensemble des prix figure sur le site, à l’adresse suivante : <a href="/fr/pricing.html">http://www.clever-cloud.com/fr/pricing.html</a>
 
 Ceux-ci sont exprimés en euros HT et TTC.
 
