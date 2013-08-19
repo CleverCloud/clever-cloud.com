@@ -16,9 +16,9 @@ import CustomTags
 import Utils
 
 langs = ["fr", "en"]
-defaultLang = "fr"
+defaultLang = "en"
 
-langRoute = gsubRoute (defaultLang ++ "/") (const "")
+langRoute = gsubRoute ("") (const "")
 
 getMetaDescription :: String -> String
 getMetaDescription "fr" = "Clever Cloud est une plateforme Cloud qui permet d'assurer hautes performances et simplicité pour votre hébergement web"
@@ -26,7 +26,7 @@ getMetaDescription _ = "Clever Cloud is a next-gen Cloud computing platform able
 
 globalContext lang =
     blockLoader lang `mappend`
-    constField "urllang" (if (lang == defaultLang) then "" else lang ++ "/") `mappend`
+    constField "urllang" (lang ++ "/") `mappend`
     constField "lang" lang `mappend`
     constField "metaDescription" (getMetaDescription lang) `mappend`
     defaultContext

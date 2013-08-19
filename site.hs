@@ -25,6 +25,10 @@ main = hakyll $ do
         route   idRoute
         compile copyFileCompiler
 
+    match "clevercloud/**" $ do
+        route   idRoute
+        compile copyFileCompiler
+
     match "assets/fonts/**" $ do
         route   idRoute
         compile copyFileCompiler
@@ -43,10 +47,6 @@ main = hakyll $ do
         loadBody "assets/css/all.less"
         >>= makeItem
         >>= withItemBody (unixFilter "lessc" ["-","--yui-compress","-O2"])
-           
-    match "fr/index.md" $ do
-        route   $ setExtension "html"
-        compile copyFileCompiler
 
     createSitemap $ loadAll ("en/**/*.md" .||. "fr/**/*.md" .||. "fr/*.html" .||. "en/*.html")    --(((++) (++) <$> (loadAll "en/**/*.md") <*> (loadAll "fr/**/*.md") 
 --------------------------------------------------------------------------------
