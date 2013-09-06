@@ -42,7 +42,7 @@ Le présent contrat a pour objet de déterminer les modalités de fourniture et 
 
 Clever Cloud propose des offres PaaS pour héberger, déployer, tester et exécuter les applications et sites web du client.
 
-L’ensemble des offres figure sur le site, à l’adresse suivante : http://www.clever-cloud.com/fr_FR/offre.html
+L’ensemble des offres figure sur le site, à l’adresse suivante : <a href="/compatibility.html">http://www.clever-cloud.com/compatibility.html</a>
 
 ## Article 4 : Propriété intellectuelle
 
@@ -95,7 +95,7 @@ Le compte est activé suite à l’envoi d’un e-mail à l’adresse mail indiq
 
 Clever Cloud se réserve le droit de suspendre ou supprimer un compte qui ne respecte pas les présentes CGU et CGV.
 
-Le client dispose d’un droit de résiliation de son compte, après demande expresse de sa part à l’adresse suivante : commercial@clever-cloud.com
+Le client dispose d’un droit de résiliation de son compte, après demande expresse de sa part à l’adresse suivante : <a href="mailto:sales@clever-cloud.com">sales@clever-cloud.com</a>
 
 ## Article 10 : Acceptation des CGU
 

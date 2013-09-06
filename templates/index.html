@@ -137,23 +137,59 @@
           <!--<div class="span7 offset5">-->
           <div class="span16">
             <form class="cc_subscribe__form" METHOD="POST" action=" https://console.clever-cloud.com/ccapi/v1/users">
-              <div class="cc_subscribe__field">
-                <input class="cc_subscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
+              <div class="row-fluid">
+                <div class="span3"></div>
+                <div class="span9">
+                  <h1>$signuph1$</h1>
+                  <h2>$signuph2$</h2>
+                </div>
               </div>
-              <div class="cc_subscribe__field cc_subscribe__field__pwd">
-                <input class="cc_subscribe__input" type="password" name="pass" placeholder="$pwdPlaceholder$"/>
-                <input type="hidden" name="url_next" value="http://www.clever-cloud.com"/>
+              <div class="row-fluid cc_subscribe__field">
+                <div class="span3">
+                </div>
+                <div class="span9">
+                  <input class="cc_subscribe__input" name="email" type="email" placeholder="$emailPlaceholder$"/>
+                </div>
+                <div class="span4">
+                  <div class="help-signup help-email"></div>
+                </div>
               </div>
-              <div class="cc_subscribe__field">
-                <label class="cc_subscribe__terms">
-                  <input type="checkbox" name="terms" value="true" />
-                  $signupTermPart1$ <a href="terms-of-sale.html">$signupTermPart2$</a>$signupTermPart3$
-                </label>
+              <div class="row-fluid cc_subscribe__field cc_subscribe__field__pwd">
+                <div class="span3">
+                </div>
+                <div class="span9">
+                  <input class="cc_subscribe__input" type="password" name="pass" placeholder="$pwdPlaceholder$"/>
+                </div>
+                <div class="span4">
+                  <div class="help-signup help-pwd"></div>
+                </div>
               </div>
-              <button class="cc_subscribe__btn" onClick="_gaq.push(['_trackEvent', 'Signup', 'go-subscribe',]);">
-                <div class="cc_subscribe__btn_child_hover"><div class="cc_subscribe__btn__text">$createButton$</div></div>
-                <div class="cc_subscribe__btn_child_normal"><div class="cc_subscribe__btn__text">$createButton$</div></div>
-              </button>
+              <div class="row-fluid cc_subscribe__field">
+                <div class="span3">
+                </div>
+                <div class="span9">
+                  <label class="cc_subscribe__terms">
+                    <input type="checkbox" name="terms" value="true" />
+                    $signupTermPart1$ <a href="terms-of-sale.html">$signupTermPart2$</a>$signupTermPart3$
+                    <span class="ms_signup__fakebox"></span>
+                  </label>
+                </div>
+                <div class="span4">
+                  <div class="help-signup help-check"></div>
+                </div>
+              </div>
+              <div class="row-fluid">
+                <div class="span3">
+                </div>
+                <div class="span9">
+                  <button class="cc_subscribe__btn">
+                    <div class="cc_subscribe__btn_child_hover"><div class="cc_subscribe__btn__text">$createButton$</div></div>
+                    <div class="cc_subscribe__btn_child_normal"><div class="cc_subscribe__btn__text">$createButton$</div></div>
+                  </button>
+                </div>
+                <div class="span4">
+                </div>
+              </div>
             </form>
           </div>
         </div>

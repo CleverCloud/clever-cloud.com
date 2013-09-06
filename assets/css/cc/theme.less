@@ -178,12 +178,18 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   font-size: 24px;
   -webkit-font-smoothing: antialiased;
 }
-.cc_headbar__menu a {
-  opacity: 0.7;
-  font-weight: 300;
-  &:hover {
+.cc_headbar__menu {
+  a {
+    opacity: 0.7;
+    font-weight: 300;
+    &:hover {
+      opacity: 1;
+    }
+  };
+  .active {
     opacity: 1;
   }
+
 }
 .cc_login__btn {
   .cc_rounded;
@@ -305,6 +311,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc-pricing {
   border:           1px solid @pricingbordercolor;
   border-radius:    4px 0px 0 0;
+  margin-bottom: 40px;
 }
 
 .help_pricing_place {
@@ -540,8 +547,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 
 /* End grey btn */
 
-
-.cc_subscribe__form input[type="email"], .cc_subscribe__form input[type="password"] {
+.cc_subscribe__form .cc_subscribe__input {
   .cc_subscribe__input;
 }
 .cc_subscribe__field,
@@ -560,13 +566,19 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
   box-shadow:    0 1px 2px @lightgrey inset;
   font-weight: 500;
   &:focus {
-    background:   @whitey;
-    border-color: @grey;
-    box-shadow:   none;
-    color:        @darkgrey;
+    border: 1px solid @grey;
+    box-shadow:    0 1px 2px @lightgrey inset;
     outline:      none;
   }
+
 }
+
+input:focus:invalid:focus{
+  border-color:  @lightgrey;
+  box-shadow:    0 1px 2px @lightgrey inset;
+  color: @darkgrey;
+};
+
 .cc_subscribe__label {
   color:      @lightgrey;
   text-align: right;
@@ -574,6 +586,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc_subscribe__terms {
   font-size: @text--M;
   color:     @grey;
+  font-weight: 300;
   a {
     color:      @grey;
     font-style: italic;
@@ -586,6 +599,35 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc_subscribe__title {
   color:        @lightgrey;
   text-shadow: 0 1px 0 @white;
+}
+
+.cc_subscribe__form {
+  h1 {
+    color: rgb(63, 63, 63);
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  };
+  h2 {
+    color: rgb(171, 171, 171);
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 14px;
+    text-align: center;
+    margin-bottom: 30px;
+  };
+  .formvalidated {
+    border-color: @grey;
+    box-shadow:   none;
+    color:        @darkgrey;
+    outline:      none;
+    border-radius: 4px;
+    background: @whitey;
+    -moz-box-shadow:    0px 1px 0px 0px @white, inset 0px 1px 0px 0px @white;
+    -webkit-box-shadow: 0px 1px 0px 0px @white, inset 0px 1px 0px 0px @white;
+    box-shadow:         0px 1px 0px 0px @white, inset 0px 1px 0px 0px @white;
+  }
 }
 
 .cc_title--striked {
@@ -763,6 +805,7 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 .cc-runtime_tech{
   border-bottom: 1px solid @darkwhitey;
   padding-left: 35px;
+  padding-right: 35px;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -961,6 +1004,7 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 
 .cc_team__secondbg__text{
   margin-top: 50px;
+  padding-right: 20px;
 }
 
 .cc_team__secondbg h1 {
@@ -1046,7 +1090,7 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   position: relative;
   float: right;
   top: 26px;
-  right: 32%;
+  right: 33%;
 }
 
 // Hello page
@@ -1060,7 +1104,7 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   margin-right: auto;
   width: 60%;
   text-align: center;
-  margin-bottom: 5%;
+  margin-bottom: 30px;
   min-width: 301px;
 
   h1 {
@@ -1117,10 +1161,8 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   }
 
   .logo-hello {
-    border-radius: 50%;
     width: 50px;
     height: 50px;
-    background-color: #169B00;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
@@ -1145,5 +1187,121 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
       display: block;
       float: left;
     }
+  }
+
+  
+  .share-twitter {
+    width: 86px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .subsubtile {
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+}
+
+.container-hello-footer {
+  width: 100%;
+  background-color: white;
+  height: 170px;
+  padding-bottom: 20px;
+
+  .hello-footer {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+  }
+
+  .contact-block {
+    margin-top: 20px;
+    width: 100%;
+    color: #707070;
+    height: 50px;
+    a {
+      color: #707070;
+      text-decoration: underline;
+    }
+  }
+
+  .span-column-contact {
+    display: block;
+    float: left;
+    width: 30%;
+  }
+
+  .hello-footer {
+    border-top: 1px solid #F2F2F2;
+    background-color: white;
+    h2 {
+      text-align: center;
+      font-weight: 400;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-family: "Helvetica Neue", "DejaVu Sans", "Arial", sans-serif;
+      font-size: 17px;
+      color: #707070;
+      line-height: 23px;
+      text-shadow: 0px 2px 0px #FFFFFF;
+    }
+  }
+
+  .hello-social {
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #707070;
+    a {
+      color: #707070;
+      text-decoration: underline;
+    }
+    .hello-social-child {
+      display: block;
+      float: left;
+      width: 50%;
+    }
+    .hello-social-twitter {
+      margin-top: 25px;
+    }
+  }
+}
+
+.help-signup {
+  margin-top: 12px;
+  line-height: 20px;
+  font-size: 14px;
+  font-weight: 300;
+  color: #cc4444;
+}
+
+.dropgunimg {
+  position: relative;
+  bottom: -10px;
+  img {
+    width: 275px;
+    margin-left: 100px;
+  }
+}
+
+.cc_pricing_vision {
+  padding-top: 50px;
+  .row1 {
+    padding-bottom: 10px;
+  }
+  .row2 {
+    border-top: solid 1px #dcdcdc;
+    img {
+      margin-top: 25px;
+      margin-left: 30%;
+    }
+    padding-bottom: 30px;
+    padding-top: 30px;
+  }
+  .row3 {
+    padding-top: 30px;
+    border-top: solid 1px #dcdcdc;
   }
 }

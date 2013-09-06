@@ -293,3 +293,57 @@ $('.cc-pricing__price').hover(
     $('#cc-pricing__price__help').hide();
   }
 );
+
+// Signup input
+$(".cc_subscribe__input").focusout(function(e) {
+  if ($(e.target).val() != "") {
+    $(e.target).addClass("formvalidated");
+  }
+})
+
+$(".cc_subscribe__input").focusin(function(e) {
+  $(e.target).removeClass("formvalidated");
+});
+
+// Signup button
+$(".cc_subscribe__btn").click(function(e) {
+  e.preventDefault();
+  e.stopPropagation();
+  var email = $(".cc_subscribe__form input[name='email']").val();
+  var password = $(".cc_subscribe__form input[name='pass']").val();
+  var terms = $(".cc_subscribe__form input[name='terms']").is(":checked");
+  $.ajax({
+    type: "POST",
+    headers: {"Content-Type":"application/json"},
+    url: "https://console.clever-cloud.com/ccapi/v1/users",
+    data: JSON.stringify({
+      email: email,
+      password: password,
+      terms: terms
+    }),
+    success: function(e) {
+      window.location.href = "http://www.clever-cloud.com/hello.html";
+    },
+    error: function(e) {
+      var temp = JSON.parse(e.responseText);
+      $(".help-email").text("");
+      $(".help-pwd").text("");
+      $(".help-check").text("");
+
+      $(".help-email").text(temp.fields.email);
+      $(".help-pwd").text(temp.fields.password);
+      $(".help-check").text(temp.fields.terms);
+    }
+  })
+})
+
+
+var urlList = ["tour", "pricing", "compatibility"];
+_.each(urlList, function(x, y) {
+  var y = x + ".html";
+  if (_.contains(window.location.pathname.split( '/' ), y)) {
+    console.log("okok");
+    $($(".nav-" + x)[0]).addClass("active");
+  }
+})
+

@@ -42,7 +42,7 @@ The goal of this contract is designed to determine the terms of supply and use o
 
 Clever Cloud offers PaaS to host, deploy, test and implement applications and customer websites.  
 
-All Offers listed on the site, at the following address: http://www.clever-cloud.com/en/the-cloud/solution/controlled-consumption.html
+All Offers listed on the site, at the following address: <a href="/en/compatibility.html">http://www.clever-cloud.com/en/compatibility.html</a>
 
 ## Article 4 : Intellectual Property
 
@@ -94,7 +94,7 @@ The account is activated after sending an email to the email address specified b
 
 Clever Cloud reserves the right to suspend or delete an account that does not comply with these Terms and Conditions.
 
-The customer has a right to terminate their account after its specific application to the following address: commercial@clever-cloud.com
+The customer has a right to terminate their account after its specific application to the following address: <a href="mailto:sales@clever-cloud.com">sales@clever-cloud.com</a>
 
 ## Article 10 : Acceptance of Terms
 
