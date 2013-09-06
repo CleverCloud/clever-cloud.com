@@ -8,6 +8,6 @@
     } 
   },
   "redirects": {
-    "/compatibility.html": "/en/compatibility.html":
+    "/compatibility.html": "/en/compatibility.html"
   }
 }
