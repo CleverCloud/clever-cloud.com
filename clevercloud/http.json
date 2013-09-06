@@ -1,1 +1,13 @@
-{ "languages": { "default": { "rewrite": "/en" }, "fr": { "rewrite": "/fr" } } }
+{ 
+  "languages": { 
+    "default": { 
+      "rewrite": "/en" 
+    }, 
+    "fr": { 
+      "rewrite": "/fr" 
+    } 
+  },
+  "redirects": {
+    "/compatibility.html": "/en/compatibility.html":
+  }
+}
