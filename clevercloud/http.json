@@ -8,6 +8,23 @@
     } 
   },
   "redirects": {
-    "/compatibility.html": "/en/compatibility.html"
+    "/tour.html": "/en/tour.html",
+    "/pricing.html": "/en/pricing.html",
+    "/compatibility.html": "/en/compatibility.html",
+    "/runtimes/java.html": "/en/runtimes/java.html",
+    "/runtimes/php.html": "/en/runtimes/php.html",
+    "/runtimes/ruby.html": "/en/runtimes/ruby.html",
+    "/runtimes/python.html": "/en/runtimes/python.html",
+    "/runtimes/nodejs.html": "/en/runtimes/nodejs.html",
+    "/runtimes/scala.html": "/en/runtimes/scala.html",
+    "/services/mysql.html": "/en/services/mysql.html",
+    "/services/postgresql.html": "/en/services/postgresql.html",
+    "/services/mongodb.html": "/en/services/mongodb.html",
+    "/add-ons/new-relic.html": "/en/add-ons/new-relic.html",
+    "/about.html": "/en/about.html",
+    "/contact.html": "/en/contact.html",
+    "/team.html": "/en/team.html",
+    "/legal-terms.html": "/en/legal-terms.html",
+    "/terms-of-sale.html": "/en/terms-of-use.html"
   }
 }
