@@ -25,6 +25,7 @@
     "/contact.html": "/en/contact.html",
     "/team.html": "/en/team.html",
     "/legal-terms.html": "/en/legal-terms.html",
-    "/terms-of-sale.html": "/en/terms-of-use.html"
+    "/terms-of-sale.html": "/en/terms-of-sale.html",
+    "/terms-of-use.html": "/en/terms-of-use.html"
   }
 }
