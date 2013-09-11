@@ -371,3 +371,48 @@ function random_array( aArray ) {
     var randArray = aArray[ rand - aArray.length ];
     return randArray;
 }
+
+//Testimonials
+var testimonials = [{
+    "content": "My blog migrated to CleverCloud this night… Impressed by how fast it is !  http:\/\/bit.ly\/d5ygWZ",
+    "author": "Jeremie Berrebi, @jberrebi",
+    "job_title": "Angel investor",
+    "photo_url": "\/assets\/img\/testimonials\/jberrebi.jpg"
+}, {
+    "content": "Many reasons to go for @clever_cloud :)",
+    "author": "Maxime Alay-Eddine, @tarraschk",
+    "job_title": "Founder of Argaus",
+    "photo_url": "\/assets\/img\/testimonials\/tarraschk.jpg"
+}, {
+    "content": "Something that you should test !",
+    "author": "Tugdual Grall, @tgrall",
+    "job_title": "Technical Evangelist @couchbase",
+    "photo_url": "\/assets\/img\/testimonials\/tgrall.png"
+}, {
+    "content": "Our projet at #angelhack is hosted on @clever_cloud ! It's really nice and fast !",
+    "author": "Jonathan Winandy, @ahoy_jon",
+    "job_title": "BI Platform Engineer at Viadeo",
+    "photo_url": "\/assets\/img\/testimonials\/ahoy_jon.jpg"
+}];
+var currentTestimonial = 0;
+$(function () {
+    setInterval(cycleTestimonial, 10000);
+});
+
+function cycleTestimonial() {
+    if (!testimonials) {
+        return;
+    }
+    if (testimonials.length == currentTestimonial + 1) {
+        currentTestimonial = 0;
+    } else {
+        currentTestimonial++;
+    }
+    $('.testimonials-quote').fadeTo('slow', 0, function () {
+        var cur = testimonials[currentTestimonial];
+        $('.cc_quote-text span').html(cur.content);
+        $('.cc_quote-author span').html(cur.author);
+        $('.cc_quote-job span').html(cur.job_title);
+        $('.cc_quote-author img').attr('src', cur.photo_url);
+    }).fadeTo('fast', 1);
+}
