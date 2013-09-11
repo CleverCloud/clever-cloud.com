@@ -8,7 +8,9 @@
     } 
   },
   "redirects": {
-    "/tour.html": "/en/tour.html",
+    "/fr/tour.html": "/fr/index.html",
+    "/en/tour.html": "/en/index.html",
+    "/tour.html": "/en/index.html",
     "/pricing.html": "/en/pricing.html",
     "/compatibility.html": "/en/compatibility.html",
     "/runtimes/java.html": "/en/runtimes/java.html",
