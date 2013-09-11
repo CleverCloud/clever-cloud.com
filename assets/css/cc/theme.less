@@ -162,10 +162,10 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 }
 
 .cc_headbar {
-  background: @red;
-  box-shadow: 0 0 0 5px fade(@red, 50%);
+  background: @smoothblue;
   color:      @white;
   font-size:  @text;
+  box-shadow: inset 0 -4px 6px 0px #29323A;
   a {
     color:           @white;
     text-decoration: none;
@@ -246,7 +246,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 }
 
 .cc_panorama {
-  background:      @darkgrey url('@{cc_path_img}cc_panorama.jpg') center;
+  background:      @darkgrey url('/assets/img/panorama.jpg') center;
   background-size: cover;
 }
 
@@ -364,8 +364,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc_side-header {
   background: url('@{cc_path_img}cc_side-header.png') right center repeat-y;
 }
-.cc_side-header__title,
-.cc_slider__title {
+.cc_side-header__title{
   font-family:    "Open Sans", "DejaVu Sans", "Arial", sans-serif;
   font-size:      @text--XL;
   font-weight:    300;
