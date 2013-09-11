@@ -5,7 +5,7 @@
         <div class="cc_hero__headline">
           <h1 class="cc_hero__title">$bloc1Title$</h1>
           <h2 class="cc_hero__desc"><div id="text-content"></div></h2>
-          <a class="btn btn-large btn-danger" href="https://console.clever-cloud.com/auth/signup" onClick="_gaq.push(['_trackEvent', 'Signup', 'go-console',]);" target="_blank">$bloc1Button$</a>
+          <a class="btn btn-large btn-danger" href="#signup-anchor" onClick="_gaq.push(['_trackEvent', 'Signup', 'go-signup',]);" target="_blank">$bloc1Button$</a>
           <p>
             <!-- AddThis Follow BEGIN -->
             <div class="addthis_toolbox addthis_default_style">
@@ -112,7 +112,7 @@
           </div>
         </div>
       </div>
-      <div class="arrow-down"></div>
+      <div id="signup-anchor" class="arrow-down"></div>
     </div>
   </div>
   <div class="container">
@@ -196,5 +196,12 @@
           '$catch4$'
       ];
       $$('#text-box').randomText( textArray, 8000); // ( array, interval, ["reload text or html"] )
+  });
+  //Smooth scrolling
+  $$('.cc_hero__headline a').click(function(){
+    $$('html, body').animate({
+        scrollTop: $$( $$(this).attr('href') ).offset().top - 20
+    }, 700);
+    return false;
   });
 </script>
