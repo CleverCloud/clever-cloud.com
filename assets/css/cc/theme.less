@@ -211,7 +211,9 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc_hero__headline h2 {
   margin-top: 15px;
   height: 60px;
-  font-weight:300;
+  font-weight:400;
+  line-height: 1.2em;
+  color:  @white;
 }
 .cc_hero__iframe {
   background: @black;
@@ -248,6 +250,7 @@ a.cc_btn--success:hover, a.cc_btn--success:focus{
 .cc_panorama {
   background:      @darkgrey url('/assets/img/panorama.jpg') center;
   background-size: cover;
+  box-shadow: inset 0px 1px 13px -6px #4C5F72;
 }
 
 .cc_partner {
@@ -867,7 +870,8 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   background-image: url("/assets/img/tour/block3-bg.jpg");
   background-repeat: none;
   background-size: 100% 100%;
-  padding-top: 40px;
+  padding-top: 60px;
+  padding-bottom: 80px;
 }
 
 .cc_tour__block3__block1 {
@@ -877,22 +881,6 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 .cc_tour__block3Text {
   font-size: 16px;
   font-weight: 300;
-}
-
-.span4.cc_tour__docbuttonparent {
-  min-height: 100px;
-}
-
-.cc_tour__docbuttonparent1 {
-  /*background-color: rgba(123, 123, 123, 0.4);*/
-  background-color: rgba(0, 0, 0, 0.15);
-  /*background-color: blue;*/
-  height: 75px;
-  border-width: 0px;
-  border-radius: 8px;
-  padding: 5px;
-  border-width: 6px;
-  box-shadow: 0px 2px 1px rgba(256,256,256,0.4);
 }
 
 .cc_tour__docbutton {
@@ -906,11 +894,6 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   font-size: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
-}
-
-.cc_tour__docbuttonparent a {
-  color: @white;
-  text-decoration: none;
 }
 
 .cc_deploy {
@@ -962,7 +945,6 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 
 .cc_tour__block5{
   background: url("@{cc_path_img}bg-grid.jpeg");
-  padding-top: 30px;
 }
 .cc_tour_realtime {
   margin-top: 50px;
