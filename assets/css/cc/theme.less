@@ -110,6 +110,30 @@ h1, h2, h3{
      -moz-box-shadow: 0px 1px 0px 0px #ffffff, inset 0px 2px 0px 0px #ffffff, inset 0px -2px 0px 0px #ededed;
           box-shadow: 0px 1px 0px 0px #ffffff, inset 0px 2px 0px 0px #ffffff, inset 0px -2px 0px 0px #ededed;
 }
+.cc_btn--hero{
+  border-radius: 3px;
+  background-image: -o-linear-gradient(-90deg, #C1444C 0%, #983239 100%);
+  background-image: -moz-linear-gradient(-90deg, #C1444C 0%, #983239 100%);
+  background-image: -webkit-linear-gradient(-90deg, #C1444C 0%, #983239 100%);
+  background-image: -ms-linear-gradient(-90deg, #C1444C 0%, #983239 100%);
+  background-image: linear-gradient(-180deg, #C1444C 0%, #983239 100%);
+  -moz-box-shadow:    0px 2px 4px 0px rgba(0,0,0,0.15), inset 0px 1px 1px 0px rgba(255,255,255,0.25);
+  -webkit-box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.15), inset 0px 1px 1px 0px rgba(255,255,255,0.25);
+  box-shadow:         0px 2px 4px 0px rgba(0,0,0,0.15), inset 0px 1px 1px 0px rgba(255,255,255,0.25);
+  color:       @white;
+  font-size:   16px;
+  padding: 13px 6em 13px 2em;
+  font-family: "Helvetica Neue","Helvetica", "Arial",sans-serif;
+  &:active {
+    -webkit-box-shadow: inset 0 4px 8px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.05);
+    -moz-box-shadow: inset 0 4px 8px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.05);
+    box-shadow: inset 0 4px 8px rgba(0,0,0,0.25),0 1px 2px rgba(0,0,0,0.05);
+  }
+}
+a.cc_btn--hero:hover, a.cc_btn--hero:focus{
+  text-decoration: none;
+  color: white;
+}
 
 .cc_btn--success {
   .cc_btn;
