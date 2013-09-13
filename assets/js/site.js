@@ -396,7 +396,7 @@ var testimonials = [{
 }];
 var currentTestimonial = 0;
 $(function () {
-    setInterval(cycleTestimonial, 10000);
+    setInterval(cycleTestimonial, 7000);
 });
 
 function cycleTestimonial() {
