@@ -1,5 +1,5 @@
 ---
-name: Ruby (bientôt)
+name: Ruby (beta gratuite)
 doc: http://doc.clever-cloud.com/
 ---
 
