@@ -1,0 +1,846 @@
+/****Generic Class****/
+.idz_clearer, .clearer {clear:both;visibility:hidden;font-size:0;width:1px;height:1px;line-height:1px;}
+.idz_strong {font-weight: bold;}
+.idz_huge{font-size:16px;}
+.idz_big{font-size:14px;}
+.idz_normal{font-size:12px;}
+.idz_small{font-size:9px;}
+.idz_fleft{float:left;}
+.idz_fright{float:right;}
+.margin_big_l{margin-left:30px !important;}
+.margin_big_r{margin-right:30px !important;}
+.margin_big_t{margin-top:30px !important;}
+.margin_big_b{margin-bottom:30px !important;}
+.margin_huge_l{margin-left:50px !important;}
+.margin_huge_r{margin-right:50px !important;}
+.margin_huge_t{margin-top:50px !important;}
+.margin_huge_b{margin-bottom:50px !important;}
+.padding_big_l{padding-left:30px !important;}
+.padding_big_r{padding-right:30px !important;}
+.padding_big_t{padding-top:30px !important;}
+.padding_big_b{padding-bottom:30px !important;}
+
+/****END Generic Class****/
+
+/****Global Chat****/
+#idz_chatglobal {
+  position:    fixed;
+	width:       420px;
+	z-index:     99999;
+}
+	#idz_chatglobal .idz_chatbox_hide {
+		bottom: 0px;
+	}
+	#idz_chatglobal .idz_chatbox_hidemore {
+		display:none;
+	}
+/****END Global Chat****/
+
+/****Chat bar ****/
+#idz_chatbar {
+	background:    #3F3F3F;
+  border-radius: 0 0 3px 3px;
+  margin-top:    -1px;
+}
+		#idz_chatbar #msgform{
+      padding: 6px;
+		}
+		#idz_chatbar #msgform .idz_msgmsg_bg{
+      margin-right: 58px;
+      padding-right: 10px;
+      position: relative;
+		}
+		#idz_chatbar .idz_loading{
+			display:none;
+			height:16px;
+			width:16px;
+			background:transparent url('//static.iadvize.com/images/loading.gif') left top no-repeat;
+		}
+		#idz_chatbar #idz_msgmsg {
+      background-color: #313131;
+      border: none;
+      border-radius: 3px 0 0 3px;
+      box-shadow: 0px 0px 0px 1px #2c2c2c inset;
+      color: white;
+      font-weight: bold;
+      height: 30px;
+      margin: 0;
+      padding: 0 5px;
+      width: 98%;
+      outline: none;
+      -webkit-box-shadow: inset 5px 7px 8px -7px black;
+		 -moz-box-shadow: inset 5px 7px 8px -7px black;
+		   -o-box-shadow: inset 5px 7px 8px -7px black;
+			  box-shadow: inset 5px 7px 8px -7px black;
+		}
+		#idz_chatbar #idz_postmsg {
+      background-color: #3f3f3f;
+      border: 1px solid #2c2c2c;
+      border-radius: 0 3px 3px 0;
+      border-left: none;
+      color: #ffffff;
+      float: right;
+      font-weight: bold;
+      height: 30px;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      top: -30px;
+      width: 70px;
+      cursor: pointer;
+      outline: none;
+		}
+
+/**** chatbar mini ****/
+#idz_chatbar_mini{
+	display:none;
+	position:absolute;
+	/*position:fixed !important;*/
+	right:16px !important;
+	bottom:0 !important;
+	height:140px;
+	width:303px !important;
+	z-index:999999 !important;
+	cursor:pointer !important;
+	background:transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-popin.png') 0 -1119px no-repeat;	
+}
+#idz_chatbar_mini.langc_fr{
+	background:transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-popin.png') 0 -1119px no-repeat;
+}
+#idz_chatbar_mini.langc_es{
+	background:transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-popin.png') -304px -1119px no-repeat;
+}
+
+body > div#idz_chatbar_mini { position: fixed !important;}
+	#idz_chatbar_mini .idz_ope{
+		display: none;
+		margin:0 0 0 20px;
+		text-align:left;
+	}
+	#idz_chatbar_mini .idz_ope .idz_ope_bg{
+		height:52px;
+		padding:3px 5px 0 5px;
+		float:left;
+		text-align:center;
+		background:#ffffff;
+		border-radius: 5px 5px 0 0;
+		-moz-border-radius: 5px 5px 0 0;
+		-webkit-border-top-left-radius:5px;
+		-webkit-border-top-right-radius:5px;
+		-webkit-border-bottom-left-radius:0;
+		-webkit-border-bottom-right-radius:0;
+	}
+		#idz_chatbar_mini .idz_ope img{
+			text-align:left;
+		}
+/**** chat box ****/
+#idz_chatbox {
+}
+	/** chat box info **/
+	#idz_chatbox_left {
+    display: none;
+	}
+	/** END chat box info **/
+#idz_chatbox_main {
+	overflow: hidden;
+	z-index:2;
+	text-align:left;
+	background-color: #3f3f3f;
+  border-radius: 3px 3px 0 0;
+}
+	/*#idz_chatbox_main h2{
+		display:block;
+		position:relative !important;
+		top: 1px !important;
+		left: 1px !important;
+		float:none !important;
+		height:57px !important;
+		min-height:0 !important;
+		width:613px !important;
+		visibility:visible !important;
+		margin:0 !important;
+		padding:0 !important;
+		font-family: Arial, Tahoma, Verdana !important;
+		text-align: center !important;
+		line-height:normal !important;
+		border:none !important;
+		background:none !important;
+	#idz_chatbox_main h2 .idz_action_l,
+	#idz_chatbox_main h2 .idz_action_r{
+		position:relative;
+		margin:20px 0 0 0;
+		height:20px;
+		z-index:2;
+	}
+	#idz_chatbox_main h2 .idz_action_l{
+		float:right;
+		padding:0 0 0 10px;
+		border-left: 1px solid #808080;
+	}
+	#idz_chatbox_main h2 .idz_action_r{
+		float:right;
+		margin-right:12px;
+		padding:0 0 0 10px;
+		border-left: 1px solid #808080;
+	}
+		#idz_chatbox_main h2 a{
+			margin:0 1px 0 0;
+			text-decoration:none !important;
+			color:#FFFFFF !important;
+			font-size: 14px !important;
+		}
+			#idz_chatbox_main h2 .idz_action_l a{
+				display:block;
+				float:left;
+				height:20px;
+				margin:0 6px;
+			}
+				#idz_chatbox_main h2 .idz_action_l a#idz_button_print{
+					padding:0 7px 0 15px;
+					border-left: 1px solid #808080;
+				}
+			#idz_chatbox_main h2 .idz_action_r a{
+				margin:0 6px;
+			}
+		#idz_chatbox_main h2 a span{
+			margin:0 3px !important;
+			font-weight:normal !important;
+			font-size:13px !important;
+			vertical-align:33% !important;
+		}
+		#idz_chatbox_main h2 a img{
+			display:inline !important;
+			border:none;
+			margin:0 2px;
+		}
+			#idz_chatbox_main h2 .idz_action_r a img{
+				vertical-align:14% !important;
+			}
+		#idz_chatbox_main h2 .idz_action_c{
+			display:none;
+			float:left;
+			position:relative;
+			left:40%;
+			width:34px;
+			margin-top:5px;
+		}
+		* html #idz_chatbox_main h2 .idz_action_c{
+			margin-top:0;
+		}
+		#idz_chatbox_main h2 .bbar {
+			background: url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') no-repeat top left;
+			width: 15px; height: 15px;
+		}
+		#idz_chatbox_main h2 .bbar2 {
+			background: url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') no-repeat top left;
+			width: 12px; height: 12px;
+		}
+		#idz_chatbox_main h2 .bbar3 {
+			background: url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') no-repeat top left;
+			width: 26px; height: 20px;
+		}
+		#idz_chatbox_main h2 .bbar_close{ background-position: 0 -118px; }
+		#idz_chatbox_main h2 .bbar_fontsize_neg{ background-position: -64px 0; }
+		#idz_chatbox_main h2 .bbar_fontsize_pos{ background-position: -80px 0; }
+		#idz_chatbox_main h2 .bbar_hide{ background-position: -13px -118px; }
+		#idz_chatbox_main h2 .bbar_mail{ background-position: -53px -118px; }
+		#idz_chatbox_main h2 .bbar_print{ background-position: -26px -118px; }
+
+		#idz_chatbox_main h2 #idz_button_font_neg,
+		#idz_chatbox_main h2 #idz_button_font_pos{
+			display:none;
+		}
+    */
+
+	/*#idz_chatbox_main_content{
+		position:relative;
+		margin:0;
+		padding:12px 12px 0 12px;
+		text-align:left;
+		z-index:3;
+		background:none;
+	}*/
+		.idz_chatbox_main_content_inner{
+		}
+		.idz_chatbox_main_content_inner_bottom{
+			display:none;
+		}
+		#idz_dialogbox {
+			width:420px !important;
+			height:228px !important;
+			overflow-x:hidden;
+      overflow-y:auto;
+      outline: none
+		}
+			.idz_msgtime {
+				float: right;
+				position: relative;
+				top: 0;
+				right: 0;
+				padding:0 0 0 5px;
+				color: #3f3f3f;
+				font-size:0.85em;
+				font-weight: bold;
+			}
+			.idz_msg_alert_op .idz_msgtime {
+				color:#ffffff;
+			}
+			.btn_livechat_refuse{
+				position:relative;
+				display:block;
+				height:44px;
+				width:96px;
+				margin:0 5px;
+				padding:0;
+				font-weight:bold;
+				font-family:Arial,verdana,"Trebuchet MS",Tahoma,times,serif !important;
+				font-size:14px;
+				text-shadow:1px 1px 0 #000000;
+				color:#FFFFFF;
+				text-align:center;
+				line-height:44px;
+				cursor:pointer;
+				background: transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') -194px -73px no-repeat;
+			}
+			.btn_livechat_accept{
+				position:relative;
+				display:block;
+				height:44px;
+				width:96px;
+				margin:0 5px;
+				padding:0;
+				font-weight:bold;
+				font-family:Arial,verdana,"Trebuchet MS",Tahoma,times,serif !important;
+				font-size:14px;
+				text-shadow:1px 1px 0 #000000;
+				color:#FFFFFF;
+				text-align:center;
+				line-height:44px;
+				cursor:pointer;
+				background: transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') -97px -73px no-repeat;
+			}
+			/*visitor message*/
+			.idz_msg_visitor {
+        background-color: rgb(239, 239, 239);
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 1px #2c2c2c;
+        color: rgb(63, 63, 63);
+        margin: 6px 6px 6px 18px;
+        min-height: 20px;
+        padding: 8px;
+			}
+				.idz_msg_visitor .idz_msg_visitor_footer{
+					display:none;
+				}
+			/*operator message*/
+			.idz_msg_operator {
+				color: #3f3f3f;
+				font-weight:bold;
+				margin: 6px 18px 6px 6px;
+			}
+				.idz_msg_operator .idz_ope{
+					float:left;
+					height:50px;
+					width:50px;
+					margin:0 0 0 5px;
+				}
+				.idz_msg_operator .idz_msgcontent{
+          border-radius: 3px;
+          box-shadow: inset 0 0 0 1px #2c2c2c;
+					padding: 8px;
+					min-height:32px;
+					background-color: #FFFFFF;
+				}
+				.idz_msg_operator .idz_msgcontent a{
+					color:#FFFFFF;
+					text-decoration:underline;
+				}
+					.idz_msg_operator .idz_msgcontent .idz_msg_operator_footer{
+            display:none;
+					}
+					.idz_msg_operator .idz_msgcontent .idz_opename{
+						font-weight:normal;
+					}
+					.idz_msg_operator .idz_msgtime{
+						color:#3f3f3f;
+            font-weight: bold;
+					}
+			/*system message*/
+			.idz_msg_alert_op {
+        border-radius: 3px;
+        box-shadow: inset 0 0 0 1px #2c2c2c;
+				color: #FFFFFF;
+				margin: 6px 18px 6px 6px;
+				padding: 8px;
+				min-height:25px;
+			}
+				.idz_msg_alert_op .idz_msg_alert_op_footer{
+          display:none;
+				}
+				.idz_msg_alert_op .idz_msgtext{
+					min-height:24px;
+					height:auto !important;
+					height:24px;
+					/*
+					padding:0 0 0 35px;
+					background:transparent url('//static.iadvize.com/images/livechat/clevercloud/bg_chatbox_msgalert_msgtext.png') left top no-repeat;
+					*/
+				}
+				.idz_msg_alert_op .idz_msgtime{
+					color: #FFFFFF;
+				}
+				/*cobrowsing system message*/
+				#idz_dialogbox .idz_msg_alert_op_cobrowsing .idz_msgtext{
+					padding:0;
+					background:none;
+				}
+				.idz_msg_alert_op_cobrowsing .idz_action{}
+					.idz_msg_alert_op_cobrowsing .idz_lab{
+						margin:0px 10px 5px 10px;
+						letter-spacing:-0.02em;
+					}
+				.idz_msg_alert_op_cobrowsing .idz_small{
+					margin:5px 10px 0 10px;
+					letter-spacing:-0.02em;
+				}
+				/*survey*/
+				#satisfaction_top.idz_msg_alert_op{
+					font-size:0.9em;
+				}
+				.idz_question{
+					padding:2px 0;
+					margin:0 46px 5px 29px;
+					font-size: 1em;
+					text-align:right;
+					border-radius: 10px;
+				    -moz-border-radius: 10px;
+				    -webkit-border-radius: 10px;
+				}
+				.idz_question:nth-child(2n+1){
+					background:#CFCFCF;
+				}
+				.idz_question .idz_msgtext{
+					float:right;
+					width:60%;
+					margin:5px 0 0 0;
+					color:#000000;
+					font-weight:bold;
+				}
+				.idz_question .idz_msgsurvey{
+					float:right;
+					width:35%;
+				}
+				.idz_question .eval_2, .idz_question .eval_1, .idz_question .eval_0{
+					height:27px !important;
+					width:27px !important;
+					padding:0;
+					margin:0 12% 0 0;
+					cursor:pointer;
+					border:none !important;
+				}
+				.idz_question .eval_2{
+					background: transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') 0px -20px no-repeat;
+				}
+				.idz_question .eval_1{
+					background: transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') -55px -20px no-repeat;
+				}
+				.idz_question .eval_0{
+					background: transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') -111px -20px no-repeat;
+				}
+				.idz_question .disabled{
+				  filter : alpha(opacity=20);
+				  -moz-opacity : 0.2;
+				  opacity : 0.2;
+				  cursor:default;
+				}
+                .idz_fbshare {
+                        float: right;
+                            font-weight: bold;
+                                margin: 5px 28px 5px 0px;
+                }
+                .idz_fbshare input[type="checkbox"] {
+                        margin-right: 10px;
+                }
+                    .idz_fbshare .idz_fbtitle {
+                        color: #627AAD;
+                        margin-left: 5px;
+                    }
+                    .idz_fbshare .idz_fbtitle .idz_fbicon {
+                        position: relative;
+                        top: 3px;
+                    }
+    .idz_writting{
+			margin:5px 13px 0 13px;
+			font-size:10px;
+			font-family:Arial, Sans-serif;
+			color:#FFFFFF;
+		}
+
+/* JSCROLLPANE COMMON */
+.jspContainer{overflow:hidden;position:relative;z-index:1;text-align:left;}
+.jspPane{position:absolute}
+.jspVerticalBar{position:absolute;top:0;right:0;width:16px;height:100%;}
+.jspHorizontalBar{position:absolute;bottom:0;left:0;width:100%;height:16px;}
+.jspVerticalBar *,.jspHorizontalBar *{margin:0;padding:0}
+.jspCap{display:none}
+.jspHorizontalBar .jspCap{float:left}
+.jspTrack{background:#dde;position:relative;width:15px;}
+.jspDrag{background:#bbd;position:relative;top:0;left:0;cursor:pointer}
+.jspDragTop{position:absolute;top:0;left:0;overflow:hidden;height:6px;width:100%;}
+.jspDragBottom{position:absolute;bottom:0;left:0;overflow:hidden;height:6px;width:100%;}
+.jspHorizontalBar .jspTrack,.jspHorizontalBar .jspDrag{float:left;height:100%}
+.jspArrow{background:#50506d;text-indent:-20000px;display:block;cursor:pointer}
+.jspArrow.jspDisabled{cursor:default;}
+.jspVerticalBar .jspArrow{height:16px}
+.jspHorizontalBar .jspArrow{width:16px;float:left;height:100%}
+.jspVerticalBar .jspArrow:focus{outline:none}
+.jspCorner{background:#eeeef4;float:left;height:100%}
+/* Yuk! CSS Hack for IE6 3 pixel bug :( */
+* html .jspCorner{margin:0 -3px 0 0}
+
+/* JSCROLLPANE SPECIFIC */
+.jspTrack{background: transparent url('//static.iadvize.com/images/livechat/scroll/bg-scroll-clean.png') -32px 0 no-repeat;}
+.jspDrag{
+  background: #636363;
+  border-radius: 5px;
+  margin-left: 3px;
+  width: 50%;
+}
+.jspDragTop{
+  display: none;
+}
+.jspDragBottom{
+  display: none;
+}
+a.jspArrowUp {background: url('//static.iadvize.com/images/livechat/scroll/bg-scroll-clean.png') no-repeat -16px -476px;}
+a.jspArrowUp:hover {background-position: -16px -446px;}
+a.jspArrowDown {background: url('//static.iadvize.com/images/livechat/scroll/bg-scroll-clean.png') no-repeat 0 -484px;}
+a.jspArrowDown:hover {background-position: 0 -454px;}
+
+#idz_chatbox_main .jspContainer{height:228px !important;width:420px !important;}
+#idz_chatbox_main .jspPane{margin-left: 0 !important;width:401px !important;}
+
+/*CSS Overload of style-invitation.css for invitation popin*/
+#idzInvitation #idzI{
+	top:40% !important;
+	width:527px;
+	margin:0px 0px 0px -263px;
+	background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit.png') left top no-repeat !important;
+}
+#idzInvitation #idzI.idzI_medium #idzI_main{
+    position:relative;
+    bottom:-13px;
+    width:527px;
+    background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-b.png') left bottom no-repeat !important;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+    #idzInvitation #idzI.idzI_medium #idzI_main #idzI_inner{
+        position:relative;
+        padding:0 5px 55px;
+    }
+
+        #idzInvitation #idzI #idzI_close{
+			display:none;
+            height:15px;
+            width:15px;
+            margin:9px 6px 0 0;
+            background: url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') no-repeat -48px 0;
+        }
+        #idzInvitation #idzI .idzI_title{
+			position:relative;
+			top:10px;
+			left:20px;
+			height:34px;
+			width:100px;
+			text-indent:-9999px;
+        }
+        #idzInvitation #idzI .idzI_ctn{
+            position:relative;
+            margin:0 12px 15px;
+            background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit.png') no-repeat -528px top !important;
+            border-radius: 0;
+            -moz-border-radius: 0;
+            -webkit-border-radius: 0;
+        }
+            #idzInvitation #idzI .idzI_ctn_inner{
+                position:relative;
+                min-height:135px;
+                height:auto !important;
+                height:135px;
+                bottom:-10px;
+                padding:5px 10px 30px;
+				background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-inner-b.png') left bottom no-repeat !important;
+            }
+                #idzInvitation #idzI .idzI_ope{
+                	position:absolute;
+                	left:0;
+                	bottom:0;
+                    height:205px;
+                    width:155px;
+                    margin:2px 20px 0 0;
+                    background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit.png') -186px -701px no-repeat !important;
+                }
+                    #idzInvitation #idzI .idzI_ope .idzI_ope_s{
+                        background: none;
+                    }
+                #idzInvitation #idzI.idzI_medium .idzI_txt{
+					/*position:relative;*/
+					margin:-35px 0 15px 131px;
+                    width:352px;
+	                min-height:130px;
+	                height:auto !important;
+	                height:130px;
+                    background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit.png') -528px -701px no-repeat !important;
+                }
+                    #idzInvitation #idzI .idzI_label{
+                        position:relative;
+                        display:table-cell;
+                        vertical-align:middle;
+                        bottom:-10px;
+                        padding:0px 20px 10px 40px;
+		                height:130px;
+                        font-size:18px !important;
+                        font-family:Arial, sans-serif !important;
+                        font-weight:normal;
+                        line-height:24px;
+                        color:#000000;
+                        background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-inner-dialog-b.png') left bottom no-repeat !important;
+                    }
+                    #idzInvitation #idzI .idzI_action{
+						position:absolute;
+						bottom:-25px;
+						width:492px;
+						right:0;
+						margin:0;
+                    }
+						#idzInvitation #idzI a.idzI_btn_green{
+							float:right;
+							height:53px;
+							width:150px;
+							margin:0 15px 0 0;
+							padding:0 0 0 35px;
+							font-weight:bold;
+							font-family:Arial,verdana,"Trebuchet MS",Tahoma,times,serif !important;
+							font-size:18px !important;
+							color:#FFFFFF;
+							letter-spacing: -1px;
+							line-height:53px;
+							text-shadow:1px 1px 1px #000000;
+							background: transparent url("//static.iadvize.com/images/livechat/clevercloud/bg-invit.png") left -859px no-repeat !important;
+						}
+						#idzInvitation #idzI a.idzI_btn_red{
+							position:absolute;
+							left:0;
+							bottom:-12px;
+							height:auto;
+							width:auto;
+							height:15px;
+							padding:0 0 0 20px;
+							font-family:Arial, sans-serif;
+							font-size:15px !important;
+							font-weight:bold;
+							color:#FFFFFF;
+							line-height:0.9em;
+							text-shadow:none;
+							letter-spacing: -1px;
+							background: transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') left -139px no-repeat;
+						}
+						#idzInvitation #idzI a.idzI_btn_green:hover,
+						#idzInvitation #idzI a.idzI_btn_red:hover{
+							text-decoration:none;
+						}
+						#idzInvitation #idzI a.idzI_btn_green span,
+						#idzInvitation #idzI a.idzI_btn_red span{
+							display:none;
+						}
+						#idzInvitation #idzI a.idzI_btn_green strong{
+							color:#FFFFFF !important;
+						}
+						#idzInvitation #idzI a.idzI_btn_red strong{
+							color:#FFFFFF !important;
+						}
+/*End CSS Overload of style-invitation.css for invitation popin*/
+
+/*CSS Overload of css/c2c/style.css for C2C invitation popin*/
+#idzc2c #c2cpopin{
+	width:420px;
+	background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-c2c.png') left top no-repeat !important;
+	border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+    box-shadow:none;
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+}
+	#idzc2c #c2cpopin_inner{
+		position: relative;
+		bottom:-20px !important;
+		padding:0 10px 10px !important;
+		background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-c2c-b.png') left bottom no-repeat !important;
+	}
+		#c2cpopin #c2cpopin_close{
+			margin:7px 16px 0 !important;
+			background:transparent url('//static.iadvize.com/images/livechat/clevercloud/buttons-bar.png') left -139px no-repeat !important;
+		}
+		#c2cpopin .c2cpopin_title{
+			margin:0 18px 15px !important;
+			color:#FFFFFF;
+		}
+		#c2cpopin .c2cpopin_ctn{
+			margin:15px !important;
+			background: #FFFFFF url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-c2c-inner.png') left bottom no-repeat !important;
+			border-radius: 10px;
+			-moz-border-radius: 10px;
+			-webkit-border-radius: 10px;
+		}
+			#c2cpopin a.btn_med_green{
+				font-size: 13px !important;
+				color:#FFFFFF !important;
+				font-family: Arial, sans-serif !important;
+				text-shadow:1px 1px 1px #000000;
+				background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-c2c.png') -447px -131px no-repeat !important;
+			}
+				#c2cpopin a.btn_med_green span{
+					background: transparent url('//static.iadvize.com/images/livechat/clevercloud/bg-invit-c2c.png') -421px -131px no-repeat !important;
+				}
+
+/*END CSS Overload of css/c2c/style.css for invitation popin*/
+
+/* iAdvize */
+
+.idz_action_l {
+  display: none;
+}
+
+#idz_btn {
+  border:      1px solid;
+  bottom:      5px !important;
+  left:        5px;
+  line-height: 16px !important;
+  padding:     5px;
+  right:       auto;
+  width:       138px;
+  font-size:   12px;
+  background-color: #F5F5F5;
+}
+#idz_btn:before {
+  content: "Some trouble with the service?";
+}
+
+#idz_button_close,
+#idz_chatbar_minifier {
+  display:     inline;
+  line-height: 10px;
+  margin:      5px;
+  padding: 2px 4px;
+}
+
+#idz_button_close:before {
+  content: "×";
+  font-weight: bold;
+}
+#idz_button_close:hover {
+  background-color: #636363;
+  border-radius: 11px 11px 11px 11px;
+  padding: 2px 4px;
+}
+
+#idz_chatbar_mini {
+  display: none;
+}
+
+#idz_chatbar_minifier:before {
+  content: "−";
+  font-weight: bold;
+}
+
+#idz_chatbox_main h2 {
+  display:    block;
+  margin:     0;
+  text-align: right;
+}
+
+#idz_chatbox_main .drag {
+  cursor:   move;
+  height:   23px;
+  left:     0 !important;
+  position: absolute !important;
+  right:    40px;
+  top:      0 !important;
+  z-index:  5;
+}
+#idz_chatbox_main .idz_msg_operator .idz_msgcontent a {
+  color: #3f3f3f;
+}
+
+.idz_t_close,
+#idz_btnimgon,
+#idz_blankimg {
+  display: none !important;
+}
+
+#idz_fonline a {
+  border:      1px solid;
+  display:     block;
+  height:      30px;
+  line-height: 30px;
+  margin-top:  10px;
+  width:       136px;
+}
+#idz_fonline a:before {
+  content: "Talk to a human";
+}
+#idz_fonline a:after {
+  content: " \f086";
+  font-family: FontAwesome;
+}
+#idz_chatbox_main .idz_msg_operator .idz_msgcontent a {
+color: #3f3f3f;
+}
+
+/* iAdvize */
+
+#idz_btn {
+  border-color:  #d0d0d0;
+  border-radius: 4px;
+  box-shadow:    0 1px 0 #fff inset,
+                 0 1px 0 #fff;
+  text-align:    center;
+}
+
+#idz_button_close,
+#idz_chatbar_minifier {
+  color:           #fff;
+  font-size:       12px;
+  font-weight:     normal;
+  text-decoration: none;
+}
+
+#idz_fonline a {
+  background:       #f6f6f6;
+  background-image: -webkit-linear-gradient(top, #fff, #eee);
+  background-image:    -moz-linear-gradient(top, #fff, #eee);
+  background-image:      -o-linear-gradient(top, #fff, #eee);
+  background-image:         linear-gradient(top, #fff, #eee);
+  border-color:     #cecece;
+  border-radius:    2px;
+  box-shadow:       0 1px 0 #fff;
+  color:            inherit;
+  cursor:           pointer;
+  font-size:        12px;
+  text-align:       center;
+  text-decoration:  none;
+}
+
+#idz_fonline a:active {
+  box-shadow: inset 0 0 6px #D9D9D9;
+  background-image: -webkit-linear-gradient(top, #F6F6F6, #F1F1F1);
+  background-image:    -moz-linear-gradient(top, #F6F6F6, #F1F1F1);
+  background-image:      -o-linear-gradient(top, #F6F6F6, #F1F1F1);
+  background-image:         linear-gradient(top, #F6F6F6, #F1F1F1);
+}
