@@ -725,6 +725,8 @@ a.jspArrowDown:hover {background-position: 0 -454px;}
   padding:     5px;
   right:       auto;
   width:       138px;
+  font-size:   12px;
+  background-color: #F5F5F5;
 }
 #idz_btn:before {
   content: "Some trouble with the service?";
@@ -830,7 +832,7 @@ color: #3f3f3f;
   box-shadow:       0 1px 0 #fff;
   color:            inherit;
   cursor:           pointer;
-  font-size:        14px;
+  font-size:        12px;
   text-align:       center;
   text-decoration:  none;
 }
