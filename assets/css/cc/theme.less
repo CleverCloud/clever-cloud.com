@@ -757,10 +757,12 @@ input:focus:invalid:focus{
 }
 .cc_workflow__block {
   border-radius: 8px;
-}
-.cc_workflow__block {
   background:  fade(@white, 10%);
   box-shadow:  0 0 4px fade(@black, 20%);
+  a {
+    color: @darkgrey;
+    text-decoration: underline;
+  }
 }
 .cc_workflow__btn {
   .cc_btn;
