@@ -416,3 +416,13 @@ function cycleTestimonial() {
         $('.cc_quote-author img').attr('src', cur.photo_url);
     }).fadeTo('fast', 1);
 }
+
+$(".cc_compatibility_head").click(function(e) {
+  if (e.target.href != "http://console.clever-cloud.com/auth/signup") {
+    e.preventDefault();
+    e.stopPropagation();
+    $('html, body').animate({
+      scrollTop: $($(e.target).attr("data-anchor")).offset().top
+    }, 500);
+  };
+});

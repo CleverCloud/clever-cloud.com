@@ -846,6 +846,10 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 
 .cc_main .cc_compatibility_head_text {
   width: 450px;
+  a {
+    color: @whitey;
+    text-decoration: underline;
+  }
 }
 .cc_compatibility_head_text{
   color: @white;
@@ -1373,12 +1377,10 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
   bottom: -10px;
   img {
     width: 275px;
-    margin-left: 100px;
   }
 }
 
 .cc_pricing_vision {
-  padding-top: 50px;
   .row1 {
     padding-bottom: 10px;
   }
@@ -1400,4 +1402,46 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 .langs_services_more {
   padding-top: 50px;
   text-align: center;
+}
+
+.table-pricing-services {
+  margin-left: 0px;
+  margin-right: auto;
+  thead {
+    font-weight: bold;
+  }
+  tr {
+    line-height: 30px;
+  }
+  tr td {
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+  };
+  td {
+    padding-left: 5px;
+    width: 200px;
+  }
+  .cell-center {
+    text-align: center;
+  }
+}
+
+.cc_pricing__services {
+  h1 {
+    margin-bottom: 60px;
+  };
+  img {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 17px;
+    width: 60px;
+    display: block;
+  };
+  .cc_pricing__services__img {
+    text-align: center;
+  };
+  .cc_pricing__services__and {
+    text-align: center;
+    /*margin-top: 70px;*/
+  }
 }
