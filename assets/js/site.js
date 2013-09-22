@@ -374,22 +374,22 @@ function random_array( aArray ) {
 
 //Testimonials
 var testimonials = [{
-    "content": "My blog migrated to CleverCloud this night… Impressed by how fast it is !  http:\/\/bit.ly\/d5ygWZ",
+    "content": "My blog migrated to CleverCloud this night. Impressed by how fast it is!",
     "author": "Jeremie Berrebi, @jberrebi",
-    "job_title": "Angel investor",
+    "job_title": "Venture capitalist",
     "photo_url": "\/assets\/img\/testimonials\/jberrebi.jpg"
 }, {
-    "content": "Many reasons to go for @clever_cloud :)",
+    "content": "Many reasons to go for Clever Cloud :)",
     "author": "Maxime Alay-Eddine, @tarraschk",
     "job_title": "Founder of Argaus",
     "photo_url": "\/assets\/img\/testimonials\/tarraschk.jpg"
 }, {
-    "content": "Something that you should test !",
+    "content": "Something that you should test!",
     "author": "Tugdual Grall, @tgrall",
     "job_title": "Technical Evangelist @couchbase",
     "photo_url": "\/assets\/img\/testimonials\/tgrall.png"
 }, {
-    "content": "Our projet at #angelhack is hosted on @clever_cloud ! It's really nice and fast !",
+    "content": "Our projet at Angelhack is hosted on Clever Cloud! It's really nice and fast!",
     "author": "Jonathan Winandy, @ahoy_jon",
     "job_title": "BI Platform Engineer at Viadeo",
     "photo_url": "\/assets\/img\/testimonials\/ahoy_jon.jpg"
