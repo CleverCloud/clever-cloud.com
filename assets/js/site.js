@@ -322,7 +322,7 @@ $(".cc_subscribe__btn").click(function(e) {
       terms: terms
     }),
     success: function(e) {
-      window.location.href = "http://www.clever-cloud.com/hello.html";
+      window.location.href = "http://www.clever-cloud.com/en/hello.html";
     },
     error: function(e) {
       var temp = JSON.parse(e.responseText);
