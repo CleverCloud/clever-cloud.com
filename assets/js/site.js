@@ -426,3 +426,13 @@ $(".cc_compatibility_head").click(function(e) {
     }, 500);
   };
 });
+
+$(".cc_pricing__services__listelt").click(function(e) {
+  var newservice = $(this).attr("data-service");
+  $($(".cc_pricing__services__list .selected")[0]).removeClass("selected");
+  $(this).addClass("selected");
+
+  $($(".cc_pricing__services__list__tables .selected")[0]).removeClass("selected");
+  $(".cc_pricing__services__list__tables" + " ." + newservice).addClass("selected");
+
+})

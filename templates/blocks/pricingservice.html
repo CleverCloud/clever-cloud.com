@@ -4,28 +4,50 @@
         <h1>$title$</h1>
     </div>
   </div>
-  <div class="row-fluid cc_pricing__services__row1">
-    <div class="span6">
+  <div class="row-fluid cc_pricing__services__list">
+    <div class="span4 cc_mysql cc_pricing__services__listelt selected" data-service="mysql">
       <div class="row-fluid">
-        <div class="span5 cc_pricing__services__img">
-          <img src="/assets/img/128px/mysql.png">
+        <div class="span6 cc_pricing__services__logo">
+          <img src="/assets/img/64px/mysql.png">
         </div>
-        <div class="span5"></div>
-        <div class="span5 cc_pricing__services__img">
-          <img src="/assets/img/128px/postgresql.png">
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span5 cc_pricing__services__img">
+        <div class="span10 cc_pricing__services__name">
           MySQL
         </div>
-        <div class="span5 cc_pricing__services__and">$and$</div>
-        <div class="span5 cc_pricing__services__img">
+      </div>
+    </div>
+    <div class="span4 cc_postgresql cc_pricing__services__listelt" data-service="postgresql">
+      <div class="row-fluid">
+        <div class="span6 cc_pricing__services__logo">
+          <img src="/assets/img/64px/postgresql.png">
+        </div>
+        <div class="span10 cc_pricing__services__name">
           PostgreSQL
         </div>
       </div>
     </div>
-    <div class="span10 cc_pricing__services_right">
+    <div class="span4 cc_mongodb cc_pricing__services__listelt" data-service="mongodb">
+      <div class="row-fluid">
+        <div class="span6 cc_pricing__services__logo">
+          <img src="/assets/img/64px/mongodb.png">
+        </div>
+        <div class="span10 cc_pricing__services__name">
+          MongoDB
+        </div>
+      </div>
+    </div>
+    <div class="span4 cc_mysql cc_pricing__services__listelt" data-service="couchbase">
+      <div class="row-fluid">
+        <div class="span6 cc_pricing__services__logo">
+          <img src="/assets/img/64px/couchbase.png">
+        </div>
+        <div class="span10 cc_pricing__services__name">
+          Couchbase
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid cc_pricing__services__list__tables">
+    <div class="span16 mysql cc_pricing__services__list__tables__elt selected">
       <table class='table-pricing-services'>
         <thead>
           <tr>
@@ -57,30 +79,43 @@
         </tbody>
       </table>
     </div>
-  </div>
-  <div class="row-fluid">
-    <div class="span6">
-      <div class="row-fluid">
-        <div class="span5 cc_pricing__services__img">
-          <img src="/assets/img/128px/mongodb.png">
-        </div>
-        <div class="span5"></div>
-        <div class="span5 cc_pricing__services__img">
-          <img src="/assets/img/128px/couchbase.png">
-        </div>
-      </div>
-      <div class="row-fluid">
-        <div class="span5 cc_pricing__services__img">
-          MongoDB
-        </div>
-        <div class="span5 cc_pricing__services__and">$and$</div>
-        <div class="span5 cc_pricing__services__img">
-          Couchbase
-        </div>
-      </div>
+    <div class="span16 postgresql cc_pricing__services__list__tables__elt">
+      <table class='table-pricing-services'>
+        <thead>
+          <tr>
+            <td></td>
+            <td class="cell-center">S</td>
+            <td class="cell-center">M</td>
+            <td class="cell-center">L</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>$connections$</td>
+            <td class="cell-center">15</td>
+            <td class="cell-center">30</td>
+            <td class="cell-center">40</td>
+          </tr>
+          <tr>
+            <td>$size$</td>
+            <td class="cell-center">1 Go</td>
+            <td class="cell-center">5 Go</td>
+            <td class="cell-center">10 Go</td>
+          </tr>
+          <tr>
+            <td>$price$</td>
+            <td class="cell-center"><b>7 €/$month$</b><br/>(0,23 €/$day$)</td>
+            <td class="cell-center"><b>35 €/$month$</b><br/>(1,17 €/$day$)</td>
+            <td class="cell-center"><b>70 €/$month$</b><br/>(2,33 €/$day$)</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div class="span10 cc_pricing__services_right cc_pricing__services_right__beta">
-      $freepublicbeta$
+    <div class="span16 mongodb cc_pricing__services__list__tables__elt">
+      <div class="service_beta">$freepublicbeta$</div>
+    </div>
+    <div class="span16 couchbase cc_pricing__services__list__tables__elt">
+      <div class="service_beta">$freepublicbeta$</div>
     </div>
   </div>
 </section>

@@ -1407,7 +1407,7 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 }
 
 .table-pricing-services {
-  margin-left: 0px;
+  margin-left: auto;
   margin-right: auto;
   thead {
     font-weight: bold;
@@ -1446,4 +1446,36 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
     text-align: center;
     /*margin-top: 70px;*/
   }
+}
+
+.cc_pricing__services__list .cc_pricing__services__listelt{
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+.cc_pricing__services__list .selected {
+  background-color: rgba(0,0,0,0.1);
+  opacity: 1;
+}
+
+.cc_pricing__services__list {
+  .cc_pricing__services__listelt {
+    background-repeat: no-repeat;
+    padding-left: 0px;
+  }
+  .cc_pricing__services__logo {
+    background-position: center;
+  }
+  .cc_pricing__services__name {
+    line-height: 100px;
+  }
+}
+
+.service_beta {
+  margin-top: 50px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  font-size: 20px;
 }
