@@ -345,7 +345,6 @@ var urlList = ["tour", "pricing", "compatibility"];
 _.each(urlList, function(x, y) {
   var y = x + ".html";
   if (_.contains(window.location.pathname.split( '/' ), y)) {
-    console.log("okok");
     $($(".nav-" + x)[0]).addClass("active");
   }
 })
