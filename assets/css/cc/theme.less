@@ -752,7 +752,7 @@ input:focus:invalid:focus{
 }
 
 .cc_workflow {
-  background:      @grey url('@{cc_path_img}cc_workflow.png') top center no-repeat;
+  background:      @grey url('@{cc_path_img}cc_workflow.jpg') top center no-repeat;
   background-size: cover;
   box-shadow:      0 5px 3px -3px fade(@black, 20%) inset,
                    0 -5px 3px -3px fade(@black, 20%) inset;
@@ -1451,17 +1451,26 @@ a.cc_workflow__btn:hover, a.cc_workflow__btn:focus{
 .cc_pricing__services__list .cc_pricing__services__listelt{
   opacity: 0.5;
   border-radius: 10px;
+    &:hover{
+      opacity: 0.8;
+      background-color: rgba(0,0,0,0.1);
+    }
 }
 
 .cc_pricing__services__list .selected {
   background-color: rgba(0,0,0,0.1);
   opacity: 1;
+    &:hover{
+      opacity: 1;
+      background-color: rgba(0,0,0,0.1);
+    }
 }
 
 .cc_pricing__services__list {
   .cc_pricing__services__listelt {
     background-repeat: no-repeat;
     padding-left: 0px;
+    cursor: pointer;
   }
   .cc_pricing__services__logo {
     background-position: center;
