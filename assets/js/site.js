@@ -139,7 +139,7 @@ function random_array( aArray ) {
 
 //Testimonials
 var testimonials = [{
-    "content": "My blog migrated to CleverCloud this night. Impressed by how fast it is!",
+    "content": "My blog migrated to Clever Cloud this night. Impressed by how fast it is!",
     "author": "Jeremie Berrebi, @jberrebi",
     "job_title": "Venture capitalist",
     "photo_url": "\/assets\/img\/testimonials\/jberrebi.jpg"
