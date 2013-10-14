@@ -144,7 +144,7 @@ var testimonials = [{
     "job_title": "Venture capitalist",
     "photo_url": "\/assets\/img\/testimonials\/jberrebi.jpg"
 }, {
-    "content": "Clever Cloud is definitely my favourite PaaS platform fot Play2 Scala hosting.",
+    "content": "Clever Cloud is definitely my favorite PaaS platform for Play2 Scala hosting.",
     "author": "Nicolas Martignole, @nmartignole",
     "job_title": "Co-founder of Devoxx France",
     "photo_url": "\/assets\/img\/testimonials\/nmartignole.jpg"
