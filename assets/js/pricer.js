@@ -229,8 +229,12 @@ var Pricer = (function() {
    /* Price estimation */
    p.estimate = function() {
       if(this.price && this.flavor && this.minInstances && this.maxInstances) {
-         if (this.instance.name == "Ruby" && Math.round(this.price.value) == 0) {
-           this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/09/16/ruby-beta.html' target='_blank'>Free public beta!<a/>");
+         if ((this.instance.name == "Ruby" || this.instance.name == "Go") && Math.round(this.price.value) == 0) {
+            if (this.instance.name == "Ruby") {
+               this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/09/16/ruby-beta.html' target='_blank'>Free public beta!<a/>");
+            } else if (this.instance.name == "Go") {
+               this.options.elem.find('.result .price').html("Free public beta!");
+            }
          } else {
             var min = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
             var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;
