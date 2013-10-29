@@ -1,5 +1,7 @@
 var Pricer = (function() {
 
+   var orderedInstanceNames = ["Optimize", "XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"];
+
    var W = function(oo) {
       this.options = oo;
       this.initialize(oo);
@@ -170,7 +172,7 @@ var Pricer = (function() {
             maxFlavor:  _.max(ff, function(f) { return f.price; })
          }])
          .sortBy(function(f) {
-            return typeof f.price != 'undefined' ? f.price : -1;
+            return orderedInstanceNames.indexOf(f.name);
          })
          .foldl(function($ff, f, n, ff) {
             var $f = $(this.options.$flavor(_.extend(f, {
