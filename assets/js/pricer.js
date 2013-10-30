@@ -235,7 +235,7 @@ var Pricer = (function() {
             if (this.instance.name == "Ruby") {
                this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/09/16/ruby-beta.html' target='_blank'>Free public beta!<a/>");
             } else if (this.instance.name == "Go") {
-               this.options.elem.find('.result .price').html("Free public beta!");
+               this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/10/29/go-beta.html' target='_blank'>Free public beta!<a/>");
             }
          } else {
             var min = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
