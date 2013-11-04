@@ -8,7 +8,7 @@ These Terms may be changed at any time without that users are notified in advanc
 
 ---
 
-## Article 1 : Définitions
+## Article 1 : Definitions
 
 ### Computer Energy
 Computer Energy&nbsp;: The computer is all energy resources consumed during the execution of an application.
