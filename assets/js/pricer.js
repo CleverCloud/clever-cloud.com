@@ -1,5 +1,7 @@
 var Pricer = (function() {
 
+   var orderedInstanceNames = ["Optimize", "XXS", "XS", "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL"];
+
    var W = function(oo) {
       this.options = oo;
       this.initialize(oo);
@@ -170,7 +172,7 @@ var Pricer = (function() {
             maxFlavor:  _.max(ff, function(f) { return f.price; })
          }])
          .sortBy(function(f) {
-            return typeof f.price != 'undefined' ? f.price : -1;
+            return orderedInstanceNames.indexOf(f.name);
          })
          .foldl(function($ff, f, n, ff) {
             var $f = $(this.options.$flavor(_.extend(f, {
@@ -229,8 +231,12 @@ var Pricer = (function() {
    /* Price estimation */
    p.estimate = function() {
       if(this.price && this.flavor && this.minInstances && this.maxInstances) {
-         if (this.instance.name == "Ruby" && Math.round(this.price.value) == 0) {
-           this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/09/16/ruby-beta.html' target='_blank'>Free public beta!<a/>");
+         if ((this.instance.name == "Ruby" || this.instance.name == "Go") && Math.round(this.price.value) == 0) {
+            if (this.instance.name == "Ruby") {
+               this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/09/16/ruby-beta.html' target='_blank'>Free public beta!<a/>");
+            } else if (this.instance.name == "Go") {
+               this.options.elem.find('.result .price').html("<a href='http://blog.clever-cloud.com/Company/2013/10/29/go-beta.html' target='_blank'>Free public beta!<a/>");
+            }
          } else {
             var min = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.minFlavor.price) * this.minInstances) / 100;
             var max = Math.round(720 * 6 * 100 * this.price.value * (this.flavor.price || this.flavor.maxFlavor.price) * this.maxInstances) / 100;

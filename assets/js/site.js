@@ -139,15 +139,15 @@ function random_array( aArray ) {
 
 //Testimonials
 var testimonials = [{
-    "content": "My blog migrated to CleverCloud this night. Impressed by how fast it is!",
+    "content": "My blog migrated to Clever Cloud this night. Impressed by how fast it is!",
     "author": "Jeremie Berrebi, @jberrebi",
     "job_title": "Venture capitalist",
     "photo_url": "\/assets\/img\/testimonials\/jberrebi.jpg"
 }, {
-    "content": "Many reasons to go for Clever Cloud :)",
-    "author": "Maxime Alay-Eddine, @tarraschk",
-    "job_title": "Founder of Argaus",
-    "photo_url": "\/assets\/img\/testimonials\/tarraschk.jpg"
+    "content": "Clever Cloud is definitely my favorite PaaS platform for Play2 Scala hosting.",
+    "author": "Nicolas Martignole, @nmartignole",
+    "job_title": "Co-founder of Devoxx France",
+    "photo_url": "\/assets\/img\/testimonials\/nmartignole.jpg"
 }, {
     "content": "Something that you should test!",
     "author": "Tugdual Grall, @tgrall",
@@ -158,6 +158,11 @@ var testimonials = [{
     "author": "Jonathan Winandy, @ahoy_jon",
     "job_title": "BI Platform Engineer at Viadeo",
     "photo_url": "\/assets\/img\/testimonials\/ahoy_jon.jpg"
+}, {
+    "content": "Many reasons to go for Clever Cloud :)",
+    "author": "Maxime Alay-Eddine, @tarraschk",
+    "job_title": "Founder of Argaus",
+    "photo_url": "\/assets\/img\/testimonials\/tarraschk.jpg"
 }];
 var currentTestimonial = 0;
 $(function () {
