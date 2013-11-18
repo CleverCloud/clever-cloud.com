@@ -1,8 +1,25 @@
-$(function() {
-   $('#carousel')
-      .carousel();
+// ML Subscribe
+$('#ml_subscribe').submit(function() {
+    mlSubscribe() 
 });
+$('#ml_subscribe a').click(function(e) {
+    e.preventDefault();
+    mlSubscribe() 
+});
+function mlSubscribe() {
+    var ml_email = $('#ml_subscribe input').val();
+    alert(ml_email);
+    if (ml_email != '') {
+        uri = 'http://subscribe.cleverapps.io/addContact';
+        $.post(uri, {
+            'mail': ml_email
+        }, function(data) {
+            $('#ml_subscribe .message').hide();
+            $('#ml_subscribe .' + data.response + '-message').show();
+        }, "json");
+    }
 
+}
 // initialisation Pricer
 $(document).ready(function () {
   if(window.location.href.indexOf("pricing") > -1) {
