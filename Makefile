@@ -31,7 +31,7 @@ publish: build
 	git clean -fdx
 	git stash pop || true
 
-preprodpublish: build
+publish-ppd: build
 	git stash save
 	git checkout publish || git checkout --orphan publish
 	find . -maxdepth 1 ! -name '.' ! -name '.git*' ! -name '_site' -exec rm -rf {} +
