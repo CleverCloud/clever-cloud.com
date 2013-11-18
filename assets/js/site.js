@@ -1,6 +1,7 @@
 // ML Subscribe
 $('#ml_subscribe').submit(function() {
-    mlSubscribe() 
+    mlSubscribe();
+    return false;
 });
 $('#ml_subscribe a').click(function(e) {
     e.preventDefault();
@@ -8,7 +9,6 @@ $('#ml_subscribe a').click(function(e) {
 });
 function mlSubscribe() {
     var ml_email = $('#ml_subscribe input').val();
-    alert(ml_email);
     if (ml_email != '') {
         uri = 'http://subscribe.cleverapps.io/addContact';
         $.post(uri, {
