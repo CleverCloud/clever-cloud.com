@@ -13,7 +13,7 @@
     <a href="irc://irc.freenode.net:6667/clevercloud">#clevercloud sur irc.freenode.net</a>
   </div>
   <div class="span4">
-    <h4>Par courier</h4>
+    <h4>Par courrier</h4>
     Clever Cloud SAS<br/>
     3, rue de l'Allier<br/>
     44000 Nantes
